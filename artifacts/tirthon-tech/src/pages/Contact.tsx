@@ -31,7 +31,7 @@ export default function Contact() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-xl text-muted-foreground max-w-2xl mx-auto"
             >
-              Tell us about your project and we'll get back to you within 24 hours.
+              Tell us what you're working on and we'll get back to you. No sales pitch, just a real conversation.
             </motion.p>
           </div>
         </section>

@@ -14,128 +14,128 @@ import {
 const services = [
   {
     title: "Web, Mobile & Desktop Apps",
-    description: "Full-cycle development of custom web apps, native & cross-platform mobile apps, and Windows desktop software — all built to scale.",
+    description: "We build the whole thing — from the UI your users see to the backend that powers it. Web, iOS, Android, Windows — whatever you need.",
     deliverables: [
-      "React, Next.js & full-stack web applications",
-      "iOS & Android mobile apps (React Native / Flutter)",
-      "Windows desktop software development",
-      "SaaS product development"
+      "React, Next.js & full-stack web apps",
+      "iOS & Android apps (React Native / Flutter)",
+      "Windows desktop software",
+      "SaaS products"
     ],
     icon: Code2
   },
   {
-    title: "Web Development & Digital Experience",
-    description: "High-performance websites and digital experiences that convert visitors into clients — built fast, clean, and on-brand.",
+    title: "Websites & Landing Pages",
+    description: "A website that's slow or hard to navigate loses you business. We build sites that are fast, clear, and actually do their job.",
     deliverables: [
-      "Responsive corporate & startup websites",
-      "High-conversion landing pages",
+      "Company & startup websites",
+      "Landing pages built to convert",
       "UI/UX design & prototyping",
       "CMS-powered content sites"
     ],
     icon: Globe
   },
   {
-    title: "AI & Automation Solutions",
-    description: "AI-powered tools, intelligent workflow automation, smart chatbots, and data-driven decision systems that give your business a real edge.",
+    title: "AI & Automation",
+    description: "If something in your business is repetitive or slow, there's a good chance we can automate it. We also build AI tools that slot into your workflow.",
     deliverables: [
-      "Custom LLM & AI integrations",
+      "LLM & AI integrations",
       "Workflow automation (Zapier / Make / custom)",
-      "Intelligent chatbots & virtual assistants",
-      "Data pipelines & AI decision systems"
+      "Chatbots & virtual assistants",
+      "Data pipelines & AI systems"
     ],
     icon: Cpu
   },
   {
     title: "Data for AI Training",
-    description: "We source, structure, and deliver high-quality datasets via web scraping and custom data collection — ready for AI and ML model training.",
+    description: "Training a model? We'll get you the data. We scrape, clean, and structure it in whatever format your pipeline expects.",
     deliverables: [
-      "Large-scale web scraping & data extraction",
-      "Structured dataset delivery (JSON, CSV, JSONL)",
-      "Domain-specific data sourcing",
-      "Custom data pipelines for training workflows"
+      "Large-scale web scraping & extraction",
+      "Datasets in JSON, CSV, JSONL formats",
+      "Domain-specific data collection",
+      "Custom pipelines for training workflows"
     ],
     icon: Database
   },
   {
     title: "Data Annotation",
-    description: "Precise, consistent labeling and annotation of text, image, and video datasets for computer vision, NLP, and machine learning pipelines.",
+    description: "Good annotations make the difference between a model that works and one that doesn't. We label carefully and consistently.",
     deliverables: [
-      "Image & video annotation (bounding boxes, segmentation)",
+      "Image & video annotation",
       "Text classification & NLP labeling",
-      "Named entity recognition (NER) annotation",
-      "Quality-controlled annotation workflows"
+      "Named entity recognition (NER)",
+      "Quality-controlled annotation"
     ],
     icon: Tag
   },
   {
     title: "Shopify & E-Commerce",
-    description: "Custom Shopify app development, storefront builds, and e-commerce integrations that help your store perform and convert.",
+    description: "We build Shopify apps, customize themes, and set up integrations so your store runs the way you want it to.",
     deliverables: [
       "Custom Shopify app development",
-      "Theme customization & storefront builds",
+      "Theme builds & customization",
       "Shopify Plus integrations",
       "Payment, inventory & order management"
     ],
     icon: ShoppingBag
   },
   {
-    title: "Cloud & Backend Infrastructure",
-    description: "Robust cloud architecture on AWS & GCP, scalable APIs, backend systems, and database optimization built for long-term growth.",
+    title: "Cloud & Backend",
+    description: "APIs, databases, cloud infrastructure — we set it up properly so it doesn't become a headache later.",
     deliverables: [
-      "Cloud architecture design (AWS / GCP)",
+      "Cloud architecture (AWS / GCP)",
       "REST & GraphQL API development",
-      "Database design, migration & optimization",
-      "Serverless & microservices architecture"
+      "Database design & optimization",
+      "Serverless & microservices"
     ],
     icon: Cloud
   },
   {
-    title: "Windows Software Development",
-    description: "Native Windows desktop applications built for performance, security, and seamless enterprise-grade integration.",
+    title: "Windows Software",
+    description: "We build native Windows apps for businesses that need something that runs locally, integrates with hardware, or handles sensitive data.",
     deliverables: [
       "C# / .NET Windows applications",
-      "Enterprise internal tools & utilities",
-      "System integrations & automation software",
-      "Legacy Windows software modernization"
+      "Internal tools & utilities",
+      "System integrations & automation",
+      "Legacy software modernization"
     ],
     icon: Monitor
   },
   {
-    title: "Business Systems & Internal Tools",
-    description: "Custom CRMs, operational dashboards, process automation, and internal tools that power your team and reduce operational overhead.",
+    title: "Internal Tools & Dashboards",
+    description: "Stop managing your business through spreadsheets. We build the CRMs, portals, and dashboards that your team will actually use.",
     deliverables: [
-      "Custom CRM & ERP development",
+      "Custom CRM & ERP systems",
       "Admin dashboards & client portals",
-      "Inventory & resource management systems",
-      "Process automation & reporting tools"
+      "Inventory & resource management",
+      "Process automation & reporting"
     ],
     icon: LayoutDashboard
   },
   {
-    title: "Product Development & Scaling",
-    description: "MVP builds for startups, architecture design, performance tuning, and scaling infrastructure that grows with your business.",
+    title: "MVPs & Product Scaling",
+    description: "Need to validate fast? We help you ship a solid MVP without wasting time. Already growing? We help you scale without things breaking.",
     deliverables: [
-      "Rapid MVP development",
+      "Fast MVP development",
       "Product strategy & roadmapping",
-      "Performance auditing & optimization",
-      "Scaling architecture for growth"
+      "Performance audits & fixes",
+      "Scaling architecture"
     ],
     icon: Rocket
   },
   {
-    title: "Technology Consulting",
-    description: "Software strategy, architecture consulting, and technology-driven process optimization for teams that want to move faster.",
+    title: "Tech Consulting",
+    description: "Sometimes you just need someone to look at what you have and give you an honest opinion. That's something we're good at.",
     deliverables: [
       "Technical due diligence",
-      "Architecture reviews & design",
-      "Digital transformation strategy",
-      "Team augmentation & technical training"
+      "Architecture reviews",
+      "Digital transformation planning",
+      "Team augmentation & training"
     ],
     icon: Lightbulb
   },
   {
-    title: "Specialized Solutions",
-    description: "Custom automation systems and advanced data platforms built for unique, complex business requirements.",
+    title: "Custom Solutions",
+    description: "If your problem doesn't fit into a standard category, reach out anyway. Some of our best work has come from unusual requirements.",
     deliverables: [
       "Web scraping & data extraction systems",
       "Third-party API integrations",
@@ -173,7 +173,7 @@ export default function ServicesPage() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-xl text-muted-foreground max-w-2xl mx-auto"
             >
-              End-to-end software solutions designed for modern businesses — from custom apps to AI training data.
+              We build a lot of different things. Here's the full breakdown of what we do and what you get.
             </motion.p>
           </div>
         </section>
@@ -228,10 +228,10 @@ export default function ServicesPage() {
         <section className="py-20 bg-primary/5 border-y border-primary/10">
           <div className="max-w-4xl mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
-              Ready to build something great?
+              See something that fits what you need?
             </h2>
             <p className="text-muted-foreground text-lg mb-8">
-              Whether it's an app, a dataset, or a full product — let's make it happen.
+              Reach out and tell us what you're building. We'll take it from there.
             </p>
             <Link href="/contact">
               <Button size="lg" className="h-14 px-8 text-lg rounded-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-md hover:shadow-lg group">

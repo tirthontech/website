@@ -9,27 +9,27 @@ import { Target, Lightbulb, Users, CheckCircle, Globe2, ShieldCheck } from "luci
 
 const values = [
   {
-    title: "Clarity",
-    description: "We communicate transparently and deliver with precision. No technical jargon, just clear business outcomes.",
+    title: "Straight talk",
+    description: "We don't hide behind technical terms or vague timelines. You'll always know where things stand and why.",
     icon: Target
   },
   {
-    title: "Innovation",
-    description: "We stay ahead of technology to bring you the best solutions. Building for tomorrow's scale today.",
+    title: "Curiosity",
+    description: "We stay on top of what's new in tech — not to chase trends, but to pick the right tool for the right job.",
     icon: Lightbulb
   },
   {
-    title: "Partnership",
-    description: "We work as an extension of your team, not just a vendor. Your success is inherently our success.",
+    title: "We're in it together",
+    description: "When you win, we win. We care about what happens after launch, not just what gets shipped.",
     icon: Users
   }
 ];
 
 const reasons = [
-  { text: "Highly experienced, senior-level engineering team", icon: ShieldCheck },
-  { text: "Global clients across diverse industries and regions", icon: Globe2 },
-  { text: "Proven track record with diverse, high-growth clients", icon: CheckCircle },
-  { text: "Structured, agile delivery process ensuring timely results", icon: CheckCircle },
+  { text: "Engineers who've shipped real products, not just side projects", icon: ShieldCheck },
+  { text: "Clients from across the world — different industries, different problems", icon: Globe2 },
+  { text: "We've helped companies go from idea to product to growth", icon: CheckCircle },
+  { text: "Clear process, no surprises, and we actually meet deadlines", icon: CheckCircle },
 ];
 
 export default function About() {
@@ -56,7 +56,7 @@ export default function About() {
                 About <span className="text-primary">Tirthon Tech</span>
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed font-light">
-                We are a software development company committed to building scalable, intelligent, and future-ready technology for clients worldwide.
+                We're a small team that builds real software for real businesses. We've worked with clients from different countries and industries — and we take every project seriously.
               </p>
             </motion.div>
           </div>
@@ -73,7 +73,7 @@ export default function About() {
             >
               <h2 className="text-3xl font-bold mb-6 text-foreground">Our Mission</h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                To empower businesses through technology that is clear, powerful, and built to grow. We bring the same discipline and craftsmanship to every project — whether it's a startup MVP or a massive enterprise system.
+                We started Tirthon Tech because we wanted to build software the right way — not the fastest, cheapest, cut-every-corner way. Whether someone comes to us with a rough idea or a detailed spec, we put in the same effort. That hasn't changed.
               </p>
             </motion.div>
           </div>
@@ -121,7 +121,7 @@ export default function About() {
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Work With Us</h2>
-              <p className="text-background/80 text-lg">We deliver excellence at every step of the engineering lifecycle.</p>
+              <p className="text-background/80 text-lg">Here's the honest version of why people keep coming back to us.</p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {reasons.map((reason, index) => {
@@ -147,7 +147,7 @@ export default function About() {
         {/* CTA */}
         <section className="py-24 text-center">
           <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-foreground">Ready to accelerate your growth?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-foreground">Have something in mind? Let's talk.</h2>
             <Link href="/contact">
               <Button size="lg" className="h-14 px-10 text-lg rounded-full bg-primary text-primary-foreground hover:bg-primary/90 shadow-md">
                 Contact Us Today

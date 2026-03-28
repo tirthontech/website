@@ -69,10 +69,10 @@ export function Contact() {
               className="flex flex-col justify-center"
             >
               <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6 text-foreground">
-                Ready to <span className="text-primary">scale?</span>
+                Let's talk about <span className="text-primary">your project</span>
               </h2>
               <p className="text-lg text-muted-foreground mb-10 leading-relaxed max-w-md">
-                Whether you need a custom enterprise platform, automated internal tools, or a technical consultation—our team is ready to deliver.
+                Drop us a message and tell us what you're working on. Even if you're not sure yet — we're happy to help you figure it out.
               </p>
 
               <div className="mt-auto space-y-6">
@@ -112,7 +112,7 @@ export function Contact() {
 
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-background border border-border shadow-sm">
                   <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-                  <span className="text-sm font-medium text-muted-foreground">We respond within 24 hours.</span>
+                  <span className="text-sm font-medium text-muted-foreground">Usually reply within a day.</span>
                 </div>
               </div>
             </motion.div>

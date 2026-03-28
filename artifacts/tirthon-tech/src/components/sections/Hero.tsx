@@ -20,7 +20,7 @@ export function Hero() {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
           </span>
-          Welcome to Tirthon Tech
+          Hey, we're Tirthon Tech
         </motion.div>
 
         <motion.h1
@@ -38,7 +38,7 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="mt-8 text-lg md:text-xl text-muted-foreground max-w-2xl font-light leading-relaxed"
         >
-          We help businesses create powerful software, automate complex operations, and grow with absolute confidence.
+          We build software that actually works for your business — whether that's a web app, a mobile product, AI tools, or anything in between. No fluff, just solid work.
         </motion.p>
 
         <motion.div

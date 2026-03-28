@@ -3,23 +3,23 @@ import { Scaling, Target, Layers, MapPin } from "lucide-react";
 
 const points = [
   {
-    title: "Built for Scale",
-    description: "Every system we build is meticulously designed to handle exponential growth from day one.",
+    title: "We think about growth upfront",
+    description: "We don't build things that fall apart the moment you get more users. Scale is something we plan for from the start, not bolt on later.",
     icon: Scaling
   },
   {
-    title: "Outcome-Focused",
-    description: "We prioritize tangible business results and ROI, not just shipping lines of code.",
+    title: "We care about your results",
+    description: "Shipping code is easy. Shipping code that actually moves the needle for your business is what we're focused on.",
     icon: Target
   },
   {
-    title: "Clarity & Structure",
-    description: "Clean architecture, transparent communication, and highly structured delivery sprints.",
+    title: "You always know what's happening",
+    description: "No radio silence, no surprise delays. We keep you in the loop throughout and flag problems early.",
     icon: Layers
   },
   {
-    title: "US-Based, Global Reach",
-    description: "Trusted by visionary clients across North America and around the globe.",
+    title: "Clients from all over the world",
+    description: "We've worked with businesses from different industries and countries. Different time zones, no problem.",
     icon: MapPin
   }
 ];
@@ -41,7 +41,7 @@ export function WhyUs() {
               Why <br/><span className="text-primary">Tirthon Tech</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              We don't just build apps; we engineer foundations for market leaders. Our approach combines elite technical precision with deep business acumen.
+              Honestly, a lot of dev shops will take your money and disappear. We're not that. We ask the right questions, give you straight answers, and build things that last.
             </p>
             <div className="w-24 h-1 bg-gradient-to-r from-primary to-transparent rounded-full" />
           </motion.div>
