@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Loader2, Mail, CheckCircle2 } from "lucide-react";
+import { Loader2, Mail, Phone, MapPin, CheckCircle2 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { useSendContactMessage, contactFormSchema, type ContactFormValues } from "@/hooks/use-contact";
 
@@ -85,6 +85,28 @@ export function Contact() {
                     <a href="mailto:tirthontech@gmail.com" className="text-lg font-semibold text-foreground hover:text-primary transition-colors">
                       tirthontech@gmail.com
                     </a>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                    <Phone className="w-5 h-5 text-primary" />
+                  </div>
+                  <div>
+                    <p className="text-sm text-muted-foreground font-medium">Call Us</p>
+                    <a href="tel:+919424575918" className="text-lg font-semibold text-foreground hover:text-primary transition-colors">
+                      +91 94245 75918
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                    <MapPin className="w-5 h-5 text-primary" />
+                  </div>
+                  <div>
+                    <p className="text-sm text-muted-foreground font-medium">Our Address</p>
+                    <p className="text-lg font-semibold text-foreground">B56, Tilak Nagar, Indore, India</p>
                   </div>
                 </div>
 
