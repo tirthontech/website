@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
-import logoUrl from "@assets/tirthontech_logo_1774692162566.png";
 
 const navLinks = [
   { name: "Home", href: "/" },
@@ -32,17 +31,13 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
         <Link
           href="/"
-          className="flex items-center gap-3 group relative z-50 no-underline"
+          className="flex items-center gap-2 group relative z-50 no-underline"
         >
-          <div className="bg-gray-900 rounded-lg p-1">
-            <img
-              src={logoUrl}
-              alt="Tirthon Tech Logo"
-              className="h-8 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
-            />
+          <div className="flex items-center justify-center w-9 h-9 rounded-lg bg-primary/10 border border-primary/20 transition-transform duration-300 group-hover:scale-105">
+            <span className="text-lg font-black text-primary leading-none">T</span>
           </div>
           <span className="text-xl font-bold tracking-tight text-foreground hidden sm:block">
-            Tirthon Tech
+            Tirthon<span className="text-primary"> Tech</span>
           </span>
         </Link>
 
