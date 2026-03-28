@@ -8,6 +8,8 @@ import AboutPage from "@/pages/About";
 import ContactPage from "@/pages/Contact";
 import BlogPage from "@/pages/Blog";
 import BlogPostPage from "@/pages/BlogPost";
+import PrivacyPolicy from "@/pages/PrivacyPolicy";
+import TermsOfService from "@/pages/TermsOfService";
 import NotFound from "@/pages/not-found";
 
 const queryClient = new QueryClient({
@@ -28,6 +30,8 @@ function Router() {
       <Route path="/contact" component={ContactPage} />
       <Route path="/blog" component={BlogPage} />
       <Route path="/blog/:slug" component={BlogPostPage} />
+      <Route path="/privacy-policy" component={PrivacyPolicy} />
+      <Route path="/terms-of-service" component={TermsOfService} />
       <Route component={NotFound} />
     </Switch>
   );

@@ -50,24 +50,31 @@ export function Testimonials() {
   return (
     <section id="testimonials" className="py-24 bg-muted/30 border-y border-border/40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-2xl mx-auto mb-16">
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+          className="text-center max-w-2xl mx-auto mb-16"
+        >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4 text-foreground">
             What clients <span className="text-primary">say</span>
           </h2>
           <p className="text-muted-foreground text-lg">
             We've worked with businesses from different industries and countries. Here's what some of them had to say.
           </p>
-        </div>
+        </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {testimonials.map((t, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: 40, scale: 0.96 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
               viewport={{ once: true, margin: "-60px" }}
-              transition={{ duration: 0.5, delay: (index % 3) * 0.1 }}
-              className="bg-card border border-border/60 rounded-2xl p-6 flex flex-col gap-4 hover:border-primary/30 hover:shadow-md transition-all duration-300"
+              transition={{ duration: 0.55, delay: (index % 3) * 0.12, ease: [0.16, 1, 0.3, 1] }}
+              whileHover={{ y: -6, transition: { duration: 0.2 } }}
+              className="bg-card border border-border/60 rounded-2xl p-6 flex flex-col gap-4 hover:border-primary/40 hover:shadow-xl transition-shadow duration-300 cursor-default"
             >
               <div className="flex gap-1">
                 {Array.from({ length: t.stars }).map((_, i) => (

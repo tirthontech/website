@@ -86,14 +86,20 @@ export function Services() {
   return (
     <section id="services" className="py-24 relative bg-muted/30 border-y border-border/40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+          className="text-center max-w-3xl mx-auto mb-16"
+        >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4 text-foreground">
             What We <span className="text-primary">Do</span>
           </h2>
           <p className="text-muted-foreground text-lg">
             From apps to AI — here's what we actually do, and what you can expect when you work with us.
           </p>
-        </div>
+        </motion.div>
 
         <motion.div
           variants={containerVariants}
