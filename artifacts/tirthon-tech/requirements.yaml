@@ -1,0 +1,14 @@
+packages:
+  "framer-motion": "For premium smooth entry animations and scroll-triggered reveals"
+  "react-hook-form": "For robust contact form state management"
+  "@hookform/resolvers": "For Zod schema validation integration"
+  "zod": "For contact form validation"
+
+images:
+  - path: "artifacts/tirthon-tech/public/images/hero-glow.png"
+    description: "Abstract ultra-dark minimal background with very subtle, elegant gold and amber light leaks, soft premium gradient mesh, clean tech aesthetic"
+    aspect_ratio: "16:9"
+
+notes:
+  - This is a purely frontend site, so the contact form submission uses a mock delay and toast notification instead of a real API call.
+  - The design is dark-mode by default to match the premium software development aesthetic.

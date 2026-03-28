@@ -1,0 +1,76 @@
+Write a clear, premium, and professional description of services offered by a US-based software development company named "Tirthon Tech".
+
+Tone: Modern, confident, minimal, and intelligent (similar to Stripe, Apple, or top SaaS companies)
+
+Positioning:
+Tirthon Tech is a technology company that helps businesses build, automate, and scale using powerful software solutions. The brand represents clarity, innovation, and structured growth.
+
+Services to include:
+
+1. Custom Software Development
+
+* Scalable web and mobile applications
+* SaaS product development
+* Enterprise-grade software solutions
+
+2. Web Development & Digital Experience
+
+* High-performance websites
+* Conversion-focused landing pages
+* Modern UI/UX design (clean, fast, minimal)
+
+3. AI & Automation Solutions
+
+* AI-powered tools and business systems
+* Workflow automation
+* Chatbots and intelligent assistants
+* Data-driven systems for smarter decisions
+
+4. Cloud & Backend Infrastructure
+
+* Cloud architecture (AWS, GCP)
+* Backend system development
+* API development & integrations
+* Database optimization
+
+5. Business Systems & Internal Tools
+
+* CRM systems
+* Custom dashboards
+* Process automation tools
+* Operational software
+
+6. Product Development & Scaling
+
+* MVP development for startups
+* System architecture design
+* Performance optimization
+* Scaling infrastructure for growing businesses
+
+7. Technology Consulting
+
+* Software strategy & planning
+* Architecture consulting
+* Process optimization using technology
+
+(Optional – keep very light mention)
+8. Specialized Solutions
+
+* Custom automation systems
+* Advanced data systems
+  (avoid deep finance-specific language)
+
+Requirements:
+
+* Keep it simple but premium
+* Focus on business outcomes, not just features
+* Avoid heavy technical jargon
+* Make it appealing to US/global clients
+* Keep finance/trading references minimal or optional
+* Make the company look scalable and high-value
+
+Output:
+
+* Website-ready service section
+* Clean headings with short powerful descriptions
+* Strong closing line that builds trust and authority
