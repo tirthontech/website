@@ -1,24 +1,57 @@
 import { motion } from "framer-motion";
+import { useState, useRef, useCallback } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "wouter";
 import { useTypewriter } from "@/hooks/use-typewriter";
+import { useCountUp } from "@/hooks/use-count-up";
 
 const words = ["Web Apps", "Mobile Apps", "AI Tools", "Shopify Apps", "Automation", "Data Systems"];
 
-const stats = [
-  { value: "50+", label: "Projects Shipped" },
-  { value: "20+", label: "Clients Worldwide" },
-  { value: "IIT", label: "Alumni Team" },
-];
+function StatItem({ value, suffix, label }: { value: number; suffix: string; label: string }) {
+  const { count, ref } = useCountUp(value, 1600);
+  return (
+    <motion.div whileHover={{ scale: 1.07 }} className="text-center">
+      <p className="text-3xl md:text-4xl font-extrabold text-primary tabular-nums">
+        <span ref={ref}>{count}</span>{suffix}
+      </p>
+      <p className="text-sm text-muted-foreground mt-1 font-medium">{label}</p>
+    </motion.div>
+  );
+}
 
 export function Hero() {
   const { text, cursor } = useTypewriter(words, 75, 1800);
+  const sectionRef = useRef<HTMLElement>(null);
+  const [spotlight, setSpotlight] = useState({ x: 0, y: 0, active: false });
+
+  const handleMouseMove = useCallback((e: React.MouseEvent<HTMLElement>) => {
+    const rect = sectionRef.current?.getBoundingClientRect();
+    if (!rect) return;
+    setSpotlight({ x: e.clientX - rect.left, y: e.clientY - rect.top, active: true });
+  }, []);
+
+  const handleMouseLeave = useCallback(() => {
+    setSpotlight((s) => ({ ...s, active: false }));
+  }, []);
 
   return (
-    <section className="relative flex items-center justify-center overflow-hidden pt-32 pb-24 bg-background min-h-[90vh]">
+    <section
+      ref={sectionRef}
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
+      className="relative flex items-center justify-center overflow-hidden pt-32 pb-24 bg-background min-h-[90vh]"
+    >
+      {/* Mouse spotlight */}
+      <div
+        className="pointer-events-none absolute inset-0 z-20 transition-opacity duration-300"
+        style={{
+          opacity: spotlight.active ? 1 : 0,
+          background: `radial-gradient(700px circle at ${spotlight.x}px ${spotlight.y}px, rgba(200,146,42,0.10), transparent 70%)`,
+        }}
+      />
 
-      {/* Animated gradient orbs */}
+      {/* Ambient orbs */}
       <motion.div
         animate={{ x: [0, 40, 0], y: [0, -30, 0] }}
         transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
@@ -28,11 +61,6 @@ export function Hero() {
         animate={{ x: [0, -30, 0], y: [0, 40, 0] }}
         transition={{ duration: 15, repeat: Infinity, ease: "easeInOut", delay: 2 }}
         className="absolute bottom-20 right-10 w-96 h-96 bg-primary/8 rounded-full blur-[120px] pointer-events-none"
-      />
-      <motion.div
-        animate={{ x: [0, 20, 0], y: [0, 20, 0] }}
-        transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 4 }}
-        className="absolute top-1/2 left-1/3 w-48 h-48 bg-primary/5 rounded-full blur-[80px] pointer-events-none"
       />
 
       {/* Grid overlay */}
@@ -54,7 +82,7 @@ export function Hero() {
           Hey, we're Tirthon Tech — IIT Alumni
         </motion.div>
 
-        {/* Headline */}
+        {/* Headline with typewriter */}
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -108,23 +136,21 @@ export function Hero() {
           </Link>
         </motion.div>
 
-        {/* Stats row */}
+        {/* Stats — count up only when scrolled to */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.65, ease: [0.16, 1, 0.3, 1] }}
           className="mt-20 flex flex-col sm:flex-row gap-8 sm:gap-16 items-center"
         >
-          {stats.map((stat, i) => (
-            <motion.div
-              key={i}
-              whileHover={{ scale: 1.05 }}
-              className="text-center"
-            >
-              <p className="text-3xl md:text-4xl font-extrabold text-primary">{stat.value}</p>
-              <p className="text-sm text-muted-foreground mt-1 font-medium">{stat.label}</p>
-            </motion.div>
-          ))}
+          <StatItem value={50} suffix="+" label="Projects Shipped" />
+          <div className="hidden sm:block w-px h-10 bg-border/60" />
+          <StatItem value={20} suffix="+" label="Clients Worldwide" />
+          <div className="hidden sm:block w-px h-10 bg-border/60" />
+          <motion.div whileHover={{ scale: 1.07 }} className="text-center">
+            <p className="text-3xl md:text-4xl font-extrabold text-primary">IIT</p>
+            <p className="text-sm text-muted-foreground mt-1 font-medium">Alumni Team</p>
+          </motion.div>
         </motion.div>
 
       </div>

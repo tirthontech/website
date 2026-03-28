@@ -5,6 +5,7 @@ import { Services } from "@/components/sections/Services";
 import { WhyUs } from "@/components/sections/WhyUs";
 import { Contact } from "@/components/sections/Contact";
 import { Testimonials } from "@/components/sections/Testimonials";
+import { Marquee } from "@/components/sections/Marquee";
 import { SEO } from "@/components/SEO";
 
 const homeJsonLd = {
@@ -32,6 +33,7 @@ export default function Home() {
       <Navbar />
       <main className="flex-grow">
         <Hero />
+        <Marquee />
         <Services />
         <WhyUs />
         <Testimonials />
