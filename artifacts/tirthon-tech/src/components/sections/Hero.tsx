@@ -6,7 +6,7 @@ import { Link } from "wouter";
 import { useTypewriter } from "@/hooks/use-typewriter";
 import { useCountUp } from "@/hooks/use-count-up";
 
-const words = ["Web Apps", "Mobile Apps", "AI Tools", "Shopify Apps", "Automation", "Data Systems"];
+const words = ["Web Apps", "Mobile Apps", "AI Tools", "Shopify Apps", "Automation"];
 
 function StatItem({ value, suffix, label }: { value: number; suffix: string; label: string }) {
   const { count, ref } = useCountUp(value, 1600);
@@ -47,7 +47,7 @@ export function Hero() {
         className="pointer-events-none absolute inset-0 z-20 transition-opacity duration-300"
         style={{
           opacity: spotlight.active ? 1 : 0,
-          background: `radial-gradient(700px circle at ${spotlight.x}px ${spotlight.y}px, rgba(200,146,42,0.10), transparent 70%)`,
+          background: `radial-gradient(700px circle at ${spotlight.x}px ${spotlight.y}px, rgba(200,146,42,0.118), transparent 70%)`,
         }}
       />
 
