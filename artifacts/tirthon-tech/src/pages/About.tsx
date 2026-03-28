@@ -26,7 +26,7 @@ const values = [
 ];
 
 const reasons = [
-  { text: "Engineers who've shipped real products, not just side projects", icon: ShieldCheck },
+  { text: "IIT Alumni — trained at India's top engineering colleges", icon: ShieldCheck },
   { text: "Clients from across the world — different industries, different problems", icon: Globe2 },
   { text: "We've helped companies go from idea to product to growth", icon: CheckCircle },
   { text: "Clear process, no surprises, and we actually meet deadlines", icon: CheckCircle },
@@ -52,11 +52,14 @@ export default function About() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/20 bg-primary/5 text-primary text-sm font-medium mb-6">
+                🎓 IIT Alumni — India's premier engineering institutions
+              </div>
               <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-foreground mb-6">
                 About <span className="text-primary">Tirthon Tech</span>
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed font-light">
-                We're a small team that builds real software for real businesses. We've worked with clients from different countries and industries — and we take every project seriously.
+                We're IIT alumni who got tired of watching businesses struggle with bad software. So we built a team that actually knows how to fix that — and we've been doing it for clients around the world ever since.
               </p>
             </motion.div>
           </div>
@@ -73,7 +76,7 @@ export default function About() {
             >
               <h2 className="text-3xl font-bold mb-6 text-foreground">Our Mission</h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                We started Tirthon Tech because we wanted to build software the right way — not the fastest, cheapest, cut-every-corner way. Whether someone comes to us with a rough idea or a detailed spec, we put in the same effort. That hasn't changed.
+                We're IIT graduates — we studied at some of the hardest engineering schools in India, where cutting corners wasn't an option. We brought that same standard into Tirthon Tech. Whether someone comes to us with a rough idea or a detailed spec, we put in the same effort. That hasn't changed.
               </p>
             </motion.div>
           </div>

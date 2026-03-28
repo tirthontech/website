@@ -4,6 +4,7 @@ import { Hero } from "@/components/sections/Hero";
 import { Services } from "@/components/sections/Services";
 import { WhyUs } from "@/components/sections/WhyUs";
 import { Contact } from "@/components/sections/Contact";
+import { Testimonials } from "@/components/sections/Testimonials";
 import { SEO } from "@/components/SEO";
 
 const homeJsonLd = {
@@ -33,6 +34,7 @@ export default function Home() {
         <Hero />
         <Services />
         <WhyUs />
+        <Testimonials />
         <Contact />
       </main>
       <Footer />
