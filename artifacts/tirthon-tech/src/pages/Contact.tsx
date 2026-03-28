@@ -1,11 +1,17 @@
 import { motion } from "framer-motion";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { SEO } from "@/components/SEO";
 import { Contact as ContactSection } from "@/components/sections/Contact";
 
 export default function Contact() {
   return (
     <div className="flex flex-col min-h-screen bg-background">
+      <SEO
+        title="Contact Us | Get a Free Project Consultation"
+        description="Ready to build something great? Contact Tirthon Tech for a free consultation. We respond within 24 hours. Email: tirthontech@gmail.com"
+        path="/contact"
+      />
       <Navbar />
       <main className="flex-grow pt-24">
         {/* Page Hero */}

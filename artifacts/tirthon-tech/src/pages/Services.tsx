@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { 
@@ -148,6 +149,11 @@ const services = [
 export default function ServicesPage() {
   return (
     <div className="flex flex-col min-h-screen bg-background">
+      <SEO
+        title="Our Services | Web, Mobile, AI & Data Solutions"
+        description="Explore Tirthon Tech's full range of services: custom web & mobile apps, Shopify apps, Windows software, AI automation, AI training datasets, data annotation, cloud infrastructure, and technology consulting."
+        path="/services"
+      />
       <Navbar />
       <main className="flex-grow pt-24">
         {/* Page Hero */}

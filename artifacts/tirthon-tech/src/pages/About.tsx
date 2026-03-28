@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Target, Lightbulb, Users, CheckCircle, Globe2, ShieldCheck } from "lucide-react";
@@ -34,6 +35,11 @@ const reasons = [
 export default function About() {
   return (
     <div className="flex flex-col min-h-screen bg-background">
+      <SEO
+        title="About Us | US-Based Software Development Company"
+        description="Learn about Tirthon Tech — a US-based software development company committed to building scalable, intelligent, and future-ready technology for global clients. Clarity. Innovation. Partnership."
+        path="/about"
+      />
       <Navbar />
       <main className="flex-grow pt-24">
         {/* Hero Section */}
