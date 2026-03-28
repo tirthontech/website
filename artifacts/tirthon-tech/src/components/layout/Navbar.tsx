@@ -9,6 +9,7 @@ const navLinks = [
   { name: "Home", href: "/" },
   { name: "Services", href: "/services" },
   { name: "About", href: "/about" },
+  { name: "Blog", href: "/blog" },
   { name: "Contact", href: "/contact" },
 ];
 
@@ -51,7 +52,7 @@ export function Navbar() {
               key={link.name}
               href={link.href}
               className={`text-sm font-medium transition-colors no-underline ${
-                location === link.href
+                location === link.href || (link.href !== "/" && location.startsWith(link.href))
                   ? "text-primary"
                   : "text-muted-foreground hover:text-foreground"
               }`}
@@ -91,7 +92,7 @@ export function Navbar() {
                   key={link.name}
                   href={link.href}
                   className={`text-lg font-medium transition-colors no-underline ${
-                    location === link.href
+                    location === link.href || (link.href !== "/" && location.startsWith(link.href))
                       ? "text-primary"
                       : "text-muted-foreground hover:text-primary"
                   }`}
