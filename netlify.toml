@@ -1,6 +1,5 @@
 [build]
-  base = "artifacts/tirthon-tech"
-  command = "pnpm install && pnpm run build"
+  command = "pnpm install && pnpm --filter @workspace/tirthon-tech run build"
   publish = "artifacts/tirthon-tech/dist"
 
 [[redirects]]
