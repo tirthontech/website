@@ -5,7 +5,7 @@ import { Link } from "wouter";
 
 export function Hero() {
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-20 bg-background">
+    <section className="relative flex items-center justify-center overflow-hidden pt-32 pb-24 bg-background">
       {/* Background with soft geometric pattern */}
       <div className="absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/10 via-background to-background" />
 
