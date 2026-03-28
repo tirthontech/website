@@ -24,7 +24,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       <SEO
         title="Tirthon Tech | Custom Software, AI & Data Solutions"
-        description="Tirthon Tech is a US-based software company building custom web apps, mobile apps, AI solutions, Shopify apps, Windows software, and AI training datasets. Scalable. Fast. Built to grow."
+        description="Tirthon Tech builds custom web apps, mobile apps, AI solutions, Shopify apps, Windows software, and AI training datasets for clients worldwide. Scalable. Fast. Built to grow."
         path="/"
         jsonLd={homeJsonLd}
       />

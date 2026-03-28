@@ -27,7 +27,7 @@ const values = [
 
 const reasons = [
   { text: "Highly experienced, senior-level engineering team", icon: ShieldCheck },
-  { text: "US-based presence with global delivery capabilities", icon: Globe2 },
+  { text: "Global clients across diverse industries and regions", icon: Globe2 },
   { text: "Proven track record with diverse, high-growth clients", icon: CheckCircle },
   { text: "Structured, agile delivery process ensuring timely results", icon: CheckCircle },
 ];
@@ -36,8 +36,8 @@ export default function About() {
   return (
     <div className="flex flex-col min-h-screen bg-background">
       <SEO
-        title="About Us | US-Based Software Development Company"
-        description="Learn about Tirthon Tech — a US-based software development company committed to building scalable, intelligent, and future-ready technology for global clients. Clarity. Innovation. Partnership."
+        title="About Us | Tirthon Tech Software Development"
+        description="Learn about Tirthon Tech — a software development company committed to building scalable, intelligent, and future-ready technology for clients worldwide. Clarity. Innovation. Partnership."
         path="/about"
       />
       <Navbar />
@@ -56,7 +56,7 @@ export default function About() {
                 About <span className="text-primary">Tirthon Tech</span>
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed font-light">
-                We are a US-based software development company committed to building scalable, intelligent, and future-ready technology.
+                We are a software development company committed to building scalable, intelligent, and future-ready technology for clients worldwide.
               </p>
             </motion.div>
           </div>
