@@ -14,7 +14,7 @@ import {
 const services = [
   {
     title: "Web, Mobile & Desktop Apps",
-    description: "We build the whole thing — from the UI your users see to the backend that powers it. Web, iOS, Android, Windows — whatever you need.",
+    description: "We build the whole thing. From the UI your users see to the backend that powers it. Web, iOS, Android, Windows, whatever you need.",
     deliverables: [
       "React, Next.js & full-stack web apps",
       "iOS & Android apps (React Native / Flutter)",
@@ -80,7 +80,7 @@ const services = [
   },
   {
     title: "Cloud & Backend",
-    description: "APIs, databases, cloud infrastructure — we set it up properly so it doesn't become a headache later.",
+    description: "APIs, databases, cloud infrastructure. We set it up properly so it doesn't become a headache later.",
     deliverables: [
       "Cloud architecture (AWS / GCP)",
       "REST & GraphQL API development",
@@ -157,13 +157,13 @@ export default function ServicesPage() {
       <Navbar />
       <main className="flex-grow pt-24">
         {/* Page Hero */}
-        <section className="py-20 bg-muted/30 border-b border-border/40">
+        <section className="py-12 md:py-20 bg-muted/30 border-b border-border/40">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-4xl md:text-6xl font-bold tracking-tight text-foreground mb-6"
+              className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground mb-4 md:mb-6"
             >
               Our <span className="text-primary">Services</span>
             </motion.h1>
@@ -193,12 +193,12 @@ export default function ServicesPage() {
                     transition={{ duration: 0.5, delay: (index % 4) * 0.08 }}
                   >
                     <Card className="h-full hover:shadow-lg transition-all duration-300 border-border hover:border-primary/30 group">
-                      <CardHeader className="flex flex-row items-start gap-5 pb-2">
-                        <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
-                          <Icon className="w-7 h-7 text-primary" />
+                      <CardHeader className="flex flex-row items-start gap-4 pb-2">
+                        <div className="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
+                          <Icon className="w-6 h-6 md:w-7 md:h-7 text-primary" />
                         </div>
                         <div>
-                          <CardTitle className="text-xl mb-2 text-foreground group-hover:text-primary transition-colors">
+                          <CardTitle className="text-lg md:text-xl mb-2 text-foreground group-hover:text-primary transition-colors">
                             {service.title}
                           </CardTitle>
                           <p className="text-muted-foreground leading-relaxed text-sm">
@@ -206,7 +206,7 @@ export default function ServicesPage() {
                           </p>
                         </div>
                       </CardHeader>
-                      <CardContent className="pt-4 pl-24">
+                      <CardContent className="pt-4 pl-4 md:pl-20">
                         <ul className="space-y-2">
                           {service.deliverables.map((item, i) => (
                             <li key={i} className="flex items-center text-sm font-medium text-foreground/80">
@@ -225,7 +225,7 @@ export default function ServicesPage() {
         </section>
 
         {/* CTA Strip */}
-        <section className="py-20 bg-primary/5 border-y border-primary/10">
+        <section className="py-12 md:py-20 bg-primary/5 border-y border-primary/10">
           <div className="max-w-4xl mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
               See something that fits what you need?

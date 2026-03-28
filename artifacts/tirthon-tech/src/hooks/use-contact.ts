@@ -15,6 +15,12 @@ export function useSendContactMessage() {
     mutationFn: async (data: ContactFormValues) => {
       contactFormSchema.parse(data);
 
+      // In local dev, Netlify Forms isn't available — simulate success
+      if (import.meta.env.DEV) {
+        await new Promise((resolve) => setTimeout(resolve, 800));
+        return { success: true };
+      }
+
       const formData = new URLSearchParams();
       formData.append("form-name", "contact");
       formData.append("name", data.name);

@@ -15,7 +15,7 @@ const values = [
   },
   {
     title: "Curiosity",
-    description: "We stay on top of what's new in tech — not to chase trends, but to pick the right tool for the right job.",
+    description: "We stay on top of what's new in tech. Not to chase trends, but to pick the right tool for the right job.",
     icon: Lightbulb
   },
   {
@@ -26,8 +26,8 @@ const values = [
 ];
 
 const reasons = [
-  { text: "IIT Alumni — trained at India's top engineering colleges", icon: ShieldCheck },
-  { text: "Clients from across the world — different industries, different problems", icon: Globe2 },
+  { text: "IIT Alumni, trained at India's top engineering colleges", icon: ShieldCheck },
+  { text: "Clients from across the world with different industries and different problems", icon: Globe2 },
   { text: "We've helped companies go from idea to product to growth", icon: CheckCircle },
   { text: "Clear process, no surprises, and we actually meet deadlines", icon: CheckCircle },
 ];
@@ -37,13 +37,13 @@ export default function About() {
     <div className="flex flex-col min-h-screen bg-background">
       <SEO
         title="About Us | Tirthon Tech Software Development"
-        description="Learn about Tirthon Tech — a software development company committed to building scalable, intelligent, and future-ready technology for clients worldwide. Clarity. Innovation. Partnership."
+        description="Learn about Tirthon Tech, a software development company committed to building scalable, intelligent, and future-ready technology for clients worldwide. Clarity. Innovation. Partnership."
         path="/about"
       />
       <Navbar />
       <main className="flex-grow pt-24">
         {/* Hero Section */}
-        <section className="py-20 md:py-28 relative overflow-hidden">
+        <section className="py-12 md:py-20 lg:py-28 relative overflow-hidden">
           <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_bottom_right,_var(--tw-gradient-stops))] from-primary/10 via-background to-background" />
           
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
@@ -53,20 +53,20 @@ export default function About() {
               transition={{ duration: 0.6 }}
             >
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/20 bg-primary/5 text-primary text-sm font-medium mb-6">
-                🎓 IIT Alumni — India's premier engineering institutions
+                🎓 IIT Alumni. India's premier engineering institutions.
               </div>
-              <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-foreground mb-6">
+              <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-foreground mb-4 md:mb-6">
                 About <span className="text-primary">Tirthon Tech</span>
               </h1>
-              <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed font-light">
-                We're IIT alumni who got tired of watching businesses struggle with bad software. So we built a team that actually knows how to fix that — and we've been doing it for clients around the world ever since.
+              <p className="text-base md:text-xl lg:text-2xl text-muted-foreground leading-relaxed font-light">
+                We're IIT alumni who got tired of watching businesses struggle with bad software. So we built a team that actually knows how to fix that, and we've been doing it for clients around the world ever since.
               </p>
             </motion.div>
           </div>
         </section>
 
         {/* Mission Section */}
-        <section className="py-20 bg-muted/30 border-y border-border/40">
+        <section className="py-10 md:py-20 bg-muted/30 border-y border-border/40">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -76,17 +76,17 @@ export default function About() {
             >
               <h2 className="text-3xl font-bold mb-6 text-foreground">Our Mission</h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                We're IIT graduates — we studied at some of the hardest engineering schools in India, where cutting corners wasn't an option. We brought that same standard into Tirthon Tech. Whether someone comes to us with a rough idea or a detailed spec, we put in the same effort. That hasn't changed.
+                We're IIT graduates. We studied at some of the hardest engineering schools in India, where cutting corners wasn't an option. We brought that same standard into Tirthon Tech. Whether someone comes to us with a rough idea or a detailed spec, we put in the same effort. That hasn't changed.
               </p>
             </motion.div>
           </div>
         </section>
 
         {/* Values Section */}
-        <section className="py-24">
+        <section className="py-12 md:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground">Our Core Values</h2>
+            <div className="text-center mb-10 md:mb-16">
+              <h2 className="text-2xl md:text-4xl font-bold text-foreground">Our Core Values</h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {values.map((value, index) => {
@@ -120,26 +120,26 @@ export default function About() {
         </section>
 
         {/* Why Work With Us Section */}
-        <section className="py-24 bg-foreground text-background">
+        <section className="py-12 md:py-24 bg-foreground text-background">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Work With Us</h2>
               <p className="text-background/80 text-lg">Here's the honest version of why people keep coming back to us.</p>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {reasons.map((reason, index) => {
                 const Icon = reason.icon;
                 return (
-                  <motion.div 
+                  <motion.div
                     key={index}
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.4, delay: index * 0.1 }}
-                    className="flex items-center gap-4 bg-background/10 p-6 rounded-2xl"
+                    className="flex items-start gap-3 bg-background/10 p-4 md:p-6 rounded-2xl"
                   >
-                    <Icon className="w-8 h-8 text-primary shrink-0" />
-                    <span className="text-lg font-medium">{reason.text}</span>
+                    <Icon className="w-6 h-6 md:w-8 md:h-8 text-primary shrink-0 mt-0.5" />
+                    <span className="text-base md:text-lg font-medium">{reason.text}</span>
                   </motion.div>
                 );
               })}
@@ -148,7 +148,7 @@ export default function About() {
         </section>
 
         {/* CTA */}
-        <section className="py-24 text-center">
+        <section className="py-12 md:py-24 text-center">
           <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-foreground">Have something in mind? Let's talk.</h2>
             <Link href="/contact">

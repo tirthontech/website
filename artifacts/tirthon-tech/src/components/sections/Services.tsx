@@ -9,12 +9,12 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 const services = [
   {
     title: "Web, Mobile & Desktop Apps",
-    description: "Got an idea for an app? We build it — web, iOS, Android, or Windows. We handle the full thing from design to deployment.",
+    description: "Got an idea for an app? We build it. Web, iOS, Android, or Windows. We handle the full thing from design to deployment.",
     icon: Code2
   },
   {
     title: "Websites & Landing Pages",
-    description: "Fast, clean websites that look good and actually load. Whether you need a company site or a page that converts — we've got it.",
+    description: "Fast, clean websites that look good and actually load. Whether you need a company site or a page that converts, we've got it.",
     icon: Globe
   },
   {
@@ -24,7 +24,7 @@ const services = [
   },
   {
     title: "Data for AI Training",
-    description: "Need data to train your model? We scrape, structure, and package it exactly how you need it — ready to feed into your pipeline.",
+    description: "Need data to train your model? We scrape, structure, and package it exactly how you need it, ready to feed into your pipeline.",
     icon: Database
   },
   {
@@ -34,7 +34,7 @@ const services = [
   },
   {
     title: "Cloud & Backend",
-    description: "APIs, databases, cloud setup on AWS or GCP — we build backend systems that hold up when things get busy.",
+    description: "APIs, databases, cloud setup on AWS or GCP. We build backend systems that hold up when things get busy.",
     icon: Cloud
   },
   {
@@ -64,7 +64,7 @@ const services = [
   },
   {
     title: "Custom Solutions",
-    description: "If it doesn't fit a neat category, that's fine — we figure it out. Weird requirements are usually the most interesting ones.",
+    description: "If it doesn't fit a neat category, that's fine. We figure it out. Weird requirements are usually the most interesting ones.",
     icon: Settings
   }
 ];
@@ -84,7 +84,7 @@ const itemVariants = {
 
 export function Services() {
   return (
-    <section id="services" className="py-24 relative bg-muted/30 border-y border-border/40">
+    <section id="services" className="py-14 md:py-24 relative bg-muted/30 border-y border-border/40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -97,7 +97,7 @@ export function Services() {
             What We <span className="text-primary">Do</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            From apps to AI — here's what we actually do, and what you can expect when you work with us.
+            From apps to AI, here's what we actually do, and what you can expect when you work with us.
           </p>
         </motion.div>
 

@@ -57,8 +57,8 @@ export function Contact() {
       <div className="absolute top-0 right-0 -mr-40 -mt-40 w-96 h-96 bg-primary/5 rounded-full blur-[100px] pointer-events-none" />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="bg-card border border-border/50 rounded-3xl p-8 md:p-12 lg:p-16 shadow-lg">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <div className="bg-card border border-border/50 rounded-2xl md:rounded-3xl p-6 md:p-12 lg:p-16 shadow-lg">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16">
             
             {/* Left side: Content */}
             <motion.div 
@@ -68,11 +68,11 @@ export function Contact() {
               transition={{ duration: 0.6 }}
               className="flex flex-col justify-center"
             >
-              <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6 text-foreground">
+              <h2 className="text-2xl md:text-5xl font-bold tracking-tight mb-4 md:mb-6 text-foreground">
                 Let's talk about <span className="text-primary">your project</span>
               </h2>
               <p className="text-lg text-muted-foreground mb-10 leading-relaxed max-w-md">
-                Drop us a message and tell us what you're working on. Even if you're not sure yet — we're happy to help you figure it out.
+                Drop us a message and tell us what you're working on. Even if you're not sure yet, we're happy to help you figure it out.
               </p>
 
               <div className="mt-auto space-y-6">
@@ -82,7 +82,7 @@ export function Contact() {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground font-medium">Email Us Directly</p>
-                    <a href="mailto:tirthontech@gmail.com" className="text-lg font-semibold text-foreground hover:text-primary transition-colors">
+                    <a href="mailto:tirthontech@gmail.com" className="text-sm md:text-lg font-semibold text-foreground hover:text-primary transition-colors break-all">
                       tirthontech@gmail.com
                     </a>
                   </div>

@@ -26,7 +26,7 @@ const points = [
 
 export function WhyUs() {
   return (
-    <section id="why-us" className="py-24 relative bg-background overflow-hidden">
+    <section id="why-us" className="py-14 md:py-24 relative bg-background overflow-hidden">
 
       {/* Background orb */}
       <motion.div
@@ -45,7 +45,7 @@ export function WhyUs() {
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className="lg:col-span-5"
           >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6 text-foreground">
+            <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4 md:mb-6 text-foreground">
               Why <br /><span className="text-primary">Tirthon Tech</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">

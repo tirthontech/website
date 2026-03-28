@@ -8,7 +8,7 @@ export default function TermsOfService() {
     <div className="flex flex-col min-h-screen bg-background">
       <SEO
         title="Terms of Service | Tirthon Tech"
-        description="Tirthon Tech's terms of service — the rules for working with us and using our website."
+        description="Tirthon Tech's terms of service. The rules for working with us and using our website."
         path="/terms-of-service"
       />
       <Navbar />
@@ -63,7 +63,7 @@ export default function TermsOfService() {
               <div>
                 <h2 className="text-xl font-bold text-foreground mb-3">4. Intellectual Property</h2>
                 <p>
-                  Everything on this website — text, design, logo, and code — belongs to Tirthon Tech. You may not copy or reproduce it without our written permission.
+                  Everything on this website (text, design, logo, and code) belongs to Tirthon Tech. You may not copy or reproduce it without our written permission.
                 </p>
                 <p className="mt-3">
                   For software we build for clients: ownership of the final deliverables is transferred to the client upon full payment, as specified in the project agreement. We may retain rights to reusable frameworks, libraries, or tools that were built independently of your project.
@@ -80,7 +80,7 @@ export default function TermsOfService() {
               <div>
                 <h2 className="text-xl font-bold text-foreground mb-3">6. Payments</h2>
                 <p>
-                  Payment schedules and amounts are agreed upon in your project contract. Generally we work on a milestone-based payment structure. Late payments may pause work on your project. If there's a billing issue, talk to us first — we're reasonable people.
+                  Payment schedules and amounts are agreed upon in your project contract. Generally we work on a milestone-based payment structure. Late payments may pause work on your project. If there's a billing issue, talk to us first. We're reasonable people.
                 </p>
               </div>
 

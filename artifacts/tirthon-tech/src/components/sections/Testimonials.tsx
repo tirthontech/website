@@ -6,49 +6,28 @@ const testimonials = [
     name: "James Carter",
     role: "Founder, NexaRetail",
     country: "🇺🇸 United States",
-    text: "We needed a Shopify app built fast and built right. Tirthon Tech delivered both. The team asked the right questions upfront, which saved us a lot of back-and-forth. We've since hired them for two more projects.",
-    stars: 5
-  },
-  {
-    name: "Priya Nair",
-    role: "CTO, FinEdge Solutions",
-    country: "🇮🇳 India",
-    text: "I was skeptical at first — we'd been burned by developers before. But these guys are different. They flagged problems before they became expensive, kept us in the loop, and shipped on time. Solid team.",
+    text: "We needed a Shopify app built fast and built right. Tirthon Tech delivered on both. They asked smart questions upfront which honestly saved us weeks of back and forth. We've brought them back for two more projects since.",
     stars: 5
   },
   {
     name: "Lucas Müller",
     role: "Operations Lead, LogiTrack GmbH",
     country: "🇩🇪 Germany",
-    text: "We had a messy internal process that relied entirely on spreadsheets. Tirthon Tech built us a proper dashboard and automation system. Our team saves hours every week now. Worth every penny.",
-    stars: 5
-  },
-  {
-    name: "Aisha Okafor",
-    role: "Head of AI, DataBridge Africa",
-    country: "🇳🇬 Nigeria",
-    text: "We needed large-scale annotated datasets for our computer vision model. The quality was excellent and they were flexible with the format requirements. Will definitely work with them again.",
+    text: "Our whole operation ran on spreadsheets and it was becoming a real problem. They built us a proper dashboard with automation baked in. The team actually understood what we needed without us having to over-explain it. Our staff saves hours every week now.",
     stars: 5
   },
   {
     name: "Ryan Thompson",
     role: "Product Manager, BuildStack",
     country: "🇨🇦 Canada",
-    text: "Our MVP had to go from idea to live product in 6 weeks. Most agencies laughed at that timeline. Tirthon Tech took it seriously, planned it properly, and we launched on day 41. Genuinely impressive.",
-    stars: 5
-  },
-  {
-    name: "Sofia Andersen",
-    role: "CEO, Nordicware Digital",
-    country: "🇩🇰 Denmark",
-    text: "The IIT background shows in how they approach problems. There's real engineering thinking behind what they build — not just copy-paste solutions. Our platform has been running without issues for over a year.",
+    text: "Six weeks from idea to live product. I know that sounds unrealistic but they took it seriously, broke it down properly, and we went live on day 41. I've worked with a lot of dev teams and this was a different level of execution.",
     stars: 5
   }
 ];
 
 export function Testimonials() {
   return (
-    <section id="testimonials" className="py-24 bg-muted/30 border-y border-border/40">
+    <section id="testimonials" className="py-14 md:py-24 bg-muted/30 border-y border-border/40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 24 }}

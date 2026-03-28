@@ -40,7 +40,7 @@ export function Hero() {
       ref={sectionRef}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      className="relative flex items-center justify-center overflow-hidden pt-32 pb-24 bg-background min-h-[90vh]"
+      className="relative flex items-center justify-center overflow-hidden pt-28 pb-16 md:pt-32 md:pb-24 bg-background min-h-[90vh]"
     >
       {/* Mouse spotlight */}
       <div
@@ -73,13 +73,13 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.85, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-          className="mb-8 inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/20 bg-primary/5 backdrop-blur-sm text-primary text-sm font-medium tracking-wide"
+          className="mb-6 md:mb-8 inline-flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full border border-primary/20 bg-primary/5 backdrop-blur-sm text-primary text-xs md:text-sm font-medium tracking-wide"
         >
-          <span className="relative flex h-2 w-2">
+          <span className="relative flex h-2 w-2 shrink-0">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
             <span className="relative inline-flex rounded-full h-2 w-2 bg-primary" />
           </span>
-          Hey, we're Tirthon Tech — IIT Alumni
+          Hey, we're Tirthon Tech. IIT Alumni.
         </motion.div>
 
         {/* Headline with typewriter */}
@@ -87,7 +87,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-          className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight text-foreground max-w-5xl leading-[1.05]"
+          className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight text-foreground max-w-5xl leading-[1.08]"
         >
           We Build
           <br />
@@ -104,9 +104,9 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-          className="mt-8 text-lg md:text-xl text-muted-foreground max-w-2xl font-light leading-relaxed"
+          className="mt-6 md:mt-8 text-base md:text-xl text-muted-foreground max-w-2xl font-light leading-relaxed px-2 md:px-0"
         >
-          We build software that actually works for your business — whether that's a web app, a mobile product, AI tools, or anything in between. No fluff, just solid work.
+          We build software that actually works for your business. Whether that's a web app, a mobile product, AI tools, or anything in between. No fluff, just solid work.
         </motion.p>
 
         {/* CTAs */}
@@ -141,7 +141,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.65, ease: [0.16, 1, 0.3, 1] }}
-          className="mt-20 flex flex-col sm:flex-row gap-8 sm:gap-16 items-center"
+          className="mt-12 md:mt-20 flex flex-row gap-6 sm:gap-12 md:gap-16 items-center justify-center flex-wrap"
         >
           <StatItem value={50} suffix="+" label="Projects Shipped" />
           <div className="hidden sm:block w-px h-10 bg-border/60" />

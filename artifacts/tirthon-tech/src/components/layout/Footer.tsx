@@ -9,7 +9,7 @@ export function Footer() {
   return (
     <footer className="bg-foreground text-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
 
           {/* Column 1 — Menus */}
           <div>
@@ -87,7 +87,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-primary shrink-0" />
-                <a href="mailto:tirthontech@gmail.com" className="text-background/70 hover:text-primary transition-colors text-sm">
+                <a href="mailto:tirthontech@gmail.com" className="text-background/70 hover:text-primary transition-colors text-sm break-all">
                   tirthontech@gmail.com
                 </a>
               </li>
@@ -97,7 +97,7 @@ export function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-16 pt-8 border-t border-background/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-background/40">
+        <div className="mt-10 md:mt-16 pt-6 md:pt-8 border-t border-background/10 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-background/40 text-center">
           <p>© {currentYear} Tirthon Tech. All rights reserved.</p>
           <p>Built in Indore, India · Clients worldwide</p>
         </div>

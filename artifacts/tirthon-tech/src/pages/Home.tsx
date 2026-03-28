@@ -11,7 +11,7 @@ import { SEO } from "@/components/SEO";
 const homeJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "Tirthon Tech — Custom Software, AI & Data Solutions",
+  "name": "Tirthon Tech | Custom Software, AI & Data Solutions",
   "url": "https://tirthontech.com/",
   "description": "Tirthon Tech builds custom web apps, mobile apps, AI solutions, Shopify apps, Windows software, and AI training datasets for US and global clients.",
   "publisher": {

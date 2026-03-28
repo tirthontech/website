@@ -8,7 +8,7 @@ export default function PrivacyPolicy() {
     <div className="flex flex-col min-h-screen bg-background">
       <SEO
         title="Privacy Policy | Tirthon Tech"
-        description="Tirthon Tech's privacy policy — how we collect, use, and protect your information."
+        description="Tirthon Tech's privacy policy. How we collect, use, and protect your information."
         path="/privacy-policy"
       />
       <Navbar />
@@ -38,7 +38,7 @@ export default function PrivacyPolicy() {
               <div>
                 <h2 className="text-xl font-bold text-foreground mb-3">1. Who We Are</h2>
                 <p>
-                  Tirthon Tech is a software development company based in Indore, India. We build web apps, mobile apps, AI tools, and data solutions for clients worldwide. When you use our website or contact us, you may share some personal information with us — and this policy explains exactly what we do with it.
+                  Tirthon Tech is a software development company based in Indore, India. We build web apps, mobile apps, AI tools, and data solutions for clients worldwide. When you use our website or contact us, you may share some personal information with us. This policy explains exactly what we do with it.
                 </p>
               </div>
 
@@ -74,7 +74,7 @@ export default function PrivacyPolicy() {
 
               <div>
                 <h2 className="text-xl font-bold text-foreground mb-3">5. Third Parties</h2>
-                <p>We don't sell, rent, or share your personal information with third parties. Our website is hosted on Netlify, which may collect basic server logs (IP address, request time) as part of their standard infrastructure — this is outside our control and governed by Netlify's own privacy policy.</p>
+                <p>We don't sell, rent, or share your personal information with third parties. Our website is hosted on Netlify, which may collect basic server logs (IP address, request time) as part of their standard infrastructure. This is outside our control and governed by Netlify's own privacy policy.</p>
               </div>
 
               <div>

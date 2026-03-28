@@ -239,7 +239,7 @@ export default function BlogPost() {
               Ready to work with Tirthon Tech?
             </h2>
             <p className="text-muted-foreground mb-8">
-              Whether you need custom software, AI solutions, or high-quality training data — we're ready to help.
+              Whether you need custom software, AI solutions, or high-quality training data, we're ready to help.
             </p>
             <Link href="/contact">
               <Button size="lg" className="rounded-full bg-primary text-primary-foreground hover:bg-primary/90 px-8 shadow-md">
