@@ -1,5 +1,4 @@
 [build]
-  base = "artifacts/tirthon-tech"
   command = "pnpm install && pnpm run build"
   publish = "dist"
 
