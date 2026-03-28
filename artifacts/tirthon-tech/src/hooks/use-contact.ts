@@ -1,7 +1,6 @@
 import { useMutation } from "@tanstack/react-query";
 import { z } from "zod";
 
-// Schema for contact form validation
 export const contactFormSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
   email: z.string().email("Please enter a valid email address"),
@@ -11,18 +10,29 @@ export const contactFormSchema = z.object({
 
 export type ContactFormValues = z.infer<typeof contactFormSchema>;
 
-// Mock API hook for sending a contact message since this is a frontend-only project
 export function useSendContactMessage() {
   return useMutation({
     mutationFn: async (data: ContactFormValues) => {
-      // Validate data before sending (double-check beyond form validation)
       contactFormSchema.parse(data);
-      
-      // Simulate network latency (1.5 seconds)
-      await new Promise((resolve) => setTimeout(resolve, 1500));
-      
-      // Mock successful submission
-      return { success: true, message: "Message sent successfully" };
+
+      const formData = new URLSearchParams();
+      formData.append("form-name", "contact");
+      formData.append("name", data.name);
+      formData.append("email", data.email);
+      formData.append("company", data.company ?? "");
+      formData.append("message", data.message);
+
+      const response = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: formData.toString(),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send message");
+      }
+
+      return { success: true };
     },
   });
 }

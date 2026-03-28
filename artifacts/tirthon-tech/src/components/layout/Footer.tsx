@@ -1,4 +1,4 @@
-import logoUrl from "@assets/tirthontech_logo_1774692162566.png";
+const logoUrl = "/logo-footer.png";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();

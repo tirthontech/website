@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
-import logoUrl from "@assets/tirthontech_logo_1774692162566.png";
+const logoUrl = "/logo-footer.png";
 
 const navLinks = [
   { name: "Home", href: "/" },
