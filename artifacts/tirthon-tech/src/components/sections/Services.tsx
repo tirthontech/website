@@ -63,11 +63,11 @@ const itemVariants = {
 
 export function Services() {
   return (
-    <section id="services" className="py-24 relative bg-background">
+    <section id="services" className="py-24 relative bg-muted/30 border-y border-border/40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
-            What We <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-amber-600">Do</span>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4 text-foreground">
+            What We <span className="text-primary">Do</span>
           </h2>
           <p className="text-muted-foreground text-lg">
             End-to-end engineering excellence. We transform complex problems into elegant, scalable software solutions.
@@ -85,12 +85,12 @@ export function Services() {
             const Icon = service.icon;
             return (
               <motion.div key={index} variants={itemVariants}>
-                <Card className="h-full bg-card/40 border-border/50 backdrop-blur-sm hover:bg-card/80 hover:border-primary/30 transition-all duration-300 group hover:-translate-y-1 hover:shadow-[0_10px_30px_-10px_rgba(212,143,37,0.1)]">
+                <Card className="h-full bg-card border-border shadow-sm hover:shadow-md transition-all duration-300 group hover:-translate-y-1">
                   <CardHeader className="pb-4">
                     <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                       <Icon className="w-6 h-6 text-primary" />
                     </div>
-                    <CardTitle className="text-xl group-hover:text-primary transition-colors">
+                    <CardTitle className="text-xl group-hover:text-primary transition-colors text-foreground">
                       {service.title}
                     </CardTitle>
                   </CardHeader>

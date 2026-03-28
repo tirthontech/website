@@ -26,7 +26,7 @@ const points = [
 
 export function WhyUs() {
   return (
-    <section id="why-us" className="py-24 relative border-y border-border/30 bg-muted/20">
+    <section id="why-us" className="py-24 relative bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
           
@@ -37,7 +37,7 @@ export function WhyUs() {
             transition={{ duration: 0.7 }}
             className="lg:col-span-5"
           >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6 text-foreground">
               Why <br/><span className="text-primary">Tirthon Tech</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
@@ -56,10 +56,10 @@ export function WhyUs() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="flex gap-4 group"
+                  className="flex gap-4 group p-4 rounded-2xl hover:bg-muted/50 transition-colors border border-transparent hover:border-border"
                 >
                   <div className="flex-shrink-0 mt-1 relative">
-                    <div className="w-12 h-12 rounded-full border border-primary/20 bg-background flex items-center justify-center group-hover:border-primary/60 transition-colors">
+                    <div className="w-12 h-12 rounded-full border border-primary/20 bg-card shadow-sm flex items-center justify-center group-hover:border-primary/60 transition-colors">
                       <Icon className="w-5 h-5 text-primary" />
                     </div>
                   </div>

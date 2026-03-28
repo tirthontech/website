@@ -53,11 +53,11 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" className="py-24 relative overflow-hidden">
-      <div className="absolute top-0 right-0 -mr-40 -mt-40 w-96 h-96 bg-primary/10 rounded-full blur-[100px] pointer-events-none" />
+    <section id="contact" className="py-24 relative overflow-hidden bg-muted/30 border-t border-border/40">
+      <div className="absolute top-0 right-0 -mr-40 -mt-40 w-96 h-96 bg-primary/5 rounded-full blur-[100px] pointer-events-none" />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="bg-card/50 border border-border/50 rounded-3xl p-8 md:p-12 lg:p-16 backdrop-blur-xl shadow-2xl">
+        <div className="bg-card border border-border/50 rounded-3xl p-8 md:p-12 lg:p-16 shadow-lg">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             
             {/* Left side: Content */}
@@ -68,7 +68,7 @@ export function Contact() {
               transition={{ duration: 0.6 }}
               className="flex flex-col justify-center"
             >
-              <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6">
+              <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6 text-foreground">
                 Ready to <span className="text-primary">scale?</span>
               </h2>
               <p className="text-lg text-muted-foreground mb-10 leading-relaxed max-w-md">
@@ -88,7 +88,7 @@ export function Contact() {
                   </div>
                 </div>
 
-                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-muted/50 border border-border">
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-background border border-border shadow-sm">
                   <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
                   <span className="text-sm font-medium text-muted-foreground">We respond within 24 hours.</span>
                 </div>
@@ -110,11 +110,11 @@ export function Contact() {
                       name="name"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel className="text-muted-foreground">Full Name</FormLabel>
+                          <FormLabel className="text-foreground font-medium">Full Name</FormLabel>
                           <FormControl>
                             <Input 
                               placeholder="John Doe" 
-                              className="bg-background/50 border-border/60 focus-visible:ring-primary/50 h-12 rounded-xl"
+                              className="bg-background border-border/60 focus-visible:ring-primary/50 h-12 rounded-xl"
                               {...field} 
                             />
                           </FormControl>
@@ -127,11 +127,11 @@ export function Contact() {
                       name="email"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel className="text-muted-foreground">Email Address</FormLabel>
+                          <FormLabel className="text-foreground font-medium">Email Address</FormLabel>
                           <FormControl>
                             <Input 
                               placeholder="john@company.com" 
-                              className="bg-background/50 border-border/60 focus-visible:ring-primary/50 h-12 rounded-xl"
+                              className="bg-background border-border/60 focus-visible:ring-primary/50 h-12 rounded-xl"
                               {...field} 
                             />
                           </FormControl>
@@ -146,11 +146,11 @@ export function Contact() {
                     name="company"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="text-muted-foreground">Company <span className="text-muted-foreground/50 font-normal">(Optional)</span></FormLabel>
+                        <FormLabel className="text-foreground font-medium">Company <span className="text-muted-foreground/50 font-normal">(Optional)</span></FormLabel>
                         <FormControl>
                           <Input 
                             placeholder="Acme Corp" 
-                            className="bg-background/50 border-border/60 focus-visible:ring-primary/50 h-12 rounded-xl"
+                            className="bg-background border-border/60 focus-visible:ring-primary/50 h-12 rounded-xl"
                             {...field} 
                           />
                         </FormControl>
@@ -164,11 +164,11 @@ export function Contact() {
                     name="message"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="text-muted-foreground">Project Details</FormLabel>
+                        <FormLabel className="text-foreground font-medium">Project Details</FormLabel>
                         <FormControl>
                           <Textarea 
                             placeholder="Tell us about what you're trying to build..." 
-                            className="bg-background/50 border-border/60 focus-visible:ring-primary/50 min-h-[150px] resize-none rounded-xl"
+                            className="bg-background border-border/60 focus-visible:ring-primary/50 min-h-[150px] resize-none rounded-xl"
                             {...field} 
                           />
                         </FormControl>
@@ -180,7 +180,7 @@ export function Contact() {
                   <Button 
                     type="submit" 
                     size="lg" 
-                    className="w-full h-14 rounded-xl text-lg font-semibold bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl hover:shadow-primary/20 transition-all"
+                    className="w-full h-14 rounded-xl text-lg font-semibold bg-primary hover:bg-primary/90 text-primary-foreground shadow-md hover:shadow-lg transition-all"
                     disabled={mutation.isPending}
                   >
                     {mutation.isPending ? (
