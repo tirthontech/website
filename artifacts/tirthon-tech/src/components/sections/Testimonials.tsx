@@ -4,21 +4,21 @@ import { Star } from "lucide-react";
 const testimonials = [
   {
     name: "James Carter",
-    role: "Founder, NexaRetail",
+    role: "Founder",
     country: "🇺🇸 United States",
     text: "We needed a Shopify app built fast and built right. Tirthon Tech delivered on both. They asked smart questions upfront which honestly saved us weeks of back and forth. We've brought them back for two more projects since.",
     stars: 5
   },
   {
     name: "Lucas Müller",
-    role: "Operations Lead, LogiTrack GmbH",
+    role: "Operations Lead",
     country: "🇩🇪 Germany",
     text: "Our whole operation ran on spreadsheets and it was becoming a real problem. They built us a proper dashboard with automation baked in. The team actually understood what we needed without us having to over-explain it. Our staff saves hours every week now.",
     stars: 5
   },
   {
     name: "Ryan Thompson",
-    role: "Product Manager, BuildStack",
+    role: "Product Manager",
     country: "🇨🇦 Canada",
     text: "Six weeks from idea to live product. I know that sounds unrealistic but they took it seriously, broke it down properly, and we went live on day 41. I've worked with a lot of dev teams and this was a different level of execution.",
     stars: 5

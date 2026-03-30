@@ -116,7 +116,7 @@ export default function TermsOfService() {
                 <h2 className="text-xl font-bold text-foreground mb-3">11. Contact</h2>
                 <p>
                   Questions about these terms? Email us at{" "}
-                  <a href="mailto:tirthontech@gmail.com" className="text-primary hover:underline">tirthontech@gmail.com</a>.
+                  <a href="mailto:business@tirthontech.com" className="text-primary hover:underline">business@tirthontech.com</a>.
                 </p>
               </div>
             </motion.div>

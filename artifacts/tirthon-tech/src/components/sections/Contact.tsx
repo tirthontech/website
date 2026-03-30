@@ -82,8 +82,8 @@ export function Contact() {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground font-medium">Email Us Directly</p>
-                    <a href="mailto:tirthontech@gmail.com" className="text-sm md:text-lg font-semibold text-foreground hover:text-primary transition-colors break-all">
-                      tirthontech@gmail.com
+                    <a href="mailto:business@tirthontech.com" className="text-sm md:text-lg font-semibold text-foreground hover:text-primary transition-colors break-all">
+                      business@tirthontech.com
                     </a>
                   </div>
                 </div>

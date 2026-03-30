@@ -9,8 +9,9 @@ export default function Contact() {
     <div className="flex flex-col min-h-screen bg-background">
       <SEO
         title="Contact Us | Get a Free Project Consultation"
-        description="Ready to build something great? Contact Tirthon Tech for a free consultation. We respond within 24 hours. Email: tirthontech@gmail.com"
+        description="Ready to build something great? Contact Tirthon Tech for a free consultation. We respond within 24 hours. Email: business@tirthontech.com"
         path="/contact"
+        keywords="contact Tirthon Tech, hire software developers India, software development consultation, get a quote software project"
       />
       <Navbar />
       <main className="flex-grow pt-24">

@@ -39,6 +39,7 @@ export default function About() {
         title="About Us | Tirthon Tech Software Development"
         description="Learn about Tirthon Tech, a software development company committed to building scalable, intelligent, and future-ready technology for clients worldwide. Clarity. Innovation. Partnership."
         path="/about"
+        keywords="Tirthon Tech, IIT alumni software company, software development team India, about Tirthon Tech, software company Indore"
       />
       <Navbar />
       <main className="flex-grow pt-24">

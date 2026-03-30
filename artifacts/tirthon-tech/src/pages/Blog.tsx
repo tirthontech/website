@@ -40,6 +40,7 @@ export default function Blog() {
         title="Blog | Software Development, AI & Technology Insights"
         description="Explore expert articles from Tirthon Tech on custom software development, AI automation, data annotation, mobile apps, Shopify development, cloud infrastructure, and technology consulting."
         path="/blog"
+        keywords="software development blog, AI automation articles, data annotation guide, mobile app development tips, Shopify development, cloud infrastructure, MVP development, technology consulting insights"
         jsonLd={blogJsonLd}
       />
       <Navbar />

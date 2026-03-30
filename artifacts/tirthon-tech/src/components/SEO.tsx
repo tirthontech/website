@@ -7,6 +7,7 @@ interface SEOProps {
   ogImage?: string;
   type?: "website" | "article";
   jsonLd?: object;
+  keywords?: string;
 }
 
 const BASE_URL = "https://tirthontech.com";
@@ -19,6 +20,7 @@ export function SEO({
   ogImage = DEFAULT_OG_IMAGE,
   type = "website",
   jsonLd,
+  keywords,
 }: SEOProps) {
   const fullTitle = title.includes("Tirthon Tech")
     ? title
@@ -32,6 +34,7 @@ export function SEO({
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
       <link rel="canonical" href={canonicalUrl} />
+      {keywords && <meta name="keywords" content={keywords} />}
 
       {/* Open Graph */}
       <meta property="og:type" content={type} />

@@ -153,6 +153,7 @@ export default function ServicesPage() {
         title="Our Services | Web, Mobile, AI & Data Solutions"
         description="Explore Tirthon Tech's full range of services: custom web & mobile apps, Shopify apps, Windows software, AI automation, AI training datasets, data annotation, cloud infrastructure, and technology consulting."
         path="/services"
+        keywords="web app development, mobile app development, Shopify app development, AI automation, data annotation services, AI training datasets, Windows software development, cloud infrastructure, MVP development, technology consulting"
       />
       <Navbar />
       <main className="flex-grow pt-24">

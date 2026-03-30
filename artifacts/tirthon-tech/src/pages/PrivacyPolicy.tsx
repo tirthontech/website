@@ -92,7 +92,7 @@ export default function PrivacyPolicy() {
                   <li>Correct anything that's wrong</li>
                   <li>Delete your data from our records</li>
                 </ul>
-                <p className="mt-3">Just email us at <a href="mailto:tirthontech@gmail.com" className="text-primary hover:underline">tirthontech@gmail.com</a> and we'll sort it out.</p>
+                <p className="mt-3">Just email us at <a href="mailto:business@tirthontech.com" className="text-primary hover:underline">business@tirthontech.com</a> and we'll sort it out.</p>
               </div>
 
               <div>
@@ -106,7 +106,7 @@ export default function PrivacyPolicy() {
                 <h2 className="text-xl font-bold text-foreground mb-3">9. Contact</h2>
                 <p>
                   Questions about this policy? Email us at{" "}
-                  <a href="mailto:tirthontech@gmail.com" className="text-primary hover:underline">tirthontech@gmail.com</a> or call{" "}
+                  <a href="mailto:business@tirthontech.com" className="text-primary hover:underline">business@tirthontech.com</a> or call{" "}
                   <a href="tel:+919424575918" className="text-primary hover:underline">+91 94245 75918</a>.
                 </p>
               </div>

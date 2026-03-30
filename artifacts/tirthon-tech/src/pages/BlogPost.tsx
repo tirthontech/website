@@ -183,6 +183,7 @@ export default function BlogPost() {
         title={post.metaTitle}
         description={post.metaDescription}
         path={`/blog/${post.slug}`}
+        type="article"
         jsonLd={articleJsonLd}
       />
       <Navbar />
