@@ -17,18 +17,29 @@ const categoryColors: Record<string, string> = {
   "Consulting": "bg-rose-50 text-rose-700",
 };
 
-const blogJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Blog",
-  "name": "Tirthon Tech Blog",
-  "url": "https://tirthontech.com/blog",
-  "description": "Insights on software development, AI, data, mobile apps, cloud infrastructure, and technology consulting from the Tirthon Tech team.",
-  "publisher": {
-    "@type": "Organization",
-    "name": "Tirthon Tech",
-    "url": "https://tirthontech.com"
-  }
-};
+const blogSchemas = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Tirthon Tech Blog",
+    "url": "https://tirthontech.com/blog",
+    "description":
+      "Insights on software development, AI, data, mobile apps, cloud infrastructure, and technology consulting from the Tirthon Tech team.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Tirthon Tech",
+      "url": "https://tirthontech.com/",
+    },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://tirthontech.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://tirthontech.com/blog" },
+    ],
+  },
+];
 
 export default function Blog() {
   const featured = blogPosts[0];
@@ -37,11 +48,11 @@ export default function Blog() {
   return (
     <div className="flex flex-col min-h-screen bg-background">
       <SEO
-        title="Blog | Software Development, AI & Technology Insights"
-        description="Explore expert articles from Tirthon Tech on custom software development, AI automation, data annotation, mobile apps, Shopify development, cloud infrastructure, and technology consulting."
+        title="Blog | Software Development, AI & Outsourcing Insights"
+        description="Expert articles from Tirthon Tech on outsourcing software development, custom web & mobile apps, AI automation, data annotation, Shopify development, and technology decisions that help global businesses move faster."
         path="/blog"
-        keywords="software development blog, AI automation articles, data annotation guide, mobile app development tips, Shopify development, cloud infrastructure, MVP development, technology consulting insights"
-        jsonLd={blogJsonLd}
+        keywords="outsource software development guide, hire developers India blog, AI automation articles, data annotation guide, mobile app development tips, Shopify development, MVP development, technology consulting insights"
+        jsonLd={blogSchemas}
       />
       <Navbar />
       <main className="flex-grow pt-24">

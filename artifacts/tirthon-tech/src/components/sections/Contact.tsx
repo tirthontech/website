@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Loader2, Mail, Phone, MapPin, CheckCircle2 } from "lucide-react";
+import { Loader2, Mail, Phone, MapPin, CheckCircle2, Calendar } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { useSendContactMessage, contactFormSchema, type ContactFormValues } from "@/hooks/use-contact";
+import { openCalendly } from "@/lib/calendly";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -109,6 +110,20 @@ export function Contact() {
                     <p className="text-lg font-semibold text-foreground">B56, Tilak Nagar, Indore, India</p>
                   </div>
                 </div>
+
+                {/* Book a Call CTA */}
+                <button
+                  onClick={openCalendly}
+                  className="group flex items-center gap-3 w-full p-4 rounded-2xl bg-primary/5 border border-primary/20 hover:bg-primary/10 hover:border-primary/40 transition-all duration-200 text-left"
+                >
+                  <div className="w-11 h-11 rounded-full bg-primary/15 flex items-center justify-center shrink-0 group-hover:bg-primary/25 transition-colors">
+                    <Calendar className="w-5 h-5 text-primary" />
+                  </div>
+                  <div>
+                    <p className="text-sm font-bold text-foreground">Book a Free Discovery Call</p>
+                    <p className="text-xs text-muted-foreground mt-0.5">20 minutes · No commitment · Pick a time that works for you</p>
+                  </div>
+                </button>
 
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-background border border-border shadow-sm">
                   <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />

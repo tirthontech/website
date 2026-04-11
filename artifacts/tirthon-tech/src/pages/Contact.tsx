@@ -4,14 +4,41 @@ import { Footer } from "@/components/layout/Footer";
 import { SEO } from "@/components/SEO";
 import { Contact as ContactSection } from "@/components/sections/Contact";
 
+const contactSchemas = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://tirthontech.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://tirthontech.com/contact" },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Tirthon Tech",
+    "url": "https://tirthontech.com/contact",
+    "description":
+      "Contact Tirthon Tech for a free project consultation. We respond within 24 hours.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Tirthon Tech",
+      "url": "https://tirthontech.com/",
+      "email": "business@tirthontech.com",
+      "telephone": "+91-94245-75918",
+    },
+  },
+];
+
 export default function Contact() {
   return (
     <div className="flex flex-col min-h-screen bg-background">
       <SEO
-        title="Contact Us | Get a Free Project Consultation"
-        description="Ready to build something great? Contact Tirthon Tech for a free consultation. We respond within 24 hours. Email: business@tirthontech.com"
+        title="Contact Tirthon Tech | Free Project Consultation"
+        description="Talk to our team about your project. We respond within 24 hours. Based in India, serving clients in the US, UK, Australia, Canada, UAE, and worldwide. Email: business@tirthontech.com"
         path="/contact"
-        keywords="contact Tirthon Tech, hire software developers India, software development consultation, get a quote software project"
+        keywords="contact Tirthon Tech, hire software developers India, outsource software development consultation, get a quote web app development, software development company India contact"
+        jsonLd={contactSchemas}
       />
       <Navbar />
       <main className="flex-grow pt-24">

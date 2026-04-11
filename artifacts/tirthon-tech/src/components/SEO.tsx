@@ -6,7 +6,7 @@ interface SEOProps {
   path?: string;
   ogImage?: string;
   type?: "website" | "article";
-  jsonLd?: object;
+  jsonLd?: object | object[];
   keywords?: string;
 }
 
@@ -33,6 +33,7 @@ export function SEO({
       {/* Primary */}
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
+      <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
       <link rel="canonical" href={canonicalUrl} />
       {keywords && <meta name="keywords" content={keywords} />}
 
@@ -51,12 +52,19 @@ export function SEO({
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={ogImageUrl} />
 
-      {/* Per-page JSON-LD */}
-      {jsonLd && (
-        <script type="application/ld+json">
-          {JSON.stringify(jsonLd)}
-        </script>
-      )}
+      {/* Per-page JSON-LD — supports single schema or array of schemas */}
+      {Array.isArray(jsonLd)
+        ? jsonLd.map((schema, i) => (
+            <script key={`ld-${i}`} type="application/ld+json">
+              {JSON.stringify(schema)}
+            </script>
+          ))
+        : jsonLd && (
+            <script type="application/ld+json">
+              {JSON.stringify(jsonLd)}
+            </script>
+          )
+      }
     </Helmet>
   );
 }

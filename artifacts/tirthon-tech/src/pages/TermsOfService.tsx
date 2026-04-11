@@ -3,6 +3,17 @@ import { Footer } from "@/components/layout/Footer";
 import { SEO } from "@/components/SEO";
 import { motion } from "framer-motion";
 
+const termsSchemas = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://tirthontech.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Terms of Service", "item": "https://tirthontech.com/terms-of-service" },
+    ],
+  },
+];
+
 export default function TermsOfService() {
   return (
     <div className="flex flex-col min-h-screen bg-background">
@@ -10,6 +21,7 @@ export default function TermsOfService() {
         title="Terms of Service | Tirthon Tech"
         description="Tirthon Tech's terms of service. The rules for working with us and using our website."
         path="/terms-of-service"
+        jsonLd={termsSchemas}
       />
       <Navbar />
       <main className="flex-grow pt-24">

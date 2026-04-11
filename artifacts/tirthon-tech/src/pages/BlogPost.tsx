@@ -153,29 +153,56 @@ export default function BlogPost() {
   const prevPost = currentIndex > 0 ? blogPosts[currentIndex - 1] : null;
   const nextPost = currentIndex < blogPosts.length - 1 ? blogPosts[currentIndex + 1] : null;
 
-  const articleJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": post.title,
-    "description": post.metaDescription,
-    "author": {
-      "@type": "Organization",
-      "name": "Tirthon Tech",
-      "url": "https://tirthontech.com"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Tirthon Tech",
-      "url": "https://tirthontech.com",
-      "logo": {
+  const postUrl = `https://tirthontech.com/blog/${post.slug}`;
+
+  const articleJsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": post.title,
+      "description": post.metaDescription,
+      "author": {
+        "@type": "Organization",
+        "name": "Tirthon Tech",
+        "url": "https://tirthontech.com/",
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Tirthon Tech",
+        "url": "https://tirthontech.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://tirthontech.com/logo.png",
+          "width": 512,
+          "height": 512,
+        },
+      },
+      "datePublished": post.date,
+      "url": postUrl,
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": postUrl,
+      },
+      "image": {
         "@type": "ImageObject",
-        "url": "https://tirthontech.com/logo.png"
-      }
+        "url": "https://tirthontech.com/opengraph.jpg",
+        "width": 1200,
+        "height": 630,
+      },
+      "keywords": post.category,
+      "articleSection": post.category,
+      "inLanguage": "en-US",
     },
-    "datePublished": post.date,
-    "url": `https://tirthontech.com/blog/${post.slug}`,
-    "mainEntityOfPage": `https://tirthontech.com/blog/${post.slug}`
-  };
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://tirthontech.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://tirthontech.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": post.title, "item": postUrl },
+      ],
+    },
+  ];
 
   return (
     <div className="flex flex-col min-h-screen bg-background">

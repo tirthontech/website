@@ -3,6 +3,17 @@ import { Footer } from "@/components/layout/Footer";
 import { SEO } from "@/components/SEO";
 import { motion } from "framer-motion";
 
+const privacySchemas = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://tirthontech.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Privacy Policy", "item": "https://tirthontech.com/privacy-policy" },
+    ],
+  },
+];
+
 export default function PrivacyPolicy() {
   return (
     <div className="flex flex-col min-h-screen bg-background">
@@ -10,6 +21,7 @@ export default function PrivacyPolicy() {
         title="Privacy Policy | Tirthon Tech"
         description="Tirthon Tech's privacy policy. How we collect, use, and protect your information."
         path="/privacy-policy"
+        jsonLd={privacySchemas}
       />
       <Navbar />
       <main className="flex-grow pt-24">

@@ -143,9 +143,9 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.65, ease: [0.16, 1, 0.3, 1] }}
           className="mt-12 md:mt-20 flex flex-row gap-6 sm:gap-12 md:gap-16 items-center justify-center flex-wrap"
         >
-          <StatItem value={50} suffix="+" label="Projects Shipped" />
+          <StatItem value={500} suffix="+" label="Projects Shipped" />
           <div className="hidden sm:block w-px h-10 bg-border/60" />
-          <StatItem value={20} suffix="+" label="Clients Worldwide" />
+          <StatItem value={200} suffix="+" label="Clients Worldwide" />
           <div className="hidden sm:block w-px h-10 bg-border/60" />
           <motion.div whileHover={{ scale: 1.07 }} className="text-center">
             <p className="text-3xl md:text-4xl font-extrabold text-primary">IIT</p>

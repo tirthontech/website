@@ -32,14 +32,39 @@ const reasons = [
   { text: "Clear process, no surprises, and we actually meet deadlines", icon: CheckCircle },
 ];
 
+const aboutSchemas = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://tirthontech.com/" },
+      { "@type": "ListItem", "position": 2, "name": "About", "item": "https://tirthontech.com/about" },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About Tirthon Tech",
+    "url": "https://tirthontech.com/about",
+    "description":
+      "Tirthon Tech is a software development company founded by IIT alumni, committed to building scalable, intelligent, and future-ready technology for clients worldwide.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Tirthon Tech",
+      "url": "https://tirthontech.com/",
+    },
+  },
+];
+
 export default function About() {
   return (
     <div className="flex flex-col min-h-screen bg-background">
       <SEO
-        title="About Us | Tirthon Tech Software Development"
-        description="Learn about Tirthon Tech, a software development company committed to building scalable, intelligent, and future-ready technology for clients worldwide. Clarity. Innovation. Partnership."
+        title="About Tirthon Tech | IIT Alumni Software Development Company"
+        description="Tirthon Tech is a software development company founded by IIT alumni, serving clients in the US, UK, Australia, Canada, UAE, and beyond. Senior engineers. Transparent process. Globally competitive rates."
         path="/about"
-        keywords="Tirthon Tech, IIT alumni software company, software development team India, about Tirthon Tech, software company Indore"
+        keywords="IIT alumni software company, software development company India for US clients, about Tirthon Tech, hire Indian software developers, software company Indore India, outsource to India"
+        jsonLd={aboutSchemas}
       />
       <Navbar />
       <main className="flex-grow pt-24">

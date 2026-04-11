@@ -146,14 +146,218 @@ const services = [
   }
 ];
 
+// ─── Schema: Service ItemList ────────────────────────────────────────────────
+const servicesSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Software Development Services by Tirthon Tech",
+  "description":
+    "Full range of software development, AI, and data services offered by Tirthon Tech for clients worldwide.",
+  "url": "https://tirthontech.com/services",
+  "numberOfItems": 12,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Service",
+        "name": "Web, Mobile & Desktop Apps",
+        "description":
+          "Custom web applications, iOS & Android mobile apps, Windows desktop software, and SaaS products built with React, Next.js, React Native, and Flutter.",
+        "provider": { "@type": "Organization", "name": "Tirthon Tech", "url": "https://tirthontech.com/" },
+        "areaServed": "Worldwide",
+        "serviceType": "Software Development",
+        "url": "https://tirthontech.com/services",
+      },
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Service",
+        "name": "Websites & Landing Pages",
+        "description":
+          "Fast, conversion-focused company websites, landing pages, UI/UX design, and CMS-powered content sites.",
+        "provider": { "@type": "Organization", "name": "Tirthon Tech", "url": "https://tirthontech.com/" },
+        "areaServed": "Worldwide",
+        "serviceType": "Web Development",
+        "url": "https://tirthontech.com/services",
+      },
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "Service",
+        "name": "AI & Automation",
+        "description":
+          "LLM & AI integrations, workflow automation, chatbots, virtual assistants, and custom data pipelines to automate repetitive business processes.",
+        "provider": { "@type": "Organization", "name": "Tirthon Tech", "url": "https://tirthontech.com/" },
+        "areaServed": "Worldwide",
+        "serviceType": "AI & Automation",
+        "url": "https://tirthontech.com/services",
+      },
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "Service",
+        "name": "Data for AI Training",
+        "description":
+          "Large-scale web scraping, data extraction, and domain-specific dataset creation in JSON, CSV, and JSONL formats for AI/ML training workflows.",
+        "provider": { "@type": "Organization", "name": "Tirthon Tech", "url": "https://tirthontech.com/" },
+        "areaServed": "Worldwide",
+        "serviceType": "AI Training Data",
+        "url": "https://tirthontech.com/services",
+      },
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@type": "Service",
+        "name": "Data Annotation",
+        "description":
+          "Image & video annotation, text classification, NLP labeling, and named entity recognition (NER) with quality-controlled annotation pipelines.",
+        "provider": { "@type": "Organization", "name": "Tirthon Tech", "url": "https://tirthontech.com/" },
+        "areaServed": "Worldwide",
+        "serviceType": "Data Annotation",
+        "url": "https://tirthontech.com/services",
+      },
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "item": {
+        "@type": "Service",
+        "name": "Shopify & E-Commerce",
+        "description":
+          "Custom Shopify app development, theme builds and customization, Shopify Plus integrations, and payment, inventory & order management solutions.",
+        "provider": { "@type": "Organization", "name": "Tirthon Tech", "url": "https://tirthontech.com/" },
+        "areaServed": "Worldwide",
+        "serviceType": "E-Commerce Development",
+        "url": "https://tirthontech.com/services",
+      },
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "item": {
+        "@type": "Service",
+        "name": "Cloud & Backend",
+        "description":
+          "Cloud architecture on AWS & GCP, REST & GraphQL API development, database design, and serverless & microservices infrastructure.",
+        "provider": { "@type": "Organization", "name": "Tirthon Tech", "url": "https://tirthontech.com/" },
+        "areaServed": "Worldwide",
+        "serviceType": "Cloud & Backend Development",
+        "url": "https://tirthontech.com/services",
+      },
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "item": {
+        "@type": "Service",
+        "name": "Windows Software",
+        "description":
+          "Native C# / .NET Windows desktop applications, internal tools, system integrations, and legacy software modernization.",
+        "provider": { "@type": "Organization", "name": "Tirthon Tech", "url": "https://tirthontech.com/" },
+        "areaServed": "Worldwide",
+        "serviceType": "Windows Software Development",
+        "url": "https://tirthontech.com/services",
+      },
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "item": {
+        "@type": "Service",
+        "name": "Internal Tools & Dashboards",
+        "description":
+          "Custom CRM & ERP systems, admin dashboards, client portals, inventory management tools, and process automation & reporting platforms.",
+        "provider": { "@type": "Organization", "name": "Tirthon Tech", "url": "https://tirthontech.com/" },
+        "areaServed": "Worldwide",
+        "serviceType": "Internal Tools Development",
+        "url": "https://tirthontech.com/services",
+      },
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "item": {
+        "@type": "Service",
+        "name": "MVPs & Product Scaling",
+        "description":
+          "Fast MVP development, product strategy & roadmapping, performance audits, and scaling architecture for growing products.",
+        "provider": { "@type": "Organization", "name": "Tirthon Tech", "url": "https://tirthontech.com/" },
+        "areaServed": "Worldwide",
+        "serviceType": "MVP Development",
+        "url": "https://tirthontech.com/services",
+      },
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
+      "item": {
+        "@type": "Service",
+        "name": "Tech Consulting",
+        "description":
+          "Technical due diligence, architecture reviews, digital transformation planning, and team augmentation & training.",
+        "provider": { "@type": "Organization", "name": "Tirthon Tech", "url": "https://tirthontech.com/" },
+        "areaServed": "Worldwide",
+        "serviceType": "Technology Consulting",
+        "url": "https://tirthontech.com/services",
+      },
+    },
+    {
+      "@type": "ListItem",
+      "position": 12,
+      "item": {
+        "@type": "Service",
+        "name": "Custom Solutions",
+        "description":
+          "Web scraping & data extraction systems, third-party API integrations, real-time analytics platforms, and IoT backend & edge systems.",
+        "provider": { "@type": "Organization", "name": "Tirthon Tech", "url": "https://tirthontech.com/" },
+        "areaServed": "Worldwide",
+        "serviceType": "Custom Software Solutions",
+        "url": "https://tirthontech.com/services",
+      },
+    },
+  ],
+};
+
+// ─── Schema: BreadcrumbList ───────────────────────────────────────────────────
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://tirthontech.com/",
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Services",
+      "item": "https://tirthontech.com/services",
+    },
+  ],
+};
+
+const servicesPageSchemas = [servicesSchema, breadcrumbSchema];
+
 export default function ServicesPage() {
   return (
     <div className="flex flex-col min-h-screen bg-background">
       <SEO
-        title="Our Services | Web, Mobile, AI & Data Solutions"
-        description="Explore Tirthon Tech's full range of services: custom web & mobile apps, Shopify apps, Windows software, AI automation, AI training datasets, data annotation, cloud infrastructure, and technology consulting."
+        title="Software Development Services for US, UK & Global Clients | Tirthon Tech"
+        description="Hire IIT-alumni engineers for custom web apps, mobile apps, AI automation, data annotation, Shopify apps, Windows software, and cloud infrastructure. Trusted by clients in the US, UK, Australia, and 10+ countries."
         path="/services"
-        keywords="web app development, mobile app development, Shopify app development, AI automation, data annotation services, AI training datasets, Windows software development, cloud infrastructure, MVP development, technology consulting"
+        keywords="hire software developers India, outsource web app development, software development services for US clients, mobile app development company India, Shopify app development India, AI automation services, data annotation company, cloud infrastructure India, MVP development company, technology consulting India"
+        jsonLd={servicesPageSchemas}
       />
       <Navbar />
       <main className="flex-grow pt-24">

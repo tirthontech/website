@@ -6,8 +6,8 @@
 
     <!-- Primary Meta -->
     <title>Tirthon Tech | Custom Software, AI & Data Solutions</title>
-    <meta name="description" content="Tirthon Tech builds custom web apps, mobile apps, AI solutions, Shopify apps, Windows software, and AI training datasets for clients worldwide. Scalable. Fast. Built to grow." />
-    <meta name="keywords" content="custom software development, web app development, mobile app development, AI solutions, data annotation, AI training data, Shopify app development, Windows software, cloud infrastructure, technology consulting, Tirthon Tech" />
+    <meta name="description" content="Tirthon Tech — IIT alumni engineers building custom web apps, mobile apps, AI solutions, and Shopify apps for clients in the US, UK, Australia, and worldwide. Senior engineers at globally competitive rates." />
+    <meta name="keywords" content="hire software developers India, outsource software development, custom web app development, mobile app development India, AI solutions, data annotation, Shopify app development, IIT alumni software company, software development company India, technology consulting" />
     <meta name="author" content="Tirthon Tech" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <link rel="canonical" href="https://tirthontech.com/" />
@@ -17,7 +17,7 @@
     <meta property="og:url" content="https://tirthontech.com/" />
     <meta property="og:title" content="Tirthon Tech | Custom Software, AI & Data Solutions" />
     <meta property="og:description" content="We build custom web apps, mobile apps, AI tools, Shopify apps, and AI training datasets for clients worldwide. Scalable. Built to grow." />
-    <meta property="og:image" content="/opengraph.jpg" />
+    <meta property="og:image" content="https://tirthontech.com/opengraph.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="Tirthon Tech - Build. Automate. Scale." />
@@ -29,7 +29,7 @@
     <meta name="twitter:url" content="https://tirthontech.com/" />
     <meta name="twitter:title" content="Tirthon Tech | Custom Software, AI & Data Solutions" />
     <meta name="twitter:description" content="We build custom web apps, mobile apps, AI tools, Shopify apps, and AI training datasets for clients worldwide. Scalable. Built to grow." />
-    <meta name="twitter:image" content="/opengraph.jpg" />
+    <meta name="twitter:image" content="https://tirthontech.com/opengraph.jpg" />
     <meta name="twitter:image:alt" content="Tirthon Tech - Build. Automate. Scale." />
 
     <!-- Theme & App -->
@@ -45,36 +45,56 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
-    <!-- JSON-LD Structured Data: Organization -->
+    <!-- JSON-LD Structured Data: Organization (static pre-JS fallback) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "Tirthon Tech",
-      "url": "https://tirthontech.com",
-      "logo": "https://tirthontech.com/logo.png",
-      "description": "Software development company specializing in custom web apps, mobile apps, AI solutions, data annotation, Shopify apps, and Windows software for clients worldwide.",
+      "alternateName": "TirthonTech",
+      "url": "https://tirthontech.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://tirthontech.com/logo.png",
+        "width": 512,
+        "height": 512
+      },
+      "description": "Tirthon Tech is a software development company founded by IIT alumni, building custom web apps, mobile apps, AI solutions, data annotation services, Shopify apps, and Windows software for clients worldwide.",
+      "foundingDate": "2024",
       "email": "business@tirthontech.com",
+      "telephone": "+91-94245-75918",
       "address": {
         "@type": "PostalAddress",
+        "streetAddress": "B56, Tilak Nagar",
+        "addressLocality": "Indore",
+        "addressRegion": "Madhya Pradesh",
+        "postalCode": "452001",
         "addressCountry": "IN"
       },
-      "sameAs": [],
+      "areaServed": "Worldwide",
+      "sameAs": [
+        "https://www.linkedin.com/company/113329677/",
+        "https://www.instagram.com/tirthon_tech/"
+      ],
       "contactPoint": {
         "@type": "ContactPoint",
-        "contactType": "customer support",
+        "contactType": "customer service",
         "email": "business@tirthontech.com",
-        "availableLanguage": "English"
+        "telephone": "+91-94245-75918",
+        "availableLanguage": ["English"],
+        "areaServed": "Worldwide"
       },
-      "offers": [
-        { "@type": "Offer", "name": "Custom Software Development" },
-        { "@type": "Offer", "name": "Web & Mobile App Development" },
-        { "@type": "Offer", "name": "AI & Automation Solutions" },
-        { "@type": "Offer", "name": "Data for AI Training" },
-        { "@type": "Offer", "name": "Data Annotation" },
-        { "@type": "Offer", "name": "Shopify App Development" },
-        { "@type": "Offer", "name": "Windows Software Development" },
-        { "@type": "Offer", "name": "Technology Consulting" }
+      "knowsAbout": [
+        "Custom Software Development",
+        "Web App Development",
+        "Mobile App Development",
+        "AI Integration",
+        "Data Annotation",
+        "AI Training Data",
+        "Shopify App Development",
+        "Windows Software Development",
+        "Cloud Infrastructure",
+        "Technology Consulting"
       ]
     }
     </script>
@@ -85,7 +105,16 @@
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "Tirthon Tech",
-      "url": "https://tirthontech.com"
+      "url": "https://tirthontech.com/",
+      "description": "Custom software development company specializing in web apps, mobile apps, AI solutions, data annotation, and Shopify development.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://tirthontech.com/blog?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
     }
     </script>
   </head>
@@ -100,5 +129,9 @@
 
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Calendly popup widget -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
   </body>
 </html>
