@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import { Scaling, Target, Layers, MapPin } from "lucide-react";
 
 const points = [
@@ -25,15 +25,20 @@ const points = [
 ];
 
 export function WhyUs() {
+  const reduceMotion = useReducedMotion();
   return (
-    <section id="why-us" className="py-14 md:py-24 relative bg-background overflow-hidden">
+    <section id="why-us" className="py-14 md:py-24 relative bg-background overflow-hidden section-lazy">
 
-      {/* Background orb */}
-      <motion.div
-        animate={{ x: [0, 30, 0], y: [0, -20, 0] }}
-        transition={{ duration: 14, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-[120px] pointer-events-none"
-      />
+      {/* Background orb — static when reduced motion or mobile */}
+      {reduceMotion ? (
+        <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-[120px] pointer-events-none" />
+      ) : (
+        <motion.div
+          animate={{ x: [0, 30, 0], y: [0, -20, 0] }}
+          transition={{ duration: 14, repeat: Infinity, ease: "easeInOut" }}
+          className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-[120px] pointer-events-none"
+        />
+      )}
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">

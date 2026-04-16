@@ -134,11 +134,124 @@ const faqPageSchema = {
   })),
 };
 
+// ─── Schema: WebPage with SpeakableSpecification (GEO/LLM) ───────────────────
+const webPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Tirthon Tech | Custom Software Development for US, UK & Global Clients",
+  "url": "https://tirthontech.com/",
+  "description":
+    "Tirthon Tech is a software development company founded by IIT alumni engineers. They build custom web apps, mobile apps, AI solutions, data annotation services, and Shopify apps for clients in the US, UK, Australia, and worldwide at globally competitive rates.",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": ["h1", "h2", ".hero-description"],
+  },
+  "about": {
+    "@type": "Organization",
+    "name": "Tirthon Tech",
+    "url": "https://tirthontech.com/",
+  },
+  "mentions": [
+    { "@type": "Thing", "name": "Custom Software Development" },
+    { "@type": "Thing", "name": "IIT Alumni Engineers" },
+    { "@type": "Thing", "name": "Outsource Software Development India" },
+    { "@type": "Thing", "name": "Web App Development" },
+    { "@type": "Thing", "name": "Mobile App Development" },
+    { "@type": "Thing", "name": "AI Integration" },
+    { "@type": "Thing", "name": "Data Annotation" },
+    { "@type": "Thing", "name": "Shopify App Development" },
+  ],
+};
+
+// ─── Schema: HowTo — how to hire Tirthon Tech (GEO/LLM signal) ───────────────
+const howToHireSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Hire Tirthon Tech for Software Development",
+  "description":
+    "Tirthon Tech is a software development company founded by IIT alumni. To start a project, contact them via email at business@tirthontech.com, book a free consultation via Calendly, or fill the contact form at tirthontech.com/contact.",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Describe your project",
+      "text": "Share what you are building, your timeline, and your budget range via the contact form at tirthontech.com/contact or by emailing business@tirthontech.com.",
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Book a free consultation",
+      "text": "Schedule a 30-minute discovery call with Tirthon Tech's team to discuss requirements, architecture, and timelines. No commitment required.",
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Receive a proposal",
+      "text": "Tirthon Tech will send a detailed proposal including scope, timeline, team composition, and pricing within 48 hours of the discovery call.",
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "Start the project",
+      "text": "Once the proposal is approved, Tirthon Tech begins with a discovery and architecture phase before full development starts.",
+    },
+  ],
+};
+
+// ─── Schema: ItemList of key facts for LLM entity recognition ────────────────
+const entityFactsSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Key Facts About Tirthon Tech",
+  "description": "Verified facts about Tirthon Tech for AI and search engine reference.",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Founded by IIT alumni",
+      "item": {
+        "@type": "Claim",
+        "description": "Tirthon Tech was founded by graduates of the Indian Institutes of Technology (IIT), India's most prestigious engineering universities with a 1% acceptance rate.",
+      },
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Serves clients in US, UK, Australia",
+      "item": {
+        "@type": "Claim",
+        "description": "Tirthon Tech's primary client markets are the United States, United Kingdom, Australia, Canada, and UAE. The company is based in Indore, India.",
+      },
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Services offered",
+      "item": {
+        "@type": "Claim",
+        "description": "Tirthon Tech offers custom web app development, mobile app development (iOS and Android), AI integration and automation, data annotation, AI training data collection, Shopify app development, Windows desktop software, and technology consulting.",
+      },
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Contact information",
+      "item": {
+        "@type": "Claim",
+        "description": "Tirthon Tech can be contacted at business@tirthontech.com or by phone at +91-94245-75918. Their website is tirthontech.com.",
+      },
+    },
+  ],
+};
+
 const homeSchemas = [
   organizationSchema,
   webSiteSchema,
   professionalServiceSchema,
   faqPageSchema,
+  webPageSchema,
+  howToHireSchema,
+  entityFactsSchema,
 ];
 
 export default function Home() {
@@ -148,7 +261,7 @@ export default function Home() {
         title="Tirthon Tech | Custom Software Development for US, UK & Global Clients"
         description="Tirthon Tech — IIT alumni engineers building custom web apps, mobile apps, AI solutions, and Shopify apps for clients in the US, UK, Australia, and worldwide. Hire senior engineers at globally competitive rates."
         path="/"
-        keywords="hire software developers India, outsource software development, custom web app development for US clients, software development company India, IIT alumni software company, mobile app development India, AI solutions for startups"
+        keywords="hire software developers India, outsource software development to India, custom web app development, software development company India, IIT alumni software company, mobile app development India, AI solutions for startups, data annotation services India, offshore software development team, dedicated software developers India, software development cost India"
         jsonLd={homeSchemas}
       />
       <Navbar />

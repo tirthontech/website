@@ -1,4 +1,9 @@
 User-agent: *
 Allow: /
 
+# Block irrelevant paths
+Disallow: /api/
+Disallow: /_netlify/
+
+# Sitemaps
 Sitemap: https://tirthontech.com/sitemap.xml

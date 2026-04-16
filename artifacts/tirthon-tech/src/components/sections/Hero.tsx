@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useState, useRef, useCallback } from "react";
+import { useState, useRef, useCallback, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "wouter";
@@ -24,12 +24,18 @@ export function Hero() {
   const { text, cursor } = useTypewriter(words, 75, 1800);
   const sectionRef = useRef<HTMLElement>(null);
   const [spotlight, setSpotlight] = useState({ x: 0, y: 0, active: false });
+  const [isTouch, setIsTouch] = useState(false);
+
+  useEffect(() => {
+    setIsTouch(window.matchMedia("(hover: none)").matches);
+  }, []);
 
   const handleMouseMove = useCallback((e: React.MouseEvent<HTMLElement>) => {
+    if (isTouch) return;
     const rect = sectionRef.current?.getBoundingClientRect();
     if (!rect) return;
     setSpotlight({ x: e.clientX - rect.left, y: e.clientY - rect.top, active: true });
-  }, []);
+  }, [isTouch]);
 
   const handleMouseLeave = useCallback(() => {
     setSpotlight((s) => ({ ...s, active: false }));
@@ -51,17 +57,26 @@ export function Hero() {
         }}
       />
 
-      {/* Ambient orbs */}
-      <motion.div
-        animate={{ x: [0, 40, 0], y: [0, -30, 0] }}
-        transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-[100px] pointer-events-none"
-      />
-      <motion.div
-        animate={{ x: [0, -30, 0], y: [0, 40, 0] }}
-        transition={{ duration: 15, repeat: Infinity, ease: "easeInOut", delay: 2 }}
-        className="absolute bottom-20 right-10 w-96 h-96 bg-primary/8 rounded-full blur-[120px] pointer-events-none"
-      />
+      {/* Ambient orbs — static on touch/mobile, animated on desktop */}
+      {isTouch ? (
+        <>
+          <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-[100px] pointer-events-none" />
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-primary/8 rounded-full blur-[120px] pointer-events-none" />
+        </>
+      ) : (
+        <>
+          <motion.div
+            animate={{ x: [0, 40, 0], y: [0, -30, 0] }}
+            transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
+            className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-[100px] pointer-events-none"
+          />
+          <motion.div
+            animate={{ x: [0, -30, 0], y: [0, 40, 0] }}
+            transition={{ duration: 15, repeat: Infinity, ease: "easeInOut", delay: 2 }}
+            className="absolute bottom-20 right-10 w-96 h-96 bg-primary/8 rounded-full blur-[120px] pointer-events-none"
+          />
+        </>
+      )}
 
       {/* Grid overlay */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#00000008_1px,transparent_1px),linear-gradient(to_bottom,#00000008_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] z-10 pointer-events-none" />

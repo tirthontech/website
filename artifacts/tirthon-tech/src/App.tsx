@@ -3,15 +3,17 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { FloatingCTA } from "@/components/FloatingCTA";
-import Home from "@/pages/Home";
-import ServicesPage from "@/pages/Services";
-import AboutPage from "@/pages/About";
-import ContactPage from "@/pages/Contact";
-import BlogPage from "@/pages/Blog";
-import BlogPostPage from "@/pages/BlogPost";
-import PrivacyPolicy from "@/pages/PrivacyPolicy";
-import TermsOfService from "@/pages/TermsOfService";
-import NotFound from "@/pages/not-found";
+import { lazy, Suspense } from "react";
+
+const Home = lazy(() => import("@/pages/Home"));
+const ServicesPage = lazy(() => import("@/pages/Services"));
+const AboutPage = lazy(() => import("@/pages/About"));
+const ContactPage = lazy(() => import("@/pages/Contact"));
+const BlogPage = lazy(() => import("@/pages/Blog"));
+const BlogPostPage = lazy(() => import("@/pages/BlogPost"));
+const PrivacyPolicy = lazy(() => import("@/pages/PrivacyPolicy"));
+const TermsOfService = lazy(() => import("@/pages/TermsOfService"));
+const NotFound = lazy(() => import("@/pages/not-found"));
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -24,17 +26,19 @@ const queryClient = new QueryClient({
 
 function Router() {
   return (
-    <Switch>
-      <Route path="/" component={Home} />
-      <Route path="/services" component={ServicesPage} />
-      <Route path="/about" component={AboutPage} />
-      <Route path="/contact" component={ContactPage} />
-      <Route path="/blog" component={BlogPage} />
-      <Route path="/blog/:slug" component={BlogPostPage} />
-      <Route path="/privacy-policy" component={PrivacyPolicy} />
-      <Route path="/terms-of-service" component={TermsOfService} />
-      <Route component={NotFound} />
-    </Switch>
+    <Suspense fallback={null}>
+      <Switch>
+        <Route path="/" component={Home} />
+        <Route path="/services" component={ServicesPage} />
+        <Route path="/about" component={AboutPage} />
+        <Route path="/contact" component={ContactPage} />
+        <Route path="/blog" component={BlogPage} />
+        <Route path="/blog/:slug" component={BlogPostPage} />
+        <Route path="/privacy-policy" component={PrivacyPolicy} />
+        <Route path="/terms-of-service" component={TermsOfService} />
+        <Route component={NotFound} />
+      </Switch>
+    </Suspense>
   );
 }
 

@@ -11,6 +11,7 @@
     <meta name="author" content="Tirthon Tech" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <link rel="canonical" href="https://tirthontech.com/" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -36,6 +37,13 @@
     <meta name="theme-color" content="#ffffff" />
     <meta name="msapplication-TileColor" content="#C8922A" />
 
+    <!-- Geo Targeting -->
+    <meta name="geo.region" content="IN-MP" />
+    <meta name="geo.placename" content="Indore, Madhya Pradesh, India" />
+    <meta name="geo.position" content="22.7196;75.8577" />
+    <meta name="ICBM" content="22.7196, 75.8577" />
+    <meta name="target-country" content="US, GB, AU, IN" />
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/logo.png" />
     <link rel="apple-touch-icon" href="/logo.png" />
@@ -44,6 +52,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <!-- DNS prefetch for external resources -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
 
     <!-- JSON-LD Structured Data: Organization (static pre-JS fallback) -->
     <script type="application/ld+json">
@@ -95,6 +105,149 @@
         "Windows Software Development",
         "Cloud Infrastructure",
         "Technology Consulting"
+      ]
+    }
+    </script>
+
+    <!-- JSON-LD Structured Data: ItemList of Services -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Tirthon Tech Services",
+      "description": "Software development services offered by Tirthon Tech",
+      "url": "https://tirthontech.com/services",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Service",
+            "name": "Custom Web App Development",
+            "description": "We build scalable, high-performance web applications tailored to your business needs using React, Node.js, and modern cloud infrastructure.",
+            "provider": { "@type": "Organization", "name": "Tirthon Tech" },
+            "areaServed": "Worldwide",
+            "url": "https://tirthontech.com/services"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Service",
+            "name": "Mobile App Development",
+            "description": "Cross-platform iOS and Android apps built with React Native and Flutter for startups and enterprises worldwide.",
+            "provider": { "@type": "Organization", "name": "Tirthon Tech" },
+            "areaServed": "Worldwide",
+            "url": "https://tirthontech.com/services"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Service",
+            "name": "AI & Machine Learning Solutions",
+            "description": "Custom AI integrations, LLM-powered tools, and intelligent automation solutions for businesses looking to scale with AI.",
+            "provider": { "@type": "Organization", "name": "Tirthon Tech" },
+            "areaServed": "Worldwide",
+            "url": "https://tirthontech.com/services"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "Service",
+            "name": "Data Annotation & AI Training Data",
+            "description": "High-quality labeled datasets for training AI/ML models — text, image, audio, and video annotation at scale.",
+            "provider": { "@type": "Organization", "name": "Tirthon Tech" },
+            "areaServed": "Worldwide",
+            "url": "https://tirthontech.com/services"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "Service",
+            "name": "Shopify App Development",
+            "description": "Custom Shopify apps and headless commerce solutions to extend and automate your e-commerce store.",
+            "provider": { "@type": "Organization", "name": "Tirthon Tech" },
+            "areaServed": "Worldwide",
+            "url": "https://tirthontech.com/services"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@type": "Service",
+            "name": "Windows Desktop Application Development",
+            "description": "Robust Windows desktop software built with modern frameworks for businesses needing offline-first or enterprise-grade tools.",
+            "provider": { "@type": "Organization", "name": "Tirthon Tech" },
+            "areaServed": "Worldwide",
+            "url": "https://tirthontech.com/services"
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- JSON-LD Structured Data: FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What services does Tirthon Tech offer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tirthon Tech offers custom web app development, mobile app development (iOS & Android), AI and machine learning integration, data annotation and AI training datasets, Shopify app development, and Windows desktop software development."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does it cost to hire Tirthon Tech?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tirthon Tech offers senior-engineer quality at globally competitive rates. Pricing depends on project scope. Contact us at business@tirthontech.com or book a free consultation to get a custom quote."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is Tirthon Tech located?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tirthon Tech is based in Indore, India and serves clients in the US, UK, Australia, and worldwide. Our team consists of IIT alumni engineers with international project experience."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Tirthon Tech build an MVP quickly?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Tirthon Tech specializes in rapid MVP development. We can help you launch a production-ready product in as little as 90 days, depending on complexity and requirements."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Tirthon Tech work with startups?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. Tirthon Tech works with startups, SMBs, and enterprises. We're especially well-suited for early-stage startups that need senior engineering talent without the cost of a full in-house team."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What technologies does Tirthon Tech use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tirthon Tech works with React, React Native, Flutter, Node.js, Python, FastAPI, PostgreSQL, AWS, GCP, and more. We choose the best technology stack based on your project's requirements."
+          }
+        }
       ]
     }
     </script>

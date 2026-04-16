@@ -84,7 +84,7 @@ const itemVariants = {
 
 export function Services() {
   return (
-    <section id="services" className="py-14 md:py-24 relative bg-muted/30 border-y border-border/40">
+    <section id="services" className="py-14 md:py-24 relative bg-muted/30 border-y border-border/40 section-lazy">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 24 }}

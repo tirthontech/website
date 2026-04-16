@@ -7,9 +7,30 @@
 }
 .animate-marquee {
   animation: marquee 28s linear infinite;
+  will-change: transform;
 }
 .animate-marquee:hover {
   animation-play-state: paused;
+}
+
+/* Reduce marquee speed on mobile to save CPU */
+@media (max-width: 768px) {
+  .animate-marquee {
+    animation-duration: 40s;
+  }
+}
+
+/* Skip animations for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: none;
+  }
+}
+
+/* Below-fold sections render lazily */
+.section-lazy {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 500px;
 }
 @import "tw-animate-css";
 @plugin "@tailwindcss/typography";
