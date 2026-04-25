@@ -3,23 +3,23 @@ import { Scaling, Target, Layers, MapPin } from "lucide-react";
 
 const points = [
   {
-    title: "We think about growth upfront",
-    description: "We don't build things that fall apart the moment you get more users. Scale is something we plan for from the start, not bolt on later.",
+    title: "AI does the heavy lifting",
+    description: "We use Claude Code, Lovable, Codex, Cursor, and Replit. AI handles the boilerplate, the repetitive patterns, the scaffolding. Our engineers handle what AI cannot — architecture decisions, edge cases, and product judgment.",
     icon: Scaling
   },
   {
-    title: "We care about your results",
-    description: "Shipping code is easy. Shipping code that actually moves the needle for your business is what we're focused on.",
+    title: "IIT engineers keep it honest",
+    description: "AI output without senior engineering oversight produces fast, broken software. Our IIT alumni engineers review every decision — so you get AI speed with human quality control baked in.",
     icon: Target
   },
   {
-    title: "You always know what's happening",
-    description: "No radio silence, no surprise delays. We keep you in the loop throughout and flag problems early.",
+    title: "You pay for the outcome, not the hours",
+    description: "When AI compresses a 3-month project into 3 weeks, you should not be billed for 3 months. We price on scope and value, and pass the efficiency directly to you.",
     icon: Layers
   },
   {
     title: "Clients from all over the world",
-    description: "We've worked with businesses from different industries and countries. Different time zones, no problem.",
+    description: "US, UK, Australia, Canada, UAE. Different industries, different time zones, same outcome — software that ships fast and works correctly.",
     icon: MapPin
   }
 ];
@@ -51,10 +51,10 @@ export function WhyUs() {
             className="lg:col-span-5"
           >
             <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4 md:mb-6 text-foreground">
-              Why <br /><span className="text-primary">Tirthon Tech</span>
+              IIT Engineers.<br /><span className="text-primary">AI Tools.</span><br />Unfair Advantage.
             </h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Honestly, a lot of dev shops will take your money and disappear. We're not that. We ask the right questions, give you straight answers, and build things that last.
+              We saw the gap early: AI tools can do most of the work now — but most companies haven't changed how they price or deliver. We built Tirthon Tech around that insight.
             </p>
             <motion.div
               initial={{ width: 0 }}

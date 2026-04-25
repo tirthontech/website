@@ -3,10 +3,7 @@ import { useState, useRef, useCallback, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "wouter";
-import { useTypewriter } from "@/hooks/use-typewriter";
 import { useCountUp } from "@/hooks/use-count-up";
-
-const words = ["Web Apps", "Mobile Apps", "AI Tools", "Shopify Apps", "Automation"];
 
 function StatItem({ value, suffix, label }: { value: number; suffix: string; label: string }) {
   const { count, ref } = useCountUp(value, 1600);
@@ -21,7 +18,6 @@ function StatItem({ value, suffix, label }: { value: number; suffix: string; lab
 }
 
 export function Hero() {
-  const { text, cursor } = useTypewriter(words, 75, 1800);
   const sectionRef = useRef<HTMLElement>(null);
   const [spotlight, setSpotlight] = useState({ x: 0, y: 0, active: false });
   const [isTouch, setIsTouch] = useState(false);
@@ -97,31 +93,37 @@ export function Hero() {
           Hey, we're Tirthon Tech. IIT Alumni.
         </motion.div>
 
-        {/* Headline with typewriter */}
+        {/* Headline */}
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
           className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight text-foreground max-w-5xl leading-[1.08]"
         >
-          We Build
+          Software Delivery at
           <br />
-          <span className="text-primary drop-shadow-sm">
-            {text}
-            <span className="opacity-70">{cursor}</span>
-          </span>
-          <br />
-          <span className="text-foreground">That Work.</span>
+          <span className="text-primary drop-shadow-sm">Light Speed</span>
         </motion.h1>
+
+        {/* Sub-tagline */}
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.25, ease: [0.16, 1, 0.3, 1] }}
+          className="mt-4 md:mt-5 text-lg md:text-2xl font-semibold text-muted-foreground tracking-tight"
+        >
+          AI + Humans ship software{" "}
+          <span className="text-primary">10x faster</span>
+        </motion.p>
 
         {/* Subtext */}
         <motion.p
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-          className="mt-6 md:mt-8 text-base md:text-xl text-muted-foreground max-w-2xl font-light leading-relaxed px-2 md:px-0"
+          transition={{ duration: 0.8, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
+          className="mt-5 md:mt-6 text-base md:text-lg text-muted-foreground max-w-2xl font-light leading-relaxed px-2 md:px-0"
         >
-          We build software that actually works for your business. Whether that's a web app, a mobile product, AI tools, or anything in between. No fluff, just solid work.
+          Welcome to the AI-powered era of software delivery. Book a free strategy session and get a sprint roadmap, tailored to your goals.
         </motion.p>
 
         {/* CTAs */}
@@ -129,14 +131,14 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.45, ease: [0.16, 1, 0.3, 1] }}
-          className="mt-12 flex flex-col sm:flex-row gap-4"
+          className="mt-10 flex flex-col sm:flex-row gap-4"
         >
           <Link href="/contact">
             <Button
               size="lg"
               className="h-14 px-8 rounded-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-lg hover:-translate-y-1 transition-all duration-300 shadow-[0_4px_14px_rgba(212,143,37,0.3)] hover:shadow-[0_6px_20px_rgba(212,143,37,0.45)] group"
             >
-              Let's Talk
+              Book a Strategy Session
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
           </Link>
@@ -151,20 +153,20 @@ export function Hero() {
           </Link>
         </motion.div>
 
-        {/* Stats — count up only when scrolled to */}
+        {/* Stats */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.65, ease: [0.16, 1, 0.3, 1] }}
           className="mt-12 md:mt-20 flex flex-row gap-6 sm:gap-12 md:gap-16 items-center justify-center flex-wrap"
         >
-          <StatItem value={500} suffix="+" label="Projects Shipped" />
+          <StatItem value={141} suffix="+" label="Projects Shipped" />
           <div className="hidden sm:block w-px h-10 bg-border/60" />
-          <StatItem value={200} suffix="+" label="Clients Worldwide" />
+          <StatItem value={90} suffix="+" label="Clients Worldwide" />
           <div className="hidden sm:block w-px h-10 bg-border/60" />
           <motion.div whileHover={{ scale: 1.07 }} className="text-center">
             <p className="text-3xl md:text-4xl font-extrabold text-primary">IIT</p>
-            <p className="text-sm text-muted-foreground mt-1 font-medium">Alumni Team</p>
+            <p className="text-sm text-muted-foreground mt-1 font-medium">Indore Alumni Team</p>
           </motion.div>
         </motion.div>
 

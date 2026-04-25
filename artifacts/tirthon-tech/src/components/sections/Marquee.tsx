@@ -1,9 +1,9 @@
 const items = [
-  "React", "Next.js", "TypeScript", "Python", "Node.js",
-  "AWS", "GCP", "Flutter", "React Native", "Shopify",
-  "PostgreSQL", "MongoDB", "LLMs", "OpenAI", "TensorFlow",
-  "Docker", "Kubernetes", "FastAPI", "GraphQL", "Tailwind CSS",
-  "C# / .NET", "Windows Apps", "Web Scraping", "Data Annotation", "AI Automation",
+  "Claude Code", "Lovable", "Cursor", "Replit", "Codex",
+  "v0 by Vercel", "Bolt.new", "React", "Next.js", "TypeScript",
+  "Python", "Node.js", "Flutter", "React Native", "Shopify",
+  "AWS", "GCP", "FastAPI", "PostgreSQL", "AI Automation",
+  "LLM Integration", "Data Annotation", "Web Scraping", "Docker", "GraphQL",
 ];
 
 export function Marquee() {

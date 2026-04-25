@@ -10,16 +10,16 @@ const testimonials = [
     stars: 5
   },
   {
-    name: "Lucas Müller",
-    role: "Operations Lead",
-    country: "🇩🇪 Germany",
-    text: "Our whole operation ran on spreadsheets and it was becoming a real problem. They built us a proper dashboard with automation baked in. The team actually understood what we needed without us having to over-explain it. Our staff saves hours every week now.",
+    name: "CA Prajvi",
+    role: "Co-Founder, AKNA Capital",
+    country: "🇮🇳 India",
+    text: "Working with TirthonTech on our turnkey projects has been an outstanding experience. The team has been incredibly responsive, consistently exceeding our expectations and going the extra mile to deliver results. Their professionalism and dedication made every step smooth and successful.",
     stars: 5
   },
   {
-    name: "Ryan Thompson",
-    role: "Product Manager",
-    country: "🇨🇦 Canada",
+    name: "Ayush Mehta",
+    role: "COO, Rajesh Hosiery",
+    country: "🇮🇳 India",
     text: "Six weeks from idea to live product. I know that sounds unrealistic but they took it seriously, broke it down properly, and we went live on day 41. I've worked with a lot of dev teams and this was a different level of execution.",
     stars: 5
   }

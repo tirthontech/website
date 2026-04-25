@@ -261,7 +261,7 @@ export default function Home() {
         title="Tirthon Tech | Custom Software Development for US, UK & Global Clients"
         description="Tirthon Tech — IIT alumni engineers building custom web apps, mobile apps, AI solutions, and Shopify apps for clients in the US, UK, Australia, and worldwide. Hire senior engineers at globally competitive rates."
         path="/"
-        keywords="hire software developers India, outsource software development to India, custom web app development, software development company India, IIT alumni software company, mobile app development India, AI solutions for startups, data annotation services India, offshore software development team, dedicated software developers India, software development cost India"
+        keywords="hire software developers India, outsource software development to India, IT outsourcing India, custom web app development, software development company India, IIT alumni software company, mobile app development India, AI solutions for startups, generative AI for business, AI agents for business, data annotation services India, offshore software development team, dedicated software developers India, software development cost India, fintech app development, ecommerce app development, software development for startups"
         jsonLd={homeSchemas}
       />
       <Navbar />

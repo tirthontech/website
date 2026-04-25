@@ -51,7 +51,7 @@ export default function Blog() {
         title="Blog | Software Development, AI & Outsourcing Insights"
         description="Expert articles from Tirthon Tech on outsourcing software development, custom web & mobile apps, AI automation, data annotation, Shopify development, and technology decisions that help global businesses move faster."
         path="/blog"
-        keywords="outsource software development guide, hire developers India blog, AI automation articles, data annotation guide, mobile app development tips, Shopify development, MVP development, technology consulting insights"
+        keywords="outsource software development India guide, IT outsourcing India, hire developers India, AI agents for business, generative AI for business, data annotation guide, mobile app development tips, fintech app development, ecommerce app development, marketplace app development, software development for startups, reduce software development costs, Shopify development, MVP development, technology consulting insights"
         jsonLd={blogSchemas}
       />
       <Navbar />

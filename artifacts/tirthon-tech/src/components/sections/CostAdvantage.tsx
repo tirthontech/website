@@ -5,46 +5,46 @@ import { Button } from "@/components/ui/button";
 
 const columns = [
   {
-    label: "Typical US / UK Agency",
-    rate: "$150 – 250",
-    rateUnit: "per hour",
+    label: "Traditional IT Agency",
+    rate: "$150 – 250/hr",
+    rateUnit: "Using AI internally. Charging you pre-AI prices.",
     highlight: false,
     dimmed: true,
     items: [
       { text: "Senior engineers", ok: true },
-      { text: "Structured process", ok: true },
-      { text: "Strong communication", ok: true },
-      { text: "Budget-friendly rates", ok: false },
-      { text: "Startup-compatible scope", ok: false },
+      { text: "Uses AI tools internally", ok: true },
+      { text: "Passes AI savings to you", ok: false },
+      { text: "Delivers in weeks, not months", ok: false },
+      { text: "Startup-compatible pricing", ok: false },
     ],
   },
   {
     label: "Tirthon Tech",
-    rate: "IIT-quality",
-    rateUnit: "at a fraction of the cost",
+    rate: "AI-Speed Delivery",
+    rateUnit: "IIT engineers + AI tools. You get both.",
     highlight: true,
     dimmed: false,
-    badge: "Best value",
+    badge: "The AI-era choice",
     items: [
       { text: "IIT alumni engineers", ok: true },
-      { text: "Clear milestone process", ok: true },
-      { text: "Same-day responses", ok: true },
-      { text: "Globally competitive rates", ok: true },
+      { text: "Claude Code, Lovable, Codex, Replit", ok: true },
+      { text: "10x faster than traditional delivery", ok: true },
+      { text: "Fraction of traditional agency cost", ok: true },
       { text: "Startup & enterprise ready", ok: true },
     ],
   },
   {
-    label: "Random Offshore Freelancer",
-    rate: "$10 – 30",
-    rateUnit: "per hour",
+    label: "Cheap Freelancer",
+    rate: "$10 – 30/hr",
+    rateUnit: "Low cost. No architecture. No process.",
     highlight: false,
     dimmed: true,
     items: [
-      { text: "Low cost", ok: true },
-      { text: "Reliable delivery", ok: false },
-      { text: "Clear communication", ok: false },
-      { text: "Structured process", ok: false },
+      { text: "Low upfront cost", ok: true },
+      { text: "Production-grade quality", ok: false },
+      { text: "Structured delivery process", ok: false },
       { text: "Post-launch support", ok: false },
+      { text: "Scalable architecture", ok: false },
     ],
   },
 ];
@@ -63,14 +63,15 @@ export function CostAdvantage() {
           className="text-center max-w-2xl mx-auto mb-14"
         >
           <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
-            Why companies choose us
+            The AI era changed everything
           </span>
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-foreground mb-4">
-            The best of both worlds
+            Traditional agencies use AI too.<br />
+            <span className="text-primary">They just don't tell you.</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            IIT-standard engineering quality. Globally competitive rates.
-            The combination that makes companies keep coming back.
+            Every agency is using Claude, Copilot, and Cursor behind the scenes — and still billing you $150–$250/hr.
+            We built Tirthon Tech to pass that advantage directly to you.
           </p>
         </motion.div>
 
@@ -173,7 +174,7 @@ export function CostAdvantage() {
           transition={{ duration: 0.5, delay: 0.4 }}
           className="text-center text-xs text-muted-foreground/50 mt-8"
         >
-          Rate ranges are typical industry estimates. We provide exact project quotes after a free discovery call.
+          AI tools compress delivery time. IIT engineers ensure the architecture is right. You get both — without the traditional agency markup.
         </motion.p>
 
       </div>

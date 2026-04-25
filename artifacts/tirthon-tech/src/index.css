@@ -6,7 +6,7 @@
   100% { transform: translateX(-50%); }
 }
 .animate-marquee {
-  animation: marquee 28s linear infinite;
+  animation: marquee 16s linear infinite;
   will-change: transform;
 }
 .animate-marquee:hover {
@@ -16,7 +16,7 @@
 /* Reduce marquee speed on mobile to save CPU */
 @media (max-width: 768px) {
   .animate-marquee {
-    animation-duration: 40s;
+    animation-duration: 22s;
   }
 }
 

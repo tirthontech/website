@@ -22,10 +22,10 @@ const steps = [
   {
     icon: Hammer,
     step: "03",
-    title: "We Build in Phases",
+    title: "AI-Accelerated Build",
     description:
-      "Work is delivered in milestones with demos after each one. You see real progress regularly, not just a finished product months later.",
-    tag: "Milestone-based",
+      "Our IIT engineers use Claude Code, Lovable, Cursor, and Replit to build at AI speed. Milestones with demos after each one — real progress in weeks, not months.",
+    tag: "AI-powered",
   },
   {
     icon: Rocket,
@@ -72,7 +72,7 @@ export function HowWeWork() {
             From first message to <span className="text-primary">live product</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            A predictable, transparent process so you always know where things stand.
+            AI tools compress timelines. IIT engineers ensure quality. A transparent process so you always know where things stand.
           </p>
         </motion.div>
 

@@ -3,7 +3,62 @@
   command = "pnpm install && pnpm run build"
   publish = "artifacts/tirthon-tech/dist"
 
+# Force www → non-www (canonical domain)
+[[redirects]]
+  from = "https://www.tirthontech.com/*"
+  to = "https://tirthontech.com/:splat"
+  status = 301
+  force = true
+
+# Remove trailing slashes (prevents Google "Page with redirect" issues)
+[[redirects]]
+  from = "/*/"
+  to = "/:splat"
+  status = 301
+  force = true
+
+# SPA catch-all — must be last
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+
+# Cache static assets aggressively, HTML never
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "no-cache, no-store, must-revalidate"
+
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+    Content-Type = "application/xml; charset=utf-8"
+
+[[headers]]
+  for = "/robots.txt"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
