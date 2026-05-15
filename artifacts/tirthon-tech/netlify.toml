@@ -3,6 +3,25 @@
   command = "pnpm install && pnpm run build"
   publish = "artifacts/tirthon-tech/dist"
 
+# Canonical domain redirects — all non-canonical variants → https://tirthontech.com
+[[redirects]]
+  from = "https://www.tirthontech.com/*"
+  to = "https://tirthontech.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.tirthontech.com/*"
+  to = "https://tirthontech.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://tirthontech.com/*"
+  to = "https://tirthontech.com/:splat"
+  status = 301
+  force = true
+
 # SPA catch-all — serves index.html for all routes (client-side routing)
 [[redirects]]
   from = "/*"
