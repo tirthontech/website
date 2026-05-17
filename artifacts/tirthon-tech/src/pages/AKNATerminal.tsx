@@ -440,9 +440,6 @@ export default function AKNATerminal() {
                     <h3 className="font-semibold text-foreground mb-1.5">{point.heading}</h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">{point.body}</p>
                   </div>
-                  <span className="absolute bottom-2 right-4 text-7xl font-black text-red-100/80 select-none leading-none pointer-events-none">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
                 </motion.div>
               ))}
             </div>
