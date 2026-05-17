@@ -13,6 +13,12 @@ const BlogPage = lazy(() => import("@/pages/Blog"));
 const BlogPostPage = lazy(() => import("@/pages/BlogPost"));
 const PrivacyPolicy = lazy(() => import("@/pages/PrivacyPolicy"));
 const TermsOfService = lazy(() => import("@/pages/TermsOfService"));
+const TradeSathi = lazy(() => import("@/pages/TradeSathi"));
+const BariQ = lazy(() => import("@/pages/BariQ"));
+const AKNATerminal = lazy(() => import("@/pages/AKNATerminal"));
+const RealtySell = lazy(() => import("@/pages/RealtySell"));
+const TopReviewz = lazy(() => import("@/pages/TopReviewz"));
+const TirthonQuant = lazy(() => import("@/pages/TirthonQuant"));
 const NotFound = lazy(() => import("@/pages/not-found"));
 
 const queryClient = new QueryClient({
@@ -36,6 +42,12 @@ function Router() {
         <Route path="/blog/:slug" component={BlogPostPage} />
         <Route path="/privacy-policy" component={PrivacyPolicy} />
         <Route path="/terms-of-service" component={TermsOfService} />
+        <Route path="/products/tradesathi" component={TradeSathi} />
+        <Route path="/products/bariq" component={BariQ} />
+        <Route path="/products/akna-terminal" component={AKNATerminal} />
+        <Route path="/products/realtysell" component={RealtySell} />
+        <Route path="/products/topreviewz" component={TopReviewz} />
+        <Route path="/products/tirthonquant" component={TirthonQuant} />
         <Route component={NotFound} />
       </Switch>
     </Suspense>

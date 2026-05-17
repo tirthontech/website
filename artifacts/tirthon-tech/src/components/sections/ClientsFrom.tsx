@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 
 const countries = [
+  { flag: "🇮🇳", name: "India" },
   { flag: "🇺🇸", name: "United States" },
   { flag: "🇬🇧", name: "United Kingdom" },
   { flag: "🇦🇺", name: "Australia" },

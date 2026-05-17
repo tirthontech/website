@@ -19,6 +19,12 @@ export function Footer() {
                 { label: "Home", href: "/" },
                 { label: "About", href: "/about" },
                 { label: "Services", href: "/services" },
+                { label: "TradeSathi", href: "/products/tradesathi" },
+                { label: "BariQ", href: "/products/bariq" },
+                { label: "AKNA Terminal", href: "/products/akna-terminal" },
+                { label: "RealtySell", href: "/products/realtysell" },
+                { label: "topreviewz", href: "/products/topreviewz" },
+                { label: "TirthonQuant", href: "/products/tirthonquant" },
                 { label: "Blog", href: "/blog" },
                 { label: "Contact Us", href: "/contact" },
               ].map((item) => (
