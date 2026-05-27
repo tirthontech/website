@@ -10,6 +10,7 @@ import { FAQ, faqs } from "@/components/sections/FAQ";
 import { ClientsFrom } from "@/components/sections/ClientsFrom";
 import { HowWeWork } from "@/components/sections/HowWeWork";
 import { CostAdvantage } from "@/components/sections/CostAdvantage";
+import { Products } from "@/components/sections/Products";
 import { SEO } from "@/components/SEO";
 
 // ─── Schema: Organization ────────────────────────────────────────────────────
@@ -160,6 +161,12 @@ const webPageSchema = {
     { "@type": "Thing", "name": "AI Integration" },
     { "@type": "Thing", "name": "Data Annotation" },
     { "@type": "Thing", "name": "Shopify App Development" },
+    { "@type": "SoftwareApplication", "name": "RealtySell", "url": "https://tirthontech.com/products/realtysell", "applicationCategory": "Real Estate CRM" },
+    { "@type": "SoftwareApplication", "name": "TradeSathi", "url": "https://tirthontech.com/products/tradesathi", "applicationCategory": "FinTech" },
+    { "@type": "SoftwareApplication", "name": "BariQ", "url": "https://tirthontech.com/products/bariq", "applicationCategory": "Queue Management" },
+    { "@type": "SoftwareApplication", "name": "AKNA Terminal", "url": "https://tirthontech.com/products/akna-terminal", "applicationCategory": "Trading Software" },
+    { "@type": "SoftwareApplication", "name": "topreviewz", "url": "https://tirthontech.com/products/topreviewz", "applicationCategory": "Reputation Management" },
+    { "@type": "SoftwareApplication", "name": "TirthonQuant", "url": "https://tirthontech.com/products/tirthonquant", "applicationCategory": "Algorithmic Trading" },
   ],
 };
 
@@ -261,7 +268,7 @@ export default function Home() {
         title="Tirthon Tech | Custom Software Development for US, UK & Global Clients"
         description="Tirthon Tech — IIT alumni engineers building custom web apps, mobile apps, AI solutions, and Shopify apps for clients in the US, UK, Australia, and worldwide. Hire senior engineers at globally competitive rates."
         path="/"
-        keywords="hire software developers India, outsource software development to India, IT outsourcing India, custom web app development, software development company India, IIT alumni software company, mobile app development India, AI solutions for startups, generative AI for business, AI agents for business, data annotation services India, offshore software development team, dedicated software developers India, software development cost India, fintech app development, ecommerce app development, software development for startups"
+        keywords="hire software developers India, outsource software development to India, IT outsourcing India, custom web app development, software development company India, IIT alumni software company, mobile app development India, AI solutions for startups, generative AI for business, AI agents for business, data annotation services India, offshore software development team, dedicated software developers India, software development cost India, fintech app development, ecommerce app development, software development for startups, real estate CRM India, proptech software India, research analyst subscriber app, SEBI RA white label app, queue management system clinics, digital queue management hospital, multi-broker trading terminal India, multi-account trading software, Google review management software, online reputation management local business, algorithmic trading platform India, algo trading software India, real estate developer software, automated trading strategies India"
         jsonLd={homeSchemas}
       />
       <Navbar />
@@ -270,6 +277,7 @@ export default function Home() {
         <Marquee />
         <ClientsFrom />
         <Services />
+        <Products />
         <HowWeWork />
         <CostAdvantage />
         <WhyUs />

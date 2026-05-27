@@ -2816,6 +2816,357 @@ At Tirthon Tech, we have built MVPs for founders across e-commerce, SaaS, fintec
     `.trim()
   },
   {
+    slug: 'real-estate-crm-software-india-guide',
+    title: 'Real Estate CRM Software in India: What Developers and Brokers Actually Need',
+    metaTitle: 'Real Estate CRM Software India: Guide for Developers & Brokers | Tirthon Tech',
+    metaDescription: 'A practical guide to real estate CRM software in India. Learn what features matter for property developers, brokers, and channel partners — and why generic CRMs fail in Indian real estate.',
+    excerpt: "Most real estate businesses in India are still running on WhatsApp groups and Excel sheets. A purpose-built CRM changes that completely — here is what to look for.",
+    category: 'Software Development',
+    readTime: '6 min read',
+    date: 'May 20, 2026',
+    content: `
+## Why Generic CRMs Fail Real Estate Businesses in India
+
+Salesforce and HubSpot are excellent products. For a SaaS company or an e-commerce business, they work beautifully. But for a real estate developer or broker firm in India, they miss the point entirely.
+
+Indian real estate has specific workflows that no generic CRM was built to handle: channel partner networks, unit-level inventory with tower and floor tracking, site visit scheduling with field agents, token amounts and cost sheets, RERA compliance, and commission structures that vary by project and by broker.
+
+Most real estate businesses work around this by maintaining one CRM for basic lead tracking and a separate Excel file for everything else. That split creates data inconsistency, reporting headaches, and lost leads falling between the cracks.
+
+## What a Real Estate CRM in India Actually Needs to Do
+
+### Lead Management Designed for Real Estate
+
+A real estate CRM should capture leads from all your sources — 99acres, MagicBricks, Housing.com, Facebook campaigns, walk-ins, and channel partners — and route them to the right sales executive automatically.
+
+It should track every touchpoint: calls, site visits, follow-ups, and the specific units a prospect showed interest in. When a lead goes cold, the system should surface it again at the right time, not bury it in a list of 2,000 unworked contacts.
+
+### Unit Inventory and Availability
+
+Knowing which units are available, which are booked, and which are under negotiation in real time is fundamental to any real estate operation. A good CRM gives you a visual floor plan or inventory grid, lets you mark units as available, reserved, or sold, and prevents two executives from working the same unit simultaneously.
+
+Cost sheets should be generated from the inventory data — not typed out manually in Excel every time a client asks for pricing.
+
+### Site Visit Tracking
+
+Site visits are the highest-intent moment in a real estate sales process. A CRM should log every site visit, track who accompanied the customer, record their reactions and objections, and automatically create a follow-up task for the next 48 hours. Without this, site visits go undocumented and deals close slower.
+
+### Channel Partner Management
+
+In Indian real estate, a significant portion of sales comes through channel partners — independent brokers and sub-broker networks. Your CRM should track which leads came from which channel partner, handle commission calculations, and generate payout reports without anyone manually cross-referencing spreadsheets.
+
+### RERA and Compliance Visibility
+
+For developers, RERA compliance is not optional. A CRM that integrates project registration numbers, booking documentation, and payment schedules into the workflow reduces compliance risk and makes audits less painful.
+
+## What Most Real Estate Businesses in India Are Using Today
+
+The reality on the ground is that most small and mid-sized real estate firms use one of three setups:
+
+1. **WhatsApp + Excel** — lead data lives in group chats and manually maintained sheets. Works until the team hits 10 people or 500 leads, then falls apart.
+
+2. **A generic CRM** — Salesforce, Zoho, or HubSpot, heavily customized to vaguely resemble a real estate workflow. Expensive to set up, never quite right, and abandoned by the field team within three months.
+
+3. **A legacy real estate software** — often outdated, poor mobile experience, and built before the days of channel partner networks and digital lead sources.
+
+None of these is purpose-built for how Indian real estate actually operates.
+
+## The Shift to Purpose-Built Real Estate CRM
+
+The businesses gaining market share are the ones where the sales team actually uses the system because it makes their job easier — not harder. A purpose-built real estate CRM is faster to adopt because it matches the workflow the team already follows, just digitized.
+
+RealtySell is our answer to this problem. It was built specifically for real estate developers, broker firms, and channel partner networks in India — with unit inventory, site visit tracking, commission management, and lead pipeline all in one place. If your team is still running on Excel and WhatsApp, it is worth a conversation.
+    `.trim()
+  },
+  {
+    slug: 'algo-trading-automation-india-guide',
+    title: 'Algorithmic Trading in India: How Automation Is Changing the Game for Retail Traders',
+    metaTitle: 'Algorithmic Trading India: Automation Guide for Retail Traders 2026 | Tirthon Tech',
+    metaDescription: 'How algorithmic trading automation works for Indian retail traders in 2026. Learn how to automate strategies on Zerodha, Upstox, Angel One without coding from scratch.',
+    excerpt: "The edge in Indian markets is no longer about who gets the tip first. It is about who executes faster, more consistently, and without letting emotions drive the trade.",
+    category: 'Software Development',
+    readTime: '7 min read',
+    date: 'May 18, 2026',
+    content: `
+## What Algorithmic Trading Actually Means for Retail Traders in India
+
+Algorithmic trading is not just for hedge funds and proprietary desks anymore. In 2026, retail traders in India are automating their strategies — and those who have made the shift will tell you it changes how you think about the market entirely.
+
+The core idea is simple: instead of sitting in front of charts and manually entering orders, you define your trading rules once, and the system executes them automatically. Entry conditions, exit conditions, stop-loss, position sizing, time filters — all of it runs without your finger on the keyboard.
+
+But the reality of setting this up without the right tools is where most traders hit a wall.
+
+## Why Manual Trading Has Structural Disadvantages
+
+### Execution Speed
+
+A market order executed 0.5 seconds late on an intraday strategy can be the difference between a profitable and a losing trade. Humans are simply slower than algorithms when it comes to order entry.
+
+### Emotional Consistency
+
+Ask any experienced trader what kills their strategy performance, and most will say it is not the strategy itself — it is the moments when they override the system. They move a stop-loss "just this once" because the trade feels like it should work. They skip an entry because the morning was rough. Automation removes those decisions from the equation.
+
+### Multi-Position Management
+
+Running three or four strategies simultaneously — each with its own entry, exit, and risk parameters across different instruments — is cognitively impossible for a human to manage without errors. An algorithm handles it without breaking a sweat.
+
+## The SEBI Regulatory Reality
+
+SEBI regulates algorithmic trading in India, and the rules apply to retail traders too. Any automated order flow that does not go through an approved API mechanism from a registered broker is technically non-compliant. This means you cannot build a scraper that clicks the buy button in your broker's web interface — you need proper API access.
+
+All major Indian brokers — Zerodha, Upstox, Angel One, Fyers, Dhan, IIFL — now offer developer APIs. Zerodha's Kite Connect and Upstox's API are the most widely used. Getting access is straightforward, but building the full infrastructure around it — authentication, rate limits, order state management, error handling, reconnection logic — is weeks of engineering work if you do it from scratch.
+
+## The Real Barriers to Getting Started
+
+The strategy is usually the easy part. Traders often have very clear ideas about what they want to automate — a moving average crossover, a gap-up strategy, an options expiry play. The hard part is everything around the strategy:
+
+- **Broker API integration** — each broker has its own authentication model, order types, and quirks
+- **Real-time data handling** — intraday strategies need sub-second data without gaps or reconnection issues
+- **Backtesting** — testing a strategy on historical data before risking real capital
+- **Risk controls** — max daily loss limits, position sizing rules, exposure limits
+- **Monitoring** — knowing when the system is working and when something has gone wrong
+
+Most traders who try to build this themselves spend months on infrastructure before they can run a single live strategy.
+
+## What an Algorithmic Trading Platform Solves
+
+A purpose-built algo trading platform removes the infrastructure burden. You connect your broker accounts, define your strategies using the platform's interface, backtest them on historical data, and deploy them live — without writing a single line of authentication or WebSocket code.
+
+The platform handles:
+- Multi-broker connectivity (trade across Zerodha and Upstox from the same interface)
+- Real-time market data feeds
+- Strategy execution with configurable risk parameters
+- Position monitoring and alerts
+- Trade logs and performance reporting
+
+TirthonQuant is our algorithmic trading platform built specifically for Indian markets. It supports Zerodha, Upstox, Angel One, Fyers, Dhan, and IIFL — with options trading, futures, equity delivery and intraday all covered. If you have a strategy you have been trading manually and want to automate it, the platform gives you the infrastructure without requiring you to become a software engineer.
+
+## Who Benefits Most from Algo Trading Automation
+
+- **Active intraday traders** who are already profitable manually but know they are leaving money on the table due to slow execution or emotional overrides
+- **Options traders** running complex payoff structures across multiple strikes and expiries
+- **Part-time traders** who cannot monitor screens all day and want the system to manage trades within defined parameters
+- **Family offices and proprietary desks** managing multiple accounts and needing centralized control
+
+The barrier to entry for algorithmic trading in India has dropped significantly. The traders building edges today are not necessarily the ones with the best strategies — they are the ones executing those strategies without slippage, without hesitation, and without missing the signal.
+    `.trim()
+  },
+  {
+    slug: 'google-review-management-restaurants-clinics-india',
+    title: 'How to Get More Google Reviews for Your Restaurant, Clinic, or Salon in India',
+    metaTitle: 'Google Review Management for Restaurants, Clinics & Salons India | Tirthon Tech',
+    metaDescription: 'Learn how restaurants, clinics, salons, and retail shops in India can get more Google reviews and manage their online reputation without violating Google policy.',
+    excerpt: "93% of Indian consumers check Google reviews before visiting a local business. If you are not actively managing your reviews, you are handing business to competitors who are.",
+    category: 'Software Development',
+    readTime: '5 min read',
+    date: 'May 15, 2026',
+    content: `
+## Why Google Reviews Are Critical for Local Businesses in India
+
+It used to be that word of mouth was everything for local businesses. A good restaurant got recommendations from regulars, and a trusted clinic grew through referrals. That still matters, but it now happens overwhelmingly online — on Google Maps.
+
+When someone in Pune searches for "dermatologist near me" or someone in Bangalore looks for "best biryani restaurant in Koramangala," the businesses at the top of the results are not just the closest ones — they are the ones with the most reviews and the highest ratings. Google's local algorithm weighs review count and rating heavily.
+
+The businesses showing up first are not necessarily better. They are just better at managing their online reputation.
+
+## The Review Collection Problem
+
+Most business owners know they should ask customers for reviews. The problem is the execution. Here is what typically happens:
+
+- The customer has a great experience and leaves happy
+- The staff member forgets to ask, or feels awkward about it
+- The customer goes home, the moment passes, and the review never gets written
+
+Meanwhile, the rare unhappy customer needs no prompting — they go straight to Google and leave a one-star review because they had nothing else to do.
+
+The result is a rating that underrepresents how good the business actually is, weighted towards the negative because positive experiences are never captured.
+
+## What Good Review Management Looks Like
+
+### Timing the Ask Correctly
+
+The best time to ask for a review is immediately after a positive experience — while the customer is still in your premises or within minutes of completing a transaction. A review request sent two days later gets ignored.
+
+For a restaurant, that means asking for a review as the meal ends. For a clinic, it means a follow-up message right after the appointment. For a salon, it is while the customer is still in the chair and happy with their blowout.
+
+### Smart Review Gating
+
+Asking every customer to leave a public review is risky. Some customers are having an average day and will leave a 3-star review that technically does not reflect any failure on your part — it just reflects their mood.
+
+Smart review gating works differently: you first ask the customer a simple question — was your experience good or not so good? Customers who respond positively are directed to your Google review link. Customers who indicate a negative experience are routed to a private feedback form that comes to you directly, where you can resolve the issue before it becomes a public one-star.
+
+This is not about hiding negative reviews — it is about having a chance to fix problems before they go public, while making it frictionless for happy customers to share their experience.
+
+### Making It Easy
+
+A Google review request that requires the customer to search for your business, find the reviews section, and navigate to the write-a-review page will convert poorly. The request should drop the customer directly onto the review writing screen with one tap.
+
+QR codes at the counter, follow-up WhatsApp messages with a direct link, and post-appointment SMS — all of these work when the link takes the customer directly to the review form.
+
+## The Specific Businesses That Benefit Most
+
+### Restaurants and Cafes
+
+Dining decisions in India are almost entirely driven by Google Maps ratings. A restaurant with 500 reviews at 4.5 stars beats a restaurant with 30 reviews at 4.8 stars in most diners' minds — more reviews signal more social proof.
+
+### Clinics and Diagnostic Centres
+
+Patients choosing a doctor or diagnostic centre in a new area rely heavily on Google reviews. A well-reviewed clinic builds trust before the patient even walks in. Poor reviews, even a handful, can cost new patient acquisition for months.
+
+### Salons and Wellness Centres
+
+Repeat customers are the backbone of salon economics, but acquisition of new customers is almost entirely online now. Google is the first place someone new to the neighbourhood will search.
+
+### Retail Shops
+
+For local retail — a clothing store, an electronics shop, a pharmacy — Google reviews influence foot traffic directly. A shop with no reviews or poor reviews sees fewer new walk-ins than its competitors.
+
+## How topreviewz Helps
+
+topreviewz is a review management platform built for exactly this use case: local businesses in India that want to grow their Google review count without spamming customers or violating Google's terms.
+
+The platform handles the review gating logic, lets you send review requests via WhatsApp and SMS, gives you a dashboard to track your review performance over time, and makes sure every happy customer gets a frictionless path to leaving a review.
+
+If your business has fewer reviews than you think you deserve, it is almost certainly a process problem — not a quality problem.
+    `.trim()
+  },
+  {
+    slug: 'queue-management-system-clinics-hospitals-india',
+    title: 'Queue Management for Clinics and Hospitals in India: Why the Waiting Room is Broken',
+    metaTitle: 'Queue Management System for Clinics & Hospitals India | Tirthon Tech',
+    metaDescription: 'How digital queue management systems are fixing patient wait times in Indian clinics, hospitals, and diagnostic centres. What the system does, how it works, and what to look for.',
+    excerpt: "The average Indian OPD patient waits 45 minutes to see a doctor for a 7-minute consultation. Digital queue management fixes the waiting room without replacing the doctor.",
+    category: 'Software Development',
+    readTime: '6 min read',
+    date: 'May 12, 2026',
+    content: `
+## The State of Waiting Rooms in Indian Healthcare
+
+Walk into any busy OPD in India on a weekday morning and you will see the same scene: patients sitting in rows of plastic chairs, unsure when they will be called, periodically asking the receptionist "how many people are ahead of me?", unable to step out for water without risking their turn.
+
+The receptionist, meanwhile, is managing a paper register, trying to maintain order in a queue that has no formal structure, dealing with patients who push ahead, and answering the same question about wait times all morning.
+
+This is not a staffing problem. It is a systems problem. And it has a solution that has been available for years but has been slow to reach most Indian clinics and hospitals.
+
+## What a Digital Queue Management System Actually Does
+
+A queue management system replaces the informal queue with a structured, digital one. Here is how it typically works:
+
+**Patient check-in:** Patients check in when they arrive — either via a counter kiosk, an SMS link sent in advance, or a QR code at the entrance. They receive a token number and a real-time estimate of their wait.
+
+**Live queue display:** A screen in the waiting area shows which token number is currently being served and the estimated wait for each upcoming token. Patients know exactly where they stand without asking anyone.
+
+**Staff dashboard:** The doctor's assistant or receptionist sees the live queue, can mark a patient as "in consultation," add patients, or manage exceptions — all from a tablet or desktop.
+
+**Patient notifications:** When a patient's turn is approaching, they receive an SMS or app notification. They do not need to stay glued to the waiting room — they can step out, get a drink, make a call, and come back when their number is close.
+
+**Analytics:** At the end of the day, the system provides data on average wait times, peak hours, consultation durations, and patient flow — information that helps administrators plan staffing and manage capacity.
+
+## Why Indian Clinics Specifically Need This
+
+### Volume
+
+Indian OPDs see patient volumes that would stress any informal queue system. A busy GP practice in a tier-2 city might see 60 to 100 patients in a morning session. Without a structured system, the queue collapses within the first hour.
+
+### Walk-Ins
+
+Unlike appointment-only practices in Western countries, Indian clinics function primarily on walk-ins. The queue system needs to handle patients who arrive without any prior scheduling and still give them reasonable wait time estimates.
+
+### Multiple Departments
+
+A hospital or diagnostic centre has multiple queues — general OPD, specialist clinics, sample collection, radiology, pharmacy. Patients often need to visit multiple departments in sequence. A good queue system handles routing: once the doctor's consultation is done, the system automatically checks the patient into the next queue (pathology, for instance) so they do not restart a wait from zero.
+
+### Patient Communication
+
+Patients from smaller towns and older age groups may not be comfortable with apps. The system needs to work via SMS, basic QR codes, and counter check-in — not require a smartphone app or a signup process.
+
+## The Real Costs of an Unmanaged Queue
+
+**Patient dissatisfaction:** Wait time is one of the top drivers of negative patient experience and poor clinic ratings. Patients who wait 90 minutes without any information about their position are significantly more likely to leave a bad review than patients who waited the same amount of time but knew exactly where they stood.
+
+**Staff stress:** Receptionists managing an unstructured queue spend a significant portion of their day managing patient anxiety rather than doing productive work.
+
+**Revenue loss:** Patients who give up and leave mid-wait are lost revenue. In a high-volume practice, even a 5% abandonment rate represents a material number of consultations per month.
+
+**Bottlenecks:** Without data on where patients spend time in their visit, administrators cannot identify the actual bottlenecks in their workflow. Is the wait at check-in? At sample collection? In the waiting room before the consultation? The queue system answers these questions with data.
+
+## What to Look for in a Queue Management System for an Indian Clinic
+
+- **No app required for patients** — SMS and QR code check-in should be the primary flow
+- **Multi-department support** — especially important for hospitals and diagnostic centres
+- **Works offline** — power and connectivity interruptions happen; the system should handle graceful degradation
+- **Easy for non-technical staff** — the receptionist using this should require minimal training
+- **Reporting** — daily and weekly summaries of patient flow, wait times, and peak hours
+
+BariQ is a queue management platform built specifically for Indian clinics, hospitals, and diagnostic centres. It handles walk-in check-in, multi-department routing, patient notifications via SMS, and gives administrators a live dashboard and end-of-day analytics. If your OPD waiting room is still running on a paper register and patient anxiety, it is worth a look.
+    `.trim()
+  },
+  {
+    slug: 'multi-broker-multi-account-trading-terminal-india',
+    title: 'Multi-Broker Trading Terminal: Why Serious Indian Traders Need One',
+    metaTitle: 'Multi-Broker Multi-Account Trading Terminal India | Tirthon Tech',
+    metaDescription: 'Why traders, trading desks, and family offices in India switch to multi-broker multi-account trading terminals. What features matter and how AKNA Terminal solves the problem.',
+    excerpt: "Switching between Zerodha, Upstox, and Angel One tabs to manage multiple accounts is not a trading strategy — it is a liability. Here is what a proper multi-broker terminal does.",
+    category: 'Software Development',
+    readTime: '6 min read',
+    date: 'May 10, 2026',
+    content: `
+## The Multi-Account Trading Problem in India
+
+A significant number of serious traders in India trade across more than one account. This might be a personal account alongside an HUF account, accounts across different brokers to spread exposure, or a family office managing accounts for multiple family members.
+
+The brokerage industry has evolved to support this — Zerodha, Upstox, Angel One, Fyers, and IIFL all provide developer APIs. But the standard trading interface each broker offers is designed for a single account. If you have three accounts across two brokers, you are juggling three separate browser tabs, logging in and out, trying to track your aggregate position across all of them in your head.
+
+This is not just inconvenient. It introduces errors. You miss a position, you double-execute, you lose track of your total exposure. For active traders, this is a real financial risk.
+
+## What a Multi-Broker Terminal Actually Solves
+
+### Unified Position View
+
+Across every account and every broker, you should see your aggregate position in a single screen. If you are long Nifty futures across two accounts, you want one number — not two separate views you mentally add together.
+
+The terminal aggregates positions across all connected accounts in real time. One dashboard, everything visible.
+
+### Single-Click Multi-Account Execution
+
+If you want to place the same trade across three accounts simultaneously — buy 50 lots of Bank Nifty in account A, 30 lots in account B, and 20 in account C — that should be one order entry, not three. A multi-broker terminal handles this with order splitting: you define the allocation once, and the terminal routes the orders to each broker's API simultaneously.
+
+### Cross-Broker P&L
+
+At end of day, you need a consolidated P&L across everything. Computing this manually from three separate brokerage statements is time-consuming and error-prone. The terminal gives you this automatically, with breakdown by account, broker, and instrument.
+
+### Risk Controls at the Aggregate Level
+
+Stop-loss and risk limits need to apply to your total position, not just one account. If you have a combined position across three accounts that hits your daily loss limit, the terminal should alert you or halt trading — even if no individual account has crossed its own limit.
+
+## Who This Is For
+
+### Active Intraday Traders
+
+Traders running the same intraday strategy across multiple accounts — to manage regulatory limits or to diversify broker execution risk — need unified control. The alternative (managing each account separately) adds latency and error at exactly the moment when speed matters most.
+
+### Proprietary Trading Desks
+
+A prop desk running multiple traders across different accounts needs centralized oversight. The desk head wants to see total exposure across the entire operation, not individual account-level views that require manual aggregation.
+
+### Family Offices Managing Multiple Accounts
+
+A family office managing trading accounts for multiple family members — each with their own demat account and broker relationship — needs consolidated visibility and control. Managing 8 separate accounts from 8 separate logins is operationally unsustainable at any meaningful trading volume.
+
+## What to Look for in a Multi-Broker Terminal
+
+- **Support for all major Indian brokers** — at minimum Zerodha, Upstox, Angel One, and Fyers. IIFL and Dhan are a bonus.
+- **Multi-exchange support** — NSE, BSE, MCX, and currency derivatives all under one roof
+- **Order basket and strategy deployment** — place multiple related orders as a group to avoid partial fills changing your payoff structure
+- **Windows-native** — for trading applications, a native Windows desktop app outperforms a browser tab in speed, reliability, and offline resilience
+- **Real-time data without throttling** — the terminal should handle high-frequency real-time updates without performance degradation
+
+AKNA Terminal is our multi-broker, multi-account Windows trading terminal built for exactly this use case. It supports all major Indian brokers and exchanges, gives you a unified view across all accounts, and handles order routing, basket orders, and consolidated P&L without switching between tabs or manually aggregating spreadsheets.
+
+If you are managing more than one trading account today and doing it from separate logins, the switch to a unified terminal is one of the higher-leverage changes you can make to your trading operations.
+    `.trim()
+  },
+  {
     slug: 'how-to-build-a-marketplace-app',
     title: 'How to Build a Marketplace App: Architecture, Features, and Costs (2026)',
     metaTitle: 'How to Build a Marketplace App: Architecture & Costs 2026 | Tirthon Tech',
