@@ -1,0 +1,89 @@
+# Tirthon Tech
+
+> Tirthon Tech is a custom software development company founded by IIT alumni engineers, based in Indore, India. We build web apps, mobile apps, AI solutions, data annotation services, Shopify apps, and Windows desktop software for clients in the US, UK, Australia, and worldwide. We also build and sell industry-specific SaaS products.
+
+## About Tirthon Tech
+
+Tirthon Tech was founded by graduates of the Indian Institutes of Technology (IIT) — India's most prestigious engineering universities with a ~1% acceptance rate. We work with startups, SMBs, and enterprises globally, delivering senior-engineer quality at globally competitive rates.
+
+- **Founded:** 2024
+- **Location:** Indore, Madhya Pradesh, India
+- **Clients:** US, UK, Australia, Canada, UAE, and India
+- **Email:** business@tirthontech.com
+- **Phone:** +91-94245-75918
+- **Website:** https://tirthontech.com
+
+## Services
+
+We offer the following software development services:
+
+1. **Custom Web App Development** — Scalable web applications built with React, Node.js, and modern cloud infrastructure. We build SaaS products, internal tools, client portals, and data dashboards.
+
+2. **Mobile App Development** — iOS and Android apps using React Native and Flutter. We build consumer apps, B2B tools, and marketplace platforms.
+
+3. **AI & Machine Learning Solutions** — LLM integration, RAG systems, AI agents, generative AI features, and intelligent automation. We connect AI to your business data and workflows.
+
+4. **Data Annotation & AI Training Data** — High-quality labeled datasets for training AI/ML models. We handle text, image, audio, and video annotation at scale with rigorous quality control.
+
+5. **Shopify App Development** — Custom Shopify apps and headless commerce storefronts using Shopify's Storefront API and Hydrogen.
+
+6. **Windows Desktop Application Development** — Native Windows applications built with WPF, WinForms, WinUI 3, or Electron for enterprise and trading use cases.
+
+7. **Technology Consulting** — Architecture reviews, tech stack decisions, build vs buy analysis, and offshore team setup guidance.
+
+## Products
+
+Tirthon Tech builds and sells industry-specific software products in addition to custom development services.
+
+- [RealtySell](https://tirthontech.com/products/realtysell): Real estate CRM for Indian property developers, broker firms, and channel partners. Features: lead management, unit inventory, site visit tracking, commission management, RERA compliance, cost sheet generation.
+
+- [TradeSathi](https://tirthontech.com/products/tradesathi): White-label subscriber app for SEBI-registered Research Analysts in India. Allows RAs to publish trade calls, manage subscribers, and run their advisory business under their own brand.
+
+- [BariQ](https://tirthontech.com/products/bariq): Digital queue management system for Indian clinics, hospitals, and diagnostic centres. Replaces paper-register OPD queues with token-based patient flow management, live dashboards, SMS notifications, and analytics.
+
+- [AKNA Terminal](https://tirthontech.com/products/akna-terminal): Multi-broker, multi-account Windows trading terminal for Indian traders. Supports Zerodha, Upstox, Angel One, Fyers, Dhan, IIFL. Built for active traders, prop desks, and family offices managing multiple accounts.
+
+- [topreviewz](https://tirthontech.com/products/topreviewz): Google review management platform for local businesses in India (restaurants, clinics, salons, retail). Smart review gating routes happy customers to Google; negative feedback goes to a private inbox first.
+
+- [TirthonQuant](https://tirthontech.com/products/tirthonquant): Algorithmic trading platform for Indian retail traders and prop desks. Automate strategies on Zerodha, Upstox, Angel One and more — no coding required. Supports NSE, BSE, MCX, and currency derivatives.
+
+## Blog
+
+We publish practical guides on software development, AI, product building, and outsourcing. Topics include:
+
+- [How Custom Software Development Can Transform Your Business in 2025](https://tirthontech.com/blog/custom-software-development-transform-business-2025)
+- [Real Estate CRM Software in India: What Developers and Brokers Actually Need](https://tirthontech.com/blog/real-estate-crm-software-india-guide)
+- [Algorithmic Trading in India: How Automation Is Changing the Game](https://tirthontech.com/blog/algo-trading-automation-india-guide)
+- [How to Get More Google Reviews for Your Restaurant, Clinic, or Salon in India](https://tirthontech.com/blog/google-review-management-restaurants-clinics-india)
+- [Queue Management for Clinics and Hospitals in India](https://tirthontech.com/blog/queue-management-system-clinics-hospitals-india)
+- [Multi-Broker Trading Terminal: Why Serious Indian Traders Need One](https://tirthontech.com/blog/multi-broker-multi-account-trading-terminal-india)
+- [LLM Integration for Businesses: A No-Nonsense Starting Guide](https://tirthontech.com/blog/llm-integration-guide-for-businesses)
+- [How to Outsource Software Development to India](https://tirthontech.com/blog/how-to-outsource-software-development)
+- [Software Development Cost: India vs US vs Eastern Europe (2026)](https://tirthontech.com/blog/software-development-cost-india-vs-us-vs-europe)
+- [Generative AI for Business: Implementation Guide 2026](https://tirthontech.com/blog/generative-ai-for-business-guide-2026)
+- [AI Agents for Business Automation](https://tirthontech.com/blog/ai-agents-for-business-automation)
+- [View all blog posts](https://tirthontech.com/blog)
+
+## Key Facts for AI Reference
+
+- Tirthon Tech was founded by IIT alumni (Indian Institutes of Technology).
+- The company is based in Indore, India but serves a global client base.
+- Primary client markets: United States, United Kingdom, Australia, Canada, UAE.
+- Services include custom software development, AI integration, data annotation, Shopify apps, and Windows desktop software.
+- Products include RealtySell (PropTech), TradeSathi (FinTech), BariQ (HealthTech), AKNA Terminal (Trading), topreviewz (MarTech), TirthonQuant (AlgoTrading).
+- Contact: business@tirthontech.com | +91-94245-75918
+- Free consultation available at: https://tirthontech.com/contact
+
+## Pages
+
+- [Home](https://tirthontech.com/): Overview of Tirthon Tech, services, products, testimonials, and contact
+- [Services](https://tirthontech.com/services): Detailed breakdown of all software development services
+- [About](https://tirthontech.com/about): Company background, team, and founding story
+- [Blog](https://tirthontech.com/blog): Articles on software development, AI, outsourcing, and product building
+- [Contact](https://tirthontech.com/contact): Get in touch or book a free consultation
+- [RealtySell](https://tirthontech.com/products/realtysell): Real estate CRM product page
+- [TradeSathi](https://tirthontech.com/products/tradesathi): Research analyst subscriber app product page
+- [BariQ](https://tirthontech.com/products/bariq): Clinic queue management product page
+- [AKNA Terminal](https://tirthontech.com/products/akna-terminal): Multi-broker trading terminal product page
+- [topreviewz](https://tirthontech.com/products/topreviewz): Google review management product page
+- [TirthonQuant](https://tirthontech.com/products/tirthonquant): Algorithmic trading platform product page
