@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, ChevronDown, TrendingUp, Monitor, Zap, Building2, Star, ArrowRight, Bot } from "lucide-react";
+import { Menu, X, ChevronDown, TrendingUp, Monitor, Zap, Building2, Star, ArrowRight, Bot, Gem } from "lucide-react";
 import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 const logoUrl = "/logo-footer.png";
@@ -47,6 +47,13 @@ const products = [
     icon: Bot,
     description: "Algorithmic trading platform to automate strategies across Zerodha, Upstox and more",
     tag: "AlgoTrading",
+  },
+  {
+    name: "SwarnDesk",
+    href: "/products/swarndesk",
+    icon: Gem,
+    description: "Billing, accounting & gold loan (Girvi) software for Indian jewellery shops",
+    tag: "JewelryTech",
   },
 ];
 
@@ -155,7 +162,7 @@ export function Navbar() {
                       <p className="text-[11px] text-muted-foreground/50 mt-0.5">Custom-built software for specific industries</p>
                     </div>
                     <span className="text-xs font-semibold text-primary bg-primary/10 border border-primary/20 px-2.5 py-1 rounded-full">
-                      6 Products
+                      7 Products
                     </span>
                   </div>
 

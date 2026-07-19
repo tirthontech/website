@@ -25,6 +25,7 @@ export function Footer() {
                 { label: "RealtySell", href: "/products/realtysell" },
                 { label: "topreviewz", href: "/products/topreviewz" },
                 { label: "TirthonQuant", href: "/products/tirthonquant" },
+                { label: "SwarnDesk", href: "/products/swarndesk" },
                 { label: "Blog", href: "/blog" },
                 { label: "Contact Us", href: "/contact" },
               ].map((item) => (

@@ -19,6 +19,7 @@ const AKNATerminal = lazy(() => import("@/pages/AKNATerminal"));
 const RealtySell = lazy(() => import("@/pages/RealtySell"));
 const TopReviewz = lazy(() => import("@/pages/TopReviewz"));
 const TirthonQuant = lazy(() => import("@/pages/TirthonQuant"));
+const SwarnDesk = lazy(() => import("@/pages/SwarnDesk"));
 const NotFound = lazy(() => import("@/pages/not-found"));
 
 const queryClient = new QueryClient({
@@ -48,6 +49,7 @@ function Router() {
         <Route path="/products/realtysell" component={RealtySell} />
         <Route path="/products/topreviewz" component={TopReviewz} />
         <Route path="/products/tirthonquant" component={TirthonQuant} />
+        <Route path="/products/swarndesk" component={SwarnDesk} />
         <Route component={NotFound} />
       </Switch>
     </Suspense>

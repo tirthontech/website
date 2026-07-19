@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Building2, TrendingUp, Monitor, Zap, Star, Bot, ArrowRight } from "lucide-react";
+import { Building2, TrendingUp, Monitor, Zap, Star, Bot, Gem, ArrowRight } from "lucide-react";
 import { Link } from "wouter";
 
 const fadeUp = {
@@ -68,6 +68,16 @@ const products = [
       "Automate your trading strategies on Zerodha, Upstox, Angel One and more — no Python required. Backtest, deploy, and monitor strategies across NSE, BSE, and MCX from one platform.",
     keywords: ["algorithmic trading India", "algo trading platform", "automated trading software India"],
   },
+  {
+    name: "SwarnDesk",
+    href: "/products/swarndesk",
+    icon: Gem,
+    tag: "JewelryTech",
+    tagline: "Billing, Accounting & Gold Loan Software for Jewellers",
+    description:
+      "Replace billing software, Tally, a karigar notebook, and a gold loan register with one system. Every sale, purchase, loan, and karigar transaction posts to real, GST-ready books automatically.",
+    keywords: ["jewellery billing software", "gold shop accounting software", "karigar metal tracking", "Girvi gold loan software"],
+  },
 ];
 
 export function Products() {
@@ -81,7 +91,7 @@ export function Products() {
       <meta itemProp="name" content="Tirthon Tech Software Products" />
       <meta
         itemProp="description"
-        content="Industry-specific software products by Tirthon Tech: RealtySell (Real Estate CRM), TradeSathi (RA subscriber app), BariQ (clinic queue management), AKNA Terminal (multi-broker trading), topreviewz (Google review management), TirthonQuant (algo trading platform)."
+        content="Industry-specific software products by Tirthon Tech: RealtySell (Real Estate CRM), TradeSathi (RA subscriber app), BariQ (clinic queue management), AKNA Terminal (multi-broker trading), topreviewz (Google review management), TirthonQuant (algo trading platform), SwarnDesk (jewellery billing, accounting & gold loan software)."
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

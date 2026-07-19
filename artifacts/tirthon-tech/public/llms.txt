@@ -47,6 +47,8 @@ Tirthon Tech builds and sells industry-specific software products in addition to
 
 - [TirthonQuant](https://tirthontech.com/products/tirthonquant): Algorithmic trading platform for Indian retail traders and prop desks. Automate strategies on Zerodha, Upstox, Angel One and more — no coding required. Supports NSE, BSE, MCX, and currency derivatives.
 
+- [SwarnDesk](https://tirthontech.com/products/swarndesk): Billing, inventory, accounting, and gold loan (Girvi) software for Indian jewellery shops and chains. Replaces separate billing software, Tally, a karigar notebook, and a gold loan register with one system. Features: instant billing & POS, old gold exchange, karigar metal tracking, full double-entry accounting, GSTR-1/GSTR-3B generation, and a standalone Girvi pawn-broking module.
+
 ## Blog
 
 We publish practical guides on software development, AI, product building, and outsourcing. Topics include:
@@ -70,7 +72,7 @@ We publish practical guides on software development, AI, product building, and o
 - The company is based in Indore, India but serves a global client base.
 - Primary client markets: United States, United Kingdom, Australia, Canada, UAE.
 - Services include custom software development, AI integration, data annotation, Shopify apps, and Windows desktop software.
-- Products include RealtySell (PropTech), TradeSathi (FinTech), BariQ (HealthTech), AKNA Terminal (Trading), topreviewz (MarTech), TirthonQuant (AlgoTrading).
+- Products include RealtySell (PropTech), TradeSathi (FinTech), BariQ (HealthTech), AKNA Terminal (Trading), topreviewz (MarTech), TirthonQuant (AlgoTrading), SwarnDesk (JewelryTech).
 - Contact: business@tirthontech.com | +91-94245-75918
 - Free consultation available at: https://tirthontech.com/contact
 
@@ -87,3 +89,4 @@ We publish practical guides on software development, AI, product building, and o
 - [AKNA Terminal](https://tirthontech.com/products/akna-terminal): Multi-broker trading terminal product page
 - [topreviewz](https://tirthontech.com/products/topreviewz): Google review management product page
 - [TirthonQuant](https://tirthontech.com/products/tirthonquant): Algorithmic trading platform product page
+- [SwarnDesk](https://tirthontech.com/products/swarndesk): Jewellery billing, accounting & gold loan software product page
