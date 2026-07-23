@@ -6,7 +6,7 @@ import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
-  Target, Megaphone, Cpu, Handshake, Workflow, Compass, ArrowRight
+  Target, Megaphone, Cpu, Workflow, Compass, ArrowRight
 } from "lucide-react";
 
 const services = [
@@ -16,8 +16,7 @@ const services = [
     deliverables: [
       "Competitive clarity",
       "Growth diagnostics",
-      "Distinctive positioning",
-      "Scaling and franchise strategy"
+      "Distinctive positioning"
     ],
     icon: Target
   },
@@ -26,8 +25,9 @@ const services = [
     description: "Build visibility, create demand, and drive growth across the channels that actually matter for your business.",
     deliverables: [
       "SEO",
-      "Digital content: blogs, newsletters, reels, social media",
-      "Paid advertising: Meta Ads, Google Ads, influencer marketing",
+      { text: "Digital marketing: content, social, email", href: "/services/digital-marketing" },
+      { text: "Performance marketing: Meta Ads, Google Ads", href: "/services/performance-marketing" },
+      { text: "Influencer marketing", href: "/services/influencer-marketing" },
       "Founder personal branding"
     ],
     icon: Megaphone
@@ -36,44 +36,37 @@ const services = [
     title: "Technology",
     description: "The part of the business that runs everything else. We build software that fits how your business actually operates, not the other way around.",
     deliverables: [
-      "Custom software",
-      "Business dashboards",
-      "Mobile apps (Android and iOS)",
-      "AI automation",
-      "Web applications"
+      { text: "Custom software, ERP & CRM development", href: "/services/software-erp-crm-development" },
+      { text: "Website and app development", href: "/services/website-app-development" },
+      { text: "AI automation", href: "/services/ai-automation" },
+      "Business dashboards"
     ],
     icon: Cpu
-  },
-  {
-    title: "Client Partnership",
-    description: "One point of contact. No vendor hand offs, and no re explaining your business to a new account manager every quarter.",
-    deliverables: [
-      "Dedicated point of contact",
-      "Regular strategy check ins",
-      "Ongoing partnership, not one off projects"
-    ],
-    icon: Handshake
   },
   {
     title: "Business Operations & Automation",
     description: "Less manual work, more time on what matters. We connect and automate the systems your business already runs on.",
     deliverables: [
+      "CRM setup and management",
       "Workflow automation",
-      "Operations software",
-      "Process digitization",
+      "Internal dashboards",
       "Systems integration"
     ],
-    icon: Workflow
+    icon: Workflow,
+    href: "/services/business-operations-automation"
   },
   {
-    title: "Consulting for Specific Moments",
+    title: "Consulting",
     description: "For when you know something needs to change, but not what. We look at your business and tell you honestly what to focus on, and in what order.",
     deliverables: [
-      "Direction setting",
-      "Priority mapping",
-      "Moment specific guidance"
+      "New business launch strategy",
+      "Fundraising support",
+      "Franchise and multi location setup",
+      "Partner and channel network design",
+      "SOP creation"
     ],
-    icon: Compass
+    icon: Compass,
+    href: "/services/consulting"
   }
 ];
 
@@ -83,9 +76,9 @@ const servicesSchema = {
   "@type": "ItemList",
   "name": "Tirthon Tech Services",
   "description":
-    "Business growth services offered by Tirthon Tech across brand and growth strategy, marketing execution, technology, client partnership, business operations automation, and consulting for specific moments.",
+    "Business growth services offered by Tirthon Tech across brand and growth strategy, marketing execution, technology, business operations automation, and consulting.",
   "url": "https://tirthontech.com/services",
-  "numberOfItems": 6,
+  "numberOfItems": 5,
   "itemListElement": [
     {
       "@type": "ListItem",
@@ -94,7 +87,7 @@ const servicesSchema = {
         "@type": "Service",
         "name": "Brand & Growth Strategy",
         "description":
-          "Competitive clarity, growth diagnostics, distinctive positioning, and scaling or franchise strategy for businesses that want direction before they spend on growth.",
+          "Competitive clarity, growth diagnostics, and distinctive positioning for businesses that want direction before they spend on growth.",
         "provider": { "@type": "Organization", "name": "Tirthon Tech", "url": "https://tirthontech.com/" },
         "areaServed": "Worldwide",
         "serviceType": "Brand and Growth Strategy",
@@ -134,20 +127,6 @@ const servicesSchema = {
       "position": 4,
       "item": {
         "@type": "Service",
-        "name": "Client Partnership",
-        "description":
-          "A dedicated point of contact, regular strategy check ins, and an ongoing partnership rather than a one off project relationship.",
-        "provider": { "@type": "Organization", "name": "Tirthon Tech", "url": "https://tirthontech.com/" },
-        "areaServed": "Worldwide",
-        "serviceType": "Client Partnership",
-        "url": "https://tirthontech.com/services",
-      },
-    },
-    {
-      "@type": "ListItem",
-      "position": 5,
-      "item": {
-        "@type": "Service",
         "name": "Business Operations & Automation",
         "description":
           "Workflow automation, operations software, process digitization, and systems integration to cut manual work across the business.",
@@ -159,12 +138,12 @@ const servicesSchema = {
     },
     {
       "@type": "ListItem",
-      "position": 6,
+      "position": 5,
       "item": {
         "@type": "Service",
-        "name": "Consulting for Specific Moments",
+        "name": "Consulting",
         "description":
-          "Direction setting, priority mapping, and moment specific guidance for launches, new markets, or growth plateaus.",
+          "New business launch strategy, fundraising support, franchise and multi location setup, partner and channel network design, and SOP creation.",
         "provider": { "@type": "Organization", "name": "Tirthon Tech", "url": "https://tirthontech.com/" },
         "areaServed": "Worldwide",
         "serviceType": "Business Consulting",
@@ -203,7 +182,7 @@ export default function ServicesPage() {
         title="Strategy, Marketing, Content & Technology Services | Tirthon Tech"
         description="Brand and growth strategy, marketing execution, technology, client partnership, business operations automation, and consulting for specific moments, built around what your business actually needs. Serving clients in the US, UK, Australia, and worldwide."
         path="/services"
-        keywords="business growth strategy, brand strategy consulting, growth diagnostics, marketing execution agency, SEO services, digital content marketing, paid advertising Meta Google Ads, founder personal branding, business operations automation, custom software development, mobile app development India, AI automation services, business consulting India"
+        keywords="business growth strategy, brand strategy consulting, growth diagnostics, marketing execution agency, SEO services, digital content marketing, paid advertising Meta Google Ads, founder personal branding, business operations automation, custom software development, mobile app development India, AI automation services, business consulting India, franchise setup consulting, SOP creation for business, partner network design"
         jsonLd={servicesPageSchemas}
       />
       <Navbar />
@@ -261,13 +240,31 @@ export default function ServicesPage() {
                       </CardHeader>
                       <CardContent className="pt-4 pl-4 md:pl-20">
                         <ul className="space-y-2">
-                          {service.deliverables.map((item, i) => (
-                            <li key={i} className="flex items-center text-sm font-medium text-foreground/80">
-                              <div className="w-1.5 h-1.5 rounded-full bg-primary mr-3 shrink-0" />
-                              {item}
-                            </li>
-                          ))}
+                          {service.deliverables.map((item, i) => {
+                            const isLinked = typeof item === "object";
+                            const label = isLinked ? item.text : item;
+                            return (
+                              <li key={i} className="flex items-center text-sm font-medium text-foreground/80">
+                                <div className="w-1.5 h-1.5 rounded-full bg-primary mr-3 shrink-0" />
+                                {isLinked ? (
+                                  <Link href={item.href} className="hover:text-primary hover:underline">
+                                    {label}
+                                  </Link>
+                                ) : (
+                                  label
+                                )}
+                              </li>
+                            );
+                          })}
                         </ul>
+                        {"href" in service && service.href && (
+                          <Link
+                            href={service.href}
+                            className="inline-flex items-center gap-1 mt-4 text-sm font-semibold text-primary hover:underline no-underline"
+                          >
+                            Learn more <ArrowRight className="w-3.5 h-3.5" />
+                          </Link>
+                        )}
                       </CardContent>
                     </Card>
                   </motion.div>

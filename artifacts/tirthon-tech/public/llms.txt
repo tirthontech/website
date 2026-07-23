@@ -15,19 +15,17 @@ Tirthon Tech was founded by graduates of the Indian Institutes of Technology (II
 
 ## Services
 
-We work across six categories, rolling up into four pillars: strategy, marketing, content, and technology.
+We work across five categories: strategy, marketing, technology, operations, and consulting.
 
-1. **Brand & Growth Strategy**: Competitive clarity, growth diagnostics, distinctive positioning, and scaling or franchise strategy for businesses that want direction before they spend on growth.
+1. **Brand & Growth Strategy**: Competitive clarity, growth diagnostics, and distinctive positioning for businesses that want direction before they spend on growth.
 
 2. **Marketing Execution**: SEO, digital content (blogs, newsletters, reels, social media), paid advertising on Meta Ads and Google Ads, influencer marketing, and founder personal branding.
 
 3. **Technology**: Custom software, business dashboards, mobile apps (Android and iOS), AI automation, and web applications built with React, Node.js, React Native, Flutter, and modern cloud infrastructure.
 
-4. **Client Partnership**: A dedicated point of contact, regular strategy check ins, and an ongoing partnership rather than a one off project relationship.
+4. **Business Operations & Automation**: Workflow automation, operations software, process digitization, and systems integration to cut manual work across the business.
 
-5. **Business Operations & Automation**: Workflow automation, operations software, process digitization, and systems integration to cut manual work across the business.
-
-6. **Consulting for Specific Moments**: Direction setting, priority mapping, and moment specific guidance for launches, new markets, or growth plateaus.
+5. **Consulting**: New business launch strategy, fundraising support, franchise and multi location setup, partner and channel network design, and SOP creation.
 
 ## Products
 
@@ -69,7 +67,7 @@ We publish practical guides on software development, AI, product building, and o
 - Tirthon Tech was founded by IIT alumni (Indian Institutes of Technology).
 - The company is based in Indore, India but serves a global client base.
 - Primary client markets: United States, United Kingdom, Australia, Canada, UAE.
-- Tirthon Tech is a growth partner, not just a software development company. Services span brand and growth strategy, marketing execution, technology, client partnership, business operations automation, and consulting for specific business moments.
+- Tirthon Tech is a growth partner, not just a software development company. Services span brand and growth strategy, marketing execution, technology, business operations automation, and consulting.
 - Technology (custom software, mobile apps, dashboards, AI automation, web applications) is one of four pillars, alongside strategy, marketing, and business operations automation.
 - Products include RealtySell (PropTech), TradeSathi (FinTech), BariQ (HealthTech), AKNA Terminal (Trading), topreviewz (MarTech), TirthonQuant (AlgoTrading), SwarnDesk (JewelryTech).
 - Contact: business@tirthontech.com | +91 94245 75918
@@ -78,7 +76,7 @@ We publish practical guides on software development, AI, product building, and o
 ## Pages
 
 - [Home](https://tirthontech.com/): Overview of Tirthon Tech, services, products, testimonials, and contact
-- [Services](https://tirthontech.com/services): Detailed breakdown of brand and growth strategy, marketing execution, technology, client partnership, business operations automation, and consulting for specific moments
+- [Services](https://tirthontech.com/services): Detailed breakdown of brand and growth strategy, marketing execution, technology, business operations automation, and consulting
 - [About](https://tirthontech.com/about): Company background, team, and founding story
 - [Blog](https://tirthontech.com/blog): Articles on software development, AI, outsourcing, and product building
 - [Contact](https://tirthontech.com/contact): Get in touch or book a free strategy session

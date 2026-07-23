@@ -46,9 +46,8 @@ export function Footer() {
                 "Brand & Growth Strategy",
                 "Marketing Execution",
                 "Technology",
-                "Client Partnership",
                 "Business Operations & Automation",
-                "Consulting for Specific Moments",
+                "Consulting",
               ].map((s) => (
                 <li key={s}>
                   <Link href="/services" className="text-background/70 hover:text-primary transition-colors text-sm">

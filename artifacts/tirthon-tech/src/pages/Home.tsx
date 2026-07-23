@@ -7,7 +7,6 @@ import { Contact } from "@/components/sections/Contact";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { Marquee } from "@/components/sections/Marquee";
 import { FAQ, faqs } from "@/components/sections/FAQ";
-import { ClientsFrom } from "@/components/sections/ClientsFrom";
 import { HowWeWork } from "@/components/sections/HowWeWork";
 import { CostAdvantage } from "@/components/sections/CostAdvantage";
 import { Products } from "@/components/sections/Products";
@@ -99,7 +98,7 @@ const professionalServiceSchema = {
   "name": "Tirthon Tech",
   "url": "https://tirthontech.com/",
   "description":
-    "Tirthon Tech helps businesses grow through brand and growth strategy, marketing execution, client partnership, technology, business operations automation, and consulting for specific business moments.",
+    "Tirthon Tech helps businesses grow through brand and growth strategy, marketing execution, technology, business operations automation, and consulting.",
   "image": "https://tirthontech.com/logo.png",
   "email": "business@tirthontech.com",
   "telephone": "+91-94245-75918",
@@ -120,9 +119,8 @@ const professionalServiceSchema = {
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Brand & Growth Strategy" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Marketing Execution" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Technology" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Client Partnership" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Business Operations & Automation" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Consulting for Specific Moments" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Consulting" } },
     ],
   },
 };
@@ -245,7 +243,7 @@ const entityFactsSchema = {
       "name": "Services offered",
       "item": {
         "@type": "Claim",
-        "description": "Tirthon Tech offers brand and growth strategy, marketing execution (SEO, digital content, paid advertising, founder personal branding), technology (custom software, mobile apps, business dashboards, AI automation, web applications), client partnership, business operations automation, and consulting for specific business moments.",
+        "description": "Tirthon Tech offers brand and growth strategy, marketing execution (SEO, digital content, paid advertising, founder personal branding), technology (custom software, mobile apps, business dashboards, AI automation, web applications), business operations automation, and consulting (new business launches, fundraising support, franchise and multi location setup, partner network design, SOP creation).",
       },
     },
     {
@@ -284,7 +282,6 @@ export default function Home() {
       <main className="flex-grow">
         <Hero />
         <Marquee />
-        <ClientsFrom />
         <Services />
         <Products />
         <HowWeWork />

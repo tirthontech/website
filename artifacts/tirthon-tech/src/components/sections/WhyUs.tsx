@@ -19,7 +19,7 @@ const points = [
   },
   {
     title: "Clients from all over the world",
-    description: "US, UK, Australia, Canada, UAE. Different industries, different time zones, same approach: a plan built around your business, not a template.",
+    description: "Different industries, different time zones, same approach: a plan built around your business, not a template.",
     icon: MapPin
   }
 ];

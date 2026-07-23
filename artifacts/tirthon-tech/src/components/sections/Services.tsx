@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Target, Megaphone, Cpu, Handshake, Workflow, Compass } from "lucide-react";
+import { Target, Megaphone, Cpu, Workflow, Compass } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 const serviceCategories = [
@@ -19,10 +19,6 @@ const serviceCategories = [
       {
         title: "Distinctive positioning",
         description: "Build a clear market position that is difficult to copy and easy to remember.",
-      },
-      {
-        title: "Scaling and franchise strategy",
-        description: "Build the systems, processes, and strategy needed to grow across multiple locations.",
       },
     ],
   },
@@ -77,25 +73,6 @@ const serviceCategories = [
     ],
   },
   {
-    category: "Client Partnership",
-    tagline: "One point of contact. No vendor hand offs.",
-    icon: Handshake,
-    items: [
-      {
-        title: "Dedicated point of contact",
-        description: "One person who actually knows your business, not a rotating support queue.",
-      },
-      {
-        title: "Regular strategy check ins",
-        description: "Scheduled reviews to track progress and adjust direction as your business changes.",
-      },
-      {
-        title: "Ongoing partnership, not one off projects",
-        description: "We stay involved after launch, not just until the invoice is paid.",
-      },
-    ],
-  },
-  {
     category: "Business Operations & Automation",
     tagline: "Less manual work. More time on what matters.",
     icon: Workflow,
@@ -119,7 +96,7 @@ const serviceCategories = [
     ],
   },
   {
-    category: "Consulting for Specific Moments",
+    category: "Consulting",
     tagline: "For when you know something needs to change, but not what.",
     icon: Compass,
     items: [
@@ -128,12 +105,20 @@ const serviceCategories = [
         description: "When you are unsure where to focus next, we look at your business and tell you honestly what matters most right now.",
       },
       {
-        title: "Priority mapping",
-        description: "Not everything can be first. We help you sequence what to fix, build, or launch, and in what order.",
+        title: "New business launch strategy",
+        description: "Positioning and go to market planning for businesses just starting out.",
       },
       {
-        title: "Moment specific guidance",
-        description: "Launching a product, entering a new market, hitting a plateau. We advise on the specific moment you are in, not a generic playbook.",
+        title: "Fundraising support",
+        description: "Pitch decks and narrative building for businesses raising capital.",
+      },
+      {
+        title: "Franchise and partner network setup",
+        description: "The systems, agreements, and partner networks needed to grow across new locations.",
+      },
+      {
+        title: "SOP creation",
+        description: "Documenting exactly how the business runs, so it does not depend on one person's memory.",
       },
     ],
   },
@@ -167,7 +152,7 @@ export function Services() {
             What We <span className="text-primary">Do</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            Everything below rolls up into four pillars: strategy, marketing, content, and technology.
+            Strategy, marketing, technology, business operations, and hands on consulting.
             Pick what your business needs. Skip what it does not.
           </p>
         </motion.div>

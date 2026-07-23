@@ -15,6 +15,7 @@ const categoryColors: Record<string, string> = {
   "Cloud & Infrastructure": "bg-sky-50 text-sky-700",
   "Product Development": "bg-amber-50 text-amber-700",
   "Consulting": "bg-rose-50 text-rose-700",
+  "Marketing & Growth": "bg-pink-50 text-pink-700",
 };
 
 const blogSchemas = [

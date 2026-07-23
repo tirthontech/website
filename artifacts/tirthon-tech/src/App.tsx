@@ -20,6 +20,14 @@ const RealtySell = lazy(() => import("@/pages/RealtySell"));
 const TopReviewz = lazy(() => import("@/pages/TopReviewz"));
 const TirthonQuant = lazy(() => import("@/pages/TirthonQuant"));
 const SwarnDesk = lazy(() => import("@/pages/SwarnDesk"));
+const PerformanceMarketing = lazy(() => import("@/pages/services/PerformanceMarketing"));
+const BusinessOperationsAutomation = lazy(() => import("@/pages/services/BusinessOperationsAutomation"));
+const Consulting = lazy(() => import("@/pages/services/Consulting"));
+const InfluencerMarketing = lazy(() => import("@/pages/services/InfluencerMarketing"));
+const DigitalMarketing = lazy(() => import("@/pages/services/DigitalMarketing"));
+const WebsiteAppDevelopment = lazy(() => import("@/pages/services/WebsiteAppDevelopment"));
+const SoftwareErpCrmDevelopment = lazy(() => import("@/pages/services/SoftwareErpCrmDevelopment"));
+const AIAutomation = lazy(() => import("@/pages/services/AIAutomation"));
 const NotFound = lazy(() => import("@/pages/not-found"));
 
 const queryClient = new QueryClient({
@@ -37,6 +45,14 @@ function Router() {
       <Switch>
         <Route path="/" component={Home} />
         <Route path="/services" component={ServicesPage} />
+        <Route path="/services/performance-marketing" component={PerformanceMarketing} />
+        <Route path="/services/business-operations-automation" component={BusinessOperationsAutomation} />
+        <Route path="/services/consulting" component={Consulting} />
+        <Route path="/services/influencer-marketing" component={InfluencerMarketing} />
+        <Route path="/services/digital-marketing" component={DigitalMarketing} />
+        <Route path="/services/website-app-development" component={WebsiteAppDevelopment} />
+        <Route path="/services/software-erp-crm-development" component={SoftwareErpCrmDevelopment} />
+        <Route path="/services/ai-automation" component={AIAutomation} />
         <Route path="/about" component={AboutPage} />
         <Route path="/contact" component={ContactPage} />
         <Route path="/blog" component={BlogPage} />

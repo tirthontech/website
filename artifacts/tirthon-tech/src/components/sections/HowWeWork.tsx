@@ -7,40 +7,35 @@ const steps = [
     icon: PhoneCall,
     step: "01",
     title: "Free Strategy Session",
-    description:
-      "20 minutes. Tell us what you're working on. We ask the right questions, give you an honest read, and tell you upfront whether we're the right fit.",
+    description: "20 minutes, honest read, no pressure",
     tag: "No commitment",
   },
   {
     icon: FileText,
     step: "02",
     title: "Proposal in 24 Hours",
-    description:
-      "You get a detailed written proposal: scope, timeline, and price broken into milestones. No vague estimates, no hidden costs.",
+    description: "Scope, timeline, and price",
     tag: "Clear pricing",
   },
   {
     icon: Hammer,
     step: "03",
     title: "Focused Execution",
-    description:
-      "Whether it's a growth strategy, a marketing campaign, content, or software, our team gets to work with milestones and check ins along the way: real progress you can see, not a black box.",
+    description: "Strategy, marketing, content, or software",
     tag: "Built around you",
   },
   {
     icon: Rocket,
     step: "04",
     title: "Launch & Handoff",
-    description:
-      "We handle rollout, testing where it applies, and make sure your team can confidently take it from there. Documentation included.",
+    description: "Rollout, testing, documentation",
     tag: "Full handoff",
   },
   {
     icon: HeartHandshake,
     step: "05",
     title: "Ongoing Support",
-    description:
-      "We don't disappear after launch. Strategy check ins, campaign optimization, feature additions, and retainer arrangements are available for clients who want to keep growing.",
+    description: "Retainer support, ongoing growth",
     tag: "Long term partner",
   },
 ];
