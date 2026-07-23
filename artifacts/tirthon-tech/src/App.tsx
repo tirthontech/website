@@ -28,6 +28,10 @@ const DigitalMarketing = lazy(() => import("@/pages/services/DigitalMarketing"))
 const WebsiteAppDevelopment = lazy(() => import("@/pages/services/WebsiteAppDevelopment"));
 const SoftwareErpCrmDevelopment = lazy(() => import("@/pages/services/SoftwareErpCrmDevelopment"));
 const AIAutomation = lazy(() => import("@/pages/services/AIAutomation"));
+const SEO = lazy(() => import("@/pages/services/SEO"));
+const BrandGrowthStrategy = lazy(() => import("@/pages/services/BrandGrowthStrategy"));
+const MarketingExecution = lazy(() => import("@/pages/services/MarketingExecution"));
+const Technology = lazy(() => import("@/pages/services/Technology"));
 const NotFound = lazy(() => import("@/pages/not-found"));
 
 const queryClient = new QueryClient({
@@ -53,6 +57,10 @@ function Router() {
         <Route path="/services/website-app-development" component={WebsiteAppDevelopment} />
         <Route path="/services/software-erp-crm-development" component={SoftwareErpCrmDevelopment} />
         <Route path="/services/ai-automation" component={AIAutomation} />
+        <Route path="/services/seo" component={SEO} />
+        <Route path="/services/brand-growth-strategy" component={BrandGrowthStrategy} />
+        <Route path="/services/marketing-execution" component={MarketingExecution} />
+        <Route path="/services/technology" component={Technology} />
         <Route path="/about" component={AboutPage} />
         <Route path="/contact" component={ContactPage} />
         <Route path="/blog" component={BlogPage} />

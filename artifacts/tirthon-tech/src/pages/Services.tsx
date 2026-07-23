@@ -18,19 +18,21 @@ const services = [
       "Growth diagnostics",
       "Distinctive positioning"
     ],
-    icon: Target
+    icon: Target,
+    href: "/services/brand-growth-strategy"
   },
   {
     title: "Marketing Execution",
     description: "Build visibility, create demand, and drive growth across the channels that actually matter for your business.",
     deliverables: [
-      "SEO",
+      { text: "SEO", href: "/services/seo" },
       { text: "Digital marketing: content, social, email", href: "/services/digital-marketing" },
       { text: "Performance marketing: Meta Ads, Google Ads", href: "/services/performance-marketing" },
       { text: "Influencer marketing", href: "/services/influencer-marketing" },
       "Founder personal branding"
     ],
-    icon: Megaphone
+    icon: Megaphone,
+    href: "/services/marketing-execution"
   },
   {
     title: "Technology",
@@ -41,7 +43,8 @@ const services = [
       { text: "AI automation", href: "/services/ai-automation" },
       "Business dashboards"
     ],
-    icon: Cpu
+    icon: Cpu,
+    href: "/services/technology"
   },
   {
     title: "Business Operations & Automation",

@@ -10,6 +10,7 @@ import { ArrowRight, ChevronDown, LucideIcon } from "lucide-react";
 export interface ServiceBullet {
   title: string;
   description: string;
+  href?: string;
 }
 
 export interface ServiceFaq {
@@ -204,7 +205,14 @@ export function ServiceDetailPage({ config }: { config: ServiceDetailConfig }) {
                 >
                   <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2.5 shrink-0" />
                   <p className="text-sm md:text-base text-foreground/80 leading-relaxed">
-                    <span className="font-semibold text-foreground">{bullet.title}.</span> {bullet.description}
+                    {bullet.href ? (
+                      <Link href={bullet.href} className="font-semibold text-primary hover:underline">
+                        {bullet.title}.
+                      </Link>
+                    ) : (
+                      <span className="font-semibold text-foreground">{bullet.title}.</span>
+                    )}{" "}
+                    {bullet.description}
                   </p>
                 </motion.div>
               ))}

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { Target, Megaphone, Cpu, Workflow, Compass } from "lucide-react";
+import { Target, Megaphone, Cpu, Workflow, Compass, ArrowRight } from "lucide-react";
+import { Link } from "wouter";
 import { Card } from "@/components/ui/card";
 
 const serviceCategories = [
@@ -7,6 +8,7 @@ const serviceCategories = [
     category: "Brand & Growth Strategy",
     tagline: "Understand where you stand before you spend on growth.",
     icon: Target,
+    href: "/services/brand-growth-strategy",
     items: [
       {
         title: "Competitive clarity",
@@ -26,18 +28,23 @@ const serviceCategories = [
     category: "Marketing Execution",
     tagline: "Build visibility. Create demand. Drive growth.",
     icon: Megaphone,
+    href: "/services/marketing-execution",
     items: [
       {
         title: "SEO",
         description: "Build long term organic visibility to your customers.",
       },
       {
-        title: "Digital content",
-        description: "Blogs, newsletters, reels, and social media content, planned and produced from start to finish.",
+        title: "Performance marketing",
+        description: "Smart spending on Meta Ads and Google Ads, tied to measurable conversions.",
       },
       {
-        title: "Paid advertising",
-        description: "Smart spending on Meta Ads, Google Ads, and influencer marketing.",
+        title: "Digital marketing",
+        description: "Content, social, and email working as one coordinated strategy.",
+      },
+      {
+        title: "Influencer marketing",
+        description: "Creator partnerships built on genuine audience fit, not follower count.",
       },
       {
         title: "Founder personal branding",
@@ -49,6 +56,7 @@ const serviceCategories = [
     category: "Technology",
     tagline: "The part of the business that runs everything else.",
     icon: Cpu,
+    href: "/services/technology",
     items: [
       {
         title: "Custom software",
@@ -76,6 +84,7 @@ const serviceCategories = [
     category: "Business Operations & Automation",
     tagline: "Less manual work. More time on what matters.",
     icon: Workflow,
+    href: "/services/business-operations-automation",
     items: [
       {
         title: "Workflow automation",
@@ -99,6 +108,7 @@ const serviceCategories = [
     category: "Consulting",
     tagline: "For when you know something needs to change, but not what.",
     icon: Compass,
+    href: "/services/consulting",
     items: [
       {
         title: "Direction setting",
@@ -192,6 +202,15 @@ export function Services() {
                       </li>
                     ))}
                   </ul>
+
+                  {cat.href && (
+                    <Link
+                      href={cat.href}
+                      className="inline-flex items-center gap-1 mt-5 text-sm font-semibold text-primary hover:underline no-underline"
+                    >
+                      Learn more <ArrowRight className="w-3.5 h-3.5" />
+                    </Link>
+                  )}
                 </Card>
               </motion.div>
             );
