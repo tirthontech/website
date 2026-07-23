@@ -34,10 +34,10 @@ export default function Contact() {
   return (
     <div className="flex flex-col min-h-screen bg-background">
       <SEO
-        title="Contact Tirthon Tech | Free Project Consultation"
-        description="Talk to our team about your project. We respond within 24 hours. Based in India, serving clients in the US, UK, Australia, Canada, UAE, and worldwide. Email: business@tirthontech.com"
+        title="Contact Tirthon Tech | Free Strategy Session"
+        description="Talk to our team about your business. We respond within 24 hours. Based in India, serving clients in the US, UK, Australia, Canada, UAE, and worldwide. Email: business@tirthontech.com"
         path="/contact"
-        keywords="contact Tirthon Tech, hire software developers India, outsource software development consultation, get a quote web app development, software development company India contact"
+        keywords="contact Tirthon Tech, business growth strategy consultation, marketing execution agency contact, hire software developers India, get a quote custom software, growth partner for businesses"
         jsonLd={contactSchemas}
       />
       <Navbar />

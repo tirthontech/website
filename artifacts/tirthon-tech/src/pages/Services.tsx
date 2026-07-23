@@ -5,144 +5,75 @@ import { Footer } from "@/components/layout/Footer";
 import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { 
-  Code2, Globe, Cpu, Cloud, 
-  LayoutDashboard, Rocket, Lightbulb, Settings,
-  Database, Tag, ShoppingBag, Monitor, ArrowRight
+import {
+  Target, Megaphone, Cpu, Handshake, Workflow, Compass, ArrowRight
 } from "lucide-react";
 
 const services = [
   {
-    title: "Web, Mobile & Desktop Apps",
-    description: "We build the whole thing. From the UI your users see to the backend that powers it. Web, iOS, Android, Windows, whatever you need.",
+    title: "Brand & Growth Strategy",
+    description: "Understand where you stand before you spend on growth. We look at your market, your customers, and your numbers, then tell you honestly what to fix first.",
     deliverables: [
-      "React, Next.js & full-stack web apps",
-      "iOS & Android apps (React Native / Flutter)",
-      "Windows desktop software",
-      "SaaS products"
+      "Competitive clarity",
+      "Growth diagnostics",
+      "Distinctive positioning",
+      "Scaling and franchise strategy"
     ],
-    icon: Code2
+    icon: Target
   },
   {
-    title: "Websites & Landing Pages",
-    description: "A website that's slow or hard to navigate loses you business. We build sites that are fast, clear, and actually do their job.",
+    title: "Marketing Execution",
+    description: "Build visibility, create demand, and drive growth across the channels that actually matter for your business.",
     deliverables: [
-      "Company & startup websites",
-      "Landing pages built to convert",
-      "UI/UX design & prototyping",
-      "CMS-powered content sites"
+      "SEO",
+      "Digital content: blogs, newsletters, reels, social media",
+      "Paid advertising: Meta Ads, Google Ads, influencer marketing",
+      "Founder personal branding"
     ],
-    icon: Globe
+    icon: Megaphone
   },
   {
-    title: "AI & Automation",
-    description: "If something in your business is repetitive or slow, there's a good chance we can automate it. We also build AI tools that slot into your workflow.",
+    title: "Technology",
+    description: "The part of the business that runs everything else. We build software that fits how your business actually operates, not the other way around.",
     deliverables: [
-      "LLM & AI integrations",
-      "Workflow automation (Zapier / Make / custom)",
-      "Chatbots & virtual assistants",
-      "Data pipelines & AI systems"
+      "Custom software",
+      "Business dashboards",
+      "Mobile apps (Android and iOS)",
+      "AI automation",
+      "Web applications"
     ],
     icon: Cpu
   },
   {
-    title: "Data for AI Training",
-    description: "Training a model? We'll get you the data. We scrape, clean, and structure it in whatever format your pipeline expects.",
+    title: "Client Partnership",
+    description: "One point of contact. No vendor hand offs, and no re explaining your business to a new account manager every quarter.",
     deliverables: [
-      "Large-scale web scraping & extraction",
-      "Datasets in JSON, CSV, JSONL formats",
-      "Domain-specific data collection",
-      "Custom pipelines for training workflows"
+      "Dedicated point of contact",
+      "Regular strategy check ins",
+      "Ongoing partnership, not one off projects"
     ],
-    icon: Database
+    icon: Handshake
   },
   {
-    title: "Data Annotation",
-    description: "Good annotations make the difference between a model that works and one that doesn't. We label carefully and consistently.",
+    title: "Business Operations & Automation",
+    description: "Less manual work, more time on what matters. We connect and automate the systems your business already runs on.",
     deliverables: [
-      "Image & video annotation",
-      "Text classification & NLP labeling",
-      "Named entity recognition (NER)",
-      "Quality-controlled annotation"
+      "Workflow automation",
+      "Operations software",
+      "Process digitization",
+      "Systems integration"
     ],
-    icon: Tag
+    icon: Workflow
   },
   {
-    title: "Shopify & E-Commerce",
-    description: "We build Shopify apps, customize themes, and set up integrations so your store runs the way you want it to.",
+    title: "Consulting for Specific Moments",
+    description: "For when you know something needs to change, but not what. We look at your business and tell you honestly what to focus on, and in what order.",
     deliverables: [
-      "Custom Shopify app development",
-      "Theme builds & customization",
-      "Shopify Plus integrations",
-      "Payment, inventory & order management"
+      "Direction setting",
+      "Priority mapping",
+      "Moment specific guidance"
     ],
-    icon: ShoppingBag
-  },
-  {
-    title: "Cloud & Backend",
-    description: "APIs, databases, cloud infrastructure. We set it up properly so it doesn't become a headache later.",
-    deliverables: [
-      "Cloud architecture (AWS / GCP)",
-      "REST & GraphQL API development",
-      "Database design & optimization",
-      "Serverless & microservices"
-    ],
-    icon: Cloud
-  },
-  {
-    title: "Windows Software",
-    description: "We build native Windows apps for businesses that need something that runs locally, integrates with hardware, or handles sensitive data.",
-    deliverables: [
-      "C# / .NET Windows applications",
-      "Internal tools & utilities",
-      "System integrations & automation",
-      "Legacy software modernization"
-    ],
-    icon: Monitor
-  },
-  {
-    title: "Internal Tools & Dashboards",
-    description: "Stop managing your business through spreadsheets. We build the CRMs, portals, and dashboards that your team will actually use.",
-    deliverables: [
-      "Custom CRM & ERP systems",
-      "Admin dashboards & client portals",
-      "Inventory & resource management",
-      "Process automation & reporting"
-    ],
-    icon: LayoutDashboard
-  },
-  {
-    title: "MVPs & Product Scaling",
-    description: "Need to validate fast? We help you ship a solid MVP without wasting time. Already growing? We help you scale without things breaking.",
-    deliverables: [
-      "Fast MVP development",
-      "Product strategy & roadmapping",
-      "Performance audits & fixes",
-      "Scaling architecture"
-    ],
-    icon: Rocket
-  },
-  {
-    title: "Tech Consulting",
-    description: "Sometimes you just need someone to look at what you have and give you an honest opinion. That's something we're good at.",
-    deliverables: [
-      "Technical due diligence",
-      "Architecture reviews",
-      "Digital transformation planning",
-      "Team augmentation & training"
-    ],
-    icon: Lightbulb
-  },
-  {
-    title: "Custom Solutions",
-    description: "If your problem doesn't fit into a standard category, reach out anyway. Some of our best work has come from unusual requirements.",
-    deliverables: [
-      "Web scraping & data extraction systems",
-      "Third-party API integrations",
-      "Real-time analytics platforms",
-      "IoT backend & edge systems"
-    ],
-    icon: Settings
+    icon: Compass
   }
 ];
 
@@ -150,23 +81,23 @@ const services = [
 const servicesSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  "name": "Software Development Services by Tirthon Tech",
+  "name": "Tirthon Tech Services",
   "description":
-    "Full range of software development, AI, and data services offered by Tirthon Tech for clients worldwide.",
+    "Business growth services offered by Tirthon Tech across brand and growth strategy, marketing execution, technology, client partnership, business operations automation, and consulting for specific moments.",
   "url": "https://tirthontech.com/services",
-  "numberOfItems": 12,
+  "numberOfItems": 6,
   "itemListElement": [
     {
       "@type": "ListItem",
       "position": 1,
       "item": {
         "@type": "Service",
-        "name": "Web, Mobile & Desktop Apps",
+        "name": "Brand & Growth Strategy",
         "description":
-          "Custom web applications, iOS & Android mobile apps, Windows desktop software, and SaaS products built with React, Next.js, React Native, and Flutter.",
+          "Competitive clarity, growth diagnostics, distinctive positioning, and scaling or franchise strategy for businesses that want direction before they spend on growth.",
         "provider": { "@type": "Organization", "name": "Tirthon Tech", "url": "https://tirthontech.com/" },
         "areaServed": "Worldwide",
-        "serviceType": "Software Development",
+        "serviceType": "Brand and Growth Strategy",
         "url": "https://tirthontech.com/services",
       },
     },
@@ -175,12 +106,12 @@ const servicesSchema = {
       "position": 2,
       "item": {
         "@type": "Service",
-        "name": "Websites & Landing Pages",
+        "name": "Marketing Execution",
         "description":
-          "Fast, conversion-focused company websites, landing pages, UI/UX design, and CMS-powered content sites.",
+          "SEO, digital content across blogs and social media, paid advertising on Meta and Google, and founder personal branding to build visibility and demand.",
         "provider": { "@type": "Organization", "name": "Tirthon Tech", "url": "https://tirthontech.com/" },
         "areaServed": "Worldwide",
-        "serviceType": "Web Development",
+        "serviceType": "Marketing Execution",
         "url": "https://tirthontech.com/services",
       },
     },
@@ -189,12 +120,12 @@ const servicesSchema = {
       "position": 3,
       "item": {
         "@type": "Service",
-        "name": "AI & Automation",
+        "name": "Technology",
         "description":
-          "LLM & AI integrations, workflow automation, chatbots, virtual assistants, and custom data pipelines to automate repetitive business processes.",
+          "Custom software, business dashboards, mobile apps for Android and iOS, AI automation, and web applications built around your business model.",
         "provider": { "@type": "Organization", "name": "Tirthon Tech", "url": "https://tirthontech.com/" },
         "areaServed": "Worldwide",
-        "serviceType": "AI & Automation",
+        "serviceType": "Software Development",
         "url": "https://tirthontech.com/services",
       },
     },
@@ -203,12 +134,12 @@ const servicesSchema = {
       "position": 4,
       "item": {
         "@type": "Service",
-        "name": "Data for AI Training",
+        "name": "Client Partnership",
         "description":
-          "Large-scale web scraping, data extraction, and domain-specific dataset creation in JSON, CSV, and JSONL formats for AI/ML training workflows.",
+          "A dedicated point of contact, regular strategy check ins, and an ongoing partnership rather than a one off project relationship.",
         "provider": { "@type": "Organization", "name": "Tirthon Tech", "url": "https://tirthontech.com/" },
         "areaServed": "Worldwide",
-        "serviceType": "AI Training Data",
+        "serviceType": "Client Partnership",
         "url": "https://tirthontech.com/services",
       },
     },
@@ -217,12 +148,12 @@ const servicesSchema = {
       "position": 5,
       "item": {
         "@type": "Service",
-        "name": "Data Annotation",
+        "name": "Business Operations & Automation",
         "description":
-          "Image & video annotation, text classification, NLP labeling, and named entity recognition (NER) with quality-controlled annotation pipelines.",
+          "Workflow automation, operations software, process digitization, and systems integration to cut manual work across the business.",
         "provider": { "@type": "Organization", "name": "Tirthon Tech", "url": "https://tirthontech.com/" },
         "areaServed": "Worldwide",
-        "serviceType": "Data Annotation",
+        "serviceType": "Business Operations Automation",
         "url": "https://tirthontech.com/services",
       },
     },
@@ -231,96 +162,12 @@ const servicesSchema = {
       "position": 6,
       "item": {
         "@type": "Service",
-        "name": "Shopify & E-Commerce",
+        "name": "Consulting for Specific Moments",
         "description":
-          "Custom Shopify app development, theme builds and customization, Shopify Plus integrations, and payment, inventory & order management solutions.",
+          "Direction setting, priority mapping, and moment specific guidance for launches, new markets, or growth plateaus.",
         "provider": { "@type": "Organization", "name": "Tirthon Tech", "url": "https://tirthontech.com/" },
         "areaServed": "Worldwide",
-        "serviceType": "E-Commerce Development",
-        "url": "https://tirthontech.com/services",
-      },
-    },
-    {
-      "@type": "ListItem",
-      "position": 7,
-      "item": {
-        "@type": "Service",
-        "name": "Cloud & Backend",
-        "description":
-          "Cloud architecture on AWS & GCP, REST & GraphQL API development, database design, and serverless & microservices infrastructure.",
-        "provider": { "@type": "Organization", "name": "Tirthon Tech", "url": "https://tirthontech.com/" },
-        "areaServed": "Worldwide",
-        "serviceType": "Cloud & Backend Development",
-        "url": "https://tirthontech.com/services",
-      },
-    },
-    {
-      "@type": "ListItem",
-      "position": 8,
-      "item": {
-        "@type": "Service",
-        "name": "Windows Software",
-        "description":
-          "Native C# / .NET Windows desktop applications, internal tools, system integrations, and legacy software modernization.",
-        "provider": { "@type": "Organization", "name": "Tirthon Tech", "url": "https://tirthontech.com/" },
-        "areaServed": "Worldwide",
-        "serviceType": "Windows Software Development",
-        "url": "https://tirthontech.com/services",
-      },
-    },
-    {
-      "@type": "ListItem",
-      "position": 9,
-      "item": {
-        "@type": "Service",
-        "name": "Internal Tools & Dashboards",
-        "description":
-          "Custom CRM & ERP systems, admin dashboards, client portals, inventory management tools, and process automation & reporting platforms.",
-        "provider": { "@type": "Organization", "name": "Tirthon Tech", "url": "https://tirthontech.com/" },
-        "areaServed": "Worldwide",
-        "serviceType": "Internal Tools Development",
-        "url": "https://tirthontech.com/services",
-      },
-    },
-    {
-      "@type": "ListItem",
-      "position": 10,
-      "item": {
-        "@type": "Service",
-        "name": "MVPs & Product Scaling",
-        "description":
-          "Fast MVP development, product strategy & roadmapping, performance audits, and scaling architecture for growing products.",
-        "provider": { "@type": "Organization", "name": "Tirthon Tech", "url": "https://tirthontech.com/" },
-        "areaServed": "Worldwide",
-        "serviceType": "MVP Development",
-        "url": "https://tirthontech.com/services",
-      },
-    },
-    {
-      "@type": "ListItem",
-      "position": 11,
-      "item": {
-        "@type": "Service",
-        "name": "Tech Consulting",
-        "description":
-          "Technical due diligence, architecture reviews, digital transformation planning, and team augmentation & training.",
-        "provider": { "@type": "Organization", "name": "Tirthon Tech", "url": "https://tirthontech.com/" },
-        "areaServed": "Worldwide",
-        "serviceType": "Technology Consulting",
-        "url": "https://tirthontech.com/services",
-      },
-    },
-    {
-      "@type": "ListItem",
-      "position": 12,
-      "item": {
-        "@type": "Service",
-        "name": "Custom Solutions",
-        "description":
-          "Web scraping & data extraction systems, third-party API integrations, real-time analytics platforms, and IoT backend & edge systems.",
-        "provider": { "@type": "Organization", "name": "Tirthon Tech", "url": "https://tirthontech.com/" },
-        "areaServed": "Worldwide",
-        "serviceType": "Custom Software Solutions",
+        "serviceType": "Business Consulting",
         "url": "https://tirthontech.com/services",
       },
     },
@@ -353,10 +200,10 @@ export default function ServicesPage() {
   return (
     <div className="flex flex-col min-h-screen bg-background">
       <SEO
-        title="Software Development Services for US, UK & Global Clients | Tirthon Tech"
-        description="Hire IIT-alumni engineers for custom web apps, mobile apps, AI automation, data annotation, Shopify apps, Windows software, and cloud infrastructure. Trusted by clients in the US, UK, Australia, and 10+ countries."
+        title="Strategy, Marketing, Content & Technology Services | Tirthon Tech"
+        description="Brand and growth strategy, marketing execution, technology, client partnership, business operations automation, and consulting for specific moments, built around what your business actually needs. Serving clients in the US, UK, Australia, and worldwide."
         path="/services"
-        keywords="hire software developers India, outsource web app development, software development services for US clients, mobile app development company India, Shopify app development India, AI automation services, data annotation company, cloud infrastructure India, MVP development company, technology consulting India"
+        keywords="business growth strategy, brand strategy consulting, growth diagnostics, marketing execution agency, SEO services, digital content marketing, paid advertising Meta Google Ads, founder personal branding, business operations automation, custom software development, mobile app development India, AI automation services, business consulting India"
         jsonLd={servicesPageSchemas}
       />
       <Navbar />
@@ -378,7 +225,8 @@ export default function ServicesPage() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-xl text-muted-foreground max-w-2xl mx-auto"
             >
-              We build a lot of different things. Here's the full breakdown of what we do and what you get.
+              Everything rolls up into four pillars: strategy, marketing, content, and technology.
+              Here is the full breakdown of what we do and what you get.
             </motion.p>
           </div>
         </section>
@@ -436,11 +284,11 @@ export default function ServicesPage() {
               See something that fits what you need?
             </h2>
             <p className="text-muted-foreground text-lg mb-8">
-              Reach out and tell us what you're building. We'll take it from there.
+              Reach out and tell us what your business needs. We will take it from there.
             </p>
             <Link href="/contact">
               <Button size="lg" className="h-14 px-8 text-lg rounded-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-md hover:shadow-lg group">
-                Start Your Project
+                Book a Strategy Session
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>

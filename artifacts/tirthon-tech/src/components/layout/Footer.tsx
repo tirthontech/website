@@ -43,12 +43,12 @@ export function Footer() {
             <h4 className="text-sm font-bold uppercase tracking-widest text-background/50 mb-6">Services</h4>
             <ul className="space-y-3">
               {[
-                "Web & Mobile Apps",
-                "AI & Automation",
-                "Data Annotation",
-                "Shopify & E-Commerce",
-                "Cloud & Backend",
-                "Windows Software",
+                "Brand & Growth Strategy",
+                "Marketing Execution",
+                "Technology",
+                "Client Partnership",
+                "Business Operations & Automation",
+                "Consulting for Specific Moments",
               ].map((s) => (
                 <li key={s}>
                   <Link href="/services" className="text-background/70 hover:text-primary transition-colors text-sm">

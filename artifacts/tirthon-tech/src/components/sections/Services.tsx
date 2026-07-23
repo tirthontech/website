@@ -1,85 +1,155 @@
 import { motion } from "framer-motion";
-import { 
-  Code2, Globe, Cpu, Cloud, 
-  LayoutDashboard, Rocket, Lightbulb, Settings,
-  Database, Tag, ShoppingBag, Monitor
-} from "lucide-react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Target, Megaphone, Cpu, Handshake, Workflow, Compass } from "lucide-react";
+import { Card } from "@/components/ui/card";
 
-const services = [
+const serviceCategories = [
   {
-    title: "Web, Mobile & Desktop Apps",
-    description: "Got an idea for an app? We build it. Web, iOS, Android, or Windows. We handle the full thing from design to deployment.",
-    icon: Code2
+    category: "Brand & Growth Strategy",
+    tagline: "Understand where you stand before you spend on growth.",
+    icon: Target,
+    items: [
+      {
+        title: "Competitive clarity",
+        description: "Understand your market, competitors, and customers before starting any campaign.",
+      },
+      {
+        title: "Growth diagnostics",
+        description: "Identify where your business is losing customers, conversions, or revenue.",
+      },
+      {
+        title: "Distinctive positioning",
+        description: "Build a clear market position that is difficult to copy and easy to remember.",
+      },
+      {
+        title: "Scaling and franchise strategy",
+        description: "Build the systems, processes, and strategy needed to grow across multiple locations.",
+      },
+    ],
   },
   {
-    title: "Websites & Landing Pages",
-    description: "Fast, clean websites that look good and actually load. Whether you need a company site or a page that converts, we've got it.",
-    icon: Globe
+    category: "Marketing Execution",
+    tagline: "Build visibility. Create demand. Drive growth.",
+    icon: Megaphone,
+    items: [
+      {
+        title: "SEO",
+        description: "Build long term organic visibility to your customers.",
+      },
+      {
+        title: "Digital content",
+        description: "Blogs, newsletters, reels, and social media content, planned and produced from start to finish.",
+      },
+      {
+        title: "Paid advertising",
+        description: "Smart spending on Meta Ads, Google Ads, and influencer marketing.",
+      },
+      {
+        title: "Founder personal branding",
+        description: "A strong personal presence as a founder. Make your voice count in the market.",
+      },
+    ],
   },
   {
-    title: "AI & Automation",
-    description: "We hook up AI tools, automate the boring stuff, and build chatbots that don't make your customers want to close the tab.",
-    icon: Cpu
+    category: "Technology",
+    tagline: "The part of the business that runs everything else.",
+    icon: Cpu,
+    items: [
+      {
+        title: "Custom software",
+        description: "Simplify operations with software built specifically for your business.",
+      },
+      {
+        title: "Business dashboards",
+        description: "Get complete visibility into your operations and make faster decisions.",
+      },
+      {
+        title: "Mobile apps",
+        description: "Android and iOS applications built around your business.",
+      },
+      {
+        title: "AI automation",
+        description: "Automate repetitive tasks, save time, and improve productivity.",
+      },
+      {
+        title: "Web applications",
+        description: "Designed according to your business model.",
+      },
+    ],
   },
   {
-    title: "Data for AI Training",
-    description: "Need data to train your model? We scrape, structure, and package it exactly how you need it, ready to feed into your pipeline.",
-    icon: Database
+    category: "Client Partnership",
+    tagline: "One point of contact. No vendor hand offs.",
+    icon: Handshake,
+    items: [
+      {
+        title: "Dedicated point of contact",
+        description: "One person who actually knows your business, not a rotating support queue.",
+      },
+      {
+        title: "Regular strategy check ins",
+        description: "Scheduled reviews to track progress and adjust direction as your business changes.",
+      },
+      {
+        title: "Ongoing partnership, not one off projects",
+        description: "We stay involved after launch, not just until the invoice is paid.",
+      },
+    ],
   },
   {
-    title: "Data Annotation",
-    description: "We label your images, text, and video datasets carefully. Clean annotations, consistent quality, no shortcuts.",
-    icon: Tag
+    category: "Business Operations & Automation",
+    tagline: "Less manual work. More time on what matters.",
+    icon: Workflow,
+    items: [
+      {
+        title: "Workflow automation",
+        description: "Cut out manual, repetitive steps so your team spends time on work that actually matters.",
+      },
+      {
+        title: "Operations software",
+        description: "Custom tools that run the day to day of your business, from inventory to scheduling to approvals.",
+      },
+      {
+        title: "Process digitization",
+        description: "Move paper registers, spreadsheets, and WhatsApp coordination into one connected system.",
+      },
+      {
+        title: "Systems integration",
+        description: "Connect the tools you already use so data moves automatically instead of manual double entry.",
+      },
+    ],
   },
   {
-    title: "Cloud & Backend",
-    description: "APIs, databases, cloud setup on AWS or GCP. We build backend systems that hold up when things get busy.",
-    icon: Cloud
+    category: "Consulting for Specific Moments",
+    tagline: "For when you know something needs to change, but not what.",
+    icon: Compass,
+    items: [
+      {
+        title: "Direction setting",
+        description: "When you are unsure where to focus next, we look at your business and tell you honestly what matters most right now.",
+      },
+      {
+        title: "Priority mapping",
+        description: "Not everything can be first. We help you sequence what to fix, build, or launch, and in what order.",
+      },
+      {
+        title: "Moment specific guidance",
+        description: "Launching a product, entering a new market, hitting a plateau. We advise on the specific moment you are in, not a generic playbook.",
+      },
+    ],
   },
-  {
-    title: "Internal Tools & Dashboards",
-    description: "Tired of spreadsheets? We build the CRMs, dashboards, and admin panels your team actually needs to get work done.",
-    icon: LayoutDashboard
-  },
-  {
-    title: "Shopify & E-Commerce",
-    description: "Custom Shopify apps, store builds, and integrations. We make your store work better and look the part.",
-    icon: ShoppingBag
-  },
-  {
-    title: "MVPs & Product Scaling",
-    description: "Starting from scratch or growing fast? We help you ship quickly without cutting corners, and scale without breaking things.",
-    icon: Rocket
-  },
-  {
-    title: "Tech Consulting",
-    description: "Not sure which direction to go? We sit down with you, look at what you have, and tell you honestly what makes sense.",
-    icon: Lightbulb
-  },
-  {
-    title: "Windows Software",
-    description: "Need a desktop app for Windows? We build native apps that run reliably, integrate with your systems, and don't crash.",
-    icon: Monitor
-  },
-  {
-    title: "Custom Solutions",
-    description: "If it doesn't fit a neat category, that's fine. We figure it out. Weird requirements are usually the most interesting ones.",
-    icon: Settings
-  }
 ];
 
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: { staggerChildren: 0.08 }
-  }
+    transition: { staggerChildren: 0.1 },
+  },
 };
 
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.0, 0.0, 0.58, 1.0] } }
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.0, 0.0, 0.58, 1.0] } },
 };
 
 export function Services() {
@@ -97,7 +167,8 @@ export function Services() {
             What We <span className="text-primary">Do</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            From apps to AI, here's what we actually do, and what you can expect when you work with us.
+            Everything below rolls up into four pillars: strategy, marketing, content, and technology.
+            Pick what your business needs. Skip what it does not.
           </p>
         </motion.div>
 
@@ -106,26 +177,36 @@ export function Services() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+          className="grid grid-cols-1 lg:grid-cols-2 gap-6"
         >
-          {services.map((service, index) => {
-            const Icon = service.icon;
+          {serviceCategories.map((cat, index) => {
+            const Icon = cat.icon;
             return (
               <motion.div key={index} variants={itemVariants}>
-                <Card className="h-full bg-card border-border shadow-sm hover:shadow-md transition-all duration-300 group hover:-translate-y-1">
-                  <CardHeader className="pb-4">
-                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                <Card className="h-full bg-card border-border shadow-sm hover:shadow-md transition-all duration-300 p-6 md:p-7">
+                  <div className="flex items-start gap-4 mb-5">
+                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
                       <Icon className="w-6 h-6 text-primary" />
                     </div>
-                    <CardTitle className="text-lg group-hover:text-primary transition-colors text-foreground">
-                      {service.title}
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
-                      {service.description}
-                    </p>
-                  </CardContent>
+                    <div>
+                      <h3 className="text-lg md:text-xl font-bold text-foreground leading-snug">
+                        {cat.category}
+                      </h3>
+                      <p className="text-sm text-muted-foreground mt-1">{cat.tagline}</p>
+                    </div>
+                  </div>
+
+                  <ul className="space-y-3">
+                    {cat.items.map((item, i) => (
+                      <li key={i} className="flex gap-2.5">
+                        <span className="text-primary mt-1.5 shrink-0 text-xs">●</span>
+                        <p className="text-sm text-muted-foreground leading-relaxed">
+                          <span className="font-semibold text-foreground">{item.title}.</span>{" "}
+                          {item.description}
+                        </p>
+                      </li>
+                    ))}
+                  </ul>
                 </Card>
               </motion.div>
             );

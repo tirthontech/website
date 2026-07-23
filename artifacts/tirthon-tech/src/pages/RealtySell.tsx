@@ -45,7 +45,7 @@ const painPoints = [
   {
     icon: AlertTriangle,
     heading: "Leads from 10 sources, none in the same place",
-    body: "Your 99acres lead came in at 8:47 AM. Your agent saw it at 11. By then the buyer had already visited three competitors. Meanwhile, the MagicBricks lead from yesterday is still sitting in someone's inbox, and the Housing.com one got forwarded to a group chat nobody checks. Every Indian real estate sales team runs on this exact chaos — and it costs deals every single week.",
+    body: "Your 99acres lead came in at 8:47 AM. Your agent saw it at 11. By then the buyer had already visited three competitors. Meanwhile, the MagicBricks lead from yesterday is still sitting in someone's inbox, and the Housing.com one got forwarded to a group chat nobody checks. Every Indian real estate sales team runs on this exact chaos, and it costs deals every single week.",
   },
   {
     icon: Clock,
@@ -55,7 +55,7 @@ const painPoints = [
   {
     icon: XCircle,
     heading: "Units get double-booked over WhatsApp voice notes",
-    body: "Two agents block the same flat in the same hour. One is a voice note in the sales group. The other is a message the developer's coordinator missed. One angry client, one refund to process, one developer relationship damaged. There's no formal blocking — just a message in a group chat that everyone read but nobody owned.",
+    body: "Two agents block the same flat in the same hour. One is a voice note in the sales group. The other is a message the developer's coordinator missed. One angry client, one refund to process, one developer relationship damaged. There's no formal blocking: just a message in a group chat that everyone read but nobody owned.",
   },
   {
     icon: IndianRupee,
@@ -69,7 +69,7 @@ const features = [
     icon: Users,
     title: "Central Lead Inbox",
     description:
-      "Every lead — 99acres, MagicBricks, Housing.com, Facebook Ads, Google Ads, walk-in, referral, IVR — lands in one central inbox with source tagging and auto-assignment to the right agent. No more copying leads from portals into Excel at end of day.",
+      "Every lead (99acres, MagicBricks, Housing.com, Facebook Ads, Google Ads, walk-in, referral, IVR) lands in one central inbox with source tagging and auto-assignment to the right agent. No more copying leads from portals into Excel at end of day.",
   },
   {
     icon: Clock,
@@ -81,7 +81,7 @@ const features = [
     icon: Layers,
     title: "Visual Real Estate Sales Pipeline",
     description:
-      "New → Contacted → Qualified → Proposal → Negotiation → Closed. One-click stage changes with every transition logged — timestamp, agent name, and notes. The entire deal pipeline is visible to the manager at a glance, no chasing required.",
+      "New → Contacted → Qualified → Proposal → Negotiation → Closed. One-click stage changes with every transition logged: timestamp, agent name, and notes. The entire deal pipeline is visible to the manager at a glance, no chasing required.",
   },
   {
     icon: Building2,
@@ -93,19 +93,19 @@ const features = [
     icon: FileText,
     title: "Interactive Cost Sheet Builder",
     description:
-      "Base price, floor rise, facing PLC, parking, clubhouse, GST at 5% — auto-calculated and formatted for the buyer. No more seventeen versions of the Excel cost sheet with conflicting formulas. One correct sheet, share-ready in one click.",
+      "Base price, floor rise, facing PLC, parking, clubhouse, GST at 5%: auto-calculated and formatted for the buyer. No more seventeen versions of the Excel cost sheet with conflicting formulas. One correct sheet, share-ready in one click.",
   },
   {
     icon: Shield,
     title: "Approval Workflow for Every Exception",
     description:
-      "Unit blocks, price discounts, custom payment plans — every exception goes through a formal request and manager sign-off with a mandatory documented reason. Full audit trail. No more verbal commitments that management hears about at closing.",
+      "Unit blocks, price discounts, custom payment plans: every exception goes through a formal request and manager sign-off with a mandatory documented reason. Full audit trail. No more verbal commitments that management hears about at closing.",
   },
   {
     icon: Calendar,
     title: "Site Visit Scheduler",
     description:
-      "Book viewings with lead, property, agent, date, and time. Check-in, No-Show, and Cancelled statuses tracked automatically. Managers see the daily site visit load across the entire team in real time — no morning WhatsApp roundups needed.",
+      "Book viewings with lead, property, agent, date, and time. Check-in, No-Show, and Cancelled statuses tracked automatically. Managers see the daily site visit load across the entire team in real time. No morning WhatsApp roundups needed.",
   },
   {
     icon: IndianRupee,
@@ -117,7 +117,7 @@ const features = [
     icon: BarChart3,
     title: "Dashboard & Analytics",
     description:
-      "Today\'s site visits, overdue leads, and hot leads at a glance. Source ROI, CPL by channel, agent-wise performance, BHK demand trends, project-wise P&L, and scenario modelling. The numbers your sales head actually needs — without building pivot tables in Excel.",
+      "Today\'s site visits, overdue leads, and hot leads at a glance. Source ROI, CPL by channel, agent-wise performance, BHK demand trends, project-wise P&L, and scenario modelling. The numbers your sales head actually needs (without building pivot tables in Excel).",
   },
   {
     icon: Bell,
@@ -131,22 +131,22 @@ const differentiators = [
   {
     icon: Home,
     title: "Built specifically for Indian real estate",
-    body: "IVR, WhatsApp, 99acres, MagicBricks, Housing.com are first-class lead sources — not afterthoughts mapped to a generic CRM field. PLC, BSP, floor rise, RERA compliance — the software speaks the same language your sales team does.",
+    body: "IVR, WhatsApp, 99acres, MagicBricks, Housing.com are first-class lead sources, not afterthoughts mapped to a generic CRM field. PLC, BSP, floor rise, RERA compliance: the software speaks the same language your sales team does.",
   },
   {
     icon: Shield,
-    title: "Role-aware from day one — no setup required",
-    body: "Agents physically cannot see other agents\' leads. No configuration needed. No hoping they don\'t look at the wrong data. Owner, Manager, CFO, Agent, Broker — each has a pre-defined permission set that works the moment the account is created.",
+    title: "Role-aware from day one: no setup required",
+    body: "Agents physically cannot see other agents\' leads. No configuration needed. No hoping they don\'t look at the wrong data. Owner, Manager, CFO, Agent, Broker: each has a pre-defined permission set that works the moment the account is created.",
   },
   {
     icon: ClipboardList,
     title: "Every exception leaves a paper trail",
-    body: "Discounts, unit blocks, custom payment plans — every exception goes through an approval workflow, not a WhatsApp message. Every rejection has a documented reason on record. Auditors, developers, and CFOs all see the same trail.",
+    body: "Discounts, unit blocks, custom payment plans: every exception goes through an approval workflow, not a WhatsApp message. Every rejection has a documented reason on record. Auditors, developers, and CFOs all see the same trail.",
   },
   {
     icon: Building2,
     title: "Unit-level inventory, not just property listings",
-    body: "Track every individual unit\'s status down to floor and facing direction. No double-bookings. No informal blocks that create disputes. A unit can only move status with explicit manager sign-off — it\'s structurally enforced, not policy-dependent.",
+    body: "Track every individual unit\'s status down to floor and facing direction. No double-bookings. No informal blocks that create disputes. A unit can only move status with explicit manager sign-off; it\'s structurally enforced, not policy-dependent.",
   },
   {
     icon: IndianRupee,
@@ -159,27 +159,27 @@ const whoFor = [
   {
     icon: Building2,
     title: "Real Estate Developers",
-    description: "Running 1–5 active projects with an in-house sales team. Need formal structure around lead assignment, site visit tracking, unit blocking approvals, and project-wise sales analytics — without hiring a CRM administrator.",
+    description: "Running 1-5 active projects with an in-house sales team. Need formal structure around lead assignment, site visit tracking, unit blocking approvals, and project-wise sales analytics (without hiring a CRM administrator).",
   },
   {
     icon: Users,
     title: "Real Estate Brokerage Firms",
-    description: "Managing 5–50 agents across multiple developer projects. Need visibility into agent activity, SLA enforcement on lead follow-up, accurate commission tracking, and role-based access so agents only see their own pipeline.",
+    description: "Managing 5-50 agents across multiple developer projects. Need visibility into agent activity, SLA enforcement on lead follow-up, accurate commission tracking, and role-based access so agents only see their own pipeline.",
   },
   {
     icon: MapPin,
     title: "Builder Sales Offices",
-    description: "Ready to replace the Excel + WhatsApp workflow with a system built for how a builder\'s sales office actually operates — especially when the site visit team, back-office, and channel partners are all separate roles.",
+    description: "Ready to replace the Excel + WhatsApp workflow with a system built for how a builder\'s sales office actually operates (especially when the site visit team, back-office, and channel partners are all separate roles).",
   },
   {
     icon: TrendingUp,
     title: "Franchise Real Estate Brands",
-    description: "Multiple agents, multiple developer projects, commission splits across direct agents and channel partners. Need role-based access, central commission tracking, and a record that every stakeholder can trust — without managing it in spreadsheets.",
+    description: "Multiple agents, multiple developer projects, commission splits across direct agents and channel partners. Need role-based access, central commission tracking, and a record that every stakeholder can trust (without managing it in spreadsheets).",
   },
 ];
 
 const roles = [
-  { role: "Owner", access: "Everything — admin, delete, approvals, financials, user management" },
+  { role: "Owner", access: "Everything: admin, delete, approvals, financials, user management" },
   { role: "Manager", access: "All leads, deals, properties, viewings, activities, approvals for the full team" },
   { role: "CFO", access: "Dashboard, commission ledger, project financials, settings" },
   { role: "Agent", access: "Only their own leads, deals, viewings, and activities" },
@@ -220,16 +220,16 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 
 const faqs = [
   {
-    q: "We already use a generic CRM — why would we switch to RealtySell?",
-    a: "Generic CRMs are built for SaaS or e-commerce sales cycles. They have no concept of unit-level inventory, no idea what a PLC is, no native integrations with 99acres or MagicBricks, and absolutely no notion of a blocking approval or a commission split between an agent and a channel partner. You end up spending two months configuring the CRM and another month training your team — then reverting to Excel anyway. RealtySell ships on day one with everything a real estate sales team in India actually needs, with zero configuration required.",
+    q: "We already use a generic CRM. Why would we switch to RealtySell?",
+    a: "Generic CRMs are built for SaaS or e-commerce sales cycles. They have no concept of unit-level inventory, no idea what a PLC is, no native integrations with 99acres or MagicBricks, and absolutely no notion of a blocking approval or a commission split between an agent and a channel partner. You end up spending two months configuring the CRM and another month training your team, then reverting to Excel anyway. RealtySell ships on day one with everything a real estate sales team in India actually needs, with zero configuration required.",
   },
   {
     q: "Can we capture leads directly from 99acres, MagicBricks, and Housing.com?",
-    a: "Yes. RealtySell integrates with all major Indian property portals so leads auto-populate in your central inbox with source tagging the moment they come in. Walk-ins, referrals, Facebook Ads, Google Ads, IVR, WhatsApp, website, email — every source is supported. Every lead carries a source tag so you know your exact CPL by channel and can make data-driven decisions about where to spend your marketing budget.",
+    a: "Yes. RealtySell integrates with all major Indian property portals so leads auto-populate in your central inbox with source tagging the moment they come in. Walk-ins, referrals, Facebook Ads, Google Ads, IVR, WhatsApp, website, email: every source is supported. Every lead carries a source tag so you know your exact CPL by channel and can make data-driven decisions about where to spend your marketing budget.",
   },
   {
-    q: "How does the unit blocking approval work — and does it actually prevent double-bookings?",
-    a: "When an agent wants to hold a unit for a client, they submit a Block Request inside RealtySell. The unit stays in Available status until a manager or owner approves that request. No WhatsApp message, no voice note, no informal hold changes the unit\'s status in the system. The same formal approval applies to the Booked and Sold transitions. Every status change is timestamped and linked to the approving manager. Double-bookings are structurally impossible — it\'s not a policy, it\'s how the system works.",
+    q: "How does the unit blocking approval work, and does it actually prevent double-bookings?",
+    a: "When an agent wants to hold a unit for a client, they submit a Block Request inside RealtySell. The unit stays in Available status until a manager or owner approves that request. No WhatsApp message, no voice note, no informal hold changes the unit\'s status in the system. The same formal approval applies to the Booked and Sold transitions. Every status change is timestamped and linked to the approving manager. Double-bookings are structurally impossible; it\'s not a policy, it\'s how the system works.",
   },
   {
     q: "What happens when an agent promises a buyer a discount we haven\'t approved?",
@@ -237,27 +237,27 @@ const faqs = [
   },
   {
     q: "How does commission tracking work across agents, brokers, and channel partners?",
-    a: "Every closed deal has a commission record with the agent or broker name, deal value, brokerage rate, earned amount, and payment status. Managers mark commissions as paid in one click. The built-in calculator handles the full chain: gross commission, 18% GST, direct agent split, referral fee, franchise fee, and co-mediation amount. Agents and brokers see their own ledger in real time — they always know exactly what they\'re owed, and managers always know what\'s outstanding. Month-end disputes about who did what are a problem from a previous era.",
+    a: "Every closed deal has a commission record with the agent or broker name, deal value, brokerage rate, earned amount, and payment status. Managers mark commissions as paid in one click. The built-in calculator handles the full chain: gross commission, 18% GST, direct agent split, referral fee, franchise fee, and co-mediation amount. Agents and brokers see their own ledger in real time: they always know exactly what they\'re owed, and managers always know what\'s outstanding. Month-end disputes about who did what are a problem from a previous era.",
   },
   {
     q: "Can different agents on the team see each other\'s leads?",
-    a: "No. Agents see only the leads assigned to them. Brokers see only their own leads and commission records. Managers see the full team\'s pipeline. Owners see everything across all projects. These permissions are pre-configured by role — there is no manual setup and agents cannot escalate their own access. You don\'t need to trust your agents to be discreet. The system handles it.",
+    a: "No. Agents see only the leads assigned to them. Brokers see only their own leads and commission records. Managers see the full team\'s pipeline. Owners see everything across all projects. These permissions are pre-configured by role; there is no manual setup and agents cannot escalate their own access. You don\'t need to trust your agents to be discreet. The system handles it.",
   },
   {
     q: "We have multiple projects running simultaneously. Can RealtySell handle inventory across all of them?",
-    a: "Yes. You can set up multiple projects, each with its own independent unit inventory. Units are tracked at the floor, BHK type, and facing direction level across every project. The dashboard shows a portfolio summary across all active projects — total units, status breakdown by project, and total portfolio value. Managers switch between project views without any reconfiguration.",
+    a: "Yes. You can set up multiple projects, each with its own independent unit inventory. Units are tracked at the floor, BHK type, and facing direction level across every project. The dashboard shows a portfolio summary across all active projects: total units, status breakdown by project, and total portfolio value. Managers switch between project views without any reconfiguration.",
   },
   {
-    q: "Our team does 15–20 site visits per week. How does the site visit management work?",
-    a: "The site visit scheduler lets you book viewings for a specific lead, property, agent, date, and time — all linked together. Agents check in when they arrive or mark a No-Show if the buyer doesn\'t turn up. Managers see the daily visit load across the entire team in one view. No-shows get flagged for follow-up. Site visit conversion rate by agent is tracked in the analytics dashboard so you can see which agents are turning visits into deals.",
+    q: "Our team does 15-20 site visits per week. How does the site visit management work?",
+    a: "The site visit scheduler lets you book viewings for a specific lead, property, agent, date, and time (all linked together). Agents check in when they arrive or mark a No-Show if the buyer doesn\'t turn up. Managers see the daily visit load across the entire team in one view. No-shows get flagged for follow-up. Site visit conversion rate by agent is tracked in the analytics dashboard so you can see which agents are turning visits into deals.",
   },
   {
     q: "What analytics does the dashboard provide for a real estate sales head?",
-    a: "The manager dashboard gives you today\'s focus view — site visits scheduled, overdue leads, hot leads. The analytics section covers: lead conversion funnel by pipeline stage, source ROI with CPL by channel so you know which portals are worth the spend, sales team performance per agent, lost lead reasons breakdown, BHK demand from active leads, buyer budget range distribution, project-wise P&L with invested vs. collected vs. outstanding, and scenario modelling where you can adjust price or cost assumptions to see margin impact in real time.",
+    a: "The manager dashboard gives you today\'s focus view: site visits scheduled, overdue leads, hot leads. The analytics section covers: lead conversion funnel by pipeline stage, source ROI with CPL by channel so you know which portals are worth the spend, sales team performance per agent, lost lead reasons breakdown, BHK demand from active leads, buyer budget range distribution, project-wise P&L with invested vs. collected vs. outstanding, and scenario modelling where you can adjust price or cost assumptions to see margin impact in real time.",
   },
   {
     q: "How is RealtySell deployed and what does onboarding look like?",
-    a: "RealtySell is a web-based platform — no installation on individual machines, no IT department required. It runs on secure cloud infrastructure and each client gets a dedicated environment. We handle the full setup, including onboarding your team and migrating your existing data from Excel sheets or your previous CRM. Ongoing support is included. Most teams are fully operational within a week of signing up.",
+    a: "RealtySell is a web-based platform: no installation on individual machines, no IT department required. It runs on secure cloud infrastructure and each client gets a dedicated environment. We handle the full setup, including onboarding your team and migrating your existing data from Excel sheets or your previous CRM. Ongoing support is included. Most teams are fully operational within a week of signing up.",
   },
 ];
 
@@ -271,7 +271,7 @@ export default function RealtySell() {
         applicationCategory: "BusinessApplication",
         operatingSystem: "Web",
         description:
-          "RealtySell is a purpose-built real estate CRM for developers, builders, and brokerage firms in India. Manage leads from 99acres, MagicBricks, and Housing.com in one central inbox. Track unit-level inventory with approval workflows, manage site visits, enforce commission accountability, and get real-time analytics — all designed for the way Indian real estate sales actually works.",
+          "RealtySell is a purpose-built real estate CRM for developers, builders, and brokerage firms in India. Manage leads from 99acres, MagicBricks, and Housing.com in one central inbox. Track unit-level inventory with approval workflows, manage site visits, enforce commission accountability, and get real-time analytics, all designed for the way Indian real estate sales actually works.",
         url: "https://tirthontech.com/products/realtysell",
         provider: {
           "@type": "Organization",
@@ -311,12 +311,12 @@ export default function RealtySell() {
   return (
     <>
       <SEO
-        title="RealtySell — Real Estate CRM for Developers, Builders & Brokers in India"
-        description="RealtySell is a purpose-built real estate CRM for Indian developers, builders, and brokerage firms. Manage leads from 99acres and MagicBricks, track unit inventory with approval workflows, schedule site visits, log commissions, and run your entire property sales pipeline — from one platform built for Indian real estate."
+        title="RealtySell: Real Estate CRM for Developers, Builders & Brokers in India"
+        description="RealtySell is a purpose-built real estate CRM for Indian developers, builders, and brokerage firms. Manage leads from 99acres and MagicBricks, track unit inventory with approval workflows, schedule site visits, log commissions, and run your entire property sales pipeline. All from one platform built for Indian real estate."
         keywords="real estate CRM India, CRM for real estate developers, real estate broker CRM, property sales CRM India, lead management software real estate, real estate sales pipeline software, CRM for builders India, real estate agent CRM, property CRM software, builder CRM India, real estate sales management software, CRM for real estate brokerage, real estate lead tracking software, property developer CRM India, site visit management software, commission tracking real estate CRM, unit inventory management software, real estate deal pipeline, RERA compliant CRM India, 99acres lead management CRM"
         canonical="https://tirthontech.com/products/realtysell"
-        ogTitle="RealtySell — Real Estate CRM Built for Indian Developers, Builders & Brokers"
-        ogDescription="Capture leads from 99acres, MagicBricks, and Housing.com into one inbox. Track unit inventory with approval workflows. Manage site visits, commissions, and your full sales pipeline — built specifically for how real estate teams in India actually work."
+        ogTitle="RealtySell: Real Estate CRM Built for Indian Developers, Builders & Brokers"
+        ogDescription="Capture leads from 99acres, MagicBricks, and Housing.com into one inbox. Track unit inventory with approval workflows. Manage site visits, commissions, and your full sales pipeline, built specifically for how real estate teams in India actually work."
         jsonLd={jsonLd}
       />
       <Navbar />
@@ -354,7 +354,7 @@ export default function RealtySell() {
               custom={2}
               className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-10 max-w-2xl mx-auto"
             >
-              RealtySell is the complete real estate CRM built exclusively for developers, builders, and brokerage firms in India. Leads from 99acres, MagicBricks, Housing.com, Facebook, and walk-ins — all in one place. Units tracked with approval workflows, site visits managed, commissions logged accurately, and every exception on the record. Built for the way Indian property sales actually happens.
+              RealtySell is the complete real estate CRM built exclusively for developers, builders, and brokerage firms in India. Leads from 99acres, MagicBricks, Housing.com, Facebook, and walk-ins, all in one place. Units tracked with approval workflows, site visits managed, commissions logged accurately, and every exception on the record. Built for the way Indian property sales actually happens.
             </motion.p>
             <motion.div
               variants={fadeUp}
@@ -449,17 +449,17 @@ export default function RealtySell() {
                 <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-primary mb-4 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 block">Real Estate Lead Management</span>
                 <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">One inbox. Every portal. No lead left behind.</h2>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  A lead comes in from 99acres at 7:43 AM. Another from a Facebook campaign at 8:12 AM. A walk-in at 10:30. All three are in the same dashboard, tagged by source, auto-assigned to the right agent, and on an SLA timer the manager can see in real time — without sending a single WhatsApp message to ask for a status update.
+                  A lead comes in from 99acres at 7:43 AM. Another from a Facebook campaign at 8:12 AM. A walk-in at 10:30. All three are in the same dashboard, tagged by source, auto-assigned to the right agent, and on an SLA timer the manager can see in real time (without sending a single WhatsApp message to ask for a status update).
                 </p>
                 <p className="text-muted-foreground leading-relaxed mb-8">
-                  Hot / Warm / Cold lead scoring. Full-text search across name, phone, and email. Tab views for Follow Ups, Site Visits, Negotiation, Won, and Lost — each with live counts. Structured lost lead capture with documented reasons: budget mismatch, location preference, competitor project, project delay, configuration unavailable, or no response. Every lost lead teaches you something.
+                  Hot / Warm / Cold lead scoring. Full-text search across name, phone, and email. Tab views for Follow Ups, Site Visits, Negotiation, Won, and Lost (each with live counts). Structured lost lead capture with documented reasons: budget mismatch, location preference, competitor project, project delay, configuration unavailable, or no response. Every lost lead teaches you something.
                 </p>
                 <ul className="space-y-3">
                   {[
                     "99acres, MagicBricks, Housing.com, Facebook, Google, WhatsApp, Walk-in, Referral, IVR, Website, Phone, Email",
-                    "Lead score 0–100 with Hot / Warm / Cold color coding",
-                    "SLA timer: Fresh (<1hr), Pending (1–2hr), Overdue (>2hr)",
-                    "Unassigned lead alert banner — assign in bulk from one popup",
+                    "Lead score 0-100 with Hot / Warm / Cold color coding",
+                    "SLA timer: Fresh (<1hr), Pending (1-2hr), Overdue (>2hr)",
+                    "Unassigned lead alert banner: assign in bulk from one popup",
                     "Full pipeline: New → Contacted → Qualified → Proposal → Negotiation → Closed",
                     "CSV export of any filtered view",
                   ].map((item) => (
@@ -472,9 +472,9 @@ export default function RealtySell() {
               </motion.div>
               <motion.div variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }} custom={1}>
                 <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-primary mb-4 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 block">Activity & Follow-up Tracking</span>
-                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">Every call, visit, and follow-up — on record, not in memory.</h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">Every call, visit, and follow-up: on record, not in memory.</h2>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  Managers currently ask agents what happened with a lead. Agents give a verbal summary. None of it is documented anywhere. RealtySell logs every interaction — Phone Call, Site Visit, Negotiation Follow-up — with date, time, property, and the agent&apos;s remarks. If a deal goes sideways, there is a complete activity trail to review, not a gap where the information should be.
+                  Managers currently ask agents what happened with a lead. Agents give a verbal summary. None of it is documented anywhere. RealtySell logs every interaction (Phone Call, Site Visit, Negotiation Follow-up) with date, time, property, and the agent&apos;s remarks. If a deal goes sideways, there is a complete activity trail to review, not a gap where the information should be.
                 </p>
                 <ul className="space-y-3">
                   {[
@@ -504,12 +504,12 @@ export default function RealtySell() {
                 <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-primary mb-4 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 block">Unit Inventory Management Software</span>
                 <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">No unit moves without a manager&apos;s sign-off. Not one.</h2>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  Every unit is tracked by project, floor, BHK type (Studio to 4BHK, Penthouse, Commercial), and facing direction. BSP, PLC, parking charges, and premium flags are stored per unit. When an agent wants to block a unit for a buyer, they raise a formal Block Request. The unit stays Available in the system until a manager approves. Double-bookings become structurally impossible — not a policy your team has to remember, but a constraint the software enforces automatically.
+                  Every unit is tracked by project, floor, BHK type (Studio to 4BHK, Penthouse, Commercial), and facing direction. BSP, PLC, parking charges, and premium flags are stored per unit. When an agent wants to block a unit for a buyer, they raise a formal Block Request. The unit stays Available in the system until a manager approves. Double-bookings become structurally impossible, not a policy your team has to remember, but a constraint the software enforces automatically.
                 </p>
                 <ul className="space-y-3">
                   {[
                     "Unit statuses: Available → Blocked → Booked → Sold",
-                    "Blocking raises a formal approval request — no informal holds",
+                    "Blocking raises a formal approval request: no informal holds",
                     "Portfolio summary: total value, units by status, value by category",
                     "Filter by project, BHK type, facing, floor, status",
                     "Release blocked units back to available if deal falls through",
@@ -526,16 +526,16 @@ export default function RealtySell() {
                 <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-primary mb-4 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 block">Cost Sheet Builder</span>
                 <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">One correct cost sheet. Not seventeen Excel versions.</h2>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  Every agent has their own version of the cost sheet Excel. Every version has slightly different formulas. Every third one has a GST calculation error. RealtySell calculates it once, correctly, every time — floor rise, facing PLC, parking, clubhouse, maintenance, GST at 5%, stamp duty reminder included. Formatted for the buyer, not for internal use. Ready to share in one click, from any device.
+                  Every agent has their own version of the cost sheet Excel. Every version has slightly different formulas. Every third one has a GST calculation error. RealtySell calculates it once, correctly, every time: floor rise, facing PLC, parking, clubhouse, maintenance, GST at 5%, stamp duty reminder included. Formatted for the buyer, not for internal use. Ready to share in one click, from any device.
                 </p>
                 <ul className="space-y-3">
                   {[
                     "Inputs: base sale price, floor rise, facing PLC, parking, clubhouse, maintenance",
                     "Floor premium: ₹50/sqft/floor auto-applied",
-                    "Facing premium: garden / pool / corner / east / north — auto-applied",
-                    "GST at 5% — correctly calculated, not an afterthought",
+                    "Facing premium: garden / pool / corner / east / north (auto-applied)",
+                    "GST at 5%: correctly calculated, not an afterthought",
                     "Stamp duty reminder included in the output",
-                    "Print/share-ready — formatted for the buyer, not for internal use",
+                    "Print/share-ready: formatted for the buyer, not for internal use",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3 text-sm text-muted-foreground">
                       <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5" />
@@ -578,7 +578,7 @@ export default function RealtySell() {
                 <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-primary mb-4 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 block">Approval Workflow</span>
                 <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">Every exception documented. Every decision auditable. No more surprises at closing.</h2>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  When an agent promises a buyer a 3% discount or a deferred payment schedule, that promise needs to go through someone with authority to make it. RealtySell formalizes every exception — the agent submits an approval request, the manager reviews it and either approves or rejects with a documented reason, and the entire trail is permanent. No more verbal commitments that management hears about for the first time at the signing table.
+                  When an agent promises a buyer a 3% discount or a deferred payment schedule, that promise needs to go through someone with authority to make it. RealtySell formalizes every exception: the agent submits an approval request, the manager reviews it and either approves or rejects with a documented reason, and the entire trail is permanent. No more verbal commitments that management hears about for the first time at the signing table.
                 </p>
                 <ul className="space-y-3">
                   {[
@@ -606,7 +606,7 @@ export default function RealtySell() {
             <motion.div variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }} className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Role-Based Access. Pre-Configured. No Setup Required.</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Adding a new agent doesn&apos;t mean sharing a password and hoping they don&apos;t look at the wrong data. Every role has exactly the access it needs — and no more. The moment the account is created, the permissions are already right.
+                Adding a new agent doesn&apos;t mean sharing a password and hoping they don&apos;t look at the wrong data. Every role has exactly the access it needs, and no more. The moment the account is created, the permissions are already right.
               </p>
             </motion.div>
             <div className="overflow-hidden rounded-2xl border border-border bg-card">
@@ -664,7 +664,7 @@ export default function RealtySell() {
             <motion.div variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }} className="text-center mb-14">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Why Real Estate Teams in India Choose RealtySell Over Generic CRMs</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                You could spend two months configuring Salesforce or Zoho for real estate. Teams have tried. They end up back on Excel. RealtySell ships ready to use on day one for Indian property sales — no configuration required.
+                You could spend two months configuring Salesforce or Zoho for real estate. Teams have tried. They end up back on Excel. RealtySell ships ready to use on day one for Indian property sales: no configuration required.
               </p>
             </motion.div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -717,7 +717,7 @@ export default function RealtySell() {
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <motion.div variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }}>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Your leads, units, and commissions — in one place, finally.
+                Your leads, units, and commissions: in one place, finally.
               </h2>
               <p className="text-background/70 text-lg leading-relaxed mb-10 max-w-xl mx-auto">
                 Real estate teams that switch to RealtySell stop losing leads to slow follow-up, stop arguing about commission splits at month-end, and stop double-booking units over WhatsApp voice notes. That&apos;s what it looks like when the CRM was actually built for the way Indian real estate works.

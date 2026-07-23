@@ -3,23 +3,23 @@ import { Scaling, Target, Layers, MapPin } from "lucide-react";
 
 const points = [
   {
-    title: "AI does the heavy lifting",
-    description: "We use Claude Code, Lovable, Codex, Cursor, and Replit. AI handles the boilerplate, the repetitive patterns, the scaffolding. Our engineers handle what AI cannot — architecture decisions, edge cases, and product judgment.",
-    icon: Scaling
-  },
-  {
-    title: "IIT engineers keep it honest",
-    description: "AI output without senior engineering oversight produces fast, broken software. Our IIT alumni engineers review every decision — so you get AI speed with human quality control baked in.",
+    title: "Built around your business, not a package",
+    description: "No menu of fixed packages to pick from. We look at what your business actually needs across strategy, marketing, content, and technology, then build the plan around that.",
     icon: Target
   },
   {
-    title: "You pay for the outcome, not the hours",
-    description: "When AI compresses a 3-month project into 3 weeks, you should not be billed for 3 months. We price on scope and value, and pass the efficiency directly to you.",
+    title: "One partner, not four vendors",
+    description: "Strategy, marketing, content, and technology working as one team, instead of scattered across separate agencies and freelancers who never talk to each other.",
     icon: Layers
   },
   {
+    title: "IIT alumni keep the technology honest",
+    description: "When the technology pillar kicks in, our IIT alumni engineers make sure it holds up: real architecture, real quality control, not just fast output.",
+    icon: Scaling
+  },
+  {
     title: "Clients from all over the world",
-    description: "US, UK, Australia, Canada, UAE. Different industries, different time zones, same outcome — software that ships fast and works correctly.",
+    description: "US, UK, Australia, Canada, UAE. Different industries, different time zones, same approach: a plan built around your business, not a template.",
     icon: MapPin
   }
 ];
@@ -51,10 +51,10 @@ export function WhyUs() {
             className="lg:col-span-5"
           >
             <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4 md:mb-6 text-foreground">
-              IIT Engineers.<br /><span className="text-primary">AI Tools.</span><br />Unfair Advantage.
+              One Partner.<br /><span className="text-primary">Every Pillar You Need.</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              We saw the gap early: AI tools can do most of the work now — but most companies haven't changed how they price or deliver. We built Tirthon Tech around that insight.
+              Most businesses need strategy, marketing, content, and technology working together, not four different vendors who never talk to each other. We built Tirthon Tech around that insight.
             </p>
             <motion.div
               initial={{ width: 0 }}

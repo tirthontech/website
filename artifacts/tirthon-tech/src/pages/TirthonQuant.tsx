@@ -45,17 +45,17 @@ const painPoints = [
   {
     icon: AlertTriangle,
     heading: "Your strategy is good. Your execution isn't.",
-    body: "You know exactly what to do. Buy when RSI crosses 30, sell when it crosses 70. You've backtested it mentally a hundred times. But when the moment comes, you hesitate — because it's your money, and the last three trades didn't work. Then you override the signal. Then the trade you skipped moves 4%. TirthonQuant doesn't hesitate.",
+    body: "You know exactly what to do. Buy when RSI crosses 30, sell when it crosses 70. You've backtested it mentally a hundred times. But when the moment comes, you hesitate, because it's your money, and the last three trades didn't work. Then you override the signal. Then the trade you skipped moves 4%. TirthonQuant doesn't hesitate.",
   },
   {
     icon: Eye,
     heading: "You can't watch 15 charts at 9:20 AM and also hold a job.",
-    body: "The opportunity was in the 5-minute NIFTY chart at 9:22 AM. You were in a meeting. By the time you checked, the setup was gone — or worse, you entered late and caught the reversal instead of the move. Your strategy works. Your availability doesn't scale.",
+    body: "The opportunity was in the 5-minute NIFTY chart at 9:22 AM. You were in a meeting. By the time you checked, the setup was gone, or worse, you entered late and caught the reversal instead of the move. Your strategy works. Your availability doesn't scale.",
   },
   {
     icon: XCircle,
     heading: "You've tested nothing. You're trading live on instinct.",
-    body: "Most retail traders deploy strategies on real capital without a single backtest. The strategy felt right based on a few trades that worked. TirthonQuant's backtesting engine runs your logic across years of historical data before you risk a single rupee — giving you CAGR, Sharpe ratio, max drawdown, and win rate before you go live.",
+    body: "Most retail traders deploy strategies on real capital without a single backtest. The strategy felt right based on a few trades that worked. TirthonQuant's backtesting engine runs your logic across years of historical data before you risk a single rupee: giving you CAGR, Sharpe ratio, max drawdown, and win rate before you go live.",
   },
   {
     icon: Clock,
@@ -69,7 +69,7 @@ const features = [
     icon: Bot,
     title: "Automated Strategy Execution",
     description:
-      "Buy and sell orders placed automatically based on technical indicators — RSI, MACD, EMA crossover, Bollinger Bands, and more. Condition stacking lets you combine multiple signals before triggering. No hesitation. No override. Exact execution every time.",
+      "Buy and sell orders placed automatically based on technical indicators: RSI, MACD, EMA crossover, Bollinger Bands, and more. Condition stacking lets you combine multiple signals before triggering. No hesitation. No override. Exact execution every time.",
   },
   {
     icon: Shield,
@@ -81,7 +81,7 @@ const features = [
     icon: LineChart,
     title: "Multi-Leg Options Automation",
     description:
-      "Straddle, strangle, iron condor, spreads — executed automatically. Auto strike selection by ATM/OTM/ITM rules. Expiry rollover on your schedule. Live Greeks monitoring (Delta, Theta, IV). Theta decay auto-exit when your target is met.",
+      "Straddle, strangle, iron condor, spreads: executed automatically. Auto strike selection by ATM/OTM/ITM rules. Expiry rollover on your schedule. Live Greeks monitoring (Delta, Theta, IV). Theta decay auto-exit when your target is met.",
   },
   {
     icon: Database,
@@ -99,7 +99,7 @@ const features = [
     icon: Zap,
     title: "TradingView & API Integration",
     description:
-      "Fire live orders directly from Pine Script alerts via TradingView webhooks. REST API for custom signal sources — Python scripts, external models, proprietary systems. Telegram bot integration: receive signals and trigger trades via message.",
+      "Fire live orders directly from Pine Script alerts via TradingView webhooks. REST API for custom signal sources: Python scripts, external models, proprietary systems. Telegram bot integration: receive signals and trigger trades via message.",
   },
   {
     icon: Activity,
@@ -111,13 +111,13 @@ const features = [
     icon: RefreshCw,
     title: "Broker API Maintenance",
     description:
-      "We handle every broker API update, session token refresh, and reconnection after a drop. Zerodha, Upstox, Angel One, Fyers, Dhan, IIFL — all maintained by our team. Your strategy keeps running whether the broker pushes an update or not.",
+      "We handle every broker API update, session token refresh, and reconnection after a drop. Zerodha, Upstox, Angel One, Fyers, Dhan, IIFL. All maintained by our team. Your strategy keeps running whether the broker pushes an update or not.",
   },
   {
     icon: BarChart3,
     title: "Reporting & Audit Trail",
     description:
-      "Complete trade log: symbol, time, quantity, price, strategy name, and reason for every order. Daily and monthly P&L reports. CSV/Excel export for ITR-3 filing and CA audit support. Every order is traceable — who triggered it, when, and under what condition.",
+      "Complete trade log: symbol, time, quantity, price, strategy name, and reason for every order. Daily and monthly P&L reports. CSV/Excel export for ITR-3 filing and CA audit support. Every order is traceable: who triggered it, when, and under what condition.",
   },
 ];
 
@@ -139,11 +139,11 @@ const segments = [
 ];
 
 const managedService = [
-  "Infrastructure setup and hosting — cloud or on-premise, fully managed",
-  "Strategy onboarding — we translate your logic into a deployable strategy",
-  "Regular broker API maintenance — zero downtime from your side",
+  "Infrastructure setup and hosting: cloud or on-premise, fully managed",
+  "Strategy onboarding: we translate your logic into a deployable strategy",
+  "Regular broker API maintenance: zero downtime from your side",
   "Monthly performance review calls with your strategy report",
-  "Priority support via WhatsApp/Telegram during market hours (9:00–15:45)",
+  "Priority support via WhatsApp/Telegram during market hours (9:00-15:45)",
 ];
 
 const whoFor = [
@@ -160,7 +160,7 @@ const whoFor = [
   {
     icon: IndianRupee,
     title: "Family offices & HNIs",
-    description: "Systematic, rule-based deployment of capital across equity and derivatives. Complete audit trail for every order — down to the second.",
+    description: "Systematic, rule-based deployment of capital across equity and derivatives. Complete audit trail for every order, down to the second.",
   },
   {
     icon: LineChart,
@@ -204,7 +204,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 const faqs = [
   {
     q: "Do I need to know coding to use TirthonQuant?",
-    a: "No. Our managed service layer handles all the technical infrastructure — broker API setup, server hosting, session management, and strategy deployment. You define the logic in plain language: entry conditions, exit conditions, stop-loss, position size. Our team translates that into a deployable strategy. If you already have a Pine Script or Python strategy, we onboard that directly.",
+    a: "No. Our managed service layer handles all the technical infrastructure: broker API setup, server hosting, session management, and strategy deployment. You define the logic in plain language: entry conditions, exit conditions, stop-loss, position size. Our team translates that into a deployable strategy. If you already have a Pine Script or Python strategy, we onboard that directly.",
   },
   {
     q: "Which brokers are supported?",
@@ -212,11 +212,11 @@ const faqs = [
   },
   {
     q: "What happens when a broker API breaks or changes?",
-    a: "We handle it. Broker API updates, session token expirations, and connection drops are our responsibility — not yours. Our team monitors all active integrations and pushes fixes before market open. Your strategy keeps running without you needing to touch the code or restart anything.",
+    a: "We handle it. Broker API updates, session token expirations, and connection drops are our responsibility, not yours. Our team monitors all active integrations and pushes fixes before market open. Your strategy keeps running without you needing to touch the code or restart anything.",
   },
   {
     q: "Can I run multiple strategies at the same time?",
-    a: "Yes. TirthonQuant supports fully parallel strategy execution with complete isolation — one strategy's drawdown or capital allocation does not affect another. Each strategy and each account can have its own risk profile: separate daily loss limits, separate max position sizes, separate stop-loss rules.",
+    a: "Yes. TirthonQuant supports fully parallel strategy execution with complete isolation: one strategy's drawdown or capital allocation does not affect another. Each strategy and each account can have its own risk profile: separate daily loss limits, separate max position sizes, separate stop-loss rules.",
   },
   {
     q: "How does the backtesting engine work?",
@@ -224,7 +224,7 @@ const faqs = [
   },
   {
     q: "Can TirthonQuant execute options strategies automatically?",
-    a: "Yes. Multi-leg options strategies — straddles, strangles, iron condors, spreads — are executed automatically. The system selects strikes based on ATM/OTM/ITM rules you define, monitors live Greeks (Delta, Theta, IV) per position, exits when Theta decay targets are met, and rolls positions to the next expiry on your schedule. No manual intervention required.",
+    a: "Yes. Multi-leg options strategies (straddles, strangles, iron condors, spreads) are executed automatically. The system selects strikes based on ATM/OTM/ITM rules you define, monitors live Greeks (Delta, Theta, IV) per position, exits when Theta decay targets are met, and rolls positions to the next expiry on your schedule. No manual intervention required.",
   },
   {
     q: "How does TradingView integration work?",
@@ -254,7 +254,7 @@ export default function TirthonQuant() {
         applicationCategory: "FinanceApplication",
         operatingSystem: "Web, Cloud",
         description:
-          "TirthonQuant is an algorithmic trading platform for Indian retail traders, trading desks, and family offices. It automates strategy execution across Zerodha, Upstox, Angel One, and other brokers — with backtesting, risk management, options automation, and a fully managed IT service layer. No coding required.",
+          "TirthonQuant is an algorithmic trading platform for Indian retail traders, trading desks, and family offices. It automates strategy execution across Zerodha, Upstox, Angel One, and other brokers, with backtesting, risk management, options automation, and a fully managed IT service layer. No coding required.",
         url: "https://tirthontech.com/products/tirthonquant",
         provider: {
           "@type": "Organization",
@@ -263,21 +263,21 @@ export default function TirthonQuant() {
         },
         featureList: [
           "Automated buy/sell order execution based on RSI, MACD, EMA, Bollinger Bands",
-          "Multi-leg options strategy automation — straddle, strangle, iron condor",
+          "Multi-leg options strategy automation: straddle, strangle, iron condor",
           "Backtesting engine with CAGR, Sharpe ratio, max drawdown, win rate",
           "Multi-account and multi-strategy parallel execution with isolation",
-          "TradingView webhook integration — Pine Script alert to live order",
-          "Automated risk management — stop-loss, trailing stop, daily loss limit, drawdown circuit breaker",
-          "Broker API maintenance — Zerodha, Upstox, Angel One, Fyers, Dhan, IIFL",
+          "TradingView webhook integration: Pine Script alert to live order",
+          "Automated risk management: stop-loss, trailing stop, daily loss limit, drawdown circuit breaker",
+          "Broker API maintenance: Zerodha, Upstox, Angel One, Fyers, Dhan, IIFL",
           "Live P&L dashboard and Telegram/email/SMS alerts",
           "Complete trade audit trail with CSV export for ITR-3 filing",
-          "Fully managed infrastructure — cloud or on-premise",
+          "Fully managed infrastructure: cloud or on-premise",
         ],
         additionalProperty: [
           { "@type": "PropertyValue", name: "Supported Brokers", value: "Zerodha, Upstox, Angel One, Fyers, Dhan, IIFL" },
           { "@type": "PropertyValue", name: "Segments", value: "NSE Equity, NSE F&O, BSE, Currency, MCX Commodities" },
           { "@type": "PropertyValue", name: "Target Users", value: "Retail traders, trading desks, family offices, HNIs, options sellers" },
-          { "@type": "PropertyValue", name: "Coding Required", value: "No — fully managed service with strategy onboarding" },
+          { "@type": "PropertyValue", name: "Coding Required", value: "No, fully managed service with strategy onboarding" },
         ],
       },
       {
@@ -294,11 +294,11 @@ export default function TirthonQuant() {
   return (
     <>
       <SEO
-        title="TirthonQuant — Algorithmic Trading Platform for Indian Traders | Algo Trading Software India"
-        description="TirthonQuant automates your trading strategy across Zerodha, Upstox, Angel One and more — with backtesting, risk management, options automation, and zero coding required. Built for retail traders, trading desks, and family offices in India."
+        title="TirthonQuant: Algorithmic Trading Platform for Indian Traders | Algo Trading Software India"
+        description="TirthonQuant automates your trading strategy across Zerodha, Upstox, Angel One and more, with backtesting, risk management, options automation, and zero coding required. Built for retail traders, trading desks, and family offices in India."
         keywords="algo trading software India, algorithmic trading platform India, automated trading software India, trading bot India, algo trading without coding, backtesting software India, options trading automation India, TradingView webhook trading India, multi-account trading automation, trading strategy automation, Zerodha algo trading, Upstox algo trading, systematic trading India, quant trading platform India, F&O automation software, options algo trading India, automated stop loss trading, risk management algo trading, NSE algo trading software, retail algo trading India"
         canonical="https://tirthontech.com/products/tirthonquant"
-        ogTitle="TirthonQuant — Automate Your Trading Strategy Across Zerodha, Upstox & More"
+        ogTitle="TirthonQuant: Automate Your Trading Strategy Across Zerodha, Upstox & More"
         ogDescription="Backtesting, risk management, options automation, and fully managed broker API maintenance. No coding required. Built for Indian traders who trade seriously."
         jsonLd={jsonLd}
       />
@@ -337,7 +337,7 @@ export default function TirthonQuant() {
               custom={2}
               className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-10 max-w-2xl mx-auto"
             >
-              TirthonQuant is an algorithmic trading platform built for Indian retail traders, trading desks, and family offices. Automate your strategy across Zerodha, Upstox, Angel One, and more — with built-in backtesting, automated risk management, options lifecycle automation, and a fully managed service so you never touch a broker API again.
+              TirthonQuant is an algorithmic trading platform built for Indian retail traders, trading desks, and family offices. Automate your strategy across Zerodha, Upstox, Angel One, and more, with built-in backtesting, automated risk management, options lifecycle automation, and a fully managed service so you never touch a broker API again.
             </motion.p>
             <motion.div
               variants={fadeUp}
@@ -399,7 +399,7 @@ export default function TirthonQuant() {
             <motion.div variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }} className="text-center mb-14">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Everything a Systematic Trader Needs</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Strategy execution, risk enforcement, options automation, backtesting, broker maintenance, and reporting — all in one platform, fully managed.
+                Strategy execution, risk enforcement, options automation, backtesting, broker maintenance, and reporting, all in one platform, fully managed.
               </p>
             </motion.div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -432,18 +432,18 @@ export default function TirthonQuant() {
                 <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-primary mb-4 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 block">Strategy Execution</span>
                 <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">Your rules. Executed in milliseconds. Every time.</h2>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  You spent months identifying a setup that works. Now it needs to execute at exactly the right moment — not when you notice the signal, not after you second-guess it, not after you check Telegram first. TirthonQuant places the order the instant the condition is met, with the exact quantity, at the exact price, on the exact account you configured.
+                  You spent months identifying a setup that works. Now it needs to execute at exactly the right moment: not when you notice the signal, not after you second-guess it, not after you check Telegram first. TirthonQuant places the order the instant the condition is met, with the exact quantity, at the exact price, on the exact account you configured.
                 </p>
                 <p className="text-muted-foreground leading-relaxed mb-8">
-                  Run strategies on 1-minute, 5-minute, 15-minute, or daily timeframes. Stack multiple conditions before a trigger fires. Schedule execution to specific sessions — pre-market, opening range, only between 10 AM and 2 PM. Event-based triggers on price levels, volume spikes, or external signals.
+                  Run strategies on 1-minute, 5-minute, 15-minute, or daily timeframes. Stack multiple conditions before a trigger fires. Schedule execution to specific sessions: pre-market, opening range, only between 10 AM and 2 PM. Event-based triggers on price levels, volume spikes, or external signals.
                 </p>
                 <ul className="space-y-3">
                   {[
                     "RSI, MACD, EMA crossover, Bollinger Bands, and custom indicators",
                     "Multi-timeframe signal analysis: 1min, 5min, 15min, daily",
-                    "Condition stacking — require multiple signals before triggering",
-                    "Scheduled execution — run only during specific market sessions",
-                    "Event-based triggers — price level, volume spike, time, external signal",
+                    "Condition stacking: require multiple signals before triggering",
+                    "Scheduled execution: run only during specific market sessions",
+                    "Event-based triggers: price level, volume spike, time, external signal",
                     "TradingView Pine Script webhook → live order in one step",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3 text-sm text-muted-foreground">
@@ -457,16 +457,16 @@ export default function TirthonQuant() {
                 <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-primary mb-4 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 block">Automated Risk Management</span>
                 <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">You know your stop-loss. Now it actually gets honoured.</h2>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  Every trader knows their max daily loss. Most traders have overridden it at least once — telling themselves the position will recover. It usually doesn&apos;t. TirthonQuant doesn&apos;t ask your permission when the limit is hit. It pauses the strategy. The decision was already made when you configured the system, and it stays made.
+                  Every trader knows their max daily loss. Most traders have overridden it at least once, telling themselves the position will recover. It usually doesn&apos;t. TirthonQuant doesn&apos;t ask your permission when the limit is hit. It pauses the strategy. The decision was already made when you configured the system, and it stays made.
                 </p>
                 <ul className="space-y-3">
                   {[
-                    "Per-trade stop-loss and target — absolute or percentage-based",
-                    "Trailing stop-loss automation — locks in profits as the trade moves",
-                    "Max daily loss limit — strategy pauses automatically when breached",
-                    "Max open positions cap — prevents overexposure across instruments",
-                    "Position sizing — fixed lot, % of capital, or volatility-adjusted",
-                    "Drawdown circuit breaker — system halts if portfolio drawdown crosses threshold",
+                    "Per-trade stop-loss and target: absolute or percentage-based",
+                    "Trailing stop-loss automation: locks in profits as the trade moves",
+                    "Max daily loss limit: strategy pauses automatically when breached",
+                    "Max open positions cap: prevents overexposure across instruments",
+                    "Position sizing: fixed lot, % of capital, or volatility-adjusted",
+                    "Drawdown circuit breaker: system halts if portfolio drawdown crosses threshold",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3 text-sm text-muted-foreground">
                       <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5 drop-shadow-sm" />
@@ -485,17 +485,17 @@ export default function TirthonQuant() {
             <div className="grid lg:grid-cols-2 gap-12 items-start">
               <motion.div variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }}>
                 <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-primary mb-4 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 block">Options Trading Automation</span>
-                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">Automate the entire options lifecycle — not just the entry.</h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">Automate the entire options lifecycle, not just the entry.</h2>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  Selling a straddle manually means picking the strikes, placing two legs, watching the Greeks, deciding when Theta decay is enough, and remembering to roll before expiry. Miss one step and the trade is wrong. TirthonQuant handles the full lifecycle — from strike selection to Greeks monitoring to expiry rollover — without you touching anything.
+                  Selling a straddle manually means picking the strikes, placing two legs, watching the Greeks, deciding when Theta decay is enough, and remembering to roll before expiry. Miss one step and the trade is wrong. TirthonQuant handles the full lifecycle (from strike selection to Greeks monitoring to expiry rollover) without you touching anything.
                 </p>
                 <ul className="space-y-3">
                   {[
-                    "Multi-leg execution — straddle, strangle, iron condor, spreads",
+                    "Multi-leg execution: straddle, strangle, iron condor, spreads",
                     "Auto strike selection: ATM / OTM / ITM rules you define",
                     "Live Greeks monitoring: Delta, Theta, IV per position",
-                    "Theta decay management — auto-exit when decay target is met",
-                    "Expiry rollover automation — rolls to next expiry on your schedule",
+                    "Theta decay management: auto-exit when decay target is met",
+                    "Expiry rollover automation: rolls to next expiry on your schedule",
                     "Full NSE F&O and currency derivatives support",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3 text-sm text-muted-foreground">
@@ -509,16 +509,16 @@ export default function TirthonQuant() {
                 <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-primary mb-4 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 block">Backtesting Engine</span>
                 <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">Test before you trade. Know the numbers before you risk the capital.</h2>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  Most retail traders&apos; idea of backtesting is looking at a chart and saying &quot;yes, that setup would have worked.&quot; That is not backtesting. TirthonQuant runs your strategy logic mechanically across years of historical tick data, across multiple symbols and timeframes simultaneously, and gives you hard numbers — not a feeling.
+                  Most retail traders&apos; idea of backtesting is looking at a chart and saying &quot;yes, that setup would have worked.&quot; That is not backtesting. TirthonQuant runs your strategy logic mechanically across years of historical tick data, across multiple symbols and timeframes simultaneously, and gives you hard numbers, not a feeling.
                 </p>
                 <ul className="space-y-3">
                   {[
                     "Historical backtesting across multiple symbols and timeframes",
                     "CAGR, Sharpe ratio, max drawdown, win rate, average R:R",
-                    "Walk-forward testing — prevents overfitting to historical data",
+                    "Walk-forward testing: prevents overfitting to historical data",
                     "Side-by-side comparison of two strategy versions on the same dataset",
                     "Test on NSE equity, F&O, and currency historical data",
-                    "Deploy the same strategy live after validation — one click",
+                    "Deploy the same strategy live after validation: one click",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3 text-sm text-muted-foreground">
                       <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5 drop-shadow-sm" />
@@ -563,7 +563,7 @@ export default function TirthonQuant() {
                   ))}
                 </ul>
                 <div className="mt-6 pt-5 border-t border-border">
-                  <p className="text-xs text-muted-foreground">Auto-reconnect on session expiry or connection drop. All API maintenance handled by our team — zero downtime from broker-side updates.</p>
+                  <p className="text-xs text-muted-foreground">Auto-reconnect on session expiry or connection drop. All API maintenance handled by our team: zero downtime from broker-side updates.</p>
                 </div>
               </motion.div>
             </div>
@@ -578,7 +578,7 @@ export default function TirthonQuant() {
                 <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-primary mb-4 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 block">Managed Service</span>
                 <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">You define the strategy. We handle everything else.</h2>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  Setting up servers, configuring broker APIs, managing session tokens, handling downtime, debugging broken connections — none of that should be your job. It&apos;s ours. TirthonQuant&apos;s managed service layer means the only thing you focus on is whether the strategy is performing.
+                  Setting up servers, configuring broker APIs, managing session tokens, handling downtime, debugging broken connections: none of that should be your job. It&apos;s ours. TirthonQuant&apos;s managed service layer means the only thing you focus on is whether the strategy is performing.
                 </p>
                 <ul className="space-y-4">
                   {managedService.map((item) => (

@@ -5,46 +5,46 @@ import { Button } from "@/components/ui/button";
 
 const columns = [
   {
-    label: "Traditional IT Agency",
-    rate: "$150 – 250/hr",
-    rateUnit: "Using AI internally. Charging you pre-AI prices.",
+    label: "Juggling Multiple Vendors",
+    rate: "3+ Vendors",
+    rateUnit: "A strategy consultant, a marketing agency, and a dev shop, none of whom talk to each other.",
     highlight: false,
     dimmed: true,
     items: [
-      { text: "Senior engineers", ok: true },
-      { text: "Uses AI tools internally", ok: true },
-      { text: "Passes AI savings to you", ok: false },
-      { text: "Delivers in weeks, not months", ok: false },
-      { text: "Startup-compatible pricing", ok: false },
+      { text: "Some expertise in each area", ok: true },
+      { text: "Coordination between vendors", ok: false },
+      { text: "One consistent strategy", ok: false },
+      { text: "Single point of accountability", ok: false },
+      { text: "Built around your actual needs", ok: false },
     ],
   },
   {
     label: "Tirthon Tech",
-    rate: "AI-Speed Delivery",
-    rateUnit: "IIT engineers + AI tools. You get both.",
+    rate: "One Partner",
+    rateUnit: "Strategy, marketing, content, and technology, under one roof.",
     highlight: true,
     dimmed: false,
-    badge: "The AI-era choice",
+    badge: "Built around you",
     items: [
-      { text: "IIT alumni engineers", ok: true },
-      { text: "Claude Code, Lovable, Codex, Replit", ok: true },
-      { text: "10x faster than traditional delivery", ok: true },
-      { text: "Fraction of traditional agency cost", ok: true },
-      { text: "Startup & enterprise ready", ok: true },
+      { text: "Strategy, marketing, content, and technology", ok: true },
+      { text: "One point of contact", ok: true },
+      { text: "Consistent strategy across every pillar", ok: true },
+      { text: "Built around what you need, not a fixed package", ok: true },
+      { text: "IIT alumni keep the technology honest", ok: true },
     ],
   },
   {
-    label: "Cheap Freelancer",
-    rate: "$10 – 30/hr",
-    rateUnit: "Low cost. No architecture. No process.",
+    label: "DIY or Cheap Freelancers",
+    rate: "Patchwork",
+    rateUnit: "Low cost upfront. No strategy. No one owns the outcome.",
     highlight: false,
     dimmed: true,
     items: [
       { text: "Low upfront cost", ok: true },
-      { text: "Production-grade quality", ok: false },
-      { text: "Structured delivery process", ok: false },
-      { text: "Post-launch support", ok: false },
-      { text: "Scalable architecture", ok: false },
+      { text: "Coordinated strategy", ok: false },
+      { text: "Production grade execution", ok: false },
+      { text: "Ongoing partnership", ok: false },
+      { text: "Accountability for results", ok: false },
     ],
   },
 ];
@@ -63,15 +63,15 @@ export function CostAdvantage() {
           className="text-center max-w-2xl mx-auto mb-14"
         >
           <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
-            The AI era changed everything
+            Growth needs more than one specialist
           </span>
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-foreground mb-4">
-            Traditional agencies use AI too.<br />
-            <span className="text-primary">They just don't tell you.</span>
+            Most businesses patch together<br />
+            <span className="text-primary">a strategist, a marketer, and a dev shop.</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            Every agency is using Claude, Copilot, and Cursor behind the scenes — and still billing you $150–$250/hr.
-            We built Tirthon Tech to pass that advantage directly to you.
+            None of them talk to each other, and no one owns the outcome.
+            We built Tirthon Tech to be the one partner that does.
           </p>
         </motion.div>
 
@@ -157,7 +157,7 @@ export function CostAdvantage() {
                     className="w-full rounded-xl bg-primary hover:bg-primary/90 text-primary-foreground font-semibold group"
                     size="lg"
                   >
-                    Start a Project
+                    Book a Strategy Session
                     <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </Link>
@@ -174,7 +174,7 @@ export function CostAdvantage() {
           transition={{ duration: 0.5, delay: 0.4 }}
           className="text-center text-xs text-muted-foreground/50 mt-8"
         >
-          AI tools compress delivery time. IIT engineers ensure the architecture is right. You get both — without the traditional agency markup.
+          Strategy, marketing, content, and technology, working as one team instead of three separate invoices.
         </motion.p>
 
       </div>

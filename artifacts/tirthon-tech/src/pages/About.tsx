@@ -10,17 +10,17 @@ import { Target, Lightbulb, Users, CheckCircle, Globe2, ShieldCheck } from "luci
 const values = [
   {
     title: "Straight talk",
-    description: "We don't hide behind technical terms or vague timelines. You'll always know where things stand and why.",
+    description: "We don't hide behind jargon or vague timelines, whether we're talking strategy, marketing, or technology. You'll always know where things stand and why.",
     icon: Target
   },
   {
     title: "Curiosity",
-    description: "We stay on top of what's new in tech. Not to chase trends, but to pick the right tool for the right job.",
+    description: "We stay on top of what's new in growth strategy, marketing, and technology. Not to chase trends, but to pick the right approach for the right problem.",
     icon: Lightbulb
   },
   {
     title: "We're in it together",
-    description: "When you win, we win. We care about what happens after launch, not just what gets shipped.",
+    description: "When you win, we win. We care about what happens after the work starts, not just what gets delivered.",
     icon: Users
   }
 ];
@@ -28,7 +28,7 @@ const values = [
 const reasons = [
   { text: "IIT Alumni, trained at India's top engineering colleges", icon: ShieldCheck },
   { text: "Clients from across the world with different industries and different problems", icon: Globe2 },
-  { text: "We've helped companies go from idea to product to growth", icon: CheckCircle },
+  { text: "We've helped businesses go from idea to strategy to real growth", icon: CheckCircle },
   { text: "Clear process, no surprises, and we actually meet deadlines", icon: CheckCircle },
 ];
 
@@ -47,7 +47,7 @@ const aboutSchemas = [
     "name": "About Tirthon Tech",
     "url": "https://tirthontech.com/about",
     "description":
-      "Tirthon Tech is a software development company founded by IIT alumni, committed to building scalable, intelligent, and future-ready technology for clients worldwide.",
+      "Tirthon Tech is a growth partner founded by IIT alumni, helping businesses grow through brand and growth strategy, marketing execution, content, and technology, built around what each business actually needs.",
     "publisher": {
       "@type": "Organization",
       "name": "Tirthon Tech",
@@ -60,10 +60,10 @@ export default function About() {
   return (
     <div className="flex flex-col min-h-screen bg-background">
       <SEO
-        title="About Tirthon Tech | IIT Alumni Software Development Company"
-        description="Tirthon Tech is a software development company founded by IIT alumni, serving clients in the US, UK, Australia, Canada, UAE, and beyond. Senior engineers. Transparent process. Globally competitive rates."
+        title="About Tirthon Tech | IIT Alumni Growth Partner for Businesses"
+        description="Tirthon Tech is a growth partner founded by IIT alumni, helping businesses grow through brand and growth strategy, marketing execution, content, and technology, serving clients in the US, UK, Australia, Canada, UAE, and beyond."
         path="/about"
-        keywords="IIT alumni software company, software development company India for US clients, about Tirthon Tech, hire Indian software developers, software company Indore India, outsource to India"
+        keywords="IIT alumni company, business growth strategy India, marketing execution agency, about Tirthon Tech, growth partner for businesses, business consulting India, software company Indore India"
         jsonLd={aboutSchemas}
       />
       <Navbar />
@@ -85,7 +85,7 @@ export default function About() {
                 About <span className="text-primary">Tirthon Tech</span>
               </h1>
               <p className="text-base md:text-xl lg:text-2xl text-muted-foreground leading-relaxed font-light">
-                We're IIT alumni who got tired of watching businesses struggle with bad software. So we built a team that actually knows how to fix that, and we've been doing it for clients around the world ever since.
+                We're IIT alumni who got tired of watching businesses treat strategy, marketing, and technology as three separate, disconnected problems. So we built a team that handles all of it as one, and we've been doing it for clients around the world ever since.
               </p>
             </motion.div>
           </div>
@@ -102,7 +102,7 @@ export default function About() {
             >
               <h2 className="text-3xl font-bold mb-6 text-foreground">Our Mission</h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                We're IIT graduates. We studied at some of the hardest engineering schools in India, where cutting corners wasn't an option. We brought that same standard into Tirthon Tech. Whether someone comes to us with a rough idea or a detailed spec, we put in the same effort. That hasn't changed.
+                We're IIT graduates. We studied at some of the hardest engineering schools in India, where cutting corners wasn't an option. We brought that same standard into Tirthon Tech, whether we're shaping a growth strategy, running a marketing campaign, or building software. Whether someone comes to us with a rough idea or a detailed brief, we put in the same effort. That hasn't changed.
               </p>
             </motion.div>
           </div>
@@ -179,7 +179,7 @@ export default function About() {
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-foreground">Have something in mind? Let's talk.</h2>
             <Link href="/contact">
               <Button size="lg" className="h-14 px-10 text-lg rounded-full bg-primary text-primary-foreground hover:bg-primary/90 shadow-md">
-                Contact Us Today
+                Book a Strategy Session
               </Button>
             </Link>
           </div>

@@ -41,12 +41,12 @@ const fadeUp = {
 
 const comparisonPoints = [
   {
-    before: "Billing software, Tally, and a karigar notebook — three separate systems that never agree with each other",
+    before: "Billing software, Tally, and a karigar notebook: three separate systems that never agree with each other",
     after: "One system. Every sale, purchase, loan, and karigar transaction lands in the same books automatically.",
   },
   {
     before: "GST return prep means exporting data and rebuilding it by hand for your CA every month",
-    after: "GSTR-1, GSTR-3B, HSN summary, and both registers generate directly from real transactions — no rebuilding.",
+    after: "GSTR-1, GSTR-3B, HSN summary, and both registers generate directly from real transactions: no rebuilding.",
   },
   {
     before: "Karigar wastage disputes because there's no real record of what metal went out and came back",
@@ -54,10 +54,10 @@ const comparisonPoints = [
   },
   {
     before: "Gold loan / pawn business tracked in a separate physical register",
-    after: "A full standalone Girvi module — legally numbered vouchers, interest tracking, CA-facing reports.",
+    after: "A full standalone Girvi module: legally numbered vouchers, interest tracking, CA-facing reports.",
   },
   {
-    before: "No way to properly reverse a returned sale — you edit numbers by hand and hope the books still add up",
+    before: "No way to properly reverse a returned sale: you edit numbers by hand and hope the books still add up",
     after: "One-click sale return restocks inventory and reverses the accounting automatically, every time.",
   },
 ];
@@ -72,17 +72,17 @@ const salesBillingFeatures = [
   {
     icon: Receipt,
     title: "Instant Billing & POS",
-    description: "Barcode scan or quick-add, live gold/silver rates, GST auto-calculated at your shop's actual rate — not a hardcoded guess.",
+    description: "Barcode scan or quick-add, live gold/silver rates, GST auto-calculated at your shop's actual rate, not a hardcoded guess.",
   },
   {
     icon: RefreshCw,
     title: "Old Gold Exchange",
-    description: "Take gold in exchange on a sale and it lands as real physical stock, not just a number — no more mismatched inventory counts.",
+    description: "Take gold in exchange on a sale and it lands as real physical stock, not just a number. No more mismatched inventory counts.",
   },
   {
     icon: ArrowRight,
     title: "Sale Returns",
-    description: "Return or cancel a sale and everything unwinds automatically — inventory restocked, books reversed, customer balance corrected.",
+    description: "Return or cancel a sale and everything unwinds automatically: inventory restocked, books reversed, customer balance corrected.",
   },
   {
     icon: MessageCircle,
@@ -95,7 +95,7 @@ const inventoryFeatures = [
   {
     icon: Package,
     title: "Smart Inventory",
-    description: "Track every ornament by weight, purity, HUID, category, and karigar — with low-stock alerts before you run out.",
+    description: "Track every ornament by weight, purity, HUID, category, and karigar, with low-stock alerts before you run out.",
   },
   {
     icon: Truck,
@@ -105,7 +105,7 @@ const inventoryFeatures = [
   {
     icon: FileCheck,
     title: "Purchase GST & ITC",
-    description: "Record GST paid to bullion dealers and claim it as Input Tax Credit automatically — most billing software can't do this at all.",
+    description: "Record GST paid to bullion dealers and claim it as Input Tax Credit automatically. Most billing software can't do this at all.",
   },
 ];
 
@@ -118,7 +118,7 @@ const customerKarigarFeatures = [
   {
     icon: Scale,
     title: "Karigar Metal Tracking",
-    description: "Issue gold, get it back, track wastage to the gram — with a correction trail if an entry was made in error.",
+    description: "Issue gold, get it back, track wastage to the gram, with a correction trail if an entry was made in error.",
   },
   {
     icon: ClipboardList,
@@ -149,7 +149,7 @@ const accountingFeatures = [
   {
     icon: BookOpen,
     title: "Auto-Posting Books",
-    description: "Every sale, purchase, loan, repair, and karigar payment posts a balanced journal entry automatically — you never touch a ledger by hand.",
+    description: "Every sale, purchase, loan, repair, and karigar payment posts a balanced journal entry automatically; you never touch a ledger by hand.",
   },
   {
     icon: FileText,
@@ -159,7 +159,7 @@ const accountingFeatures = [
   {
     icon: BarChart3,
     title: "Trial Balance, P&L, Balance Sheet",
-    description: "Generated live from the journal — no month-end reconciliation, no exporting to another tool.",
+    description: "Generated live from the journal: no month-end reconciliation, no exporting to another tool.",
   },
   {
     icon: Wallet,
@@ -193,35 +193,35 @@ const faqs = [
   },
   {
     q: "Does SwarnDesk actually replace Tally, or do I still need it?",
-    a: "SwarnDesk includes full double-entry accounting — a real chart of accounts, auto-posted journal entries for every sale, purchase, loan, and karigar payment, plus a live Trial Balance, P&L, and Balance Sheet. Most jewellers using SwarnDesk stop using Tally entirely, since the books are generated directly from real shop transactions instead of being re-entered.",
+    a: "SwarnDesk includes full double-entry accounting: a real chart of accounts, auto-posted journal entries for every sale, purchase, loan, and karigar payment, plus a live Trial Balance, P&L, and Balance Sheet. Most jewellers using SwarnDesk stop using Tally entirely, since the books are generated directly from real shop transactions instead of being re-entered.",
   },
   {
     q: "How does GST filing work?",
-    a: "GSTR-1, GSTR-3B, HSN Summary, and both GST-wise Purchase and Sales Registers are generated directly from your transactions — no exporting data and rebuilding it by hand. B2B/B2C is split automatically with buyer GSTIN, and CGST/SGST vs IGST is calculated correctly based on state code.",
+    a: "GSTR-1, GSTR-3B, HSN Summary, and both GST-wise Purchase and Sales Registers are generated directly from your transactions: no exporting data and rebuilding it by hand. B2B/B2C is split automatically with buyer GSTIN, and CGST/SGST vs IGST is calculated correctly based on state code.",
   },
   {
-    q: "What is the Girvi module — do I need it if I don't do gold loans?",
-    a: "Girvi is a standalone gold loan / pawn-broking module with its own customer base, legally sequential FY-numbered vouchers, interest and penalty tracking, and CA-facing reports. It's built in but entirely optional — if your shop doesn't do gold loans, you simply won't use that section.",
+    q: "What is the Girvi module, and do I need it if I don't do gold loans?",
+    a: "Girvi is a standalone gold loan / pawn-broking module with its own customer base, legally sequential FY-numbered vouchers, interest and penalty tracking, and CA-facing reports. It's built in but entirely optional: if your shop doesn't do gold loans, you simply won't use that section.",
   },
   {
     q: "How does karigar metal tracking prevent wastage disputes?",
-    a: "Every gram of metal issued to a karigar and every gram returned is logged against that job, so wastage is a real recorded number instead of a verbal claim. If an entry was made in error, it can be corrected with a full correction trail — nothing is silently overwritten.",
+    a: "Every gram of metal issued to a karigar and every gram returned is logged against that job, so wastage is a real recorded number instead of a verbal claim. If an entry was made in error, it can be corrected with a full correction trail. Nothing is silently overwritten.",
   },
   {
     q: "What happens when a customer returns a sale?",
-    a: "One click reverses the entire transaction — inventory is restocked, the accounting entries are reversed, and the customer's balance is corrected automatically. There's no manual number-editing and no risk of the books not adding up afterward.",
+    a: "One click reverses the entire transaction: inventory is restocked, the accounting entries are reversed, and the customer's balance is corrected automatically. There's no manual number-editing and no risk of the books not adding up afterward.",
   },
   {
     q: "Can I claim Input Tax Credit on gold I purchase from bullion dealers?",
-    a: "Yes. SwarnDesk records the GST paid on every purchase from your suppliers and tracks it as Input Tax Credit automatically — something most general billing software for jewellers doesn't handle at all.",
+    a: "Yes. SwarnDesk records the GST paid on every purchase from your suppliers and tracks it as Input Tax Credit automatically, something most general billing software for jewellers doesn't handle at all.",
   },
   {
     q: "Does SwarnDesk work for a chain of showrooms, or only a single counter?",
-    a: "Both. SwarnDesk is built for everything from a single-counter shop to a multi-branch chain — including multi-branch support inside the Girvi loan ledger.",
+    a: "Both. SwarnDesk is built for everything from a single-counter shop to a multi-branch chain, including multi-branch support inside the Girvi loan ledger.",
   },
   {
     q: "Is there a free trial, and do I need a credit card to start?",
-    a: "Yes — SwarnDesk offers a 7-day free trial with no credit card required and no long-term lock-in. You can sign up and start billing immediately.",
+    a: "Yes, SwarnDesk offers a 7-day free trial with no credit card required and no long-term lock-in. You can sign up and start billing immediately.",
   },
   {
     q: "Can I send invoices to customers on WhatsApp?",
@@ -230,26 +230,6 @@ const faqs = [
 ];
 
 const jsonLd = [
-  {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    name: "SwarnDesk — Billing, Accounting & Gold Loan Software for Jewellers",
-    description:
-      "SwarnDesk replaces billing software, Tally, a karigar notebook, and a gold loan register with one system for Indian jewellery shops. Every sale, purchase, loan, and karigar transaction posts to real, GST-ready double-entry books automatically.",
-    brand: { "@type": "Organization", name: "Tirthon Tech" },
-    url: "https://tirthontech.com/products/swarndesk",
-    offers: {
-      "@type": "Offer",
-      priceCurrency: "INR",
-      availability: "https://schema.org/InStock",
-      seller: { "@type": "Organization", name: "Tirthon Tech" },
-    },
-    category: "Jewellery Retail Management Software",
-    audience: {
-      "@type": "BusinessAudience",
-      audienceType: "Jewellery Shop Owners, Jewellery Chains, Gold Loan / Pawn Brokers",
-    },
-  },
   {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -350,8 +330,8 @@ export default function SwarnDesk() {
   return (
     <div className="flex flex-col min-h-screen bg-background">
       <SEO
-        title="SwarnDesk — Billing, Accounting & Gold Loan Software for Jewellers"
-        description="SwarnDesk replaces billing software, Tally, a karigar notebook, and a gold loan register with one system for Indian jewellery shops. Sales, purchases, karigar metal tracking, gold loans (Girvi), and GST-ready double-entry accounting — all in one place. 7-day free trial, no credit card needed."
+        title="SwarnDesk: Billing, Accounting & Gold Loan Software for Jewellers"
+        description="SwarnDesk replaces billing software, Tally, a karigar notebook, and a gold loan register with one system for Indian jewellery shops. Sales, purchases, karigar metal tracking, gold loans (Girvi), and GST-ready double-entry accounting: all in one place. 7-day free trial, no credit card needed."
         path="/products/swarndesk"
         keywords="jewellery billing software India, gold shop accounting software, jewellery shop management software, jewellers software India, karigar metal tracking software, gold loan software, Girvi software, jewellery GST software, jewellery ERP India, gold and silver billing software, jewellery inventory software, jewellery POS software India"
         jsonLd={jsonLd}
@@ -401,7 +381,7 @@ export default function SwarnDesk() {
               >
                 Billing software for sales, Tally for accounts, a notebook for karigars, a
                 register for gold loans. <strong className="text-foreground">SwarnDesk</strong> replaces
-                all four — every transaction posts to real, GST-ready books automatically.
+                all four: every transaction posts to real, GST-ready books automatically.
               </motion.p>
 
               <motion.div
@@ -416,7 +396,7 @@ export default function SwarnDesk() {
                     size="lg"
                     className="rounded-full px-8 bg-primary text-primary-foreground hover:bg-primary/90 hover:-translate-y-0.5 transition-all shadow-md hover:shadow-lg font-semibold"
                   >
-                    Sign Up Now — 7 Day Free Trial
+                    Sign Up Now: 7 Day Free Trial
                     <ArrowRight className="w-4 h-4 ml-2" />
                   </Button>
                 </Link>
@@ -531,7 +511,7 @@ export default function SwarnDesk() {
                 <span className="text-primary">Under a Minute</span>
               </h2>
               <p className="text-muted-foreground text-lg max-w-2xl">
-                Everything a jeweller actually needs — built from the ground up for Indian
+                Everything a jeweller actually needs, built from the ground up for Indian
                 jewellers, whether you run a small counter or a chain of showrooms.
               </p>
             </motion.div>
@@ -555,7 +535,7 @@ export default function SwarnDesk() {
                 Inventory & Purchases
               </div>
               <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-                Know Exactly What You Have —{" "}
+                Know Exactly What You Have:{" "}
                 <span className="text-primary">And What You Owe For It</span>
               </h2>
             </motion.div>
@@ -579,7 +559,7 @@ export default function SwarnDesk() {
                 Customers & Karigars
               </div>
               <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-                Relationships and Workshop Tracking —{" "}
+                Relationships and Workshop Tracking:{" "}
                 <span className="text-primary">Not Spreadsheets</span>
               </h2>
             </motion.div>
@@ -600,7 +580,7 @@ export default function SwarnDesk() {
             >
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-4">
                 <Landmark className="w-3.5 h-3.5" />
-                Girvi — Gold Loan / Pawn
+                Girvi: Gold Loan / Pawn
               </div>
               <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
                 A Complete Pawn-Broking Module{" "}
@@ -631,7 +611,7 @@ export default function SwarnDesk() {
                 <span className="text-primary">Actually Replaces Tally</span>
               </h2>
               <p className="text-muted-foreground text-lg max-w-2xl">
-                Every transaction posts itself — you never touch a ledger by hand.
+                Every transaction posts itself; you never touch a ledger by hand.
               </p>
             </motion.div>
 
@@ -654,7 +634,7 @@ export default function SwarnDesk() {
                 GST Compliance Suite
               </div>
               <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-                What You Hand Your CA Every Month —{" "}
+                What You Hand Your CA Every Month:{" "}
                 <span className="text-primary">Generated in One Click</span>
               </h2>
             </motion.div>
@@ -703,12 +683,12 @@ export default function SwarnDesk() {
                 <IndianRupee className="w-8 h-8 text-primary" />
               </div>
               <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-                Books That Stay Correct —{" "}
+                Books That Stay Correct:{" "}
                 <span className="text-primary">Automatically</span>
               </h2>
               <p className="text-muted-foreground text-lg mb-10 leading-relaxed">
                 Every sale, purchase, loan, and karigar transaction lands in the same
-                GST-ready books, every time. Start your 7-day free trial — no credit card,
+                GST-ready books, every time. Start your 7-day free trial: no credit card,
                 no long-term lock-in.
               </p>
               <div className="flex flex-wrap justify-center gap-4">
@@ -717,7 +697,7 @@ export default function SwarnDesk() {
                     size="lg"
                     className="rounded-full px-10 bg-primary text-primary-foreground hover:bg-primary/90 hover:-translate-y-0.5 transition-all shadow-md hover:shadow-lg font-semibold text-base"
                   >
-                    Sign Up Now — 7 Day Free Trial
+                    Sign Up Now: 7 Day Free Trial
                     <ArrowRight className="w-4 h-4 ml-2" />
                   </Button>
                 </Link>

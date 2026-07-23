@@ -50,7 +50,7 @@ export default function PrivacyPolicy() {
               <div>
                 <h2 className="text-xl font-bold text-foreground mb-3">1. Who We Are</h2>
                 <p>
-                  Tirthon Tech is a software development company based in Indore, India. We build web apps, mobile apps, AI tools, and data solutions for clients worldwide. When you use our website or contact us, you may share some personal information with us. This policy explains exactly what we do with it.
+                  Tirthon Tech is a growth partner based in Indore, India, helping businesses through brand and growth strategy, marketing execution, content, and technology. When you use our website or contact us, you may share some personal information with us. This policy explains exactly what we do with it.
                 </p>
               </div>
 

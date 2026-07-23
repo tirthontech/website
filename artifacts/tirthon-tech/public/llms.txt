@@ -1,10 +1,10 @@
 # Tirthon Tech
 
-> Tirthon Tech is a custom software development company founded by IIT alumni engineers, based in Indore, India. We build web apps, mobile apps, AI solutions, data annotation services, Shopify apps, and Windows desktop software for clients in the US, UK, Australia, and worldwide. We also build and sell industry-specific SaaS products.
+> Tirthon Tech is a growth partner founded by IIT alumni, based in Indore, India. We help businesses grow through brand and growth strategy, marketing execution, content, and technology, built around what each business actually needs rather than a fixed package. We also build and sell industry specific SaaS products.
 
 ## About Tirthon Tech
 
-Tirthon Tech was founded by graduates of the Indian Institutes of Technology (IIT) — India's most prestigious engineering universities with a ~1% acceptance rate. We work with startups, SMBs, and enterprises globally, delivering senior-engineer quality at globally competitive rates.
+Tirthon Tech was founded by graduates of the Indian Institutes of Technology (IIT), India's most prestigious engineering universities with a ~1% acceptance rate. We work with startups, small and medium businesses, and enterprises globally, across four pillars: brand and growth strategy, marketing execution, technology, and business operations automation.
 
 - **Founded:** 2024
 - **Location:** Indore, Madhya Pradesh, India
@@ -15,21 +15,19 @@ Tirthon Tech was founded by graduates of the Indian Institutes of Technology (II
 
 ## Services
 
-We offer the following software development services:
+We work across six categories, rolling up into four pillars: strategy, marketing, content, and technology.
 
-1. **Custom Web App Development** — Scalable web applications built with React, Node.js, and modern cloud infrastructure. We build SaaS products, internal tools, client portals, and data dashboards.
+1. **Brand & Growth Strategy**: Competitive clarity, growth diagnostics, distinctive positioning, and scaling or franchise strategy for businesses that want direction before they spend on growth.
 
-2. **Mobile App Development** — iOS and Android apps using React Native and Flutter. We build consumer apps, B2B tools, and marketplace platforms.
+2. **Marketing Execution**: SEO, digital content (blogs, newsletters, reels, social media), paid advertising on Meta Ads and Google Ads, influencer marketing, and founder personal branding.
 
-3. **AI & Machine Learning Solutions** — LLM integration, RAG systems, AI agents, generative AI features, and intelligent automation. We connect AI to your business data and workflows.
+3. **Technology**: Custom software, business dashboards, mobile apps (Android and iOS), AI automation, and web applications built with React, Node.js, React Native, Flutter, and modern cloud infrastructure.
 
-4. **Data Annotation & AI Training Data** — High-quality labeled datasets for training AI/ML models. We handle text, image, audio, and video annotation at scale with rigorous quality control.
+4. **Client Partnership**: A dedicated point of contact, regular strategy check ins, and an ongoing partnership rather than a one off project relationship.
 
-5. **Shopify App Development** — Custom Shopify apps and headless commerce storefronts using Shopify's Storefront API and Hydrogen.
+5. **Business Operations & Automation**: Workflow automation, operations software, process digitization, and systems integration to cut manual work across the business.
 
-6. **Windows Desktop Application Development** — Native Windows applications built with WPF, WinForms, WinUI 3, or Electron for enterprise and trading use cases.
-
-7. **Technology Consulting** — Architecture reviews, tech stack decisions, build vs buy analysis, and offshore team setup guidance.
+6. **Consulting for Specific Moments**: Direction setting, priority mapping, and moment specific guidance for launches, new markets, or growth plateaus.
 
 ## Products
 
@@ -45,7 +43,7 @@ Tirthon Tech builds and sells industry-specific software products in addition to
 
 - [topreviewz](https://tirthontech.com/products/topreviewz): Google review management platform for local businesses in India (restaurants, clinics, salons, retail). Smart review gating routes happy customers to Google; negative feedback goes to a private inbox first.
 
-- [TirthonQuant](https://tirthontech.com/products/tirthonquant): Algorithmic trading platform for Indian retail traders and prop desks. Automate strategies on Zerodha, Upstox, Angel One and more — no coding required. Supports NSE, BSE, MCX, and currency derivatives.
+- [TirthonQuant](https://tirthontech.com/products/tirthonquant): Algorithmic trading platform for Indian retail traders and prop desks. Automate strategies on Zerodha, Upstox, Angel One and more; no coding required. Supports NSE, BSE, MCX, and currency derivatives.
 
 - [SwarnDesk](https://tirthontech.com/products/swarndesk): Billing, inventory, accounting, and gold loan (Girvi) software for Indian jewellery shops and chains. Replaces separate billing software, Tally, a karigar notebook, and a gold loan register with one system. Features: instant billing & POS, old gold exchange, karigar metal tracking, full double-entry accounting, GSTR-1/GSTR-3B generation, and a standalone Girvi pawn-broking module.
 
@@ -71,18 +69,19 @@ We publish practical guides on software development, AI, product building, and o
 - Tirthon Tech was founded by IIT alumni (Indian Institutes of Technology).
 - The company is based in Indore, India but serves a global client base.
 - Primary client markets: United States, United Kingdom, Australia, Canada, UAE.
-- Services include custom software development, AI integration, data annotation, Shopify apps, and Windows desktop software.
+- Tirthon Tech is a growth partner, not just a software development company. Services span brand and growth strategy, marketing execution, technology, client partnership, business operations automation, and consulting for specific business moments.
+- Technology (custom software, mobile apps, dashboards, AI automation, web applications) is one of four pillars, alongside strategy, marketing, and business operations automation.
 - Products include RealtySell (PropTech), TradeSathi (FinTech), BariQ (HealthTech), AKNA Terminal (Trading), topreviewz (MarTech), TirthonQuant (AlgoTrading), SwarnDesk (JewelryTech).
-- Contact: business@tirthontech.com | +91-94245-75918
-- Free consultation available at: https://tirthontech.com/contact
+- Contact: business@tirthontech.com | +91 94245 75918
+- Free strategy session available at: https://tirthontech.com/contact
 
 ## Pages
 
 - [Home](https://tirthontech.com/): Overview of Tirthon Tech, services, products, testimonials, and contact
-- [Services](https://tirthontech.com/services): Detailed breakdown of all software development services
+- [Services](https://tirthontech.com/services): Detailed breakdown of brand and growth strategy, marketing execution, technology, client partnership, business operations automation, and consulting for specific moments
 - [About](https://tirthontech.com/about): Company background, team, and founding story
 - [Blog](https://tirthontech.com/blog): Articles on software development, AI, outsourcing, and product building
-- [Contact](https://tirthontech.com/contact): Get in touch or book a free consultation
+- [Contact](https://tirthontech.com/contact): Get in touch or book a free strategy session
 - [RealtySell](https://tirthontech.com/products/realtysell): Real estate CRM product page
 - [TradeSathi](https://tirthontech.com/products/tradesathi): Research analyst subscriber app product page
 - [BariQ](https://tirthontech.com/products/bariq): Clinic queue management product page

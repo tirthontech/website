@@ -100,9 +100,9 @@ export function Hero() {
           transition={{ duration: 0.9, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
           className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight text-foreground max-w-5xl leading-[1.08]"
         >
-          Software Delivery at
+          Everything Your Business
           <br />
-          <span className="text-primary drop-shadow-sm">Light Speed</span>
+          <span className="text-primary drop-shadow-sm">Needs to Grow</span>
         </motion.h1>
 
         {/* Sub-tagline */}
@@ -112,8 +112,8 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.25, ease: [0.16, 1, 0.3, 1] }}
           className="mt-4 md:mt-5 text-lg md:text-2xl font-semibold text-muted-foreground tracking-tight"
         >
-          AI + Humans ship software{" "}
-          <span className="text-primary">10x faster</span>
+          Strategy. Marketing. Content.{" "}
+          <span className="text-primary">Technology.</span>
         </motion.p>
 
         {/* Subtext */}
@@ -123,7 +123,7 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
           className="mt-5 md:mt-6 text-base md:text-lg text-muted-foreground max-w-2xl font-light leading-relaxed px-2 md:px-0"
         >
-          Welcome to the AI-powered era of software delivery. Book a free strategy session and get a sprint roadmap, tailored to your goals.
+          Built around what your business actually needs, not a fixed package. Book a free strategy session and get a growth roadmap tailored to your goals.
         </motion.p>
 
         {/* CTAs */}

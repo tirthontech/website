@@ -120,7 +120,7 @@ export function Contact() {
                     <Calendar className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <p className="text-sm font-bold text-foreground">Book a Free Discovery Call</p>
+                    <p className="text-sm font-bold text-foreground">Book a Free Strategy Session</p>
                     <p className="text-xs text-muted-foreground mt-0.5">20 minutes · No commitment · Pick a time that works for you</p>
                   </div>
                 </button>

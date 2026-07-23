@@ -47,17 +47,17 @@ const painPoints = [
   {
     icon: AlertTriangle,
     heading: "WhatsApp groups don't scale",
-    body: "At 500 subscribers, a WhatsApp group becomes unmanageable. Messages get buried, calls go unread, and subscribers miss entries. Worse — WhatsApp bans accounts that send financial content at scale.",
+    body: "At 500 subscribers, a WhatsApp group becomes unmanageable. Messages get buried, calls go unread, and subscribers miss entries. Worse. WhatsApp bans accounts that send financial content at scale.",
   },
   {
     icon: CreditCard,
     heading: "Payments are a mess",
-    body: "Chasing UTRs over DM, maintaining Excel sheets, manually approving each subscriber — it's a full-time job that has nothing to do with research. And when someone's plan expires, you have no clean way to cut their access.",
+    body: "Chasing UTRs over DM, maintaining Excel sheets, manually approving each subscriber; it's a full-time job that has nothing to do with research. And when someone's plan expires, you have no clean way to cut their access.",
   },
   {
     icon: Eye,
     heading: "No proof of your track record",
-    body: "Your win rate exists only in your head. You can't show a new subscriber your historical performance, closed calls, or accuracy across market segments. There's no record — which means there's no trust.",
+    body: "Your win rate exists only in your head. You can't show a new subscriber your historical performance, closed calls, or accuracy across market segments. There's no record, which means there's no trust.",
   },
   {
     icon: Ban,
@@ -77,13 +77,13 @@ const targetAudience = [
     icon: TrendingUp,
     title: "Trading Educators & Mentors",
     description:
-      "Educators with a following who want to convert their audience into paying subscribers — without building software from scratch.",
+      "Educators with a following who want to convert their audience into paying subscribers, without building software from scratch.",
   },
   {
     icon: Users,
     title: "Portfolio Management Firms",
     description:
-      "Firms that want a direct, branded subscriber channel for trade ideas and market commentary — separate from social media noise.",
+      "Firms that want a direct, branded subscriber channel for trade ideas and market commentary, separate from social media noise.",
   },
   {
     icon: Layers,
@@ -96,9 +96,9 @@ const targetAudience = [
 const subscriberFeatures = [
   {
     icon: BarChart3,
-    title: "Stocks, F&O & Commodity — All in One",
+    title: "Stocks, F&O & Commodity: All in One",
     description:
-      "Your subscribers access NSE/BSE stock ideas, MCX commodity calls, and F&O ideas in organised tabs — intraday, short-term, medium-term, and long-term. Clean, segmented, easy to follow.",
+      "Your subscribers access NSE/BSE stock ideas, MCX commodity calls, and F&O ideas in organised tabs: intraday, short-term, medium-term, and long-term. Clean, segmented, easy to follow.",
   },
   {
     icon: Star,
@@ -108,7 +108,7 @@ const subscriberFeatures = [
   },
   {
     icon: Zap,
-    title: "Live Status — No Refresh Needed",
+    title: "Live Status: No Refresh Needed",
     description:
       "The moment you mark Target Hit or SL Hit in your app, your subscriber's screen updates instantly. No polling, no delay. They see it the second you update it.",
   },
@@ -116,7 +116,7 @@ const subscriberFeatures = [
     icon: Bell,
     title: "Push Alerts That Actually Get Read",
     description:
-      "New call, target hit, SL triggered, daily commentary — every event sends a push notification with the key details right in the banner. Tapping it opens the exact call or screen.",
+      "New call, target hit, SL triggered, daily commentary: every event sends a push notification with the key details right in the banner. Tapping it opens the exact call or screen.",
   },
   {
     icon: MessageSquare,
@@ -132,58 +132,58 @@ const subscriberFeatures = [
   },
   {
     icon: IndianRupee,
-    title: "UPI Payments — No Gateway Needed",
+    title: "UPI Payments: No Gateway Needed",
     description:
-      "Subscriber selects a plan, pays to your UPI ID, submits their UTR inside the app. You approve it. Their plan activates instantly with a push notification — no bank integrations, no payment gateway fees.",
+      "Subscriber selects a plan, pays to your UPI ID, submits their UTR inside the app. You approve it. Their plan activates instantly with a push notification: no bank integrations, no payment gateway fees.",
   },
   {
     icon: Users,
     title: "Referral Programme Built In",
     description:
-      "Every subscriber gets a unique referral code. They share it, someone subscribes, they earn a commission. Referral earnings are tracked inside the app — pending, ready to pay, and paid out.",
+      "Every subscriber gets a unique referral code. They share it, someone subscribes, they earn a commission. Referral earnings are tracked inside the app: pending, ready to pay, and paid out.",
   },
 ];
 
 const analystFeatures = [
-  "Post any idea — stock, future, option, or commodity — with full details: entry range, SL, up to 3 targets, risk level, rationale, and a chart image from your camera roll",
-  "Publish immediately or schedule a call to go live at a specific date and time — useful for pre-market setups",
-  "Update live calls in one tap: mark T1, T2, T3 Hit, SL Hit, or Expired — each update triggers a real-time push notification to relevant subscribers",
-  "Create Themed Baskets — curated collections of ideas (e.g. 'Diwali Picks 2025') with a validity window and cover image, visible to all subscribers",
-  "Post daily market commentary per segment — one entry per segment per day, editable anytime, triggers a push notification on publish",
-  "Send manual push notifications to all subscribers or specific plan tiers — useful for market alerts, announcements, or session reminders",
-  "Analytics dashboard: win rate, average return, streak, monthly idea count, category breakdown, and recent closed calls — your performance, documented",
+  "Post any idea (stock, future, option, or commodity) with full details: entry range, SL, up to 3 targets, risk level, rationale, and a chart image from your camera roll",
+  "Publish immediately or schedule a call to go live at a specific date and time, useful for pre-market setups",
+  "Update live calls in one tap: mark T1, T2, T3 Hit, SL Hit, or Expired; each update triggers a real-time push notification to relevant subscribers",
+  "Create Themed Baskets: curated collections of ideas (e.g. 'Diwali Picks 2025') with a validity window and cover image, visible to all subscribers",
+  "Post daily market commentary per segment: one entry per segment per day, editable anytime, triggers a push notification on publish",
+  "Send manual push notifications to all subscribers or specific plan tiers, useful for market alerts, announcements, or session reminders",
+  "Analytics dashboard: win rate, average return, streak, monthly idea count, category breakdown, and recent closed calls: your performance, documented",
 ];
 
 const adminFeatures = [
-  "Invite and manage analysts — set credentials, assign SEBI Reg. No., bio, and specialisation; deactivate without deleting their data",
-  "View all subscribers with their active plans — each subscriber can hold multiple simultaneous plans (e.g. Stocks + F&O at the same time)",
-  "Review UPI payment submissions — see subscriber name, plan, amount, and UTR; approve or reject with a reason sent as a push notification",
-  "Grant or extend subscriptions manually — for renewals, gifts, or trial access; changes reflect instantly in the subscriber's app",
-  "Create and manage Seasonal Bundles — platform-level idea collections with publish/archive controls",
-  "Full oversight of all ideas across all analysts — force-update any status or delete any call",
+  "Invite and manage analysts: set credentials, assign SEBI Reg. No., bio, and specialisation; deactivate without deleting their data",
+  "View all subscribers with their active plans: each subscriber can hold multiple simultaneous plans (e.g. Stocks + F&O at the same time)",
+  "Review UPI payment submissions: see subscriber name, plan, amount, and UTR; approve or reject with a reason sent as a push notification",
+  "Grant or extend subscriptions manually, for renewals, gifts, or trial access; changes reflect instantly in the subscriber's app",
+  "Create and manage Seasonal Bundles: platform-level idea collections with publish/archive controls",
+  "Full oversight of all ideas across all analysts: force-update any status or delete any call",
   "Analytics: total active subscribers, plan breakdown, total subscriptions issued, referral commission liability and payout status",
 ];
 
 const techHighlights = [
-  { icon: Zap, feature: "Real-time idea delivery", detail: "Server-Sent Events (SSE) push updates to subscribers the instant you update a call — no polling, no delay, no refresh" },
-  { icon: Bell, feature: "Firebase push notifications", detail: "FCM via Expo — Android and iOS both covered; tapping any notification opens the exact relevant screen" },
-  { icon: Lock, feature: "Single-device sessions", detail: "Every login invalidates all other active sessions — account sharing is blocked at the infrastructure level" },
-  { icon: Layers, feature: "Three roles, one APK", detail: "Admin, Analyst, and Subscriber UIs are completely separate inside a single APK/IPA — one build, three apps" },
-  { icon: IndianRupee, feature: "UPI with UTR validation", detail: "Subscribers pay to your UPI ID, submit UTR, admin approves — no payment gateway dependency or per-transaction fees" },
-  { icon: Database, feature: "Node.js + PostgreSQL backend", detail: "Serverless-ready architecture on NeonDB — built to scale from 100 to 10,000 subscribers without re-engineering" },
-  { icon: Globe, feature: "Fully white-label", detail: "App name, icon, colour scheme, UPI ID, and API URL are all configurable per deployment — your brand, completely" },
+  { icon: Zap, feature: "Real-time idea delivery", detail: "Server-Sent Events (SSE) push updates to subscribers the instant you update a call: no polling, no delay, no refresh" },
+  { icon: Bell, feature: "Firebase push notifications", detail: "FCM via Expo: Android and iOS both covered; tapping any notification opens the exact relevant screen" },
+  { icon: Lock, feature: "Single-device sessions", detail: "Every login invalidates all other active sessions; account sharing is blocked at the infrastructure level" },
+  { icon: Layers, feature: "Three roles, one APK", detail: "Admin, Analyst, and Subscriber UIs are completely separate inside a single APK/IPA: one build, three apps" },
+  { icon: IndianRupee, feature: "UPI with UTR validation", detail: "Subscribers pay to your UPI ID, submit UTR, admin approves: no payment gateway dependency or per-transaction fees" },
+  { icon: Database, feature: "Node.js + PostgreSQL backend", detail: "Serverless-ready architecture on NeonDB: built to scale from 100 to 10,000 subscribers without re-engineering" },
+  { icon: Globe, feature: "Fully white-label", detail: "App name, icon, colour scheme, UPI ID, and API URL are all configurable per deployment: your brand, completely" },
   { icon: ShieldCheck, feature: "SEBI-aware design", detail: "SEBI Reg. No. displayed on every analyst profile; mandatory disclaimer shown on the F&O section as required" },
 ];
 
 const subscriptionPlans = [
-  { plan: "Commodity", access: "MCX intraday & short-term calls — Gold, Silver, Crude Oil, Natural Gas" },
+  { plan: "Commodity", access: "MCX intraday & short-term calls: Gold, Silver, Crude Oil, Natural Gas" },
   { plan: "Stocks", access: "NSE/BSE short-term, medium-term, and long-term equity ideas" },
   { plan: "F&O", access: "Futures & Options intraday and short-term ideas" },
   { plan: "All Markets", access: "Complete access to Stocks, Commodity, and F&O in one subscription" },
 ];
 
 const deliverables = [
-  "Source code deployment branded to your client — app name, icon, colours",
+  "Source code deployment branded to your client: app name, icon, colours",
   "UPI ID configured for direct subscriber payment collection",
   "Backend server setup, hosting, and database provisioned",
   "Firebase / FCM configured for push notifications on Android and iOS",
@@ -194,7 +194,7 @@ const deliverables = [
 const faqs = [
   {
     q: "What exactly is TradeSathi?",
-    a: "TradeSathi is a ready-built, white-label mobile app platform for SEBI Registered Research Analysts. It gives you — or your client — a fully branded subscriber app where paying clients receive trade ideas in real time, manage their subscriptions, and pay via UPI. No app development required from your side.",
+    a: "TradeSathi is a ready-built, white-label mobile app platform for SEBI Registered Research Analysts. It gives you (or your client) a fully branded subscriber app where paying clients receive trade ideas in real time, manage their subscriptions, and pay via UPI. No app development required from your side.",
   },
   {
     q: "Is this SEBI compliant for Research Analysts?",
@@ -206,15 +206,15 @@ const faqs = [
   },
   {
     q: "Will the app appear on the Play Store under my client's name?",
-    a: "Yes. TradeSathi is white-label — the app is built and deployed under your client's brand name. We handle the APK build and can assist with Play Store submission. The app name, icon, splash screen, and colours are all customised to your client's brand.",
+    a: "Yes. TradeSathi is white-label. The app is built and deployed under your client's brand name. We handle the APK build and can assist with Play Store submission. The app name, icon, splash screen, and colours are all customised to your client's brand.",
   },
   {
     q: "How do subscribers pay? Is there a payment gateway fee?",
-    a: "Subscribers pay directly to your client's UPI ID from within the app — no payment gateway is involved. They submit their UTR number after payment. The admin reviews and approves it, and the subscription activates instantly. This means zero per-transaction fees and full control over revenue.",
+    a: "Subscribers pay directly to your client's UPI ID from within the app: no payment gateway is involved. They submit their UTR number after payment. The admin reviews and approves it, and the subscription activates instantly. This means zero per-transaction fees and full control over revenue.",
   },
   {
     q: "Does it support both NSE/BSE stocks and MCX commodities?",
-    a: "Yes. The platform supports three market segments: Stocks (NSE/BSE), Commodity (MCX), and Futures & Options (NSE). Each segment has its own sub-categories — intraday, short-term, medium-term, and long-term. Subscribers subscribe to whichever segments they trade.",
+    a: "Yes. The platform supports three market segments: Stocks (NSE/BSE), Commodity (MCX), and Futures & Options (NSE). Each segment has its own sub-categories: intraday, short-term, medium-term, and long-term. Subscribers subscribe to whichever segments they trade.",
   },
   {
     q: "Can multiple analysts post ideas on the same platform?",
@@ -222,39 +222,19 @@ const faqs = [
   },
   {
     q: "How long does it take to deploy TradeSathi for a client?",
-    a: "Deployment typically takes 1–2 weeks from the time we have your branding assets (app name, logo, colour scheme, UPI ID). This includes backend setup, database provisioning, Firebase configuration, branding, and the first APK build.",
+    a: "Deployment typically takes 1-2 weeks from the time we have your branding assets (app name, logo, colour scheme, UPI ID). This includes backend setup, database provisioning, Firebase configuration, branding, and the first APK build.",
   },
   {
     q: "Is the app available on iOS as well?",
-    a: "The backend, push notifications, and all app logic are cross-platform (React Native via Expo). Android APK is the primary delivery format. iOS builds can be done separately — reach out to discuss your specific requirement.",
+    a: "The backend, push notifications, and all app logic are cross-platform (React Native via Expo). Android APK is the primary delivery format. iOS builds can be done separately. Reach out to discuss your specific requirement.",
   },
   {
     q: "What ongoing support does Tirthon Tech provide after launch?",
-    a: "We provide ongoing technical support, bug fixes, and platform updates. As the platform evolves — new features, stability improvements, or regulatory changes — updates are applied to your deployment.",
+    a: "We provide ongoing technical support, bug fixes, and platform updates. As the platform evolves (new features, stability improvements, or regulatory changes), updates are applied to your deployment.",
   },
 ];
 
 const jsonLd = [
-  {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    name: "TradeSathi — White-Label Subscriber App for SEBI Research Analysts",
-    description:
-      "TradeSathi is a ready-built, white-label mobile app platform for SEBI Registered Research Analysts. Launch a branded subscriber app with real-time trade idea delivery, push notifications, UPI subscription payments, and multi-role access — without writing a single line of code.",
-    brand: { "@type": "Organization", name: "Tirthon Tech" },
-    url: "https://tirthontech.com/products/tradesathi",
-    offers: {
-      "@type": "Offer",
-      priceCurrency: "INR",
-      availability: "https://schema.org/InStock",
-      seller: { "@type": "Organization", name: "Tirthon Tech" },
-    },
-    category: "Financial Technology Software",
-    audience: {
-      "@type": "BusinessAudience",
-      audienceType: "SEBI Registered Research Analysts, Trading Educators, Portfolio Management Firms",
-    },
-  },
   {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -271,7 +251,7 @@ const jsonLd = [
     applicationCategory: "FinanceApplication",
     operatingSystem: "Android, iOS",
     description:
-      "White-label mobile application platform for SEBI Registered Research Analysts. Includes subscriber app, analyst app, and admin app — real-time trade ideas, push notifications, UPI payments, and subscription management.",
+      "White-label mobile application platform for SEBI Registered Research Analysts. Includes subscriber app, analyst app, and admin app: real-time trade ideas, push notifications, UPI payments, and subscription management.",
     offers: {
       "@type": "Offer",
       priceCurrency: "INR",
@@ -324,8 +304,8 @@ export default function TradeSathi() {
   return (
     <div className="flex flex-col min-h-screen bg-background">
       <SEO
-        title="TradeSathi — Subscriber App Platform for SEBI Research Analysts"
-        description="Stop managing subscribers on WhatsApp. TradeSathi is a white-label mobile app platform built for SEBI Registered Research Analysts in India — real-time trade idea delivery, push notifications, UPI payments, and subscription management. Launch your own branded app without writing code."
+        title="TradeSathi: Subscriber App Platform for SEBI Research Analysts"
+        description="Stop managing subscribers on WhatsApp. TradeSathi is a white-label mobile app platform built for SEBI Registered Research Analysts in India: real-time trade idea delivery, push notifications, UPI payments, and subscription management. Launch your own branded app without writing code."
         path="/products/tradesathi"
         keywords="SEBI research analyst app, subscriber app for research analyst, stock tips app India, trading advice app, white label trading platform India, research analyst subscription platform, replace WhatsApp for trading tips, SEBI RA app, trade ideas delivery app, stock tips delivery platform, MCX NSE trading app, research analyst subscriber management, professional trading tips app, SEBI registered analyst platform, trading research platform India"
         jsonLd={jsonLd}
@@ -376,7 +356,7 @@ export default function TradeSathi() {
               >
                 <strong className="text-foreground">TradeSathi</strong> is a fully-built,
                 white-label mobile app platform that lets any SEBI Registered Research
-                Analyst launch their own branded subscriber app — without writing a single
+                Analyst launch their own branded subscriber app, without writing a single
                 line of code. Your subscribers download your app, pay for a plan, and
                 receive your trade ideas in real time on their phones.
               </motion.p>
@@ -490,7 +470,7 @@ export default function TradeSathi() {
               className="mt-10 p-6 rounded-2xl bg-primary/5 border border-primary/20 text-center"
             >
               <p className="text-foreground font-semibold text-lg">
-                TradeSathi solves all of this — with a professional, branded app that runs on your terms.
+                TradeSathi solves all of this, with a professional, branded app that runs on your terms.
               </p>
             </motion.div>
           </div>
@@ -512,7 +492,7 @@ export default function TradeSathi() {
                 </h2>
                 <p className="text-muted-foreground text-lg leading-relaxed mb-5">
                   Every TradeSathi deployment ships with three separate role-based apps
-                  inside a single APK — a subscriber-facing app, an analyst-facing
+                  inside a single APK: a subscriber-facing app, an analyst-facing
                   app, and an admin app. Three completely separate UIs. One codebase. Your brand.
                 </p>
                 <p className="text-muted-foreground text-lg leading-relaxed mb-5">
@@ -590,7 +570,7 @@ export default function TradeSathi() {
               </h2>
               <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
                 If you give paid trading advice and you want a professional platform to
-                deliver it — this is for you.
+                deliver it. This is for you.
               </p>
             </motion.div>
 
@@ -629,7 +609,7 @@ export default function TradeSathi() {
             >
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-600 text-sm font-medium mb-4">
                 <Users className="w-3.5 h-3.5" />
-                Subscriber App — What Your Clients Get
+                Subscriber App: What Your Clients Get
               </div>
               <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
                 A Subscriber Experience That Builds{" "}
@@ -637,7 +617,7 @@ export default function TradeSathi() {
               </h2>
               <p className="text-muted-foreground text-lg max-w-2xl">
                 When your subscriber opens the app and sees a clean trade card with entry,
-                SL, targets, and your rationale — they feel like they're with a professional.
+                SL, targets, and your rationale; they feel like they're with a professional.
                 That trust keeps them renewing.
               </p>
             </motion.div>
@@ -680,7 +660,7 @@ export default function TradeSathi() {
                 <span className="text-primary">You Actually Work</span>
               </h2>
               <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-                The analyst app is designed around a research analyst's workflow — post a
+                The analyst app is designed around a research analyst's workflow: post a
                 call, update its status, track your performance. No overhead, no complexity.
               </p>
             </motion.div>
@@ -694,7 +674,7 @@ export default function TradeSathi() {
               >
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
                   <TrendingUp className="w-3.5 h-3.5" />
-                  Analyst App — For You, the Research Analyst
+                  Analyst App: For You, the Research Analyst
                 </div>
                 <h3 className="text-2xl font-bold text-foreground mb-6">
                   Post. Update. Track. Repeat.
@@ -726,7 +706,7 @@ export default function TradeSathi() {
               >
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-600 text-sm font-medium mb-6">
                   <Settings className="w-3.5 h-3.5" />
-                  Admin App — Platform Control
+                  Admin App: Platform Control
                 </div>
                 <h3 className="text-2xl font-bold text-foreground mb-6">
                   Every Subscriber, Every Rupee, Under Control
@@ -763,18 +743,18 @@ export default function TradeSathi() {
                 viewport={{ once: true }}
               >
                 <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                  Four Plans — One for{" "}
+                  Four Plans: One for{" "}
                   <span className="text-primary">Every Type of Trader</span>
                 </h2>
                 <p className="text-muted-foreground text-lg leading-relaxed mb-4">
                   Your subscribers pay for the market segment they actually trade. A commodity
-                  trader doesn't need an F&O subscription — and shouldn't pay for one.
+                  trader doesn't need an F&O subscription, and shouldn't pay for one.
                   You monetise each vertical independently.
                 </p>
                 <p className="text-muted-foreground">
                   Every plan is available in Monthly and Annual billing.
                   Annual subscribers save up to{" "}
-                  <span className="text-primary font-semibold">44%</span> — giving you
+                  <span className="text-primary font-semibold">44%</span>, giving you
                   better retention and predictable annual revenue.
                 </p>
               </motion.div>
@@ -815,7 +795,7 @@ export default function TradeSathi() {
               </h2>
               <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
                 This isn't a demo app. TradeSathi is built on production-grade architecture
-                that handles real subscribers, real payments, and real-time data —
+                that handles real subscribers, real payments, and real-time data,
                 without cutting corners.
               </p>
             </motion.div>
@@ -863,17 +843,17 @@ export default function TradeSathi() {
                 </h2>
                 <p className="text-muted-foreground text-lg leading-relaxed mb-4">
                   You don't need to hire developers, manage servers, or learn anything
-                  technical. Tirthon Tech handles the entire deployment — from branding
+                  technical. Tirthon Tech handles the entire deployment: from branding
                   to backend to the first APK in your hands.
                 </p>
                 <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                  Typical deployment takes <strong className="text-foreground">1–2 weeks</strong> from
+                  Typical deployment takes <strong className="text-foreground">1-2 weeks</strong> from
                   the day you share your branding assets with us.
                 </p>
                 <div className="flex items-center gap-3 p-4 rounded-xl bg-primary/5 border border-primary/20">
                   <Clock className="w-5 h-5 text-primary shrink-0" />
                   <p className="text-sm text-foreground font-medium">
-                    From briefing to working APK in your hands — typically 1 to 2 weeks.
+                    From briefing to working APK in your hands, typically 1 to 2 weeks.
                   </p>
                 </div>
               </motion.div>
@@ -950,7 +930,7 @@ export default function TradeSathi() {
               </h2>
               <p className="text-muted-foreground text-lg mb-4 leading-relaxed">
                 Your subscribers deserve a professional experience. You deserve a platform
-                that runs your subscription business properly — with real payments, real
+                that runs your subscription business properly: with real payments, real
                 analytics, and real control.
               </p>
               <p className="text-muted-foreground mb-10">
@@ -962,7 +942,7 @@ export default function TradeSathi() {
                     size="lg"
                     className="rounded-full px-10 bg-primary text-primary-foreground hover:bg-primary/90 hover:-translate-y-0.5 transition-all shadow-md hover:shadow-lg font-semibold text-base"
                   >
-                    Get Your App — Talk to Us
+                    Get Your App: Talk to Us
                     <ArrowRight className="w-4 h-4 ml-2" />
                   </Button>
                 </Link>

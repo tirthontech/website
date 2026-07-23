@@ -17,7 +17,7 @@ const products = [
     name: "TradeSathi",
     href: "/products/tradesathi",
     icon: TrendingUp,
-    description: "White-label subscriber app for SEBI-registered Research Analysts",
+    description: "White label subscriber app for SEBI registered Research Analysts",
     tag: "FinTech",
   },
   {
@@ -31,7 +31,7 @@ const products = [
     name: "AKNA Terminal",
     href: "/products/akna-terminal",
     icon: Zap,
-    description: "Multi-broker multi-account Windows trading terminal",
+    description: "Multi broker multi account Windows trading terminal",
     tag: "Trading",
   },
   {
@@ -159,7 +159,7 @@ export function Navbar() {
                   <div className="flex items-center justify-between px-5 py-3.5 border-b border-border/50 bg-muted/40">
                     <div>
                       <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground/70">Our Products</p>
-                      <p className="text-[11px] text-muted-foreground/50 mt-0.5">Custom-built software for specific industries</p>
+                      <p className="text-[11px] text-muted-foreground/50 mt-0.5">Software products built for specific industries</p>
                     </div>
                     <span className="text-xs font-semibold text-primary bg-primary/10 border border-primary/20 px-2.5 py-1 rounded-full">
                       7 Products
@@ -175,7 +175,7 @@ export function Navbar() {
                         onClick={() => setProductsOpen(false)}
                         className="flex items-start gap-3 p-3.5 rounded-xl hover:bg-muted/70 transition-all duration-150 no-underline group"
                         role="menuitem"
-                        title={`${product.name} — ${product.description}`}
+                        title={`${product.name}: ${product.description}`}
                       >
                         <div className="w-9 h-9 rounded-lg bg-primary/10 group-hover:bg-primary/20 flex items-center justify-center shrink-0 mt-0.5 transition-colors">
                           <product.icon className="w-4 h-4 text-primary" />

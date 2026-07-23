@@ -6,9 +6,9 @@ const steps = [
   {
     icon: PhoneCall,
     step: "01",
-    title: "Free Discovery Call",
+    title: "Free Strategy Session",
     description:
-      "20 minutes. Tell us what you're building. We ask the right questions, give you an honest read, and tell you upfront whether we're the right fit.",
+      "20 minutes. Tell us what you're working on. We ask the right questions, give you an honest read, and tell you upfront whether we're the right fit.",
     tag: "No commitment",
   },
   {
@@ -16,23 +16,23 @@ const steps = [
     step: "02",
     title: "Proposal in 24 Hours",
     description:
-      "You get a detailed written proposal — scope, timeline, and price broken into milestones. No vague estimates, no hidden costs.",
+      "You get a detailed written proposal: scope, timeline, and price broken into milestones. No vague estimates, no hidden costs.",
     tag: "Clear pricing",
   },
   {
     icon: Hammer,
     step: "03",
-    title: "AI-Accelerated Build",
+    title: "Focused Execution",
     description:
-      "Our IIT engineers use Claude Code, Lovable, Cursor, and Replit to build at AI speed. Milestones with demos after each one — real progress in weeks, not months.",
-    tag: "AI-powered",
+      "Whether it's a growth strategy, a marketing campaign, content, or software, our team gets to work with milestones and check ins along the way: real progress you can see, not a black box.",
+    tag: "Built around you",
   },
   {
     icon: Rocket,
     step: "04",
     title: "Launch & Handoff",
     description:
-      "We handle deployment, do thorough testing, and make sure your team can confidently take over. Documentation included.",
+      "We handle rollout, testing where it applies, and make sure your team can confidently take it from there. Documentation included.",
     tag: "Full handoff",
   },
   {
@@ -40,8 +40,8 @@ const steps = [
     step: "05",
     title: "Ongoing Support",
     description:
-      "We don't disappear after launch. Bug fixes, feature additions, and retainer arrangements are available for clients who want to keep building.",
-    tag: "Long-term partner",
+      "We don't disappear after launch. Strategy check ins, campaign optimization, feature additions, and retainer arrangements are available for clients who want to keep growing.",
+    tag: "Long term partner",
   },
 ];
 
@@ -69,10 +69,10 @@ export function HowWeWork() {
             How It Works
           </span>
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-foreground mb-4">
-            From first message to <span className="text-primary">live product</span>
+            From first message to <span className="text-primary">real results</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            AI tools compress timelines. IIT engineers ensure quality. A transparent process so you always know where things stand.
+            A clear process across strategy, marketing, content, and technology, so you always know where things stand.
           </p>
         </motion.div>
 
@@ -136,7 +136,7 @@ export function HowWeWork() {
             className="group inline-flex items-center gap-3 px-8 py-4 rounded-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-base shadow-lg hover:shadow-xl transition-all duration-200 hover:-translate-y-0.5"
           >
             <Calendar className="w-5 h-5" />
-            Book a Free Discovery Call
+            Book a Free Strategy Session
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </button>
         </motion.div>
@@ -174,7 +174,7 @@ export function HowWeWork() {
 
             <div className="shrink-0 text-right hidden md:block">
               <p className="text-xs text-background/40 max-w-[160px] leading-relaxed">
-                Same-day responses guaranteed during your business hours.
+                Same day responses guaranteed during your business hours.
               </p>
             </div>
           </div>

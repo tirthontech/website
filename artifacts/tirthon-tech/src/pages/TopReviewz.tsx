@@ -54,12 +54,12 @@ const painPoints = [
   {
     icon: AlertTriangle,
     heading: "Your clinic receptionist sees the 1-star before the doctor does.",
-    body: "A patient had a billing confusion. Nobody at the front desk heard a complaint. No call the next day, no email. Just a 1-star on Google Maps with the words 'rude staff' — and now every new patient searching your clinic name reads that before they ever book an appointment.",
+    body: "A patient had a billing confusion. Nobody at the front desk heard a complaint. No call the next day, no email. Just a 1-star on Google Maps with the words 'rude staff', and now every new patient searching your clinic name reads that before they ever book an appointment.",
   },
   {
     icon: XCircle,
-    heading: "Your stylist gave a bad haircut. The client never said a word — until Google.",
-    body: "She sat in the chair, said it looked fine, paid and left. That evening she left a 2-star review and moved to another salon. You found out three days later when your cousin mentioned it. Asking for reviews feels awkward, so your staff doesn't do it consistently — and the customers who complain are always the ones motivated enough to find Google on their own.",
+    heading: "Your stylist gave a bad haircut. The client never said a word, until Google.",
+    body: "She sat in the chair, said it looked fine, paid and left. That evening she left a 2-star review and moved to another salon. You found out three days later when your cousin mentioned it. Asking for reviews feels awkward, so your staff doesn't do it consistently, and the customers who complain are always the ones motivated enough to find Google on their own.",
   },
   {
     icon: Eye,
@@ -71,9 +71,9 @@ const painPoints = [
 const features = [
   {
     icon: Shield,
-    title: "Smart Rating Gate — Negative Review Prevention",
+    title: "Smart Rating Gate: Negative Review Prevention",
     description:
-      "Customers choose a star rating before reaching Google. 4 and 5 stars go straight to your Google review page. 1, 2, and 3 stars land in your private inbox. Unhappy customers get heard — just not by the entire internet first. This is the core of topreviewz's negative review prevention software.",
+      "Customers choose a star rating before reaching Google. 4 and 5 stars go straight to your Google review page. 1, 2, and 3 stars land in your private inbox. Unhappy customers get heard, just not by the entire internet first. This is the core of topreviewz's negative review prevention software.",
   },
   {
     icon: Mail,
@@ -85,25 +85,25 @@ const features = [
     icon: MessageSquare,
     title: "Private Feedback Inbox",
     description:
-      "Every 1, 2, or 3 star response lands here — never on Google. Filter by Open or Resolved. Get an email notification the moment a complaint comes in. Call the customer, sort it out, mark it resolved. This is your early warning system for customer complaints before they become public reviews.",
+      "Every 1, 2, or 3 star response lands here, never on Google. Filter by Open or Resolved. Get an email notification the moment a complaint comes in. Call the customer, sort it out, mark it resolved. This is your early warning system for customer complaints before they become public reviews.",
   },
   {
     icon: Users,
-    title: "Customer CRM — All Contacts in One Place",
+    title: "Customer CRM: All Contacts in One Place",
     description:
       "Add customers manually or import via CSV from your phone, spreadsheet, or POS system. Store name, email, phone, and private notes. See per-customer status at a glance: Sent, Opened, Clicked, or Reviewed. Filter by Uncontacted, Follow-up, or Reviewed. This is customer review tracking software built for busy owners.",
   },
   {
     icon: BarChart3,
-    title: "Analytics Dashboard — See What's Working",
+    title: "Analytics Dashboard: See What's Working",
     description:
-      "Requests sent, reviews posted, complaints intercepted, open rate, conversion rate — all in one view. A weekly bar chart of requests sent versus reviews received. A real-time activity feed of your last 20 customer interactions. No more guessing whether your Google rating improvement efforts are actually working.",
+      "Requests sent, reviews posted, complaints intercepted, open rate, conversion rate, all in one view. A weekly bar chart of requests sent versus reviews received. A real-time activity feed of your last 20 customer interactions. No more guessing whether your Google rating improvement efforts are actually working.",
   },
   {
     icon: QrCode,
     title: "Google Review QR Code Generator",
     description:
-      "Generate a printable QR code that sends customers directly to your Google review page. Print it on receipts, put it on tables, stick it near the checkout counter. Scan and review — no email needed. Copy the direct Google review URL to send via WhatsApp or SMS in one click.",
+      "Generate a printable QR code that sends customers directly to your Google review page. Print it on receipts, put it on tables, stick it near the checkout counter. Scan and review. No email needed. Copy the direct Google review URL to send via WhatsApp or SMS in one click.",
   },
 ];
 
@@ -118,7 +118,7 @@ const whoFor = [
 
 const steps = [
   { step: "01", title: "Create your account", body: "Sign up and enter your business name, category, and Google listing details. Takes about 60 seconds." },
-  { step: "02", title: "Connect your Google listing", body: "Enter your Google Place ID — the only technical step in the whole setup. We link you directly to Google's Place ID lookup tool and walk you through it." },
+  { step: "02", title: "Connect your Google listing", body: "Enter your Google Place ID (the only technical step in the whole setup). We link you directly to Google's Place ID lookup tool and walk you through it." },
   { step: "03", title: "Import your customers", body: "Paste in a list or upload a CSV from your phone contacts, your salon software, your POS, or a spreadsheet. Name and email are all you need." },
   { step: "04", title: "Send your first campaign", body: "Select your customers, preview the email exactly as they will see it, and send. Your smart rating gate is live from the moment the first customer clicks." },
 ];
@@ -158,23 +158,23 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 const faqs = [
   {
     q: "Does this actually work with real Google reviews, or is it some kind of workaround?",
-    a: "It sends your customers to your actual Google review page — the exact same page they would find by searching your business name on Google Maps. The rating gate is the step before Google, not a replacement for it. Customers who pick 4 or 5 stars click through and leave a real, public Google review. Customers who pick 1, 2, or 3 stars are shown a private feedback form instead. Google only sees the customers who chose to review. Your reviews are completely genuine.",
+    a: "It sends your customers to your actual Google review page: the exact same page they would find by searching your business name on Google Maps. The rating gate is the step before Google, not a replacement for it. Customers who pick 4 or 5 stars click through and leave a real, public Google review. Customers who pick 1, 2, or 3 stars are shown a private feedback form instead. Google only sees the customers who chose to review. Your reviews are completely genuine.",
   },
   {
     q: "Is filtering reviews like this allowed by Google?",
-    a: "Yes. Google's review policies prohibit two things: paying or incentivising people to leave reviews, and selectively removing or hiding existing reviews. topreviewz does neither. Routing unhappy customers to a private feedback channel before they post is a standard customer service practice — it's no different from a manager asking a dissatisfied customer to speak privately rather than argue in the dining room. We do not touch, remove, or manipulate any review that has already been posted on Google.",
+    a: "Yes. Google's review policies prohibit two things: paying or incentivising people to leave reviews, and selectively removing or hiding existing reviews. topreviewz does neither. Routing unhappy customers to a private feedback channel before they post is a standard customer service practice; it's no different from a manager asking a dissatisfied customer to speak privately rather than argue in the dining room. We do not touch, remove, or manipulate any review that has already been posted on Google.",
   },
   {
     q: "What actually happens when a customer picks 1, 2, or 3 stars?",
-    a: "They land on a private feedback form asking what went wrong. When they submit it, that response goes directly to your inbox — not to Google. You get an email notification immediately. You can call the customer, address the issue, and mark it resolved inside topreviewz. The customer never posts a public review unless they separately navigate to Google and choose to write one on their own. In our experience, most unhappy customers just want to be heard — and once you contact them, very few bother to post publicly.",
+    a: "They land on a private feedback form asking what went wrong. When they submit it, that response goes directly to your inbox, not to Google. You get an email notification immediately. You can call the customer, address the issue, and mark it resolved inside topreviewz. The customer never posts a public review unless they separately navigate to Google and choose to write one on their own. In our experience, most unhappy customers just want to be heard, and once you contact them, very few bother to post publicly.",
   },
   {
     q: "I am not technical at all. Will I be able to set this up?",
-    a: "Yes. The only part that requires any lookup is finding your Google Place ID — we give you a direct link to Google's own Place ID finder and a step-by-step walkthrough. Everything else is your business name, your customer list, and a few clicks. Restaurant owners, clinic managers, and salon owners with no technology background have been up and running in under two minutes. If you can use WhatsApp, you can use topreviewz.",
+    a: "Yes. The only part that requires any lookup is finding your Google Place ID; we give you a direct link to Google's own Place ID finder and a step-by-step walkthrough. Everything else is your business name, your customer list, and a few clicks. Restaurant owners, clinic managers, and salon owners with no technology background have been up and running in under two minutes. If you can use WhatsApp, you can use topreviewz.",
   },
   {
     q: "My customer contacts are scattered across my phone, a spreadsheet, and my billing software. How do I get them in?",
-    a: "Two ways. You can add customers one at a time using a simple form — useful if you want to start with your regulars. Or you can export your contacts from wherever they currently live (your phone contacts, Google Sheets, your salon management software, your POS system) as a CSV file and upload it in one go. All you need is a column for name and a column for email. Phone is optional. Most business owners get their full customer list imported in under five minutes.",
+    a: "Two ways. You can add customers one at a time using a simple form (useful if you want to start with your regulars). Or you can export your contacts from wherever they currently live (your phone contacts, Google Sheets, your salon management software, your POS system) as a CSV file and upload it in one go. All you need is a column for name and a column for email. Phone is optional. Most business owners get their full customer list imported in under five minutes.",
   },
   {
     q: "Can someone game the system by clicking the review link multiple times?",
@@ -186,11 +186,11 @@ const faqs = [
   },
   {
     q: "How does the QR code work for my restaurant or shop?",
-    a: "The QR code links directly to your Google review page. It is designed for in-person use: print it on the back of your receipt, laminate it and place it on each table, or tape it near your checkout. A customer scans it with their phone camera and goes straight to Google — no email, no campaign needed. You can also copy the direct URL from the same page and paste it into a WhatsApp message or SMS if you prefer to send it manually.",
+    a: "The QR code links directly to your Google review page. It is designed for in-person use: print it on the back of your receipt, laminate it and place it on each table, or tape it near your checkout. A customer scans it with their phone camera and goes straight to Google: no email, no campaign needed. You can also copy the direct URL from the same page and paste it into a WhatsApp message or SMS if you prefer to send it manually.",
   },
   {
     q: "Will my customers know their feedback is being filtered before it reaches Google?",
-    a: "No. Customers see a clean, branded star rating selector followed by either a redirect to Google (for 4 and 5 stars) or a feedback form (for 1 to 3 stars). The experience is branded to your business and looks like a normal review flow. There is no mention of filtering, routing, or topreviewz. Customers simply have two different experiences depending on how satisfied they were — one gets their feedback to Google, the other gets it to you.",
+    a: "No. Customers see a clean, branded star rating selector followed by either a redirect to Google (for 4 and 5 stars) or a feedback form (for 1 to 3 stars). The experience is branded to your business and looks like a normal review flow. There is no mention of filtering, routing, or topreviewz. Customers simply have two different experiences depending on how satisfied they were: one gets their feedback to Google, the other gets it to you.",
   },
   {
     q: "Which types of businesses get the most value from topreviewz?",
@@ -208,7 +208,7 @@ export default function TopReviewz() {
         applicationCategory: "BusinessApplication",
         operatingSystem: "Web",
         description:
-          "topreviewz is a Google review management platform for local businesses in India and beyond. It automates review requests via email campaigns, intercepts negative customer feedback privately before it reaches Google through a smart rating gate, and provides a private complaints inbox, customer CRM, and analytics dashboard — all set up in 2 minutes with no technical skills required.",
+          "topreviewz is a Google review management platform for local businesses in India and beyond. It automates review requests via email campaigns, intercepts negative customer feedback privately before it reaches Google through a smart rating gate, and provides a private complaints inbox, customer CRM, and analytics dashboard, all set up in 2 minutes with no technical skills required.",
         url: "https://tirthontech.com/products/topreviewz",
         provider: {
           "@type": "Organization",
@@ -216,7 +216,7 @@ export default function TopReviewz() {
           url: "https://tirthontech.com",
         },
         featureList: [
-          "Smart rating gate — routes 1-3 star feedback to private inbox, 4-5 stars to Google review page",
+          "Smart rating gate: routes 1-3 star feedback to private inbox, 4-5 stars to Google review page",
           "Automated review request email campaigns for restaurants, clinics, salons, and retail stores",
           "Private negative feedback inbox with Open/Resolved tracking and instant email notifications",
           "Customer CRM with CSV import, per-customer review status, and internal notes",
@@ -248,12 +248,12 @@ export default function TopReviewz() {
   return (
     <>
       <SEO
-        title="topreviewz — Google Review Management Software for Restaurants, Clinics & Salons"
-        description="topreviewz helps local businesses get more Google reviews automatically and stop negative reviews before they go public. Smart rating gate, automated review request emails, private feedback inbox, and customer CRM — set up in 2 minutes, no tech skills needed. Built for restaurants, clinics, salons, and retail stores across India."
+        title="topreviewz: Google Review Management Software for Restaurants, Clinics & Salons"
+        description="topreviewz helps local businesses get more Google reviews automatically and stop negative reviews before they go public. Smart rating gate, automated review request emails, private feedback inbox, and customer CRM, set up in 2 minutes, no tech skills needed. Built for restaurants, clinics, salons, and retail stores across India."
         keywords="Google review management software, get more Google reviews small business, negative review prevention software, review request email software, local business reputation management, Google review automation India, review management for restaurants, review management for dental clinics, salon review management, retail store review management, customer review tracking software, review management platform India, automated review requests India, Google rating improvement software, online reputation management small business, customer feedback management software, Google review QR code generator, reputation management for local businesses, review collection software, private feedback inbox"
         canonical="https://tirthontech.com/products/topreviewz"
-        ogTitle="topreviewz — Get More Google Reviews. Stop Bad Ones Before They Go Public."
-        ogDescription="A smart rating gate that intercepts unhappy customers privately, automated review request email campaigns, and a customer CRM — all in one dashboard. Built for restaurants, clinics, salons, and retail shops. Set up in 2 minutes, no tech skills needed."
+        ogTitle="topreviewz: Get More Google Reviews. Stop Bad Ones Before They Go Public."
+        ogDescription="A smart rating gate that intercepts unhappy customers privately, automated review request email campaigns, and a customer CRM, all in one dashboard. Built for restaurants, clinics, salons, and retail shops. Set up in 2 minutes, no tech skills needed."
         jsonLd={jsonLd}
       />
       <Navbar />
@@ -291,7 +291,7 @@ export default function TopReviewz() {
               custom={2}
               className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-10 max-w-2xl mx-auto"
             >
-              topreviewz automatically asks your customers for Google reviews, catches unhappy ones privately before they post publicly, and shows you exactly what is working — all from one simple dashboard. Set up in 2 minutes. No technical skills needed.
+              topreviewz automatically asks your customers for Google reviews, catches unhappy ones privately before they post publicly, and shows you exactly what is working, all from one simple dashboard. Set up in 2 minutes. No technical skills needed.
             </motion.p>
             <motion.div
               variants={fadeUp}
@@ -342,7 +342,7 @@ export default function TopReviewz() {
             <motion.div variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }} className="text-center mb-14">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Sound Familiar?</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                These are the exact situations topreviewz was built to prevent. Every one of them happens to local business owners every week — and every one of them is avoidable.
+                These are the exact situations topreviewz was built to prevent. Every one of them happens to local business owners every week, and every one of them is avoidable.
               </p>
             </motion.div>
             <div className="grid md:grid-cols-2 gap-6">
@@ -374,9 +374,9 @@ export default function TopReviewz() {
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }} className="text-center mb-14">
               <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-primary mb-4 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 block">Core Feature</span>
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">The Smart Rating Gate — Negative Review Prevention Built In</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">The Smart Rating Gate: Negative Review Prevention Built In</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Positive reviews go to Google. Negative ones come to you privately. It happens automatically, every time, for every customer who clicks your review link — whether they came from an email campaign, a QR code scan, or a WhatsApp message.
+                Positive reviews go to Google. Negative ones come to you privately. It happens automatically, every time, for every customer who clicks your review link, whether they came from an email campaign, a QR code scan, or a WhatsApp message.
               </p>
             </motion.div>
             <div className="grid md:grid-cols-3 gap-6">
@@ -430,7 +430,7 @@ export default function TopReviewz() {
               viewport={{ once: true }}
               className="text-center text-sm text-muted-foreground mt-8"
             >
-              Every review request email contains a unique one-time link — so the same customer cannot submit more than once, and no fake reviews can be generated.
+              Every review request email contains a unique one-time link, so the same customer cannot submit more than once, and no fake reviews can be generated.
             </motion.p>
           </div>
         </section>
@@ -439,9 +439,9 @@ export default function TopReviewz() {
         <section className="py-20 bg-muted/30">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }} className="text-center mb-14">
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Everything Your Google Reputation Needs — in One Dashboard</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Everything Your Google Reputation Needs: in One Dashboard</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                No separate tools to connect. No developers to call. topreviewz handles the complete cycle — from sending your first review request to watching your Google rating climb — all from one place.
+                No separate tools to connect. No developers to call. topreviewz handles the complete cycle: from sending your first review request to watching your Google rating climb, all from one place.
               </p>
             </motion.div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -481,7 +481,7 @@ export default function TopReviewz() {
                     "Bulk send to any subset of your customer list",
                     "Customizable email template with your business name",
                     "Template variables: customer name, business name, review link",
-                    "Live email preview — see it exactly as the customer will",
+                    "Live email preview: see it exactly as the customer will",
                     "Unique one-time link generated per customer, per send",
                     "Per-customer status: Sent → Opened → Clicked → Reviewed",
                   ].map((item) => (
@@ -493,10 +493,10 @@ export default function TopReviewz() {
                 </ul>
               </motion.div>
               <motion.div variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }} custom={1}>
-                <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-primary mb-4 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 block">Customer CRM — All Your Contacts in One Place</span>
+                <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-primary mb-4 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 block">Customer CRM: All Your Contacts in One Place</span>
                 <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">Stop managing customers across three different places.</h2>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  Right now your customer list is split across your phone, a spreadsheet, and your billing software. topreviewz gives you one place for all of them — with private internal notes and a live review status that updates automatically as customers interact with your campaigns. The kind of customer feedback management software that actually fits how a local business works.
+                  Right now your customer list is split across your phone, a spreadsheet, and your billing software. topreviewz gives you one place for all of them, with private internal notes and a live review status that updates automatically as customers interact with your campaigns. The kind of customer feedback management software that actually fits how a local business works.
                 </p>
                 <ul className="space-y-3">
                   {[
@@ -523,18 +523,18 @@ export default function TopReviewz() {
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-12 items-start">
               <motion.div variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }}>
-                <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-primary mb-4 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 block">Analytics — Google Rating Improvement Tracking</span>
+                <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-primary mb-4 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 block">Analytics: Google Rating Improvement Tracking</span>
                 <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">Finally know whether your Google rating is actually improving.</h2>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  Most business owners send review requests with no idea what happens next. topreviewz tracks the full funnel — from send to open to click to review — so you can see exactly where customers drop off and whether your Google rating improvement efforts are working. No more guessing. No more running your reputation management blind.
+                  Most business owners send review requests with no idea what happens next. topreviewz tracks the full funnel: from send to open to click to review, so you can see exactly where customers drop off and whether your Google rating improvement efforts are working. No more guessing. No more running your reputation management blind.
                 </p>
                 <ul className="space-y-3">
                   {[
-                    "Requests Sent — total review request emails delivered",
-                    "Reviews Posted — 4 and 5 star redirects that reached Google",
-                    "Issues Caught — private complaints intercepted before going public",
-                    "Open Rate — percentage of emails opened or clicked",
-                    "Conversion Rate — percentage of requests that resulted in action",
+                    "Requests Sent: total review request emails delivered",
+                    "Reviews Posted: 4 and 5 star redirects that reached Google",
+                    "Issues Caught: private complaints intercepted before going public",
+                    "Open Rate: percentage of emails opened or clicked",
+                    "Conversion Rate: percentage of requests that resulted in action",
                     "Weekly bar chart: requests sent vs. reviews received",
                     "Real-time activity feed of your last 20 customer interactions",
                   ].map((item) => (
@@ -546,14 +546,14 @@ export default function TopReviewz() {
                 </ul>
               </motion.div>
               <motion.div variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }} custom={1}>
-                <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-primary mb-4 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 block">Private Feedback Inbox — Handle Complaints Before They Become Reviews</span>
+                <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-primary mb-4 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 block">Private Feedback Inbox: Handle Complaints Before They Become Reviews</span>
                 <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">Your unhappy customer is about to post a 2-star review. You have one chance to stop it.</h2>
                 <p className="text-muted-foreground leading-relaxed mb-6">
                   A patient had a confusing experience at your clinic. A diner at your restaurant waited too long. A customer at your retail store got the wrong product. They click your review link, pick 2 stars, and land on your private feedback form. You get an email notification the moment they submit. You call them, sort it out, and mark it resolved. They never go to Google. That is 68 percent of negative experiences handled before the public ever sees them.
                 </p>
                 <ul className="space-y-3">
                   {[
-                    "All 1, 2, and 3 star responses stored privately — never posted to Google",
+                    "All 1, 2, and 3 star responses stored privately: never posted to Google",
                     "Instant email notification the moment a complaint comes in",
                     "Filter feedback by Open or Resolved status",
                     "Mark issues resolved and add internal resolution notes",
@@ -575,7 +575,7 @@ export default function TopReviewz() {
         <section className="py-20 bg-white">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }} className="text-center mb-14">
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Up and Running in 2 Minutes — No Developer Needed</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Up and Running in 2 Minutes: No Developer Needed</h2>
               <p className="text-muted-foreground max-w-xl mx-auto">
                 No integrations to configure. No technical knowledge required. If you can send a WhatsApp message, you can set up topreviewz.
               </p>
@@ -606,7 +606,7 @@ export default function TopReviewz() {
             <motion.div variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }} className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Built for Local Business Owners Across India</h2>
               <p className="text-muted-foreground max-w-xl mx-auto">
-                If a new customer Googles your business before deciding to walk in, your star rating is one of the most important things you own. topreviewz exists to protect it — and grow it.
+                If a new customer Googles your business before deciding to walk in, your star rating is one of the most important things you own. topreviewz exists to protect it, and grow it.
               </p>
             </motion.div>
             <motion.div
@@ -667,7 +667,7 @@ export default function TopReviewz() {
                 More Google reviews. Fewer public surprises. Starting today.
               </h2>
               <p className="text-background/70 text-lg leading-relaxed mb-10 max-w-xl mx-auto">
-                Businesses running topreviewz do not just collect more Google reviews — they stop finding out about problems from strangers on the internet. They handle complaints before they become public. They watch their rating climb. And they do it all without needing a developer, a marketing agency, or a separate set of tools. That is what 2 minutes of setup actually buys you.
+                Businesses running topreviewz do not just collect more Google reviews. They stop finding out about problems from strangers on the internet. They handle complaints before they become public. They watch their rating climb. And they do it all without needing a developer, a marketing agency, or a separate set of tools. That is what 2 minutes of setup actually buys you.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/contact">

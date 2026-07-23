@@ -4,44 +4,49 @@ import { ChevronDown } from "lucide-react";
 
 export const faqs = [
   {
-    question: "What services does Tirthon Tech offer?",
+    question: "What does Tirthon Tech actually do?",
     answer:
-      "We build custom web apps, mobile apps (iOS & Android), AI & automation tools, data annotation pipelines, AI training datasets, Shopify apps, Windows desktop software, cloud infrastructure, and internal tools & dashboards. If it's a software problem, we can likely help.",
+      "We help businesses grow through four pillars: brand and growth strategy, marketing execution, technology, and business operations automation. We also offer client partnership and consulting for specific business moments. Pick what your business needs. Skip what it does not.",
   },
   {
-    question: "How much does a custom web app cost?",
+    question: "Is this a fixed package, or is it custom?",
     answer:
-      "It depends on scope and complexity. Focused MVPs typically start from $3,000–$8,000. Full-scale SaaS platforms or complex systems can range from $15,000–$60,000+. We share a detailed estimate after a short discovery call once we understand your requirements.",
+      "Everything is built around what your business actually needs. We do not sell a one size fits all package. Some clients only need strategy. Others need strategy, marketing, and technology together.",
+  },
+  {
+    question: "How is this different from hiring separate agencies?",
+    answer:
+      "Most businesses patch together a strategy consultant, a marketing agency, and a dev shop who never talk to each other. We work as one partner across all four pillars, so the strategy, the marketing, and the technology stay consistent.",
+  },
+  {
+    question: "How much does custom software development cost?",
+    answer:
+      "For the technology pillar specifically, focused MVPs typically start from $3,000 to $8,000. Full scale SaaS platforms or complex systems can range from $15,000 to $60,000 or more. Pricing for strategy, marketing, and other engagements depends on scope. We share a detailed estimate after a short strategy session.",
   },
   {
     question: "Do you work with startups?",
     answer:
-      "Yes — a significant portion of our clients are early-stage startups. We help founders ship MVPs quickly, validate ideas with real users, and then scale the product over time. We understand the pace and constraints startups operate under.",
+      "Yes, a significant portion of our clients are early stage startups. We help founders validate ideas, launch quickly, and then scale over time. We understand the pace and constraints startups operate under.",
   },
   {
     question: "What industries do you serve?",
     answer:
-      "We work across SaaS, e-commerce, fintech, healthtech, logistics, AI/ML, education, and more. Our work is industry-agnostic — we adapt to your domain rather than requiring you to adapt to us.",
+      "We work across SaaS, ecommerce, fintech, healthtech, real estate, retail, and more. We are not tied to one industry. We adapt our approach to your business rather than asking you to adapt to us.",
   },
   {
-    question: "How long does a typical project take?",
+    question: "Do you offer ongoing support after the engagement starts?",
     answer:
-      "A focused MVP typically takes 6–12 weeks. Full-scale web or mobile apps take 3–6 months depending on scope. Data annotation and AI training data projects are scoped per engagement. We'll give you a clear timeline before we start.",
-  },
-  {
-    question: "Do you offer post-launch support and maintenance?",
-    answer:
-      "Yes. We offer ongoing bug fixes, feature development, and maintenance after launch. Many clients work with us on a retainer basis for continuous product development. We don't hand off code and disappear.",
+      "Yes. Strategy check ins, campaign optimization, feature development, and maintenance are all available on a retainer basis for clients who want to keep growing. We do not disappear after the first milestone.",
   },
   {
     question: "Where are you based, and do you work with international clients?",
     answer:
-      "We're based in Indore, India, with clients across the US, UK, Europe, Australia, and the Middle East. We work fully remote and adapt to your timezone for meetings and standups.",
+      "We are based in Indore, India, with clients across the US, UK, Europe, Australia, and the Middle East. We work fully remote and adapt to your timezone for meetings and check ins.",
   },
   {
     question: "How do I get started?",
     answer:
-      "Fill out our contact form or email us directly at business@tirthontech.com. We'll get back to you within 24 hours to schedule a free discovery call and talk through your project.",
+      "Fill out our contact form or email us directly at business@tirthontech.com. We will get back to you within 24 hours to schedule a free strategy session and talk through what your business needs.",
   },
 ];
 

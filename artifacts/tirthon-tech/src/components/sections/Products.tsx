@@ -23,10 +23,10 @@ const products = [
     href: "/products/tradesathi",
     icon: TrendingUp,
     tag: "FinTech",
-    tagline: "White-Label App for Research Analysts",
+    tagline: "White Label App for Research Analysts",
     description:
-      "SEBI-registered Research Analysts can launch their own branded subscriber app in days — no dev team needed. Push calls, manage subscribers, and grow your advisory business.",
-    keywords: ["SEBI RA app", "research analyst subscriber app", "white-label trading app"],
+      "SEBI registered Research Analysts can launch their own branded subscriber app in days. No dev team needed. Push calls, manage subscribers, and grow your advisory business.",
+    keywords: ["SEBI RA app", "research analyst subscriber app", "white label trading app"],
   },
   {
     name: "BariQ",
@@ -35,7 +35,7 @@ const products = [
     tag: "HealthTech",
     tagline: "Digital Queue for Clinics & Hospitals",
     description:
-      "Replace chaotic waiting rooms with a smart digital queue system. Patients get real-time updates, staff see live dashboards, and clinics run smoother — from OPDs to diagnostic labs.",
+      "Replace chaotic waiting rooms with a smart digital queue system. Patients get live updates, staff see live dashboards, and clinics run smoother (from OPDs to diagnostic labs).",
     keywords: ["queue management system", "clinic queue", "hospital OPD management"],
   },
   {
@@ -43,10 +43,10 @@ const products = [
     href: "/products/akna-terminal",
     icon: Zap,
     tag: "Trading",
-    tagline: "Multi-Broker Trading Terminal for Windows",
+    tagline: "Multi Broker Trading Terminal for Windows",
     description:
       "Trade across multiple brokers and accounts from a single Windows terminal. Designed for active traders, proprietary desks, and family offices managing more than one trading account.",
-    keywords: ["multi-broker trading terminal", "multi-account trading software", "Windows trading terminal"],
+    keywords: ["multi broker trading terminal", "multi account trading software", "Windows trading terminal"],
   },
   {
     name: "topreviewz",
@@ -65,7 +65,7 @@ const products = [
     tag: "AlgoTrading",
     tagline: "Algorithmic Trading Platform for Indian Markets",
     description:
-      "Automate your trading strategies on Zerodha, Upstox, Angel One and more — no Python required. Backtest, deploy, and monitor strategies across NSE, BSE, and MCX from one platform.",
+      "Automate your trading strategies on Zerodha, Upstox, Angel One and more; no Python required. Backtest, deploy, and monitor strategies across NSE, BSE, and MCX from one platform.",
     keywords: ["algorithmic trading India", "algo trading platform", "automated trading software India"],
   },
   {
@@ -75,7 +75,7 @@ const products = [
     tag: "JewelryTech",
     tagline: "Billing, Accounting & Gold Loan Software for Jewellers",
     description:
-      "Replace billing software, Tally, a karigar notebook, and a gold loan register with one system. Every sale, purchase, loan, and karigar transaction posts to real, GST-ready books automatically.",
+      "Replace billing software, Tally, a karigar notebook, and a gold loan register with one system. Every sale, purchase, loan, and karigar transaction posts to real, GST ready books automatically.",
     keywords: ["jewellery billing software", "gold shop accounting software", "karigar metal tracking", "Girvi gold loan software"],
   },
 ];
@@ -91,7 +91,7 @@ export function Products() {
       <meta itemProp="name" content="Tirthon Tech Software Products" />
       <meta
         itemProp="description"
-        content="Industry-specific software products by Tirthon Tech: RealtySell (Real Estate CRM), TradeSathi (RA subscriber app), BariQ (clinic queue management), AKNA Terminal (multi-broker trading), topreviewz (Google review management), TirthonQuant (algo trading platform), SwarnDesk (jewellery billing, accounting & gold loan software)."
+        content="Industry specific software products by Tirthon Tech: RealtySell (Real Estate CRM), TradeSathi (RA subscriber app), BariQ (clinic queue management), AKNA Terminal (multi broker trading), topreviewz (Google review management), TirthonQuant (algo trading platform), SwarnDesk (jewellery billing, accounting & gold loan software)."
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -107,12 +107,12 @@ export function Products() {
             Our Products
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Software We Built — and Use in the Real World
+            Software Products From Our Technology Pillar
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-base sm:text-lg leading-relaxed">
-            Every product here started as a problem we kept seeing in a specific industry. We built
-            the solution, put it in front of real users, and kept improving it. These are live
-            products — not demos.
+            Every product here started as a problem we kept seeing in a specific industry. Technology
+            is one of the four pillars we work in, and these are the live products it has produced,
+            not demos.
           </p>
         </motion.div>
 
