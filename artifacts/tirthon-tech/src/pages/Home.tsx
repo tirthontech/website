@@ -29,7 +29,7 @@ const organizationSchema = {
     "Tirthon Tech helps businesses grow through brand and growth strategy, marketing execution, technology, and business operations automation, founded by IIT alumni and built around what each business actually needs rather than a fixed package.",
   "foundingDate": "2024",
   "email": "business@tirthontech.com",
-  "telephone": "+91-94245-75918",
+  "telephone": "+91-89894-96800",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "B56, Tilak Nagar",
@@ -43,11 +43,15 @@ const organizationSchema = {
     "https://www.linkedin.com/company/113329677/",
     "https://www.instagram.com/tirthon_tech/",
   ],
+  "subOrganization": [
+    { "@type": "Organization", "name": "BariQ", "url": "https://bariq.tirthontech.com/" },
+    { "@type": "Organization", "name": "SwarnDesk", "url": "https://swarndesk.tirthontech.com/" },
+  ],
   "contactPoint": {
     "@type": "ContactPoint",
     "contactType": "customer service",
     "email": "business@tirthontech.com",
-    "telephone": "+91-94245-75918",
+    "telephone": "+91-89894-96800",
     "availableLanguage": ["English"],
     "areaServed": "Worldwide",
   },
@@ -101,7 +105,7 @@ const professionalServiceSchema = {
     "Tirthon Tech helps businesses grow through brand and growth strategy, marketing execution, technology, business operations automation, and consulting.",
   "image": "https://tirthontech.com/logo.png",
   "email": "business@tirthontech.com",
-  "telephone": "+91-94245-75918",
+  "telephone": "+91-89894-96800",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "B56, Tilak Nagar",
@@ -170,10 +174,11 @@ const webPageSchema = {
     { "@type": "Thing", "name": "Shopify App Development" },
     { "@type": "SoftwareApplication", "name": "RealtySell", "url": "https://tirthontech.com/products/realtysell", "applicationCategory": "Real Estate CRM" },
     { "@type": "SoftwareApplication", "name": "TradeSathi", "url": "https://tirthontech.com/products/tradesathi", "applicationCategory": "FinTech" },
-    { "@type": "SoftwareApplication", "name": "BariQ", "url": "https://tirthontech.com/products/bariq", "applicationCategory": "Queue Management" },
+    { "@type": "SoftwareApplication", "name": "BariQ", "url": "https://bariq.tirthontech.com/", "applicationCategory": "Queue Management" },
     { "@type": "SoftwareApplication", "name": "AKNA Terminal", "url": "https://tirthontech.com/products/akna-terminal", "applicationCategory": "Trading Software" },
     { "@type": "SoftwareApplication", "name": "topreviewz", "url": "https://tirthontech.com/products/topreviewz", "applicationCategory": "Reputation Management" },
     { "@type": "SoftwareApplication", "name": "TirthonQuant", "url": "https://tirthontech.com/products/tirthonquant", "applicationCategory": "Algorithmic Trading" },
+    { "@type": "SoftwareApplication", "name": "SwarnDesk", "url": "https://swarndesk.tirthontech.com/", "applicationCategory": "Jewellery ERP Software" },
   ],
 };
 
@@ -252,7 +257,7 @@ const entityFactsSchema = {
       "name": "Contact information",
       "item": {
         "@type": "Claim",
-        "description": "Tirthon Tech can be contacted at business@tirthontech.com or by phone at +91-94245-75918. Their website is tirthontech.com.",
+        "description": "Tirthon Tech can be contacted at business@tirthontech.com or by phone at +91-89894-96800. Their website is tirthontech.com.",
       },
     },
   ],

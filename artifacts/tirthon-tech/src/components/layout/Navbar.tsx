@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, ChevronDown, TrendingUp, Monitor, Zap, Building2, Star, ArrowRight, Bot, Gem, Target, Megaphone, Cpu, Workflow, Compass } from "lucide-react";
+import { Menu, X, ChevronDown, TrendingUp, Monitor, Zap, Building2, Star, ArrowRight, Bot, Gem, Target, Megaphone, Cpu, Workflow, Compass, ExternalLink } from "lucide-react";
 import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 const logoUrl = "/logo-footer.png";
@@ -23,6 +23,7 @@ const products = [
   {
     name: "BariQ",
     href: "/products/bariq",
+    liveUrl: "https://bariq.tirthontech.com/",
     icon: Monitor,
     description: "Digital queue management for clinics, hospitals & diagnostic centres",
     tag: "HealthTech",
@@ -51,6 +52,7 @@ const products = [
   {
     name: "SwarnDesk",
     href: "/products/swarndesk",
+    liveUrl: "https://swarndesk.tirthontech.com/",
     icon: Gem,
     description: "Billing, accounting & gold loan (Girvi) software for Indian jewellery shops",
     tag: "JewelryTech",
@@ -192,7 +194,7 @@ export function Navbar() {
                   animate={{ opacity: 1, y: 0, scale: 1 }}
                   exit={{ opacity: 0, y: 10, scale: 0.97 }}
                   transition={{ duration: 0.18 }}
-                  className="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-[420px] bg-card border border-border/70 rounded-2xl shadow-2xl overflow-hidden"
+                  className="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-[720px] bg-card border border-border/70 rounded-2xl shadow-2xl overflow-hidden"
                   role="menu"
                 >
                   {/* Header */}
@@ -203,53 +205,55 @@ export function Navbar() {
                     </div>
                   </div>
 
-                  {/* Service list */}
-                  <div className="p-3">
-                    {services.map((service) =>
-                      service.children ? (
-                        <div key={service.name} className="py-1">
-                          <div className="flex items-center gap-3 px-3 pt-2 pb-1">
-                            <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
-                              <service.icon className="w-4 h-4 text-primary" />
-                            </div>
-                            <p className="text-sm font-semibold text-foreground leading-tight">{service.name}</p>
+                  {/* Service columns */}
+                  <div className="p-4 grid grid-cols-3 gap-2">
+                    {services.filter((s) => s.children).map((service) => (
+                      <div key={service.name} className="p-2">
+                        <div className="flex items-center gap-2.5 px-1 pb-2 mb-1 border-b border-border/50">
+                          <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                            <service.icon className="w-4 h-4 text-primary" />
                           </div>
-                          <div className="pl-[3.25rem] flex flex-col">
-                            {service.children.map((child) => (
-                              <Link
-                                key={child.name}
-                                href={child.href}
-                                onClick={() => setServicesOpen(false)}
-                                className="text-sm text-muted-foreground hover:text-primary no-underline py-1.5 rounded-lg transition-colors"
-                                role="menuitem"
-                              >
-                                {child.name}
-                              </Link>
-                            ))}
-                          </div>
+                          <p className="text-sm font-semibold text-foreground leading-tight">{service.name}</p>
                         </div>
-                      ) : (
+                        <div className="flex flex-col">
+                          {service.children!.map((child) => (
+                            <Link
+                              key={child.name}
+                              href={child.href}
+                              onClick={() => setServicesOpen(false)}
+                              className="text-sm text-muted-foreground hover:text-primary hover:bg-muted/70 no-underline px-1 py-1.5 rounded-lg transition-colors"
+                              role="menuitem"
+                            >
+                              {child.name}
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
+
+                    <div className="p-2 flex flex-col gap-1">
+                      {services.filter((s) => !s.children).map((service) => (
                         <Link
                           key={service.name}
                           href={service.href}
                           onClick={() => setServicesOpen(false)}
-                          className="flex items-start gap-3 p-3 rounded-xl hover:bg-muted/70 transition-all duration-150 no-underline group"
+                          className="flex items-start gap-2.5 p-2 rounded-xl hover:bg-muted/70 transition-all duration-150 no-underline group"
                           role="menuitem"
                         >
-                          <div className="w-9 h-9 rounded-lg bg-primary/10 group-hover:bg-primary/20 flex items-center justify-center shrink-0 mt-0.5 transition-colors">
+                          <div className="w-8 h-8 rounded-lg bg-primary/10 group-hover:bg-primary/20 flex items-center justify-center shrink-0 mt-0.5 transition-colors">
                             <service.icon className="w-4 h-4 text-primary" />
                           </div>
                           <div className="min-w-0">
                             <p className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors leading-tight">
                               {service.name}
                             </p>
-                            <p className="text-xs text-muted-foreground leading-snug mt-0.5">
+                            <p className="text-xs text-muted-foreground leading-snug mt-0.5 line-clamp-2">
                               {service.description}
                             </p>
                           </div>
                         </Link>
-                      )
-                    )}
+                      ))}
+                    </div>
                   </div>
 
                   {/* Footer CTA */}
@@ -310,31 +314,48 @@ export function Navbar() {
                   {/* 2-column product grid */}
                   <div className="p-3 grid grid-cols-2 gap-1">
                     {products.map((product) => (
-                      <Link
-                        key={product.name}
-                        href={product.href}
-                        onClick={() => setProductsOpen(false)}
-                        className="flex items-start gap-3 p-3.5 rounded-xl hover:bg-muted/70 transition-all duration-150 no-underline group"
-                        role="menuitem"
-                        title={`${product.name}: ${product.description}`}
-                      >
-                        <div className="w-9 h-9 rounded-lg bg-primary/10 group-hover:bg-primary/20 flex items-center justify-center shrink-0 mt-0.5 transition-colors">
-                          <product.icon className="w-4 h-4 text-primary" />
-                        </div>
-                        <div className="min-w-0">
-                          <div className="flex items-center gap-2 mb-0.5">
-                            <p className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors leading-tight">
-                              {product.name}
-                            </p>
-                            <span className="text-[10px] font-semibold text-primary/70 bg-primary/8 px-1.5 py-0.5 rounded-full whitespace-nowrap hidden lg:block">
-                              {product.tag}
-                            </span>
+                      <div key={product.name} className="relative group">
+                        <Link
+                          href={product.href}
+                          onClick={() => setProductsOpen(false)}
+                          className="flex items-start gap-3 p-3.5 rounded-xl hover:bg-muted/70 transition-all duration-150 no-underline"
+                          role="menuitem"
+                          title={`${product.name}: ${product.description}`}
+                        >
+                          <div className="w-9 h-9 rounded-lg bg-primary/10 group-hover:bg-primary/20 flex items-center justify-center shrink-0 mt-0.5 transition-colors">
+                            <product.icon className="w-4 h-4 text-primary" />
                           </div>
-                          <p className="text-xs text-muted-foreground leading-snug line-clamp-2">
-                            {product.description}
-                          </p>
-                        </div>
-                      </Link>
+                          <div className="min-w-0">
+                            <div className="flex items-center gap-2 mb-0.5">
+                              <p className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors leading-tight">
+                                {product.name}
+                              </p>
+                              <span className="text-[10px] font-semibold text-primary/70 bg-primary/8 px-1.5 py-0.5 rounded-full whitespace-nowrap hidden lg:block">
+                                {product.tag}
+                              </span>
+                              {product.liveUrl && (
+                                <span className="text-[10px] font-semibold text-green-600 bg-green-500/10 px-1.5 py-0.5 rounded-full whitespace-nowrap">
+                                  Live
+                                </span>
+                              )}
+                            </div>
+                            <p className="text-xs text-muted-foreground leading-snug line-clamp-2">
+                              {product.description}
+                            </p>
+                          </div>
+                        </Link>
+                        {product.liveUrl && (
+                          <a
+                            href={product.liveUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            title={`Open the live ${product.name} app`}
+                            className="absolute top-2.5 right-2.5 w-6 h-6 rounded-md flex items-center justify-center text-muted-foreground/50 hover:text-primary hover:bg-primary/10 transition-colors"
+                          >
+                            <ExternalLink className="w-3.5 h-3.5" />
+                          </a>
+                        )}
+                      </div>
                     ))}
                   </div>
 
@@ -502,7 +523,10 @@ export function Navbar() {
                             </div>
                             <div>
                               <p className="text-sm font-semibold text-foreground leading-tight">{product.name}</p>
-                              <p className="text-[10px] font-medium text-primary/70 mt-0.5">{product.tag}</p>
+                              <p className="text-[10px] font-medium mt-0.5">
+                                <span className="text-primary/70">{product.tag}</span>
+                                {product.liveUrl && <span className="text-green-600 ml-1.5">· Live</span>}
+                              </p>
                             </div>
                           </Link>
                         ))}

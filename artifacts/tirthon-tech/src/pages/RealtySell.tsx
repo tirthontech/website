@@ -314,9 +314,7 @@ export default function RealtySell() {
         title="RealtySell: Real Estate CRM for Developers, Builders & Brokers in India"
         description="RealtySell is a purpose-built real estate CRM for Indian developers, builders, and brokerage firms. Manage leads from 99acres and MagicBricks, track unit inventory with approval workflows, schedule site visits, log commissions, and run your entire property sales pipeline. All from one platform built for Indian real estate."
         keywords="real estate CRM India, CRM for real estate developers, real estate broker CRM, property sales CRM India, lead management software real estate, real estate sales pipeline software, CRM for builders India, real estate agent CRM, property CRM software, builder CRM India, real estate sales management software, CRM for real estate brokerage, real estate lead tracking software, property developer CRM India, site visit management software, commission tracking real estate CRM, unit inventory management software, real estate deal pipeline, RERA compliant CRM India, 99acres lead management CRM"
-        canonical="https://tirthontech.com/products/realtysell"
-        ogTitle="RealtySell: Real Estate CRM Built for Indian Developers, Builders & Brokers"
-        ogDescription="Capture leads from 99acres, MagicBricks, and Housing.com into one inbox. Track unit inventory with approval workflows. Manage site visits, commissions, and your full sales pipeline, built specifically for how real estate teams in India actually work."
+        path="/products/realtysell"
         jsonLd={jsonLd}
       />
       <Navbar />

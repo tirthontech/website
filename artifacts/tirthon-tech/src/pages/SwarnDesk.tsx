@@ -188,6 +188,10 @@ const gstFeatures = [
 
 const faqs = [
   {
+    q: "What is the best jewellery shop management software in India?",
+    a: "It depends on what you're trying to replace. Generic accounting software like Tally or Busy handles general bookkeeping but has no jewellery-specific fields for purity, HUID, or karigar tracking. If you want one system that replaces billing software, Tally, a karigar notebook, and a gold loan register at once, with purity and making-charge billing, HUID tracking, karigar metal wastage tracking, and a standalone Girvi module built in natively, and GST returns generated directly from real transactions, SwarnDesk is purpose-built for exactly that. It runs in the browser, plans start at ₹2,999/month, and every plan starts with a 7-day free trial with no credit card required.",
+  },
+  {
     q: "What exactly is SwarnDesk?",
     a: "SwarnDesk is billing, inventory, accounting, and gold-loan software built specifically for Indian jewellery shops. It replaces separate billing software, Tally, a karigar notebook, and a gold loan register with one system where every transaction posts to real, GST-ready books automatically.",
   },
@@ -243,6 +247,8 @@ const jsonLd = [
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     name: "SwarnDesk",
+    url: "https://swarndesk.tirthontech.com/",
+    sameAs: "https://swarndesk.tirthontech.com/",
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web",
     description:
@@ -253,6 +259,15 @@ const jsonLd = [
       availability: "https://schema.org/InStock",
     },
     author: { "@type": "Organization", name: "Tirthon Tech", url: "https://tirthontech.com" },
+    keywords: [
+      "jewellery billing software India",
+      "jewellery ERP India",
+      "gold loan software",
+      "Girvi software",
+      "karigar metal tracking software",
+      "best jewellery shop management software India",
+      "best jewellery ERP software India",
+    ],
   },
 ];
 
@@ -333,7 +348,7 @@ export default function SwarnDesk() {
         title="SwarnDesk: Billing, Accounting & Gold Loan Software for Jewellers"
         description="SwarnDesk replaces billing software, Tally, a karigar notebook, and a gold loan register with one system for Indian jewellery shops. Sales, purchases, karigar metal tracking, gold loans (Girvi), and GST-ready double-entry accounting: all in one place. 7-day free trial, no credit card needed."
         path="/products/swarndesk"
-        keywords="jewellery billing software India, gold shop accounting software, jewellery shop management software, jewellers software India, karigar metal tracking software, gold loan software, Girvi software, jewellery GST software, jewellery ERP India, gold and silver billing software, jewellery inventory software, jewellery POS software India"
+        keywords="jewellery billing software India, gold shop accounting software, jewellery shop management software, jewellers software India, karigar metal tracking software, gold loan software, Girvi software, jewellery GST software, jewellery ERP India, gold and silver billing software, jewellery inventory software, jewellery POS software India, best jewellery shop management software India, best jewellery ERP software India, best jewellery accounting software India, best gold loan software India"
         jsonLd={jsonLd}
       />
       <Navbar />
@@ -391,7 +406,7 @@ export default function SwarnDesk() {
                 custom={3}
                 className="flex flex-wrap gap-4 items-center"
               >
-                <Link href="/contact">
+                <a href="https://swarndesk.tirthontech.com/register" target="_blank" rel="noopener noreferrer">
                   <Button
                     size="lg"
                     className="rounded-full px-8 bg-primary text-primary-foreground hover:bg-primary/90 hover:-translate-y-0.5 transition-all shadow-md hover:shadow-lg font-semibold"
@@ -399,7 +414,7 @@ export default function SwarnDesk() {
                     Sign Up Now: 7 Day Free Trial
                     <ArrowRight className="w-4 h-4 ml-2" />
                   </Button>
-                </Link>
+                </a>
                 <Link href="/contact">
                   <Button
                     size="lg"
@@ -489,6 +504,20 @@ export default function SwarnDesk() {
                 </motion.div>
               ))}
             </div>
+
+            <motion.p
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="text-center text-sm text-muted-foreground mt-10"
+            >
+              Wondering how SwarnDesk stacks up against Tally, Busy, or a generic billing app? Read the
+              full{" "}
+              <Link href="/blog/best-jewellery-shop-management-software-india-2026" className="text-primary hover:underline font-medium">
+                jewellery shop management software comparison
+              </Link>.
+            </motion.p>
           </div>
         </section>
 
@@ -692,7 +721,7 @@ export default function SwarnDesk() {
                 no long-term lock-in.
               </p>
               <div className="flex flex-wrap justify-center gap-4">
-                <Link href="/contact">
+                <a href="https://swarndesk.tirthontech.com/register" target="_blank" rel="noopener noreferrer">
                   <Button
                     size="lg"
                     className="rounded-full px-10 bg-primary text-primary-foreground hover:bg-primary/90 hover:-translate-y-0.5 transition-all shadow-md hover:shadow-lg font-semibold text-base"
@@ -700,7 +729,7 @@ export default function SwarnDesk() {
                     Sign Up Now: 7 Day Free Trial
                     <ArrowRight className="w-4 h-4 ml-2" />
                   </Button>
-                </Link>
+                </a>
                 <Link href="/contact">
                   <Button
                     size="lg"

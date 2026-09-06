@@ -297,9 +297,7 @@ export default function TirthonQuant() {
         title="TirthonQuant: Algorithmic Trading Platform for Indian Traders | Algo Trading Software India"
         description="TirthonQuant automates your trading strategy across Zerodha, Upstox, Angel One and more, with backtesting, risk management, options automation, and zero coding required. Built for retail traders, trading desks, and family offices in India."
         keywords="algo trading software India, algorithmic trading platform India, automated trading software India, trading bot India, algo trading without coding, backtesting software India, options trading automation India, TradingView webhook trading India, multi-account trading automation, trading strategy automation, Zerodha algo trading, Upstox algo trading, systematic trading India, quant trading platform India, F&O automation software, options algo trading India, automated stop loss trading, risk management algo trading, NSE algo trading software, retail algo trading India"
-        canonical="https://tirthontech.com/products/tirthonquant"
-        ogTitle="TirthonQuant: Automate Your Trading Strategy Across Zerodha, Upstox & More"
-        ogDescription="Backtesting, risk management, options automation, and fully managed broker API maintenance. No coding required. Built for Indian traders who trade seriously."
+        path="/products/tirthonquant"
         jsonLd={jsonLd}
       />
       <Navbar />

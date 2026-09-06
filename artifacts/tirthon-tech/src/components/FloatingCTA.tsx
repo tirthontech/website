@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { X, Calendar, MessageCircle } from "lucide-react";
 import { openCalendly } from "@/lib/calendly";
 
-const WA_NUMBER = "919424575918";
+const WA_NUMBER = "918989496800";
 const WA_MESSAGE = encodeURIComponent(
   "Hi Tirthon Tech, I'd like to discuss a project. Can we set up a quick call?"
 );

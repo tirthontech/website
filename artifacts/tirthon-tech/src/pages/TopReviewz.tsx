@@ -251,9 +251,7 @@ export default function TopReviewz() {
         title="topreviewz: Google Review Management Software for Restaurants, Clinics & Salons"
         description="topreviewz helps local businesses get more Google reviews automatically and stop negative reviews before they go public. Smart rating gate, automated review request emails, private feedback inbox, and customer CRM, set up in 2 minutes, no tech skills needed. Built for restaurants, clinics, salons, and retail stores across India."
         keywords="Google review management software, get more Google reviews small business, negative review prevention software, review request email software, local business reputation management, Google review automation India, review management for restaurants, review management for dental clinics, salon review management, retail store review management, customer review tracking software, review management platform India, automated review requests India, Google rating improvement software, online reputation management small business, customer feedback management software, Google review QR code generator, reputation management for local businesses, review collection software, private feedback inbox"
-        canonical="https://tirthontech.com/products/topreviewz"
-        ogTitle="topreviewz: Get More Google Reviews. Stop Bad Ones Before They Go Public."
-        ogDescription="A smart rating gate that intercepts unhappy customers privately, automated review request email campaigns, and a customer CRM, all in one dashboard. Built for restaurants, clinics, salons, and retail shops. Set up in 2 minutes, no tech skills needed."
+        path="/products/topreviewz"
         jsonLd={jsonLd}
       />
       <Navbar />

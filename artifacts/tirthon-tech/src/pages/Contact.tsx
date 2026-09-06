@@ -25,7 +25,7 @@ const contactSchemas = [
       "name": "Tirthon Tech",
       "url": "https://tirthontech.com/",
       "email": "business@tirthontech.com",
-      "telephone": "+91-94245-75918",
+      "telephone": "+91-89894-96800",
     },
   },
 ];

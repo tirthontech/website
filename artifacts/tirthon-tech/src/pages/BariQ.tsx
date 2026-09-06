@@ -200,7 +200,22 @@ const deliverables = [
   "Ongoing technical support and platform updates",
 ];
 
+const comparisonRows = [
+  { criteria: "Setup time", paper: "None, but no benefit", erp: "Weeks to months", bariq: "1-2 weeks" },
+  { criteria: "Needs a dedicated IT admin", paper: "No", erp: "Usually yes", bariq: "No" },
+  { criteria: "Patient self-service, no app download", paper: "No", erp: "Rarely a priority", bariq: "Core feature" },
+  { criteria: "Multi-doctor queue routing", paper: "Manual", erp: "Yes, but heavyweight", bariq: "Yes, lightweight" },
+  { criteria: "Built for walk-in-heavy Indian OPDs", paper: "Chaotic", erp: "Often appointment-first", bariq: "Yes, by design" },
+  { criteria: "Billing auto-generated from consultation", paper: "Manual reconciliation", erp: "Yes", bariq: "Yes, automatic" },
+  { criteria: "Inpatient / bed management", paper: "N/A", erp: "Yes", bariq: "Not applicable (OPD-focused)" },
+  { criteria: "Cost for a single clinic", paper: "Free (hidden cost: time)", erp: "High", bariq: "Low, scales with usage" },
+];
+
 const faqs = [
+  {
+    q: "What is the best clinic and hospital queue management software in India?",
+    a: "It depends on what you're running. For private clinics, specialist practices, and diagnostic centres focused on OPD queue management, appointment scheduling, billing, and patient records, BariQ is purpose-built for exactly that use case: patient self-service with no app download, per-doctor live queues, a waiting room TV display, and auto-generated billing, deployed in 1-2 weeks. For large multi-specialty hospitals that need inpatient operations like bed management and OT scheduling, a full hospital ERP suite is the right category instead. BariQ does not attempt to compete there; it is built specifically for the outpatient queue and front-desk problem that most Indian clinics actually have.",
+  },
   {
     q: "What is a digital queue management system for clinics?",
     a: "A digital queue management system replaces physical paper tokens and manual front-desk coordination with a real-time digital system. BariQ specifically does this: when a patient is registered or books an appointment, they receive a unique link. They open that link on their phone (no app download) and can see their queue position, estimated wait time, and who is currently being seen by the doctor. The receptionist manages everything from a dashboard: checking patients in, reordering the queue, adding walk-ins. The doctor has their own live queue view at their desk. The waiting room TV display shows the 'Now Serving' status for everyone in the room. No phone calls, no paper tokens, no confusion at the front desk.",
@@ -296,6 +311,8 @@ const jsonLd = [
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     name: "BariQ",
+    url: "https://bariq.tirthontech.com/",
+    sameAs: "https://bariq.tirthontech.com/",
     applicationCategory: "HealthApplication",
     operatingSystem: "Web",
     description:
@@ -317,6 +334,8 @@ const jsonLd = [
       "clinic appointment scheduling software India",
       "digital prescription software India",
       "clinic CRM software India",
+      "best clinic management software India",
+      "best hospital queue management software India",
     ],
     additionalProperty: [
       {
@@ -345,7 +364,7 @@ export default function BariQ() {
         title="BariQ: Digital Queue Management System for Private Clinics & Hospitals in India"
         description="Tired of paper tokens, missed appointments, and WhatsApp chaos at your clinic? BariQ is a complete digital queue management and clinic management system for private clinics, hospitals, and specialist practices in India: real-time OPD queue, patient self-service, appointment scheduling, digital billing, prescriptions, and CRM. No patient app download needed."
         path="/products/bariq"
-        keywords="clinic queue management system India, hospital queue management software India, OPD queue management system, digital token system for clinic, patient queue management app India, clinic management software India, smart queue system hospital India, clinic appointment scheduling software India, digital prescription software India, clinic CRM software India, patient management system India, hospital waiting room management, paperless clinic management India, online appointment booking clinic India, multi-doctor clinic software, specialist clinic management system, dermatology clinic software, dental clinic management system, orthopaedic clinic software, private hospital management software India, outpatient department management system, digital health record clinic India"
+        keywords="clinic queue management system India, hospital queue management software India, OPD queue management system, digital token system for clinic, patient queue management app India, clinic management software India, smart queue system hospital India, clinic appointment scheduling software India, digital prescription software India, clinic CRM software India, patient management system India, hospital waiting room management, paperless clinic management India, online appointment booking clinic India, multi-doctor clinic software, specialist clinic management system, dermatology clinic software, dental clinic management system, orthopaedic clinic software, private hospital management software India, outpatient department management system, digital health record clinic India, best clinic management software India, best hospital management software India, best OPD queue management system India, best clinic queue management software"
         jsonLd={jsonLd}
       />
       <Navbar />
@@ -438,8 +457,13 @@ export default function BariQ() {
                     <ArrowRight className="w-4 h-4 ml-2" />
                   </Button>
                 </Link>
-                <a href="#features">
+                <a href="https://bariq.tirthontech.com/signup" target="_blank" rel="noopener noreferrer">
                   <Button size="lg" variant="outline" className="rounded-full px-8 hover:-translate-y-0.5 transition-all">
+                    Try BariQ Free
+                  </Button>
+                </a>
+                <a href="#features">
+                  <Button size="lg" variant="ghost" className="rounded-full px-8 hover:-translate-y-0.5 transition-all">
                     See All Features
                   </Button>
                 </a>
@@ -782,6 +806,72 @@ export default function BariQ() {
           </div>
         </section>
 
+        {/* ── How BariQ Compares ── */}
+        <section className="py-16 md:py-24">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <motion.div
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="text-center mb-12"
+            >
+              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+                How BariQ Compares to{" "}
+                <span className="text-primary">the Alternatives</span>
+              </h2>
+              <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+                "Best clinic management software" depends on what you're actually running. Here's how
+                a paper-and-WhatsApp setup, a generic hospital ERP, and BariQ stack up for a private
+                clinic, specialist practice, or diagnostic centre.
+              </p>
+            </motion.div>
+
+            <motion.div
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="overflow-x-auto rounded-2xl border border-border"
+            >
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="bg-muted/50 border-b-2 border-border">
+                    <th className="py-3.5 px-4 text-left font-semibold text-foreground">Criteria</th>
+                    <th className="py-3.5 px-4 text-left font-semibold text-muted-foreground">Paper + WhatsApp</th>
+                    <th className="py-3.5 px-4 text-left font-semibold text-muted-foreground">Generic Hospital ERP</th>
+                    <th className="py-3.5 px-4 text-left font-semibold text-primary">BariQ</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {comparisonRows.map((row, i) => (
+                    <tr key={row.criteria} className={i % 2 === 0 ? "bg-card" : "bg-muted/20"}>
+                      <td className="py-3 px-4 font-medium text-foreground">{row.criteria}</td>
+                      <td className="py-3 px-4 text-muted-foreground">{row.paper}</td>
+                      <td className="py-3 px-4 text-muted-foreground">{row.erp}</td>
+                      <td className="py-3 px-4 text-foreground font-medium">{row.bariq}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </motion.div>
+
+            <motion.p
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="text-center text-sm text-muted-foreground mt-6"
+            >
+              BariQ is built for outpatient queue management, scheduling, billing, and patient records:
+              not for inpatient hospital operations like bed management or OT scheduling. Read the full{" "}
+              <Link href="/blog/best-clinic-hospital-management-software-india-2026" className="text-primary hover:underline font-medium">
+                clinic and hospital management software comparison
+              </Link>.
+            </motion.p>
+          </div>
+        </section>
+
         {/* ── Tech Stack ── */}
         <section className="py-16 md:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -952,8 +1042,13 @@ export default function BariQ() {
                     <ArrowRight className="w-4 h-4 ml-2" />
                   </Button>
                 </Link>
-                <Link href="/services">
+                <a href="https://bariq.tirthontech.com/signup" target="_blank" rel="noopener noreferrer">
                   <Button size="lg" variant="outline" className="rounded-full px-8 hover:-translate-y-0.5 transition-all">
+                    Try BariQ Free
+                  </Button>
+                </a>
+                <Link href="/services">
+                  <Button size="lg" variant="ghost" className="rounded-full px-8 hover:-translate-y-0.5 transition-all">
                     See All Services
                   </Button>
                 </Link>

@@ -95,8 +95,8 @@ export function Contact() {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground font-medium">Call Us</p>
-                    <a href="tel:+919424575918" className="text-lg font-semibold text-foreground hover:text-primary transition-colors">
-                      +91 94245 75918
+                    <a href="tel:+918989496800" className="text-lg font-semibold text-foreground hover:text-primary transition-colors">
+                      +91 89894 96800
                     </a>
                   </div>
                 </div>

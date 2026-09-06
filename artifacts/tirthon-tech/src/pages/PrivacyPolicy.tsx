@@ -119,7 +119,7 @@ export default function PrivacyPolicy() {
                 <p>
                   Questions about this policy? Email us at{" "}
                   <a href="mailto:business@tirthontech.com" className="text-primary hover:underline">business@tirthontech.com</a> or call{" "}
-                  <a href="tel:+919424575918" className="text-primary hover:underline">+91 94245 75918</a>.
+                  <a href="tel:+918989496800" className="text-primary hover:underline">+91 89894 96800</a>.
                 </p>
               </div>
             </motion.div>
